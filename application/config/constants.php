@@ -1,5 +1,17 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+/*
+|--------------------------------------------------------------------------
+| Paths
+|--------------------------------------------------------------------------
+|
+| Paths used across the application
+| Always end with trailing slash!
+|
+*/
+define('BASE_URL', 'http://localhost:8888/usda-eat/');
+define('PATH_VENDOR', BASE_URL.'vendor/');
+
 
 /*
 |--------------------------------------------------------------------------

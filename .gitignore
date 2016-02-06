@@ -26,4 +26,7 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-workspace
 *.sublime-project
 
-vendor/
+### CodeKit ###
+# General CodeKit files to ignore
+config.codekit
+/min
