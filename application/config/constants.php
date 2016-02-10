@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 //	local
 if (!isset($_SERVER['CI_ENV'])) {
-	define('BASE_URL', 'http://localhost:8888/usda-eat/');
+	define('BASE_URL', 'http://localhost:8888/usda-hackathon/');
 } 
 //	server
 else {

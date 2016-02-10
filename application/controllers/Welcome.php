@@ -1,15 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+require_once('Client.php');
+
+class Welcome extends Client {
 
 	public function index()
 	{
 		$data['app'] = array(
-			'title' => 'USDA',
+			'title' => $this->lang->line('welcome_title'),
 			'view'  => 'pages/welcome'
 		);
-
+		
+		$data['global'] = $this->global;
 
 		$this->load->view('layout/application', $data);
 	}

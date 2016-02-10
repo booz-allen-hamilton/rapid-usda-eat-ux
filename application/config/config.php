@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = BASE_URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,6 +65,20 @@ $config['uri_protocol']	= 'REQUEST_URI';
 | https://codeigniter.com/user_guide/general/urls.html
 */
 $config['url_suffix'] = '';
+
+/*
+|--------------------------------------------------------------------------
+| Language Settings
+|--------------------------------------------------------------------------
+|
+| Settings for language
+*/
+$config['language_list'] = array(
+	'english' => 'English', 
+	'spanish' => 'Español',
+	'korean' => '한국어',
+);
+
 
 /*
 |--------------------------------------------------------------------------
