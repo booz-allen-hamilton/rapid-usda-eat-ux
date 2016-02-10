@@ -5,12 +5,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Environment Variables
 |--------------------------------------------------------------------------
 */
-
 //	local
 if (!isset($_SERVER['CI_ENV'])) {
+	define('BASE_URL', 'http://localhost:8888/usda-eat/');
 } 
-
-//	has server environment 
+//	server
 else {
 	define('BASE_URL', $_SERVER['BASE_URL']);
 }
@@ -24,7 +23,6 @@ else {
 | Always end with trailing slash!
 |
 */
-define('BASE_URL', 'http://localhost:8888/usda-eat/');
 define('PATH_VENDOR', BASE_URL.'vendor/');
 
 
