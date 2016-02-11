@@ -30,3 +30,7 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 # General CodeKit files to ignore
 config.codekit
 /min
+
+# Local
+#-------------------------
+config.php
