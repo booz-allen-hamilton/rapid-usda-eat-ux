@@ -7,11 +7,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 //	local
 if (!isset($_SERVER['CI_ENV'])) {
-	define('BASE_URL', 'http://localhost:8888/usda-hackathon/');
+	require('config.php');
 } 
 //	server
 else {
 	define('BASE_URL', $_SERVER['BASE_URL']);
+	define('DB_HOSTNAME', $_SERVER['DB_HOSTNAME']);
+	define('DB_USERNAME', $_SERVER['DB_USERNAME']);
+	define('DB_PASSWORD', $_SERVER['DB_PASSWORD']);
+	define('DB_DATABASE', $_SERVER['DB_DATABASE']);
+	define('ENCRYPTION_KEY', $_SERVER['ENCRYPTION_KEY']);
 }
 
 /*
