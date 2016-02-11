@@ -29,6 +29,7 @@ else {
 |
 */
 define('PATH_VENDOR', BASE_URL.'vendor/');
+define('PATH_ASSETS', BASE_URL.'assets/');
 
 
 /*

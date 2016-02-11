@@ -12,5 +12,6 @@
 	?>
 	<script src="<?=PATH_VENDOR?>components/jquery/jquery.min.js"></script>
 	<script src="<?=PATH_VENDOR?>twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="<?=PATH_ASSETS?>js/form.js"></script>
 </body>
 </html>
