@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title><?=$app['title']?></title>
 	<link rel="stylesheet" href="<?=PATH_VENDOR?>twbs/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/assets/css/app.css" />
 </head>
 <body>
 	<?
