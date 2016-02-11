@@ -1,1 +1,1 @@
-# usda-hackathon
+# rapid-usda-eat-ux
