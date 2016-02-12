@@ -33,5 +33,5 @@ config.codekit
 
 # Local
 #-------------------------
-config.php
+/config.php
 assets/scss/.sass-cache/*
