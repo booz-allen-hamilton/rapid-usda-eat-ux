@@ -20,14 +20,25 @@ h1 {
     padding: 20px;
     font-size: 40px;
     text-align: center; }
-  .section .form-group {
-    margin-top: 20px; }
-    .section .form-group label {
-      font-size: 20px;
-      margin: 10px 0; }
-    .section .form-group .form-control {
-      font-size: 24px;
-      height: 48px; }
+  .section .add-button {
+    border: solid 1px #ccc;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000; }
+
+.form-group {
+  margin-top: 20px; }
+  .form-group label {
+    font-size: 20px;
+    margin: 0 0 10px; }
+  .form-group .form-control {
+    font-size: 24px;
+    height: 48px; }
+  .form-group .radio-inline, .form-group .checkbox-inline {
+    margin-right: 15px; }
+  .form-group input[type=radio], .form-group input[type=checkbox] {
+    margin-top: 6px; }
 
 .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
   font-weight: bold;
@@ -35,3 +46,5 @@ h1 {
   .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a .text {
     padding-bottom: 5px;
     border-bottom: 3px solid #ccc; }
+
+/*# sourceMappingURL=app.css.map */

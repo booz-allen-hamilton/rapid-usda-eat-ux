@@ -33,7 +33,7 @@ $lang['label_child_student'] = "Are they a student?";
 $lang['label_child_type'] = "Select all that apply:";
 $lang['label_child_type_foster'] = "Foster Child";
 $lang['label_child_type_hmr'] = "Homeless, Migrant, or Runaway";
-$lang['label_child_add'] = "Add Another Child";
+$lang['label_child_add'] = "+ Add Another Child";
 
 // Section Two
 $lang['link_define'] = "Define Acronyms";

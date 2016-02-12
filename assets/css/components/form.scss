@@ -19,17 +19,33 @@ h1 {
 		text-align: center;
 	}
 
-	.form-group {
-		margin-top: 20px;
+	.add-button {
+		border: solid 1px #ccc;
+		padding: 10px 40px;
+		text-decoration: none;
+		font-size: 20px;
+		color: #000;
+	}
+}
 
-		label {
-			font-size: 20px;
-			margin: 10px 0;
-		}
+.form-group {
+	margin-top: 20px;
 
-		.form-control {
-			font-size: 24px;
-			height: 48px;
-		}
+	label {
+		font-size: 20px;
+		margin: 0 0 10px;
+	}
+
+	.form-control {
+		font-size: 24px;
+		height: 48px;
+	}
+
+	.radio-inline, .checkbox-inline {
+		margin-right: 15px;
+	}
+
+	input[type=radio], input[type=checkbox]{
+		margin-top: 6px;
 	}
 }
