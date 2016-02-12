@@ -40,7 +40,13 @@ class Client extends Application
 	public function language() {
 		$language = $this->uri->segment(3);
 		$this->set_language($language);
-		redirect('welcome');
+		
+		$redirect = urldecode($this->input->get('redirect'));
+		if (!empty($redirect)) {
+			redirect($redirect);
+		} else {
+			redirect('welcome');
+		}
 	}
 		
 	/**

@@ -10,7 +10,7 @@
 					<?
 						foreach($global['language_list'] as $language_key => $language_value) {
 					?>
-			    <li><a href="<?=base_url('client/language/'.$language_key)?>"><?=$language_value?></a></li>
+			    <li><a href="<?=base_url('client/language/'.$language_key)?>?redirect=<?=urlencode(uri_string())?>"><?=$language_value?></a></li>
 					<?
 						}
 					?>
