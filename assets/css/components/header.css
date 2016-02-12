@@ -1,0 +1,6 @@
+.navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
+  font-weight: bold;
+  background: none; }
+  .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a .text {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ccc; }

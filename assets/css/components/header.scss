@@ -1,0 +1,15 @@
+.navbar.navbar-default.navbar-usda {
+	.nav.navbar-nav {
+		li.active {
+			a {
+				font-weight: bold;
+				background: none;
+				.text {
+					padding-bottom: 5px;
+					
+					border-bottom: 3px solid #ccc;
+				}
+			}
+		}
+	}
+}

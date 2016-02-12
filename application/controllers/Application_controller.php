@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * base class for whole application. 
  */
-class Application extends CI_Controller 
+class Application_controller extends CI_Controller 
 {
 	public function __construct() 
 	{

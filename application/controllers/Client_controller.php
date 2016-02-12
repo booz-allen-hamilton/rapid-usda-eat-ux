@@ -6,9 +6,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * base class for client 
  */
  
-require_once('Application.php');
+require_once APPPATH . '/controllers/Application_controller.php';
 
-class Client extends Application 
+class Client_controller extends Application_controller 
 {
 	
 	/**
@@ -29,8 +29,27 @@ class Client extends Application
 		$this->global['language_list'] = $this->config->item('language_list');
 		$this->check_language();	//	check language and set to default if not set
 		
+		//	set current
+		$this->global['nav'] = $this->uri->segment(1);
+		
 		//	load language file
 		$this->lang->load('client', $this->session->userdata('language'));
+	}
+		
+	/**
+	 * Default index page
+	 * @return [type] [description]
+	 */
+	public function index()
+	{
+		$data['app'] = array(
+			'title' => $this->lang->line('welcome_title'),
+			'view'  => 'pages/welcome'
+		);
+		
+		$data['global'] = $this->global;
+
+		$this->load->view('layout/application', $data);
 	}
 	
 	/**

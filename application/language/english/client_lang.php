@@ -8,6 +8,12 @@ $lang['edit'] = "Edit";
 $lang['remove'] = "Remove";
 $lang['frequency'] = "Select Frequency";
 
+// Header 
+$lang['nav_how_it_works'] = "How it Works";
+$lang['nav_apply_now'] = "Apply Now";
+$lang['nav_application_status'] = "Application Status";
+$lang['nav_help'] = "Help";
+
 // Page Titles
 $lang['welcome_title'] = "Welcome to the Free and Reduced School Lunch Application";
 $lang['welcome_description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";

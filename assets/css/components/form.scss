@@ -1,0 +1,35 @@
+
+h1 {
+	margin-bottom: 20px;
+}
+.section {
+	border-top: 1px solid #CCC;
+	padding-top: 20px;
+	margin-top: 20px;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.section-number {
+		border: 1px solid #ccc;
+		border-radius: 90px;
+		padding: 20px;
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.form-group {
+		margin-top: 20px;
+
+		label {
+			font-size: 20px;
+			margin: 10px 0;
+		}
+
+		.form-control {
+			font-size: 24px;
+			height: 48px;
+		}
+	}
+}
