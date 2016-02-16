@@ -15,3 +15,7 @@
 		</div>
 	</div>
 </div>
+<div class="footer">
+	<a href="#" class="footer-button-with-border">Next ></a>
+	<a href="#">Cancel</a>
+</div>

@@ -13,7 +13,7 @@ class Application_controller extends CI_Controller
 		
 		//	display profiler if in development
 		if (ENVIRONMENT == 'development') {
-			$this->output->enable_profiler(TRUE);
+			//$this->output->enable_profiler(TRUE);
 		}
 	}
 }
