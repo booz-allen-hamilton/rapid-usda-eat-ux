@@ -37,7 +37,7 @@ $lang['landing_list_three'] = "Case number if participating in an assistance pro
 $lang['landing_get_started'] = "Get Started";
 
 // Assistance Skip Pattern
-$lang['label_other_assistance'] = "Other Assistance";
+$lang['title_assistance'] = "Other Assistance";
 $lang['label_assistance'] = "Do you or your kids participate in <strong>SNAP</strong>, <strong>TANF</strong>, or <strong>FDPIR</strong>?";
 $lang['label_assistance_clarification'] = "(If so, you are already eligible for free/reduced school lunch.)";
 $lang['link_define'] = "Program Definitions";
@@ -48,6 +48,11 @@ $lang['modal_assistance_snap'] = "Supplemental Nutrition Assistance Program";
 $lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
 $lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
 $lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
+
+// Household
+$lang['title_household'] = "All Household Members";
+$lang['label_num_children'] = "How many children live with you, even if not related?";
+$lang['label_num_adults'] = "How many adults (including you) live at the residence?";
 
 // Children Information
 $lang['label_child_first'] = "Child's First Name";
