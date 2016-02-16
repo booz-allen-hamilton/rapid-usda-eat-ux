@@ -8,37 +8,59 @@ body {
 h1 {
   margin-bottom: 20px; }
 
+hr {
+  border-top: 1px solid #CCC; }
+
+.centered {
+  text-align: center; }
+
 .section {
   border-top: 1px solid #CCC;
   padding-top: 20px;
   margin-top: 20px; }
   .section h2 {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 20px; }
   .section .section-number {
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     border-radius: 90px;
     padding: 20px;
     font-size: 40px;
     text-align: center; }
   .section .add-button {
-    border: solid 1px #ccc;
+    border: solid 1px #CCC;
     padding: 10px 40px;
     text-decoration: none;
     font-size: 20px;
     color: #000; }
 
+.assistance {
+  margin-top: 50px; }
+
 .form-group {
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-size: 20px; }
   .form-group label {
     font-size: 20px;
     margin: 0 0 10px; }
+  .form-group p {
+    margin-bottom: 20px; }
   .form-group .form-control {
-    font-size: 24px;
+    font-size: 20px;
     height: 48px; }
   .form-group .radio-inline, .form-group .checkbox-inline {
     margin-right: 15px; }
   .form-group input[type=radio], .form-group input[type=checkbox] {
     margin-top: 6px; }
+  .form-group .input-group {
+    float: left;
+    margin-right: 20px; }
+    .form-group .input-group select, .form-group .input-group option {
+      padding: 20px 20px; }
+  .form-group .childIncomeRow * {
+    font-size: 20px; }
+  .form-group .childIncomeRow {
+    margin-bottom: 30px; }
 
 .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
   font-weight: bold;

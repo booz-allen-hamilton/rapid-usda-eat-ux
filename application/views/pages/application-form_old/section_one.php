@@ -6,7 +6,7 @@
 	</div>
 	<div class="col-md-1">
 		<label for="childMiddle"><?=$this->lang->line('label_child_middle')?></label>
-		<input type="text" class="form-control" id="childMiddle">
+		<input type="text" class="form-control" id="childMiddle" maxlength="1">
 	</div>
 	<div class="col-md-4">
 		<label for="childLast"><?=$this->lang->line('label_child_last')?></label>

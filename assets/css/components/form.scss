@@ -2,6 +2,15 @@
 h1 {
 	margin-bottom: 20px;
 }
+
+hr {
+	border-top: 1px solid #CCC;
+}
+
+.centered {
+	text-align: center;
+}
+
 .section {
 	border-top: 1px solid #CCC;
 	padding-top: 20px;
@@ -9,10 +18,11 @@ h1 {
 
 	h2 {
 		margin-top: 0;
+		margin-bottom: 20px;
 	}
 
 	.section-number {
-		border: 1px solid #ccc;
+		border: 1px solid #CCC;
 		border-radius: 90px;
 		padding: 20px;
 		font-size: 40px;
@@ -20,7 +30,7 @@ h1 {
 	}
 
 	.add-button {
-		border: solid 1px #ccc;
+		border: solid 1px #CCC;
 		padding: 10px 40px;
 		text-decoration: none;
 		font-size: 20px;
@@ -28,16 +38,25 @@ h1 {
 	}
 }
 
+.assistance {
+	margin-top: 50px;
+}
+
 .form-group {
 	margin-top: 20px;
+	font-size: 20px;
 
 	label {
 		font-size: 20px;
 		margin: 0 0 10px;
 	}
 
+	p {
+		margin-bottom: 20px;
+	}
+
 	.form-control {
-		font-size: 24px;
+		font-size: 20px;
 		height: 48px;
 	}
 
@@ -47,5 +66,22 @@ h1 {
 
 	input[type=radio], input[type=checkbox]{
 		margin-top: 6px;
+	}
+
+	.input-group {
+		float: left;
+		margin-right: 20px;
+
+		select, option {
+			padding: 20px 20px;
+		}
+	}
+
+	.childIncomeRow * {
+		font-size: 20px;
+	}
+
+	.childIncomeRow {
+		margin-bottom: 30px;
 	}
 }
