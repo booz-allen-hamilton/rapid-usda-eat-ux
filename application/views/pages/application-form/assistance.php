@@ -1,6 +1,6 @@
-<div class="row centered assistance">
+<div class="row centered topMarginFifty">
 	<div class="col-sm-12">
-		<h1><?=$this->lang->line('label_other_assistance')?></h1>
+		<h1><?=$this->lang->line('title_assistance')?></h1>
 		<p><?=$this->lang->line('label_assistance')?>
 			<a href="#" data-toggle="modal" data-target="#assistanceClarification">
 				<span class="glyphicon glyphicon-info-sign"></span>
