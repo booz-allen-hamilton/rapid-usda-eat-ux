@@ -54,10 +54,17 @@ $lang['title_household'] = "All Household Members";
 $lang['label_num_children'] = "How many children live with you, even if not related?";
 $lang['label_num_adults'] = "How many adults (including you) live at the residence?";
 
-// Children Information
-$lang['label_child_first'] = "Child's First Name";
-$lang['label_child_middle'] = "MI";
-$lang['label_child_last'] = "Last Name";
+// Household Members
+$lang['title_household_members'] = "Names of All Household Members";
+$lang['subtitle_household_members'] = "Please list all children and adults who live with you, even if they are not related.";
+$lang['section_title_children'] = "CHILDREN";
+$lang['section_title_adults'] = "ADULTS";
+$lang['label_first'] = "First Name";
+$lang['label_middle'] = "Middle Initial";
+$lang['label_last'] = "Last Name";
+$lang['label_add_child'] = "Add Child";
+$lang['label_add_adult'] = "Add Adult";
+
 $lang['label_child_student'] = "Are they a student?";
 $lang['label_child_type'] = "Select all that apply:";
 $lang['label_child_type_foster'] = "Foster Child";
