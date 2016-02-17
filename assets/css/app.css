@@ -6,7 +6,11 @@ body {
  * Components
  */
 h1 {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-size: 50px; }
+
+h2 {
+  font-size: 36px; }
 
 hr {
   border-top: 1px solid #CCC; }
@@ -62,12 +66,27 @@ hr {
   .form-group .childIncomeRow {
     margin-bottom: 30px; }
 
-.navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
-  font-weight: bold;
-  background: none; }
-  .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a .text {
-    padding-bottom: 5px;
-    border-bottom: 3px solid #ccc; }
+.navbar.navbar-default.navbar-usda {
+  height: 80px;
+  background-color: #FFF; }
+  .navbar.navbar-default.navbar-usda .nav.navbar-nav li {
+    font-size: 20px;
+    margin-top: 14px; }
+  .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
+    font-weight: bold;
+    background: none; }
+
+.navbar-brand {
+  font-size: 50px;
+  margin-top: 12px; }
+
+.border-header-link {
+  border: 2px solid #000;
+  text-decoration: none;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px; }
 
 .footer {
   position: fixed;
@@ -136,5 +155,28 @@ hr {
 .footer-bav-connector {
   width: 50px;
   border: 1px solid #BBB; }
+
+.black-button-large {
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-size: 34px;
+  padding: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #FFF;
+  font-weight: bold; }
+
+.black-button-large:hover {
+  color: #FFF;
+  text-decoration: none; }
+
+.landing-list {
+  margin-top: 30px;
+  margin-bottom: 50px; }
+
+.landing-list li {
+  font-size: 24px;
+  margin: 10px 0; }
 
 /*# sourceMappingURL=app.css.map */

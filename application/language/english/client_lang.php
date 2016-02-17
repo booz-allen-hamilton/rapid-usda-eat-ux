@@ -17,7 +17,7 @@ $lang['frequency'] = "Select Frequency";
 // Header 
 $lang['nav_how_it_works'] = "How it Works";
 $lang['nav_apply_now'] = "Apply Now";
-$lang['nav_application_status'] = "Application Status";
+$lang['nav_application_status'] = "My Status";
 $lang['nav_help'] = "Help";
 
 // Page Titles

@@ -17,14 +17,14 @@
 			  <li class="<?=($global['nav'] == 'how-it-works' ? 'active' : NULL)?>">
 					<a href="<?=base_url('how-it-works')?>"><span class="text"><?=$this->lang->line('nav_how_it_works')?></span></a>
 				</li>
-				  <li class="<?=($global['nav'] == 'apply' ? 'active' : NULL)?>">
-					<a href="<?=base_url('apply')?>"><span class="text"><?=$this->lang->line('nav_apply_now')?></span></a>
-				</li>
 				  <li class="<?=($global['nav'] == 'status' ? 'active' : NULL)?>">
 					<a href="<?=base_url('status')?>"><span class="text"><?=$this->lang->line('nav_application_status')?></span></a>
 				</li>
 				  <li class="<?=($global['nav'] == 'help' ? 'active' : NULL)?>">
 					<a href="<?=base_url('help')?>"><span class="text"><?=$this->lang->line('nav_help')?></span></a>
+				</li>
+				  <li class="<?=($global['nav'] == 'apply' ? 'active' : NULL)?>">
+					<a href="<?=base_url('apply')?>"><span class="text border-header-link"><?=$this->lang->line('nav_apply_now')?></span></a>
 				</li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
