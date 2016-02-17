@@ -1,6 +1,6 @@
 <div id="page-application-form">
 	<div class="container">
-		<div class="row centered" style="margin-top: 12%;">
+		<div class="row text-center" style="margin-top: 12%;">
 			<div class="col-sm-12 col-md-12">
 				<h2><b><?=$this->lang->line('title_assistance')?></b></h2>
 				<h3 style="margin-top: 30px;"><?=$this->lang->line('label_assistance')?>
