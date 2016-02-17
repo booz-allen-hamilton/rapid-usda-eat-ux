@@ -5,98 +5,96 @@ body {
 /**
  * Components
  */
-a:hover {
-  text-decoration: none;
-  color: #000; }
+.mb15 {
+  margin-bottom: 15px; }
 
-h1 {
-  margin-bottom: 20px;
-  font-size: 50px; }
+.mb25 {
+  margin-bottom: 25px; }
 
-h2 {
-  font-size: 42px; }
-
-h3 {
-  font-size: 32px; }
-
-h4 {
-  font-size: 24px; }
-
-hr {
-  border-top: 1px solid #CCC; }
-
-.centered {
-  text-align: center; }
-
-.topMarginFifty {
-  margin-top: 50px; }
-
-.section {
-  border-top: 1px solid #CCC;
-  padding-top: 20px;
-  margin-top: 20px; }
-  .section h2 {
-    margin-top: 0;
-    margin-bottom: 20px; }
-  .section .section-number {
-    border: 1px solid #CCC;
-    border-radius: 90px;
-    padding: 20px;
-    font-size: 40px;
-    text-align: center; }
-  .section .add-button {
-    border: solid 1px #CCC;
-    padding: 10px 40px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #000; }
-
-.form-group {
-  margin-top: 20px;
-  font-size: 20px; }
-  .form-group label {
-    font-size: 20px;
-    margin: 0 0 10px; }
-  .form-group p {
-    margin-bottom: 20px; }
-  .form-group .form-control {
-    font-size: 20px;
-    height: 48px; }
-  .form-group .radio-inline, .form-group .checkbox-inline {
-    margin-right: 15px; }
-  .form-group input[type=radio], .form-group input[type=checkbox] {
-    margin-top: 6px; }
-  .form-group .input-group {
-    float: left;
-    margin-right: 20px; }
-    .form-group .input-group select, .form-group .input-group option {
-      padding: 20px 20px; }
-  .form-group .childIncomeRow * {
-    font-size: 20px; }
-  .form-group .childIncomeRow {
-    margin-bottom: 30px; }
-
-.navbar.navbar-default.navbar-usda {
-  height: 80px;
-  background-color: #FFF; }
-  .navbar.navbar-default.navbar-usda .nav.navbar-nav li {
-    font-size: 20px;
-    margin-top: 14px; }
-  .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
+#page-application-form {
+  padding-bottom: 200px; }
+  #page-application-form h2 {
     font-weight: bold;
-    background: none; }
-
-.navbar-brand {
-  font-size: 50px;
-  margin-top: 12px; }
-
-.border-header-link {
-  border: 2px solid #000;
-  text-decoration: none;
-  padding: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 30px; }
+    font-size: 36px; }
+  #page-application-form h3 {
+    font-weight: bold;
+    font-size: 28px; }
+  #page-application-form h4 {
+    font-weight: bold;
+    font-size: 18px; }
+    #page-application-form h4.optional {
+      color: #999; }
+  #page-application-form h5 {
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 15px; }
+  #page-application-form p {
+    font-size: 18px; }
+  #page-application-form .tableHeaders {
+    font-size: 18px;
+    text-align: left; }
+  #page-application-form hr.divider {
+    border-top: 1px solid #eee; }
+  #page-application-form .tableItems .remove-item {
+    font-size: 32px;
+    color: #555; }
+  #page-application-form .checkbox-inline {
+    font-size: 18px; }
+    #page-application-form .checkbox-inline input[type=checkbox] {
+      /* Double-sized Checkboxes */
+      -ms-transform: scale(2);
+      /* IE */
+      -moz-transform: scale(2);
+      /* FF */
+      -webkit-transform: scale(2);
+      /* Safari and Chrome */
+      -o-transform: scale(2);
+      /* Opera */
+      padding: 10px; }
+    #page-application-form .checkbox-inline .checkbox-label {
+      padding-left: 10px; }
+  #page-application-form .black-button-large {
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: 34px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #FFF;
+    font-weight: bold; }
+  #page-application-form .white-button-large {
+    background: #FFF;
+    border: 2px solid #000;
+    border-radius: 50px;
+    font-size: 30px;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #000;
+    font-weight: bold; }
+  #page-application-form .white-button {
+    background: #FFF;
+    border: 2px solid #000;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #000;
+    font-weight: bold; }
+    #page-application-form .white-button:hover {
+      text-decoration: none; }
+  #page-application-form .black-button-large:hover {
+    color: #FFF;
+    text-decoration: none; }
+  #page-application-form .modal .modal-header h4 {
+    font-weight: bold; }
+  #page-application-form .modal .close {
+    font-size: 36px; }
+  #page-application-form .modal .modal-body {
+    font-size: 18px; }
 
 .footer {
   position: fixed;
@@ -104,100 +102,133 @@ hr {
   height: 100px;
   border-top: 1px solid #BBB;
   left: 0px;
-  right: 0px; }
+  right: 0px;
+  background: #fff; }
+  .footer a {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 25px;
+    color: #888; }
+  .footer a:hover {
+    text-decoration: none; }
+  .footer .footer-button-with-border {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 3px solid;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 35px;
+    font-size: 25px;
+    color: #888; }
+  .footer .footer-nav-bar {
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 25px; }
+  .footer .footer-nav-circle {
+    border-radius: 100%;
+    border: 3px solid;
+    padding: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    color: #BBB; }
+  .footer .footer-nav-circle-focused {
+    border-radius: 100%;
+    border: 3px solid;
+    padding: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    color: #000; }
+  .footer .footer-nav-circle-completed {
+    border-radius: 100%;
+    border: 3px solid;
+    padding: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    color: #FFF;
+    background: #000; }
+  .footer .footer-progress-step {
+    font-size: 10px; }
+    .footer .footer-progress-step.step-active .icon-outline,
+    .footer .footer-progress-step.step-active .icon-number {
+      color: #000; }
+    .footer .footer-progress-step.step-active .icon-background,
+    .footer .footer-progress-step.step-active .icon-image {
+      display: none; }
+    .footer .footer-progress-step.step-disabled .icon-outline,
+    .footer .footer-progress-step.step-disabled .icon-number {
+      color: #ccc; }
+    .footer .footer-progress-step.step-disabled .icon-background,
+    .footer .footer-progress-step.step-disabled .icon-image {
+      display: none; }
+    .footer .footer-progress-step.step-complete .icon-outline,
+    .footer .footer-progress-step.step-complete .icon-number {
+      display: none; }
+    .footer .footer-progress-step.step-complete .icon-background {
+      color: #000; }
+    .footer .footer-progress-step.step-complete .icon-image {
+      color: #fff; }
+  .footer .footer-bav-connector {
+    width: 50px;
+    border: 1px solid #BBB; }
 
-.footer a {
-  float: right;
-  margin-right: 20px;
-  margin-top: 20px;
-  padding: 10px;
-  padding-right: 40px;
-  padding-left: 40px;
-  font-size: 25px;
-  color: #888; }
+.navbar.navbar-default.navbar-usda {
+  height: 80px;
+  background-color: #FFF;
+  border-bottom: 2px solid #ccc; }
+  .navbar.navbar-default.navbar-usda .nav.navbar-nav li {
+    font-size: 16px;
+    margin-top: 14px; }
+    .navbar.navbar-default.navbar-usda .nav.navbar-nav li a {
+      color: #000; }
+      .navbar.navbar-default.navbar-usda .nav.navbar-nav li a .border-header-link {
+        border: 2px solid #000;
+        text-decoration: none;
+        padding: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 30px;
+        font-weight: bold; }
+  .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
+    font-weight: bold;
+    background: none; }
+  .navbar.navbar-default.navbar-usda .nav.navbar-nav li:hover a .border-header-link {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #fff; }
+  .navbar.navbar-default.navbar-usda .navbar-brand {
+    color: #000;
+    font-size: 36px;
+    margin-top: 12px; }
 
-.footer-button-with-border {
-  float: right;
-  margin-right: 20px;
-  margin-top: 20px;
-  border: 3px solid;
-  padding: 10px;
-  padding-right: 40px;
-  padding-left: 40px;
-  border-radius: 35px;
-  font-size: 25px;
-  color: #888; }
-
-.footer a:hover {
-  text-decoration: none; }
-
-.footer-nav-bar {
-  float: left;
-  margin-top: 20px;
-  margin-left: 40px;
-  font-size: 25px; }
-
-.footer-nav-circle {
-  border-radius: 100%;
-  border: 3px solid;
-  padding: 10px;
-  padding-left: 19px;
-  padding-right: 19px;
-  color: #BBB; }
-
-.footer-nav-circle-focused {
-  border-radius: 100%;
-  border: 3px solid;
-  padding: 10px;
-  padding-left: 19px;
-  padding-right: 19px;
-  color: #000; }
-
-.footer-nav-circle-completed {
-  border-radius: 100%;
-  border: 3px solid;
-  padding: 10px;
-  padding-left: 19px;
-  padding-right: 19px;
-  color: #FFF;
-  background: #000; }
-
-.footer-bav-connector {
-  width: 50px;
-  border: 1px solid #BBB; }
-
-.black-button-large {
-  background: #000;
-  border: 1px solid #000;
-  border-radius: 50px;
-  font-size: 34px;
-  padding: 10px;
-  padding-left: 60px;
-  padding-right: 60px;
-  color: #FFF;
-  font-weight: bold; }
-
-.white-button-large {
-  background: #FFF;
-  border: 2px solid #000;
-  border-radius: 50px;
-  font-size: 30px;
-  padding: 5px;
-  padding-left: 50px;
-  padding-right: 50px;
-  color: #000;
-  font-weight: bold; }
-
-.black-button-large:hover {
-  color: #FFF;
-  text-decoration: none; }
-
-.landing-list {
-  margin-top: 30px;
-  margin-bottom: 50px; }
-
-.landing-list li {
-  font-size: 24px;
-  margin: 10px 0; }
-
-/*# sourceMappingURL=app.css.map */
+#page-welcome {
+  margin-top: 20px; }
+  #page-welcome h1 {
+    font-size: 48px; }
+  #page-welcome h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 25px; }
+  #page-welcome p {
+    font-size: 18px; }
+  #page-welcome ol {
+    font-size: 22px;
+    padding-left: 20px;
+    margin-bottom: 50px; }
+    #page-welcome ol li {
+      margin-bottom: 15px; }
+  #page-welcome .get-started-btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 32px; }

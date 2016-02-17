@@ -1,6 +1,6 @@
-<div class="row centered topMarginFifty">
+<div class="row text-center">
 	<div class="col-sm-12">
-		<h1><?=$this->lang->line('title_household')?></h1>
+		<h2 class="mb25"><?=$this->lang->line('title_household')?></h2>
 		<p>
 			<?=$this->lang->line('label_num_children')?>
 			<a href="#" data-toggle="modal" data-target="#childrenClarification">
@@ -9,9 +9,9 @@
 		</p>
 	</div>
 	<div class="col-sm-12 col-md-offset-5 col-md-2">
-		<input type="text" class="form-control" id="numberChildren">
+		<input type="text" class="form-control input-lg" name="numberChildren" id="numberChildren">
 	</div>
-	<div class="col-sm-12">
+	<div class="col-sm-12" style="margin-top: 25px;">
 		<p>
 			<?=$this->lang->line('label_num_adults')?>
 			<a href="#" data-toggle="modal" data-target="#adultsClarification">
@@ -20,7 +20,7 @@
 		</p>
 	</div>
 	<div class="col-sm-12 col-md-offset-5 col-md-2">
-		<input type="text" class="form-control" id="numberAdults">
+		<input type="text" class="form-control input-lg" name="numberAdults" id="numberAdults">
 	</div>
 </div>
 

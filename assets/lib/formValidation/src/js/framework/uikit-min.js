@@ -1,0 +1,9 @@
+/**
+ * FormValidation (http://formvalidation.io)
+ * The best jQuery plugin to validate form fields. Support Bootstrap, Foundation, Pure, SemanticUI, UIKit and custom frameworks
+ *
+ * @author      https://twitter.com/formvalidation
+ * @copyright   (c) 2013 - 2015 Nguyen Huu Phuoc
+ * @license     http://formvalidation.io/license/
+ */
+!function($){FormValidation.Framework.Uikit=function(o,t){t=$.extend(!0,{button:{selector:'[type="submit"]:not([formnovalidate])',disabled:"disabled"},control:{valid:"uk-form-success",invalid:"uk-form-danger"},err:{clazz:"uk-text-danger",parent:"^.*(uk-form-controls|uk-width-[\\d+]-[\\d+]).*$"},icon:{valid:null,invalid:null,validating:null,feedback:"fv-control-feedback"},row:{selector:".uk-form-row",valid:"fv-has-success",invalid:"fv-has-error",feedback:"fv-has-feedback"}},t),FormValidation.Base.apply(this,[o,t])},FormValidation.Framework.Uikit.prototype=$.extend({},FormValidation.Base.prototype,{_fixIcon:function(o,t){var a=this._namespace,i=o.attr("type"),e=o.attr("data-"+a+"-field"),r=this.options.fields[e].row||this.options.row.selector,n=o.closest(r);if("checkbox"===i||"radio"===i){var l=o.parent();l.is("label")&&t.insertAfter(l)}0===n.find("label").length&&t.addClass("fv-icon-no-label")},_createTooltip:function(o,t,a){var i=o.data("fv.icon");i&&(i.data("tooltip")&&(i.data("tooltip").off(),i.removeData("tooltip")),i.attr("title",t).css({cursor:"pointer"}),new $.UIkit.tooltip(i))},_destroyTooltip:function(o,t){var a=o.data("fv.icon");if(a){var i=a.data("tooltip");i&&(i.hide(),i.off(),a.off("focus mouseenter").removeData("tooltip")),a.css({cursor:""})}},_hideTooltip:function(o,t){var a=o.data("fv.icon");if(a){var i=a.data("tooltip");i&&i.hide(),a.css({cursor:""})}},_sguideoltip:function(o,t){var a=o.data("fv.icon");if(a){a.css({cursor:"pointer"});var i=a.data("tooltip");i&&i.show()}}})}(jQuery);

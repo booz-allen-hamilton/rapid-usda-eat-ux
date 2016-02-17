@@ -14,15 +14,31 @@ $lang['optional'] = "OPTIONAL";
 $lang['frequency'] = "Select Frequency";
 
 
-// Header 
+// Header
 $lang['nav_how_it_works'] = "How it Works";
 $lang['nav_apply_now'] = "Apply Now";
 $lang['nav_application_status'] = "My Status";
 $lang['nav_help'] = "Help";
 
 // Page Titles
-$lang['welcome_title'] = "Welcome to the Free and Reduced School Lunch Application";
-$lang['welcome_description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+$lang['welcome_title'] = "Apply for <strong>Free School Lunch!</strong>";
+$lang['welcome_description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.";
+$lang['welcome_required'] = "Things you'll need";
+$lang['welcome_required_items'] = array(
+	array(
+		'text' => 'Household income',
+		'help' => 'help text'
+	),
+	array(
+		'text' => "Primary wage earner's Social Security #",
+		'help' => 'help text'
+	),
+	array(
+		'text' => 'Case number if participating in an assistance program',
+		'help' => 'help text'
+	),
+);
+$lang['welcome_btn'] = "Get Started";
 
 // Section Titles
 $lang['application_apply'] = "Apply for <strong>Free School Lunch</strong>";
@@ -31,13 +47,6 @@ $lang['section_one_title'] = "Please list ALL infants, children, and students up
 $lang['section_two_title'] = "Does anyone (including you) currently participate in one or more of the following assistance programs: SNAP, TANF, or FDPIR?";
 $lang['section_three_title'] = "Report Income for ALL Household Members";
 $lang['section_four_title'] = "Contact Information";
-
-// Landing Page
-$lang['landing_things'] = "Things you'll need";
-$lang['landing_list_one'] = "Household income";
-$lang['landing_list_two'] = "Primary wage earner's Social Security #";
-$lang['landing_list_three'] = "Case number if participating in an assistance program";
-$lang['landing_get_started'] = "Get Started";
 
 // Assistance Skip Pattern
 $lang['title_assistance'] = "Other Assistance";

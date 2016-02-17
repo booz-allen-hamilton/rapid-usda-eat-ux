@@ -54,8 +54,10 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 //	Client Routes
-$route['how-it-works'] = 'client/static_pages/how_it_works';
-$route['help'] = 'client/static_pages/help';
-$route['apply'] = 'client/form/index';
+$route['how-it-works']           = 'client/static_pages/how_it_works';
+$route['help']                   = 'client/static_pages/help';
+$route['apply']                  = 'client/form/index';
+$route['apply/standard']         = 'client/form/standard_form';
+$route['apply/assistance']       = 'client/form/assistance';
 $route['client/language/(:any)'] = 'client_controller/language/$1';
-$route['status'] = 'client/form/status';
+$route['status']                 = 'client/form/status';

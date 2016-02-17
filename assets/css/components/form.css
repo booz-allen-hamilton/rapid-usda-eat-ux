@@ -1,0 +1,172 @@
+.mb15 {
+  margin-bottom: 15px; }
+
+.mb25 {
+  margin-bottom: 25px; }
+
+#page-application-form {
+  padding-bottom: 200px; }
+  #page-application-form h2 {
+    font-weight: bold;
+    font-size: 36px; }
+  #page-application-form h3 {
+    font-weight: bold;
+    font-size: 28px; }
+  #page-application-form h4 {
+    font-weight: bold;
+    font-size: 18px; }
+    #page-application-form h4.optional {
+      color: #999; }
+  #page-application-form h5 {
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 15px; }
+  #page-application-form p {
+    font-size: 18px; }
+  #page-application-form .tableHeaders {
+    font-size: 18px;
+    text-align: left; }
+  #page-application-form hr.divider {
+    border-top: 1px solid #eee; }
+  #page-application-form .tableItems .remove-item {
+    font-size: 32px;
+    color: #555; }
+  #page-application-form .checkbox-inline {
+    font-size: 18px; }
+    #page-application-form .checkbox-inline input[type=checkbox] {
+      /* Double-sized Checkboxes */
+      -ms-transform: scale(2);
+      /* IE */
+      -moz-transform: scale(2);
+      /* FF */
+      -webkit-transform: scale(2);
+      /* Safari and Chrome */
+      -o-transform: scale(2);
+      /* Opera */
+      padding: 10px; }
+    #page-application-form .checkbox-inline .checkbox-label {
+      padding-left: 10px; }
+  #page-application-form .black-button-large {
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: 34px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #FFF;
+    font-weight: bold; }
+  #page-application-form .white-button-large {
+    background: #FFF;
+    border: 2px solid #000;
+    border-radius: 50px;
+    font-size: 30px;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #000;
+    font-weight: bold; }
+  #page-application-form .white-button {
+    background: #FFF;
+    border: 2px solid #000;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #000;
+    font-weight: bold; }
+    #page-application-form .white-button:hover {
+      text-decoration: none; }
+  #page-application-form .black-button-large:hover {
+    color: #FFF;
+    text-decoration: none; }
+  #page-application-form .modal .modal-header h4 {
+    font-weight: bold; }
+  #page-application-form .modal .close {
+    font-size: 36px; }
+  #page-application-form .modal .modal-body {
+    font-size: 18px; }
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  height: 100px;
+  border-top: 1px solid #BBB;
+  left: 0px;
+  right: 0px;
+  background: #fff; }
+  .footer a {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 25px;
+    color: #888; }
+  .footer a:hover {
+    text-decoration: none; }
+  .footer .footer-button-with-border {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 3px solid;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 35px;
+    font-size: 25px;
+    color: #888; }
+  .footer .footer-nav-bar {
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 25px; }
+  .footer .footer-nav-circle {
+    border-radius: 100%;
+    border: 3px solid;
+    padding: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    color: #BBB; }
+  .footer .footer-nav-circle-focused {
+    border-radius: 100%;
+    border: 3px solid;
+    padding: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    color: #000; }
+  .footer .footer-nav-circle-completed {
+    border-radius: 100%;
+    border: 3px solid;
+    padding: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    color: #FFF;
+    background: #000; }
+  .footer .footer-progress-step {
+    font-size: 10px; }
+    .footer .footer-progress-step.step-active .icon-outline,
+    .footer .footer-progress-step.step-active .icon-number {
+      color: #000; }
+    .footer .footer-progress-step.step-active .icon-background,
+    .footer .footer-progress-step.step-active .icon-image {
+      display: none; }
+    .footer .footer-progress-step.step-disabled .icon-outline,
+    .footer .footer-progress-step.step-disabled .icon-number {
+      color: #ccc; }
+    .footer .footer-progress-step.step-disabled .icon-background,
+    .footer .footer-progress-step.step-disabled .icon-image {
+      display: none; }
+    .footer .footer-progress-step.step-complete .icon-outline,
+    .footer .footer-progress-step.step-complete .icon-number {
+      display: none; }
+    .footer .footer-progress-step.step-complete .icon-background {
+      color: #000; }
+    .footer .footer-progress-step.step-complete .icon-image {
+      color: #fff; }
+  .footer .footer-bav-connector {
+    width: 50px;
+    border: 1px solid #BBB; }
