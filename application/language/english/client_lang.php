@@ -9,6 +9,7 @@ $lang['remove'] = "Remove";
 $lang['cancel'] = "Cancel";
 $lang['next'] = "Next";
 $lang['required'] = "* Required";
+$lang['optional'] = "OPTIONAL";
 $lang['frequency'] = "Select Frequency";
 
 // Header 
@@ -65,11 +66,17 @@ $lang['label_last'] = "Last Name";
 $lang['label_add_child'] = "Add Child";
 $lang['label_add_adult'] = "Add Adult";
 
-$lang['label_child_student'] = "Are they a student?";
-$lang['label_child_type'] = "Select all that apply:";
-$lang['label_child_type_foster'] = "Foster Child";
-$lang['label_child_type_hmr'] = "Homeless, Migrant, or Runaway";
-$lang['label_child_add'] = "+ Add Another Child";
+// Children Details
+$lang['title_children_details'] = "Children's Details";
+$lang['subtitle_children_details'] = "Please check all that apply to help determine eligibility.";
+$lang['label_select_all'] = "Select all that apply";
+$lang['label_child_student'] = "Student (K-12)";
+$lang['label_child_foster'] = "Foster Child";
+$lang['label_child_hmr'] = "Homeless, Migrant, or Runaway";
+$lang['label_child_head_start'] = "Head Start participant";
+$lang['label_child_ethnicity'] = "Ethnicity";
+$lang['label_child_hispanic'] = "Hispanic or Latino";
+$lang['label_child_race'] = "Race";
 
 // Section Three
 $lang['subsection_child_income'] = "CHILD INCOME";

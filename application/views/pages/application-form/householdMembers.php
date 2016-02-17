@@ -79,7 +79,7 @@
 		<input type="text" class="form-control" id="adult_middle_1">
 	</div>
 	<div class="col-sm-12 col-md-2 centered">
-		<span class="glyphicon glyphicon-remove"></span>
+		(You)
 	</div>
 </div>
 
