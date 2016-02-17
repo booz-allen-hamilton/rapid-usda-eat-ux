@@ -3,9 +3,15 @@
 		'household',
 		'householdMembers',
 		'childrenDetails',
+		'householdMembersIncome',
+		'contactInformation',
+		'socialSecurityNumber',
+		'electronicSignature',
+		'success',
 	);
+	$max = 6;
 ?>
-<div id="page-application-form" data-current-step="1" data-max-steps="<?=count($form_sections)?>">
+<div id="page-application-form" data-current-step="1" data-max-steps="<?=$max?>" data-complete="<?=count($form_sections)?>">
 	<div class="container">
 		<form id="application-form" class="form-horizontal">
 			<div class="tab-content">
@@ -27,8 +33,6 @@
 				<table>
 					<tr>
 					<?
-						$max = count($form_sections);
-
 						for($i = 1; $i <= $max; $i++) {
 							$step = ($i == 1 ? 'step-active' : 'step-disabled');
 					?>
