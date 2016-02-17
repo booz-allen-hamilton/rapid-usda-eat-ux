@@ -2,7 +2,7 @@
 	<div class="col-sm-12">
 		<h2><?=$this->lang->line('title_household_members')?></h2>
 		<p><?=$this->lang->line('subtitle_household_members')?>
-			<a href="#" data-toggle="modal" data-target="#childrenClarification">
+			<a href="#" data-toggle="modal" data-target="#householdMembersClarification">
 				<span class="glyphicon glyphicon-info-sign"></span>
 			</a>
 		</p>
@@ -126,7 +126,7 @@
 	</div>
 </div>
 
-<div name="householdMembersClarification" class="modal fade" tabindex="-1" role="dialog">
+<div id="householdMembersClarification" class="modal fade" tabindex="-1" role="dialog">
 	<div class="modal-dialog modal-md" role="document">
 		<div class="modal-content">
 			<div class="modal-header">

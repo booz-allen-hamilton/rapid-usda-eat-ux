@@ -178,6 +178,9 @@ body {
     width: 50px;
     border: 1px solid #BBB; }
 
+body {
+  padding-bottom: 100px; }
+
 .navbar.navbar-default.navbar-usda {
   height: 80px;
   background-color: #FFF;
