@@ -13,7 +13,7 @@
 <div class="row">
 	<div class="col-sm-12">
 		<h4>Johnny B. Goode</h4>
-		<p><?=$this->lang->line('required')?></p>
+		<p>*<?=$this->lang->line('all_that_apply')?></p>
 	</div>
 	<div class="col-sm-12 col-md-3">
 		<label class="checkbox-inline">
@@ -53,11 +53,9 @@
 			<span class="checkbox-label"><?=$this->lang->line('label_child_hispanic')?></span>
 		</label>
 	</div>
-	<div class="col-sm-12 col-md-1">
-		<span><strong><?=$this->lang->line('label_child_race')?></strong></span>
-	</div>
-	<div class="col-sm-12 col-md-3">
-		<select class="form-control">
+	<div class="col-sm-12 col-md-8">
+		<h5 style="display: inline;"><?=$this->lang->line('label_child_race')?></h5>
+		<select class="form-control" style="display: inline; width: 50%;">
 			<option value="-1">Select</option>
 		</select>
 	</div>

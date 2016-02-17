@@ -1,8 +1,8 @@
 //
-// a:hover {
-// 	text-decoration: none;
-// 	color: #000;
-// }
+a:hover {
+ 	text-decoration: none;
+ 	color: #000;
+}
 //
 // h1 {
 // 	margin-bottom: 20px;
@@ -155,7 +155,7 @@
 		  /* Double-sized Checkboxes */
 		  -ms-transform: scale(2); /* IE */
 		  -moz-transform: scale(2); /* FF */
-		  -webkit-transform: scale(2); /* Safari and Chrome */
+		  -webkit-transform: scale(1); /* Safari and Chrome */
 		  -o-transform: scale(2); /* Opera */
 		  padding: 10px;
 		}

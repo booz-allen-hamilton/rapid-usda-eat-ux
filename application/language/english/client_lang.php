@@ -12,6 +12,7 @@ $lang['next'] = "Next";
 $lang['required'] = "* Required";
 $lang['optional'] = "OPTIONAL";
 $lang['frequency'] = "Select Frequency";
+$lang['all_that_apply'] = "Select all that apply";
 
 
 // Header

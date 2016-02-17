@@ -5,6 +5,10 @@ body {
 /**
  * Components
  */
+a:hover {
+  text-decoration: none;
+  color: #000; }
+
 .mb15 {
   margin-bottom: 15px; }
 
@@ -47,7 +51,7 @@ body {
       /* IE */
       -moz-transform: scale(2);
       /* FF */
-      -webkit-transform: scale(2);
+      -webkit-transform: scale(1);
       /* Safari and Chrome */
       -o-transform: scale(2);
       /* Opera */
@@ -203,10 +207,6 @@ body {
   .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
     font-weight: bold;
     background: none; }
-  .navbar.navbar-default.navbar-usda .nav.navbar-nav li:hover a .border-header-link {
-    background-color: #3498db;
-    border-color: #3498db;
-    color: #fff; }
   .navbar.navbar-default.navbar-usda .navbar-brand {
     color: #000;
     font-size: 36px;
