@@ -92,7 +92,7 @@
 			</tr>
 		</table>
 	</div>
-	<a href="<?=base_url('household')?>" class="footer-button-with-border">Next ></a>
-	<a href="<?=base_url('household')?>" class="footer-button-with-border">< Back</a>
+	<a href="<?=base_url('household')?>" class="footer-button-with-border"><?=$this->lang->line('next')?> ></a>
+	<a href="<?=base_url('household')?>" class="footer-button-with-border">< <?=$this->lang->line('back')?></a>
 	<a href="#">Cancel</a>
 </div>

@@ -16,6 +16,6 @@
 	</div>
 </div>
 <div class="footer">
-	<a href="<?=base_url('household')?>" class="footer-button-with-border">Next ></a>
+	<a href="<?=base_url('household')?>" class="footer-button-with-border"><?=$this->lang->line('next')?> ></a>
 	<a href="#">Cancel</a>
 </div>

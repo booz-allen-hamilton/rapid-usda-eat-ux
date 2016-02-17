@@ -7,9 +7,12 @@ $lang['no'] = "No";
 $lang['edit'] = "Edit";
 $lang['remove'] = "Remove";
 $lang['cancel'] = "Cancel";
+$lang['back'] = "Back";
 $lang['next'] = "Next";
 $lang['required'] = "* Required";
+$lang['optional'] = "OPTIONAL";
 $lang['frequency'] = "Select Frequency";
+
 
 // Header 
 $lang['nav_how_it_works'] = "How it Works";
@@ -54,15 +57,28 @@ $lang['title_household'] = "All Household Members";
 $lang['label_num_children'] = "How many children live with you, even if not related?";
 $lang['label_num_adults'] = "How many adults (including you) live at the residence?";
 
-// Children Information
-$lang['label_child_first'] = "Child's First Name";
-$lang['label_child_middle'] = "MI";
-$lang['label_child_last'] = "Last Name";
-$lang['label_child_student'] = "Are they a student?";
-$lang['label_child_type'] = "Select all that apply:";
-$lang['label_child_type_foster'] = "Foster Child";
-$lang['label_child_type_hmr'] = "Homeless, Migrant, or Runaway";
-$lang['label_child_add'] = "+ Add Another Child";
+// Household Members
+$lang['title_household_members'] = "Names of All Household Members";
+$lang['subtitle_household_members'] = "Please list all children and adults who live with you, even if they are not related.";
+$lang['section_title_children'] = "CHILDREN";
+$lang['section_title_adults'] = "ADULTS";
+$lang['label_first'] = "First Name";
+$lang['label_middle'] = "Middle Initial";
+$lang['label_last'] = "Last Name";
+$lang['label_add_child'] = "Add Child";
+$lang['label_add_adult'] = "Add Adult";
+
+// Children Details
+$lang['title_children_details'] = "Children's Details";
+$lang['subtitle_children_details'] = "Please check all that apply to help determine eligibility.";
+$lang['label_select_all'] = "Select all that apply";
+$lang['label_child_student'] = "Student (K-12)";
+$lang['label_child_foster'] = "Foster Child";
+$lang['label_child_hmr'] = "Homeless, Migrant, or Runaway";
+$lang['label_child_head_start'] = "Head Start participant";
+$lang['label_child_ethnicity'] = "Ethnicity";
+$lang['label_child_hispanic'] = "Hispanic or Latino";
+$lang['label_child_race'] = "Race";
 
 // Section Three
 $lang['subsection_child_income'] = "CHILD INCOME";
