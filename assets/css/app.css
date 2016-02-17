@@ -5,12 +5,22 @@ body {
 /**
  * Components
  */
+a:hover {
+  text-decoration: none;
+  color: #000; }
+
 h1 {
   margin-bottom: 20px;
   font-size: 50px; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 42px; }
+
+h3 {
+  font-size: 32px; }
+
+h4 {
+  font-size: 24px; }
 
 hr {
   border-top: 1px solid #CCC; }
@@ -165,6 +175,17 @@ hr {
   padding-left: 60px;
   padding-right: 60px;
   color: #FFF;
+  font-weight: bold; }
+
+.white-button-large {
+  background: #FFF;
+  border: 2px solid #000;
+  border-radius: 50px;
+  font-size: 30px;
+  padding: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #000;
   font-weight: bold; }
 
 .black-button-large:hover {

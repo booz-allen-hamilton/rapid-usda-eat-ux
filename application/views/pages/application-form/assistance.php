@@ -1,18 +1,20 @@
-<div class="row centered topMarginFifty">
+<div class="row centered" style="margin-top: 12%;">
 	<div class="col-sm-12">
-		<h1><?=$this->lang->line('title_assistance')?></h1>
-		<p><?=$this->lang->line('label_assistance')?>
+		<h2><b><?=$this->lang->line('title_assistance')?></b></h2>
+		<h3 style="margin-top: 30px;"><?=$this->lang->line('label_assistance')?>
 			<a href="#" data-toggle="modal" data-target="#assistanceClarification">
 				<span class="glyphicon glyphicon-info-sign"></span>
 			</a>
-		</p>
-		<p><?=$this->lang->line('label_assistance_clarification')?></p>
-	</div>
-	<div class="col-sm-12 col-md-offset-3 col-md-3">
-		<a href="#"><?=$this->lang->line('yes')?></a>
-	</div>
-	<div class="col-sm-12 col-md-3">
-		<a href="#"><?=$this->lang->line('no')?></a>
+		</h3>
+		<h4 style="margin-top: 20px;"><?=$this->lang->line('label_assistance_clarification')?></h4>
+		<div style="margin-top: 50px;">
+			<div class="col-sm-12 col-md-offset-3 col-md-3">
+				<a href="#" class="white-button-large"><span style="padding-right: 20px;">&#10004;</span><?=$this->lang->line('yes')?></a>
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<a href="#" class="white-button-large"><span style="padding-right: 20px;">&#10006;</span><?=$this->lang->line('no')?></a>
+			</div>
+		</div>
 	</div>
 </div>
 
