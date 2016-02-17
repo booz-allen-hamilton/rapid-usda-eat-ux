@@ -19,7 +19,8 @@
 	bottom: 0px;
 	height: 100px;
 	border-top: 1px solid #BBB;
-	width: 100%;
+	left: 0px;
+	right: 0px;
 }
 
 .footer a {
@@ -48,4 +49,34 @@
 
 .footer a:hover {
 	text-decoration: none;
-};
+}
+
+.footer-nav-bar {
+	float: left;
+	margin-top: 20px;
+	margin-left: 40px;
+	font-size: 25px;
+}
+
+.footer-nav-circle {
+	border-radius: 100%;
+	border: 3px solid;
+	padding: 10px;
+	padding-left: 19px;
+	padding-right: 19px;
+	color: #BBB;
+}
+
+.footer-nav-circle-focused {
+	border-radius: 100%;
+	border: 3px solid;
+	padding: 10px;
+	padding-left: 19px;
+	padding-right: 19px;
+	color: #000;
+}
+
+.footer-bav-connector {
+	width: 50px;
+	border: 1px solid #BBB;
+}
