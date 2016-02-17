@@ -1,93 +1,95 @@
 <div class="row centered">
 	<div class="col-sm-12">
-		<h1><?=$this->lang->line('title_household_members')?></h1>
-		<h3><?=$this->lang->line('subtitle_household_members')?>
+		<h2><b><?=$this->lang->line('title_household_members')?></b></h2>
+		<h4><?=$this->lang->line('subtitle_household_members')?>
 			<a href="#" data-toggle="modal" data-target="#childrenClarification">
 				<span class="glyphicon glyphicon-info-sign"></span>
 			</a>
-		</h3>
+		</h4>
 
-		<h2><?=$this->lang->line('section_title_children')?></h2>
+		<h3><b><?=$this->lang->line('section_title_children')?></b></h3>
 	</div>
 </div>
-<div class="row tableHeaders">
-	<div class="col-sm-12 col-md-4">
-		* <?=$this->lang->line('label_first')?>
-	</div>
-	<div class="col-sm-12 col-md-4">
-		* <?=$this->lang->line('label_last')?>
-	</div>
-	<div class="col-sm-12 col-md-2">
-		<?=$this->lang->line('label_middle')?>
-	</div>
-	<div class="col-sm-12 col-md-2">
-		&nbsp;
-	</div>
-</div>
-
-<!-- Children rows -->
-<div class="row tableHeaders">
-	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control" id="child_first_1">
-	</div>
-	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control" id="child_last_1">
-	</div>
-	<div class="col-sm-12 col-md-2">
-		<input type="text" class="form-control" id="child_middle_1">
-	</div>
-	<div class="col-sm-12 col-md-2 centered">
-		<span class="glyphicon glyphicon-remove"></span>
-	</div>
-</div>
-
-<div class="row centered">
-	<div class="col-sm-12">
-		<a href="#"><span class="glyphicon glyphicon-plus"></span>&nbsp;<?=$this->lang->line('label_add_child')?></a>
-	</div>
-</div>
-
-<div class="row centered">
-	<div class="col-sm-12">
-		<h2><?=$this->lang->line('section_title_adults')?></h2>
-	</div>
-</div>
-<div class="row tableHeaders">
-	<div class="col-sm-12 col-md-4">
-		* <?=$this->lang->line('label_first')?>
-	</div>
-	<div class="col-sm-12 col-md-4">
-		* <?=$this->lang->line('label_last')?>
-	</div>
-	<div class="col-sm-12 col-md-2">
-		<?=$this->lang->line('label_middle')?>
-	</div>
-	<div class="col-sm-12 col-md-2">
-		&nbsp;
-	</div>
-</div>
-
-<!-- Adult rows -->
-<div class="row tableHeaders">
-	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control" id="adult_first_1">
-	</div>
-	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control" id="adult_last_1">
-	</div>
-	<div class="col-sm-12 col-md-2">
-		<input type="text" class="form-control" id="adult_middle_1">
-	</div>
-	<div class="col-sm-12 col-md-2 centered">
-		(You)
-	</div>
-</div>
-
-<div class="row centered">
-	<div class="col-sm-12">
-		<a href="#"><span class="glyphicon glyphicon-plus"></span>&nbsp;<?=$this->lang->line('label_add_adult')?></a>
-	</div>
-</div>
+<table class="table form-table col-md-12">
+	<tr>
+		<th style="border-top: none;" width="33%">
+			* <?=$this->lang->line('label_first')?>
+		</th>
+		<th style="border-top: none;" width="33%">
+			* <?=$this->lang->line('label_last')?>
+		</th>
+		<th style="border-top: none;" width="33%">
+			<?=$this->lang->line('label_middle')?>
+		</th>
+		<th style="border-top: none;" width="10%"></th>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" class="form-control" id="child_first_1">
+		</td>
+		<td>
+			<input type="text" class="form-control" id="child_last_1">
+		</td>
+		<td>
+			<input type="text" class="form-control" id="child_middle_1" style="width: 18%;">
+		</td>
+		<td>
+			<span class="glyphicon glyphicon-remove"></span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<div class="row centered" style="margin-top: 20px; margin-bottom: 30px;">
+				<div class="col-sm-12">
+					<a href="#" class="white-button-large"><span class="glyphicon glyphicon-plus"></span>&nbsp;<?=$this->lang->line('label_add_child')?></a>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4" style="border-top: none;">
+			<div class="row centered">
+				<div class="col-sm-12">
+					<h3><b><?=$this->lang->line('section_title_adults')?></b></h3>
+				</div>
+			</div>
+		</td>
+	<tr>
+		<th style="border-top: none;" width="33%">
+			* <?=$this->lang->line('label_first')?>
+		</th>
+		<th style="border-top: none;" width="33%">
+			* <?=$this->lang->line('label_last')?>
+		</th>
+		<th style="border-top: none;" width="33%">
+			<?=$this->lang->line('label_middle')?>
+		</th>
+		<th style="border-top: none;" width="10%"></th>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" class="form-control" id="child_first_1">
+		</td>
+		<td>
+			<input type="text" class="form-control" id="child_last_1">
+		</td>
+		<td>
+			<input type="text" class="form-control" id="child_middle_1" style="width: 18%;">
+		</td>
+		<td>
+			<span class="glyphicon glyphicon-remove"></span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<div class="row centered" style="margin-top: 20px; margin-bottom: 30px;">
+				<div class="col-sm-12">
+					<a href="#" class="white-button-large"><span class="glyphicon glyphicon-plus"></span>&nbsp;<?=$this->lang->line('label_add_adult')?></a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
 
 <div id="householdMembersClarification" class="modal fade" tabindex="-1" role="dialog">
 	<div class="modal-dialog modal-md" role="document">
