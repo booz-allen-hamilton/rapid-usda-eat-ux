@@ -2,11 +2,30 @@
 	font-size: 18px;
 	position: relative;
 	top: -2px;
+
 	.fa-circle-thin {
 		color: $color_action;
 	}
+
 	.fa-info {
 		color: $color_action;
+	}
+
+	.fa-info:before {
+		content: "i";
+		left: 0;
+		width: 24px!important;
+		height: 24px;
+		margin-top: 0;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 23px;
+		text-align: center;
+		color: #FBB040  ;
+		background: none;
+		border-radius: 100%;
+		display: inline-block;
+		cursor: pointer;
 	}
 }
 
