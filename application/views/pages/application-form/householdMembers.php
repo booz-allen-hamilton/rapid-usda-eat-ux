@@ -24,7 +24,7 @@
 </div>
 
 <!-- Children rows -->
-<div id="childName-list">
+<div id="row childName-list">
 	<div class="row tableItems">
 		<div class="col-sm-12 col-md-4">
 			<input type="text" class="form-control input-lg" name="child_first[]">
@@ -86,7 +86,7 @@
 </div>
 
 <!-- Adult rows -->
-<div id="adultName-list">
+<div id="row adultName-list">
 	<div class="row tableHeaders">
 		<div class="col-sm-12 col-md-4">
 			<input type="text" class="form-control input-lg" name="adult_first[]">

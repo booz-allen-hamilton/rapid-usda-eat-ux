@@ -38,23 +38,23 @@ body {
     cursor: pointer; }
 
 button.button,
-.button {
+.button, .button:active, .button:focus {
   background: transparent;
   border-radius: 30px;
   padding: 8px 25px;
   font-size: 16px; }
   button.button i.icon-left,
-  .button i.icon-left {
+  .button i.icon-left, .button:active i.icon-left, .button:focus i.icon-left {
     margin-right: 10px; }
   button.button i.icon-right,
-  .button i.icon-right {
+  .button i.icon-right, .button:active i.icon-right, .button:focus i.icon-right {
     margin-left: 10px; }
   button.button.button-lg,
-  .button.button-lg {
+  .button.button-lg, .button:active.button-lg, .button:focus.button-lg {
     padding: 10px 50px;
     font-size: 24px; }
     button.button.button-lg i.icon-right,
-    .button.button-lg i.icon-right {
+    .button.button-lg i.icon-right, .button:active.button-lg i.icon-right, .button:focus.button-lg i.icon-right {
       margin-left: 15px; }
 
 .button-transparent {
@@ -99,7 +99,6 @@ body {
   padding-bottom: 100px; }
 
 .navbar.navbar-default.navbar-usda {
-  height: 70px;
   background-color: #FFF;
   border-bottom: 1px solid #ccc; }
   .navbar.navbar-default.navbar-usda .nav.navbar-nav {
@@ -110,7 +109,7 @@ body {
         color: #333; }
     .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
       font-weight: bold;
-      background: none; }
+      background: #FFF; }
   .navbar.navbar-default.navbar-usda .navbar-brand {
     color: #000;
     display: block;
@@ -137,11 +136,16 @@ body {
   #page-welcome ol {
     font-weight: 300;
     font-size: 22px;
-    padding-left: 20px;
+    padding-left: 30px;
     margin-bottom: 50px; }
     #page-welcome ol li {
       margin-bottom: 15px; }
+  #page-welcome .welcome-information {
+    margin-bottom: 30px; }
 
+@media (max-width: 767px) {
+  .welcome-image {
+    display: none; } }
 a:hover {
   text-decoration: none;
   color: #000; }
@@ -284,5 +288,11 @@ a:hover {
       border: 1px solid #BBB;
       margin-left: -5px;
       margin-right: -5px; }
+
+@media (max-width: 767px) {
+  #page-application-form .footer {
+    height: auto; }
+    #page-application-form .footer .footer-bav-connector {
+      width: 27px; } }
 
 /*# sourceMappingURL=app.css.map */

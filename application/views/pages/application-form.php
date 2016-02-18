@@ -2,7 +2,7 @@
 <?
 	$form_attributes = array(
 		'id'                               => 'form-application',
-		'class'                            => 'form-horizontal',
+		'class'                            => 'form-horizontal container',
 		'data-fv-framework'                => "bootstrap",
 		'data-fv-feedbackicons-valid'      => "glyphicon glyphicon-ok",
 		'data-fv-feedbackicons-invalid'    => "glyphicon glyphicon-remove",
@@ -16,7 +16,7 @@
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-12 col-md-6">
 					<table>
 						<tr>
 						<?
@@ -46,7 +46,7 @@
 						</tr>
 					</table>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-12 col-md-6">
 					<button class="button button-invert-blue pull-right" type="submit">
 						<?=$this->lang->line('next')?><i class="icon-right fa fa-angle-right"></i>
 					</button>

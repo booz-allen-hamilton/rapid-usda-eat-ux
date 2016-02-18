@@ -30,7 +30,7 @@
 }
 
 button.button,
-.button {
+.button, .button:active, .button:focus {
 	background: transparent;
 	border-radius: 30px;
 	padding: 8px 25px;
