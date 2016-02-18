@@ -3,118 +3,22 @@ a:hover {
  	text-decoration: none;
  	color: #000;
 }
-//
-// h1 {
-// 	margin-bottom: 20px;
-// 	font-size: 50px;
-// }
-//
-// h2 {
-// 	font-size: 42px;
-// }
-//
-// h3 {
-// 	font-size: 32px;
-// }
-//
-// h4 {
-// 	font-size: 24px;
-// }
-//
-// hr {
-// 	border-top: 1px solid #CCC;
-// }
-//
-//.centered {
-//	text-align: center;
-// }
-//
-// .topMarginFifty {
-// 	margin-top: 50px;
-// }
-//
-// .section {
-// 	border-top: 1px solid #CCC;
-// 	padding-top: 20px;
-// 	margin-top: 20px;
-//
-// 	h2 {
-// 		margin-top: 0;
-// 		margin-bottom: 20px;
-// 	}
-//
-// 	.section-number {
-// 		border: 1px solid #CCC;
-// 		border-radius: 90px;
-// 		padding: 20px;
-// 		font-size: 40px;
-// 		text-align: center;
-// 	}
-//
-// 	.add-button {
-// 		border: solid 1px #CCC;
-// 		padding: 10px 40px;
-// 		text-decoration: none;
-// 		font-size: 20px;
-// 		color: #000;
-// 	}
-// }
-//
-// .form-group {
-// 	margin-top: 20px;
-// 	font-size: 20px;
-//
-// 	label {
-// 		font-size: 20px;
-// 		margin: 0 0 10px;
-// 	}
-//
-// 	p {
-// 		margin-bottom: 20px;
-// 	}
-//
-// 	.form-control {
-// 		font-size: 20px;
-// 		height: 48px;
-// 	}
-//
-// 	.radio-inline, .checkbox-inline {
-// 		margin-right: 15px;
-// 	}
-//
-// 	input[type=radio], input[type=checkbox]{
-// 		margin-top: 6px;
-// 	}
-//
-// 	.input-group {
-// 		float: left;
-// 		margin-right: 20px;
-//
-// 		select, option {
-// 			padding: 20px 20px;
-// 		}
-// 	}
-//
-// 	.childIncomeRow * {
-// 		font-size: 20px;
-// 	}
-//
-// 	.childIncomeRow {
-// 		margin-bottom: 30px;
-// 	}
-// }
-
 .mb15 {
 	margin-bottom: 15px;
 }
 .mb25 {
 	margin-bottom: 25px;
 }
+.mr10 {
+	margin-right: 10px;
+}
+
 #page-application-form {
 	padding-bottom: 200px;
 	h2 {
+		color: $color_title;
 		font-weight: bold;
-		font-size: 36px;
+		font-size: 32px;
 	}
 	h3 {
 		font-weight: bold;
@@ -134,7 +38,11 @@ a:hover {
 		margin-right: 15px;
 	}
 	p {
+		font-weight: $fw_light;
 		font-size: 18px;
+		&.text-large {
+			font-size: 24px;
+		}
 	}
 	.tableHeaders {
 		font-size: 18px;
@@ -221,115 +129,62 @@ a:hover {
 			font-size: 18px;
 		}
 	}
-}
-
-.footer {
-	position: fixed;
-	bottom: 0px;
-	height: 100px;
-	border-top: 1px solid #BBB;
-	left: 0px;
-	right: 0px;
-	background: #fff;
-	a {
-		float: right;
-		margin-right: 20px;
-		margin-top: 20px;
-		padding: 10px;
-		padding-right: 40px;
-		padding-left: 40px;
-		font-size: 25px;
-		color: #888;
-	}
-	a:hover {
-		text-decoration: none;
-	}
-	.footer-button-with-border {
-		float: right;
-		margin-right: 20px;
-		margin-top: 20px;
-		border: 3px solid;
-		padding: 10px;
-		padding-right: 40px;
-		padding-left: 40px;
-		border-radius: 35px;
-		font-size: 25px;
-		color: #888;
-	}
-	.footer-nav-bar {
-		float: left;
-		margin-top: 20px;
-		margin-left: 40px;
-		font-size: 25px;
-	}
-
-	.footer-nav-circle {
-		border-radius: 100%;
-		border: 3px solid;
-		padding: 10px;
-		padding-left: 19px;
-		padding-right: 19px;
-		color: #BBB;
-	}
-
-	.footer-nav-circle-focused {
-		border-radius: 100%;
-		border: 3px solid;
-		padding: 10px;
-		padding-left: 19px;
-		padding-right: 19px;
-		color: #000;
-	}
-
-	.footer-nav-circle-completed {
-		border-radius: 100%;
-		border: 3px solid;
-		padding: 10px;
-		padding-left: 19px;
-		padding-right: 19px;
-		color: #FFF;
-		background: #000;
-	}
-	.footer-progress-step {
-		font-size: 10px;
-		&.step-active {
-			.icon-outline,
-			.icon-number {
-				color: #000;
+	.footer {
+		position: fixed;
+		bottom: 0px;
+		height: 80px;
+		border-top: 1px solid #BBB;
+		left: 0px;
+		right: 0px;
+		background: #fff;
+		padding: 20px 0;
+		a.link {
+			padding: 10px;
+			padding-right: 40px;
+			padding-left: 40px;
+			font-size: 24px;
+			color: #888;
+		}
+		.footer-progress-step {
+			font-size: 12px;
+			&.step-active {
+				.icon-outline,
+				.icon-number {
+					color: $color_action;
+				}
+				.icon-background,
+				.icon-image {
+					display: none;
+				}
 			}
-			.icon-background,
-			.icon-image {
-				display: none;
+			&.step-disabled {
+				.icon-outline,
+				.icon-number {
+					color: #ccc;
+				}
+				.icon-background,
+				.icon-image {
+					display: none;
+				}
+			}
+			&.step-complete {
+				.icon-outline,
+				.icon-number {
+					display: none;
+				}
+				.icon-background{
+					color: #000;
+				}
+				.icon-image {
+					color: #fff;
+				}
 			}
 		}
-		&.step-disabled {
-			.icon-outline,
-			.icon-number {
-				color: #ccc;
-			}
-			.icon-background,
-			.icon-image {
-				display: none;
-			}
+		.footer-bav-connector {
+			width: 50px;
+			border: 1px solid #BBB;
+			margin-left: -5px;
+			margin-right: -5px;
 		}
-		&.step-complete {
-			.icon-outline,
-			.icon-number {
-				display: none;
-			}
-			.icon-background{
-				color: #000;
-			}
-			.icon-image {
-				color: #fff;
-			}
-		}
-	}
-
-	.footer-bav-connector {
-		width: 50px;
-		border: 1px solid #BBB;
-		margin-left: -5px;
-		margin-right: -5px;
 	}
 }

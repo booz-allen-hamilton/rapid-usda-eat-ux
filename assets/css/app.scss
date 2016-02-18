@@ -1,10 +1,31 @@
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700,900);
+/**
+ * Colors
+ */
+$color_title: 		#038bce;
+$color_subtitle: 	#00aeef;
+$color_action: 		#fbb03f;
+$color_green: 		#3ab54a;
+$color_red: 			#ee3e35;
+
+/**
+ * Font Weights
+ */
+$fw_light: 			300;
+$fw_normal: 		400;
+$fw_bold: 			700;
+$fw_extra_bold: 900;
+
 body {
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	font-weight: $fw_normal;
 }
+
 /**
  * Components
  */
-@import 'components/form.scss';
+@import 'components/buttons.scss';
 @import 'components/header.scss';
 @import 'components/welcome.scss';
+@import 'components/form.scss';

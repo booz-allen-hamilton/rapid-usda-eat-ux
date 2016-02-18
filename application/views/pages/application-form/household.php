@@ -9,7 +9,7 @@
 		</p>
 	</div>
 	<div class="col-sm-12 col-md-offset-5 col-md-2">
-		<input type="text" class="form-control input-lg" name="numberChildren" id="numberChildren">
+		<input type="text" class="form-control input-lg" name="numberChildren" id="numberChildren" data-fv-notempty="true" />
 	</div>
 	<div class="col-sm-12" style="margin-top: 25px;">
 		<p>
@@ -20,7 +20,7 @@
 		</p>
 	</div>
 	<div class="col-sm-12 col-md-offset-5 col-md-2">
-		<input type="text" class="form-control input-lg" name="numberAdults" id="numberAdults">
+		<input type="text" class="form-control input-lg" name="numberAdults" id="numberAdults" />
 	</div>
 </div>
 

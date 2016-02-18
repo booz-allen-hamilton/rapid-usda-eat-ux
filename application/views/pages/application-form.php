@@ -1,67 +1,65 @@
+<div id="page-application-form">
 <?
-	$form_sections = array(
-		'household',
-		'householdMembers',
-		'childrenDetails',
-		'householdMembersIncome',
-		'contactInformation',
-		'socialSecurityNumber',
-		'electronicSignature',
-		'success',
+	$form_attributes = array(
+		'id'                               => 'form-application',
+		'class'                            => 'form-horizontal',
+		'data-fv-framework'                => "bootstrap",
+		'data-fv-feedbackicons-valid'      => "glyphicon glyphicon-ok",
+		'data-fv-feedbackicons-invalid'    => "glyphicon glyphicon-remove",
+		'data-fv-feedbackicons-validating' => "glyphicon glyphicon-refresh"
 	);
-	$max = 6;
+	echo form_open($form['process'], $form_attributes);
+	$this->load->view('pages/application-form/'.$form['section']);
 ?>
-<div id="page-application-form" data-current-step="1" data-max-steps="<?=$max?>" data-complete="<?=count($form_sections)?>">
 	<div class="container">
-		<form id="application-form" class="form-horizontal">
-			<div class="tab-content">
-			<?
-				$loop = 1;
-				$active = '';
-				foreach($form_sections as $form_section) {
-					$active = ($loop != 1 ? 'hide' : NULL);
-					echo '<div class="form-section '.$active.'" id="form-section-'.$form_section.'" data-step="'.$loop.'">';
-					$this->load->view('pages/application-form/'.$form_section);
-					echo '</div>';
-					$loop++;
-				}
-			?>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="footer-nav-bar">
-				<table>
-					<tr>
-					<?
-						for($i = 1; $i <= $max; $i++) {
-							$step = ($i == 1 ? 'step-active' : 'step-disabled');
-					?>
-						<td>
-							<div class="footer-progress-step <?=$step?>" id="step-<?=$i?>">
-								<span class="fa-stack fa-3x">
-									<i class="fa fa-circle-thin fa-stack-2x icon-outline"></i>
-									<i class="fa fa-circle fa-stack-2x icon-background"></i>
-									<i class="fa fa-check fa-stack-1x icon-image"></i>
-									<i class="fa fa-stack-1x icon-number"><?=$i?></i>
-								</span>
-							</div>
-						</td>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<table>
+						<tr>
 						<?
-							if ($i != $max) {
+							for($i = 1; $i <= count($form['form_sections']); $i++) {
+								$step = ($i == $form['step'] ? 'step-active' : 'step-disabled');
 						?>
 							<td>
-								<div class="footer-bav-connector"></div>
+								<div class="footer-progress-step <?=$step?>" id="step-<?=$i?>">
+									<span class="fa-stack fa-2x">
+										<i class="fa fa-circle-thin fa-stack-2x icon-outline"></i>
+										<i class="fa fa-circle fa-stack-2x icon-background"></i>
+										<i class="fa fa-check fa-stack-1x icon-image"></i>
+										<i class="fa fa-stack-1x icon-number"><?=$i?></i>
+									</span>
+								</div>
 							</td>
-					<?
+							<?
+								if ($i != count($form['form_sections'])) {
+							?>
+								<td>
+									<div class="footer-bav-connector"></div>
+								</td>
+						<?
+								}
 							}
-						}
-					?>
-					</tr>
-				</table>
+						?>
+						</tr>
+					</table>
+				</div>
+				<div class="col-sm-6">
+					<button class="button button-invert-blue pull-right" type="submit">
+						<?=$this->lang->line('next')?><i class="icon-right fa fa-angle-right"></i>
+					</button>
+					<a href="#" class="button button-invert-blue mr10 pull-right" data-action="prev">
+						<i class="icon-left fa fa-angle-left"></i><?=$this->lang->line('back')?>
+					</a>
+					<a href="<?=base_url('apply/cancel')?>" class="button button-transparent mr10 pull-right">Cancel</a>
+					<div class="clearfix"></div>
+				</div>
 			</div>
-			<a href="#" class="footer-button-with-border" data-action="next"><?=$this->lang->line('next')?> ></a>
-			<a href="#" class="footer-button-with-border" data-action="prev">< <?=$this->lang->line('back')?></a>
-			<a href="#">Cancel</a>
-		</form>
+		</div>
 	</div>
+<?
+	echo form_close();
+?>
 </div>

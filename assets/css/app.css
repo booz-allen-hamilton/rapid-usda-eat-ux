@@ -1,10 +1,132 @@
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700,900);
+/**
+ * Colors
+ */
+/**
+ * Font Weights
+ */
 body {
-  font-family: 'Noto Sans', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-weight: 400; }
 
 /**
  * Components
  */
+.icon-info {
+  font-size: 18px;
+  position: relative;
+  top: -2px; }
+  .icon-info .fa-circle-thin {
+    color: #fbb03f; }
+  .icon-info .fa-info {
+    color: #fbb03f; }
+
+button.button,
+.button {
+  background: transparent;
+  border-radius: 30px;
+  padding: 8px 25px;
+  font-size: 16px; }
+  button.button i.icon-left,
+  .button i.icon-left {
+    margin-right: 10px; }
+  button.button i.icon-right,
+  .button i.icon-right {
+    margin-left: 10px; }
+  button.button.button-lg,
+  .button.button-lg {
+    padding: 10px 50px;
+    font-size: 24px; }
+    button.button.button-lg i.icon-right,
+    .button.button-lg i.icon-right {
+      margin-left: 15px; }
+
+.button-transparent {
+  padding: 10px 25px;
+  color: #666; }
+
+.button-invert-blue {
+  border: 2px solid #00aeef;
+  color: #00aeef;
+  font-weight: 700; }
+  .button-invert-blue:hover {
+    background-color: #00aeef;
+    color: #fff; }
+
+.button-invert-green {
+  border: 2px solid #3ab54a;
+  color: #3ab54a;
+  font-weight: 700; }
+  .button-invert-green:hover {
+    color: #3ab54a; }
+
+.button-invert-red {
+  border: 2px solid #ee3e35;
+  color: #ee3e35;
+  font-weight: 700; }
+  .button-invert-red:hover {
+    color: #ee3e35; }
+
+.button-orange {
+  background-color: #fbb03f;
+  color: #fff;
+  font-weight: 700; }
+  .button-orange:hover {
+    color: #fff; }
+
+.button-orange-inverse {
+  border: 2px solid #fbb03f;
+  color: #fbb03f;
+  font-weight: 700; }
+
+body {
+  padding-bottom: 100px; }
+
+.navbar.navbar-default.navbar-usda {
+  height: 70px;
+  background-color: #FFF;
+  border-bottom: 1px solid #ccc; }
+  .navbar.navbar-default.navbar-usda .nav.navbar-nav {
+    margin-top: 10px; }
+    .navbar.navbar-default.navbar-usda .nav.navbar-nav li {
+      font-size: 16px; }
+      .navbar.navbar-default.navbar-usda .nav.navbar-nav li a {
+        color: #333; }
+    .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
+      font-weight: bold;
+      background: none; }
+  .navbar.navbar-default.navbar-usda .navbar-brand {
+    color: #000;
+    display: block;
+    width: 170px;
+    font-size: 36px;
+    margin-top: 12px;
+    padding: 0 15px; }
+
+#page-welcome {
+  margin-top: 20px; }
+  #page-welcome h1 {
+    font-size: 48px;
+    color: #038bce; }
+    #page-welcome h1 strong {
+      font-weight: 900; }
+  #page-welcome h2 {
+    color: #00aeef;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 45px;
+    margin-bottom: 25px; }
+  #page-welcome p {
+    font-size: 18px; }
+  #page-welcome ol {
+    font-weight: 300;
+    font-size: 22px;
+    padding-left: 20px;
+    margin-bottom: 50px; }
+    #page-welcome ol li {
+      margin-bottom: 15px; }
+
 a:hover {
   text-decoration: none;
   color: #000; }
@@ -15,11 +137,15 @@ a:hover {
 .mb25 {
   margin-bottom: 25px; }
 
+.mr10 {
+  margin-right: 10px; }
+
 #page-application-form {
   padding-bottom: 200px; }
   #page-application-form h2 {
+    color: #038bce;
     font-weight: bold;
-    font-size: 36px; }
+    font-size: 32px; }
   #page-application-form h3 {
     font-weight: bold;
     font-size: 28px; }
@@ -34,7 +160,10 @@ a:hover {
     display: inline-block;
     margin-right: 15px; }
   #page-application-form p {
+    font-weight: 300;
     font-size: 18px; }
+    #page-application-form p.text-large {
+      font-size: 24px; }
   #page-application-form .tableHeaders {
     font-size: 18px;
     text-align: left; }
@@ -99,141 +228,44 @@ a:hover {
     font-size: 36px; }
   #page-application-form .modal .modal-body {
     font-size: 18px; }
-
-.footer {
-  position: fixed;
-  bottom: 0px;
-  height: 100px;
-  border-top: 1px solid #BBB;
-  left: 0px;
-  right: 0px;
-  background: #fff; }
-  .footer a {
-    float: right;
-    margin-right: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 25px;
-    color: #888; }
-  .footer a:hover {
-    text-decoration: none; }
-  .footer .footer-button-with-border {
-    float: right;
-    margin-right: 20px;
-    margin-top: 20px;
-    border: 3px solid;
-    padding: 10px;
-    padding-right: 40px;
-    padding-left: 40px;
-    border-radius: 35px;
-    font-size: 25px;
-    color: #888; }
-  .footer .footer-nav-bar {
-    float: left;
-    margin-top: 20px;
-    margin-left: 40px;
-    font-size: 25px; }
-  .footer .footer-nav-circle {
-    border-radius: 100%;
-    border: 3px solid;
-    padding: 10px;
-    padding-left: 19px;
-    padding-right: 19px;
-    color: #BBB; }
-  .footer .footer-nav-circle-focused {
-    border-radius: 100%;
-    border: 3px solid;
-    padding: 10px;
-    padding-left: 19px;
-    padding-right: 19px;
-    color: #000; }
-  .footer .footer-nav-circle-completed {
-    border-radius: 100%;
-    border: 3px solid;
-    padding: 10px;
-    padding-left: 19px;
-    padding-right: 19px;
-    color: #FFF;
-    background: #000; }
-  .footer .footer-progress-step {
-    font-size: 10px; }
-    .footer .footer-progress-step.step-active .icon-outline,
-    .footer .footer-progress-step.step-active .icon-number {
-      color: #000; }
-    .footer .footer-progress-step.step-active .icon-background,
-    .footer .footer-progress-step.step-active .icon-image {
-      display: none; }
-    .footer .footer-progress-step.step-disabled .icon-outline,
-    .footer .footer-progress-step.step-disabled .icon-number {
-      color: #ccc; }
-    .footer .footer-progress-step.step-disabled .icon-background,
-    .footer .footer-progress-step.step-disabled .icon-image {
-      display: none; }
-    .footer .footer-progress-step.step-complete .icon-outline,
-    .footer .footer-progress-step.step-complete .icon-number {
-      display: none; }
-    .footer .footer-progress-step.step-complete .icon-background {
-      color: #000; }
-    .footer .footer-progress-step.step-complete .icon-image {
-      color: #fff; }
-  .footer .footer-bav-connector {
-    width: 50px;
-    border: 1px solid #BBB;
-    margin-left: -5px;
-    margin-right: -5px; }
-
-body {
-  padding-bottom: 100px; }
-
-.navbar.navbar-default.navbar-usda {
-  height: 80px;
-  background-color: #FFF;
-  border-bottom: 2px solid #ccc; }
-  .navbar.navbar-default.navbar-usda .nav.navbar-nav li {
-    font-size: 16px;
-    margin-top: 14px; }
-    .navbar.navbar-default.navbar-usda .nav.navbar-nav li a {
-      color: #000; }
-      .navbar.navbar-default.navbar-usda .nav.navbar-nav li a .border-header-link {
-        border: 2px solid #000;
-        text-decoration: none;
-        padding: 8px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-radius: 30px;
-        font-weight: bold; }
-  .navbar.navbar-default.navbar-usda .nav.navbar-nav li.active a {
-    font-weight: bold;
-    background: none; }
-  .navbar.navbar-default.navbar-usda .navbar-brand {
-    color: #000;
-    font-size: 36px;
-    margin-top: 12px; }
-
-#page-welcome {
-  margin-top: 20px; }
-  #page-welcome h1 {
-    font-size: 48px; }
-  #page-welcome h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 45px;
-    margin-bottom: 25px; }
-  #page-welcome p {
-    font-size: 18px; }
-  #page-welcome ol {
-    font-size: 22px;
-    padding-left: 20px;
-    margin-bottom: 50px; }
-    #page-welcome ol li {
-      margin-bottom: 15px; }
-  #page-welcome .get-started-btn {
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 50px;
-    border-radius: 40px;
-    font-weight: bold;
-    font-size: 32px; }
+  #page-application-form .footer {
+    position: fixed;
+    bottom: 0px;
+    height: 80px;
+    border-top: 1px solid #BBB;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+    padding: 20px 0; }
+    #page-application-form .footer a.link {
+      padding: 10px;
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 24px;
+      color: #888; }
+    #page-application-form .footer .footer-progress-step {
+      font-size: 12px; }
+      #page-application-form .footer .footer-progress-step.step-active .icon-outline,
+      #page-application-form .footer .footer-progress-step.step-active .icon-number {
+        color: #fbb03f; }
+      #page-application-form .footer .footer-progress-step.step-active .icon-background,
+      #page-application-form .footer .footer-progress-step.step-active .icon-image {
+        display: none; }
+      #page-application-form .footer .footer-progress-step.step-disabled .icon-outline,
+      #page-application-form .footer .footer-progress-step.step-disabled .icon-number {
+        color: #ccc; }
+      #page-application-form .footer .footer-progress-step.step-disabled .icon-background,
+      #page-application-form .footer .footer-progress-step.step-disabled .icon-image {
+        display: none; }
+      #page-application-form .footer .footer-progress-step.step-complete .icon-outline,
+      #page-application-form .footer .footer-progress-step.step-complete .icon-number {
+        display: none; }
+      #page-application-form .footer .footer-progress-step.step-complete .icon-background {
+        color: #000; }
+      #page-application-form .footer .footer-progress-step.step-complete .icon-image {
+        color: #fff; }
+    #page-application-form .footer .footer-bav-connector {
+      width: 50px;
+      border: 1px solid #BBB;
+      margin-left: -5px;
+      margin-right: -5px; }

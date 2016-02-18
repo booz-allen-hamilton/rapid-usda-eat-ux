@@ -5,6 +5,7 @@
 	<title><?=$app['title']?></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?=PATH_VENDOR?>twbs/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="<?=PATH_ASSETS?>lib/formValidation/dist/css/formValidation.css" />
 	<link rel="stylesheet" href="<?=PATH_ASSETS?>css/app.css" />
 </head>
 <body>
@@ -17,6 +18,16 @@
   <script src="<?=PATH_ASSETS.'lib/formValidation/dist/js/formValidation.js'?>" type="text/javascript"></script>
   <script src="<?=PATH_ASSETS.'lib/formValidation/dist/js/framework/bootstrap.min.js'?>" type="text/javascript"></script>
 	<script src="<?=PATH_ASSETS?>js/app.js"></script>
-	<script src="<?=PATH_ASSETS?>js/form.js"></script>
+	<?
+		if (!empty($app['scripts'])) {
+			if (is_array($app['scripts'])) {
+				foreach($app['scripts'] as $script) {
+	?>
+					<script src="<?=PATH_ASSETS?>js/<?=$script?>"></script>
+	<?
+				}
+			}
+		}
+	?>
 </body>
 </html>

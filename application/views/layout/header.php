@@ -8,7 +8,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?=base_url()?>">LOGO</a>
+      <a class="navbar-brand" href="<?=base_url()?>">
+				<img src="<?=PATH_IMG?>header/logo.png" class="img-responsive" />
+			</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,14 +36,16 @@
 			  <li class="<?=($global['nav'] == 'how-it-works' ? 'active' : NULL)?>">
 					<a href="<?=base_url('how-it-works')?>"><span class="text"><?=$this->lang->line('nav_how_it_works')?></span></a>
 				</li>
-				  <li class="<?=($global['nav'] == 'status' ? 'active' : NULL)?>">
+				<li class="<?=($global['nav'] == 'status' ? 'active' : NULL)?>">
 					<a href="<?=base_url('status')?>"><span class="text"><?=$this->lang->line('nav_application_status')?></span></a>
 				</li>
-				  <li class="<?=($global['nav'] == 'help' ? 'active' : NULL)?>">
+				<li class="<?=($global['nav'] == 'help' ? 'active' : NULL)?>">
 					<a href="<?=base_url('help')?>"><span class="text"><?=$this->lang->line('nav_help')?></span></a>
 				</li>
-				  <li class="<?=($global['nav'] == 'apply' ? 'active' : NULL)?>">
-					<a href="<?=base_url('apply')?>"><span class="text border-header-link"><?=$this->lang->line('nav_apply_now')?></span></a>
+				<li class="<?=($global['nav'] == 'apply' ? 'active' : NULL)?>">
+					<a href="<?=base_url('apply')?>">
+						<span class="button button-orange-inverse"><?=$this->lang->line('nav_apply_now')?></span>
+					</a>
 				</li>
       </ul>
     </div><!-- /.navbar-collapse -->

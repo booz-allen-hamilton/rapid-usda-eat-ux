@@ -2,10 +2,15 @@
 	margin-top: 20px;
 	h1 {
 		font-size: 48px;
+		color: $color_title;
+		strong {
+			font-weight: $fw_extra_bold;
+		}
 	}
 	h2 {
+		color: $color_subtitle;
 		font-size: 24px;
-		font-weight: bold;
+		font-weight: $fw_bold;
 		margin-top: 45px;
 		margin-bottom: 25px;
 	}
@@ -13,20 +18,12 @@
 		font-size: 18px;
 	}
 	ol {
+		font-weight: 300;
 		font-size: 22px;
 		padding-left: 20px;
 		margin-bottom: 50px;
 		li {
 			margin-bottom: 15px;
 		}
-	}
-	.get-started-btn {
-		background-color: #000;
-		color: #fff;
-		text-decoration: none;
-		padding: 10px 50px;
-		border-radius: 40px;
-		font-weight: bold;
-		font-size: 32px;
 	}
 }

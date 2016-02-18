@@ -1,0 +1,79 @@
+.icon-info {
+	font-size: 18px;
+	position: relative;
+	top: -2px;
+	.fa-circle-thin {
+		color: $color_action;
+	}
+	.fa-info {
+		color: $color_action;
+	}
+}
+
+button.button,
+.button {
+	background: transparent;
+	border-radius: 30px;
+	padding: 8px 25px;
+	font-size: 16px;
+	i {
+		&.icon-left {
+			margin-right: 10px;
+		}
+		&.icon-right {
+			margin-left: 10px;
+		}
+	}
+	&.button-lg {
+		padding: 10px 50px;
+		font-size: 24px;
+		i {
+			&.icon-right {
+				margin-left: 15px;
+			}
+		}
+	}
+}
+.button-transparent {
+	padding: 10px 25px;
+	color: #666;
+}
+
+.button-invert-blue {
+	border: 2px solid $color_subtitle;
+	color: $color_subtitle;
+	font-weight: $fw_bold;
+	&:hover {
+		background-color: $color_subtitle;
+		color: #fff;
+	}
+}
+
+.button-invert-green {
+	border: 2px solid $color_green;
+	color: $color_green;
+	font-weight: $fw_bold;
+	&:hover {color: $color_green;}
+}
+
+.button-invert-red {
+	border: 2px solid $color_red;
+	color: $color_red;
+	font-weight: $fw_bold;
+	&:hover {color: $color_red;}
+}
+
+.button-orange {
+	background-color: $color_action;
+	color: #fff;
+	font-weight: $fw_bold;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.button-orange-inverse {
+	border: 2px solid $color_action;
+	color: $color_action;
+	font-weight: $fw_bold;
+}

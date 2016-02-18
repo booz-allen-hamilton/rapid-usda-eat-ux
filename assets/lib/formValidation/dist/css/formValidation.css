@@ -46,6 +46,7 @@
 /* Bootstrap stacked form without label */
 .fv-form-bootstrap .fv-icon-no-label {
 	top: 0;
+  right: 10px;
 }
 .fv-form-bootstrap .fv-bootstrap-icon-input-group {
 	z-index: 100;

@@ -2,24 +2,39 @@
 	<div class="container">
 		<div class="row text-center" style="margin-top: 12%;">
 			<div class="col-sm-12 col-md-12">
+				<?
+					$form_attributes = array(
+						'id'    => 'form-application'
+					);
+					echo form_open($form['process'], $form_attributes);
+				?>
 				<h2><b><?=$this->lang->line('title_assistance')?></b></h2>
-				<h3 style="margin-top: 30px;"><?=$this->lang->line('label_assistance')?>
+				<p class="text-large mb15" style="margin-top: 30px;"><?=$this->lang->line('label_assistance')?>
 					<a href="#" data-toggle="modal" data-target="#assistanceClarification">
 						<span class="glyphicon glyphicon-info-sign"></span>
 					</a>
-				</h3>
-				<h4 style="margin-top: 20px;"><?=$this->lang->line('label_assistance_clarification')?></h4>
+				</p>
+				<p><?=$this->lang->line('label_assistance_clarification')?></p>
 				<div style="margin-top: 50px;">
-					<div class="col-sm-12 col-md-offset-3 col-md-3">
-						<a href="<?=base_url('apply/standard')?>" class="white-button-large" data-action="next"><span style="padding-right: 20px;"><i class="fa fa-check"></i></span><?=$this->lang->line('yes')?></a>
-					</div>
-					<div class="col-sm-12 col-md-3">
-						<a href="<?=base_url('apply/standard')?>" class="white-button-large" data-action="next"><span style="padding-right: 20px;"><i class="fa fa-times"></i></span><?=$this->lang->line('no')?></a>
+					<div class="col-sm-12 text-center">
+						<button type="submit" class="button button-invert-green" style="margin-right: 20px;">
+							<i class="icon-left fa fa-check"></i><?=$this->lang->line('yes')?>
+						</button>
+						<button type="submit" class="button button-invert-red">
+							<i class="icon-left fa fa-times"></i><?=$this->lang->line('no')?>
+						</button>
 					</div>
 				</div>
+				<?
+					echo form_close();
+				?>
 			</div>
 		</div>
 	</div>
+	<div class="footer text-center">
+		<a href="<?=base_url('apply/cancel')?>" class="link">Cancel</a>
+	</form>
+</div>
 </div>
 
 <div id="assistanceClarification" class="modal fade" tabindex="-1" role="dialog">

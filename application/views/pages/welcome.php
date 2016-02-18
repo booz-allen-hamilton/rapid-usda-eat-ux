@@ -13,13 +13,15 @@
 					<?
 						foreach($this->lang->line('welcome_required_items') as $required_item) {
 					?>
-					<li><?=$required_item['text']?> <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="<?=$required_item['help']?>"></i></li>
+					<li><?=$required_item['text']?>
+						<?=help_icon($required_item['help'])?>
+					</li>
 					<?
 						}
 					?>
 				</ol>
 
-				<a href="<?=base_url('apply')?>" class="get-started-btn"><?=$this->lang->line('welcome_btn')?> <i class="fa fa-chevron-right"></i></a>
+				<a href="<?=base_url('apply')?>" class="button button-lg button-orange"><?=$this->lang->line('welcome_btn')?> <i class="icon-right fa fa-angle-right"></i></a>
 			</div>
 			<div class="col-sm-4">
 				<img src="<?=PATH_ASSETS?>img/apple.png" class="img-responsive" />

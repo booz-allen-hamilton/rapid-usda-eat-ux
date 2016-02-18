@@ -26,6 +26,7 @@ class Client_controller extends Application_controller
 	public function __construct()
 	{
 	  parent::__construct();
+		$this->load->helper('client');
 		$this->global['language_list'] = $this->config->item('language_list');
 		$this->check_language();	//	check language and set to default if not set
 

@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //	local
 if (!isset($_SERVER['CI_ENV'])) {
 	require('config.php');
-} 
+}
 //	server
 else {
 	define('BASE_URL', $_SERVER['BASE_URL']);
@@ -30,6 +30,7 @@ else {
 */
 define('PATH_VENDOR', BASE_URL.'vendor/');
 define('PATH_ASSETS', BASE_URL.'assets/');
+define('PATH_IMG', PATH_ASSETS.'img/');
 
 
 /*
