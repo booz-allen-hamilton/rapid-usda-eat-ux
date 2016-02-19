@@ -19,16 +19,16 @@ body {
   top: -2px; }
   .icon-info .fa-circle-thin {
     color: #fbb03f; }
-  .icon-info .fa-info {
+  .icon-info .fa-question {
     color: #fbb03f; }
-  .icon-info .fa-info:before {
-    content: "i";
+  .icon-info .fa-question:before {
+    content: "?";
     left: 0;
     width: 24px !important;
+    font-weight: bold;
     height: 24px;
     margin-top: 0;
     font-size: 20px;
-    font-weight: 500;
     line-height: 23px;
     text-align: center;
     color: #FBB040;
@@ -154,7 +154,7 @@ body {
     font-weight: 300;
     font-size: 22px;
     padding-left: 30px;
-    margin-bottom: 50px; }
+    margin-bottom: 20px; }
     #page-welcome ol li {
       margin-bottom: 15px; }
   #page-welcome .welcome-information {
@@ -166,7 +166,7 @@ body {
     #page-welcome .welcome-information .mr10 {
       margin-right: 10px; }
   #page-welcome .button-holder {
-    margin: 20px auto;
+    margin: 0 auto 20px;
     padding-left: 0; }
     #page-welcome .button-holder .button-orange, #page-welcome .button-holder .button-orange:focus {
       background-color: #fbb03f;
@@ -380,5 +380,3 @@ a:hover {
     height: auto; }
     #page-application-form .footer .footer-bav-connector {
       width: 27px; } }
-
-/*# sourceMappingURL=app.css.map */
