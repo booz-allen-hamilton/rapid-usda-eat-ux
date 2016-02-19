@@ -57,10 +57,11 @@ $lang['link_define'] = "Program Definitions";
 
 // Assistance Modal
 $lang['modal_assistance_title'] = "Program Definitions";
-$lang['modal_assistance_snap'] = "Supplemental Nutrition Assistance Program";
-$lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
-$lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
-$lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
+
+$lang['modal_assistance_body'] = "<p><strong>SNAP:</strong> Supplemental Nutrition Assistance Program</p>
+<p><strong>TANF:</strong> Temporary Assistance for Needy Families</p>
+<p><strong>FDPIR</strong>: Food Distribution Program on Indian Reservations</p>
+<p><em>If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.</em></p>";
 
 // Household
 $lang['title_household'] = "All Household Members";

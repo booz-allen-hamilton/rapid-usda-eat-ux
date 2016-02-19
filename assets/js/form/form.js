@@ -14,4 +14,9 @@ $(document).on('click', '.remove-item', function(e){
 	});
 });
 
-$('#form-application').formValidation();
+$('#form-application').validator({
+	feedback: {
+	  success: 'glyphicon-ok',
+	  error: 'glyphicon-remove'
+	}
+});

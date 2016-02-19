@@ -1,12 +1,10 @@
 <div id="page-application-form">
 <?
 	$form_attributes = array(
-		'id'                               => 'form-application',
-		'class'                            => 'form-horizontal',
-		'data-fv-framework'                => "bootstrap",
-		'data-fv-feedbackicons-valid'      => "glyphicon glyphicon-ok",
-		'data-fv-feedbackicons-invalid'    => "glyphicon glyphicon-remove",
-		'data-fv-feedbackicons-validating' => "glyphicon glyphicon-refresh"
+		'id'           => 'form-application',
+		'class'        => 'form-horizontal',
+		'data-toggle'	 => "validator",
+		'role'         => "form",
 	);
 	echo form_open($form['process'], $form_attributes);
 	$this->load->view('pages/application-form/'.$form['section']);

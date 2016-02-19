@@ -30,7 +30,11 @@ class Form extends Client_controller {
 		if ($current_form_step != FALSE) {
 			$form_view = 'pages/application-form';
 			$form_section = $this->form_sections[$current_form_step];
-			$form_scripts = array('form/form.js', 'form/'.$this->form_sections[$current_form_step].'.js');
+			$form_scripts = array(
+				'lib/bootstrap-validator/dist/validator.min.js',
+				'js/form/form.js',
+				'js/form/'.$this->form_sections[$current_form_step].'.js'
+			);
 		} else {
 			//	show start page
 			$form_view    = 'pages/application-start';

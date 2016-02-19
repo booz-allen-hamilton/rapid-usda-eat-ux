@@ -66,6 +66,24 @@ button.button,
 		background-color: $color_subtitle;
 		color: #fff;
 	}
+	&.disabled {
+		border: 2px solid #ccc !important;
+		color: #ccc !important;
+		font-weight: $fw_bold;
+		background-color: #eee !important;
+	}
+}
+
+.button-disabled {
+	border: 2px solid #ccc !important;
+	color: #ccc !important;
+	font-weight: $fw_bold;
+	background-color: #eee !important;
+	&:hover {
+		background-color: #eee !important;
+		border: 2px solid #ccc !important;
+		color: #ccc !important;
+	}
 }
 
 .button-invert-green {

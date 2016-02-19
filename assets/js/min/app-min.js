@@ -1,0 +1,1 @@
+$(function(){$('[data-toggle="tooltip"]').tooltip(),$('[data-target="#modal-help"]').click(function(t){t.preventDefault();var a=$(this).attr("data-modal-title"),l=$(this).attr("data-modal-body");$("#modal-help .modal-title").html(a),$("#modal-help .modal-body").html(l)})});

@@ -8,8 +8,12 @@
 			</a>
 		</p>
 	</div>
-	<div class="col-sm-12 col-md-offset-5 col-md-2">
-		<input type="text" class="form-control input-lg" name="numberChildren" id="numberChildren" data-fv-notempty="true" />
+	<div class="form-group">
+		<div class="col-sm-12 col-md-offset-5 col-md-2">
+			<input type="number" class="form-control input-lg" name="numberChildren" required data-error="error message" />
+			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+			<div class="help-block with-errors"></div>
+		</div>
 	</div>
 	<div class="col-sm-12" style="margin-top: 25px;">
 		<p>
@@ -19,8 +23,12 @@
 			</a>
 		</p>
 	</div>
-	<div class="col-sm-12 col-md-offset-5 col-md-2">
-		<input type="text" class="form-control input-lg" name="numberAdults" id="numberAdults" />
+	<div class="form-group">
+		<div class="col-sm-12 col-md-offset-5 col-md-2">
+			<input type="number" class="form-control input-lg" name="numberAdults" required data-error="error message" />
+			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+			<div class="help-block with-errors"></div>
+		</div>
 	</div>
 </div>
 
