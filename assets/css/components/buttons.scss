@@ -86,17 +86,19 @@ button.button,
 	}
 }
 
-.button-invert-green {
+.button-invert-green, .button-invert-green:focus {
 	border: 2px solid $color_green;
 	color: $color_green;
 	font-weight: $fw_bold;
+	text-decoration: none;
 	&:hover {color: $color_green;}
 }
 
-.button-invert-red {
+.button-invert-red, .button-invert-red:focus {
 	border: 2px solid $color_red;
 	color: $color_red;
 	font-weight: $fw_bold;
+	text-decoration: none;
 	&:hover {color: $color_red;}
 }
 

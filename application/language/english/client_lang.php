@@ -27,8 +27,9 @@ $lang['nav_application_status'] = "My Status";
 $lang['nav_help'] = "Help";
 
 // Page Titles
-$lang['welcome_title'] = "Apply for <strong>Free School Lunch!</strong>";
-$lang['welcome_description'] = "Welcome to the application for free and reduced price meals.";
+$lang['welcome_title'] = "Apply for <strong>Free</strong> or <strong>Reduced-Price Meals!</strong>";
+$lang['welcome_description_part_one'] = "This webform is your quick and secure way to apply. Everything you need to know about applying for free and reduced price meals can be found here. Click the yellow question mark icon";
+$lang['welcome_description_part_two'] = "to open up the Help Menu and click it again to close it. General FAQ contains information about elibility, questions about the process, and contact information for your school.<br /><br /> After you complete and submit this application, your school can review your eligibility for free and reduced price meals.";
 $lang['welcome_required'] = "You may be eligible if:";
 $lang['welcome_required_items'] = array(
 	array(
@@ -50,8 +51,7 @@ $lang['welcome_btn'] = "Apply Now";
 $lang['getting_started_title'] = "Getting Started";
 $lang['getting_started_description'] = "Please enter your name and if you are the household adult.";
 $land['getting_started_help'] = "Help text";
-$lang['welcome_enter_name'] = "Enter your name";
-$lang['welcome_over_eighteen'] = "Over 18 years old";
+$lang['getting_started_age'] = "Are you over the age of 21?";
 
 // Section Titles
 $lang['application_apply'] = "Apply for <strong>Free School Lunch</strong>";
@@ -139,4 +139,4 @@ $lang['label_adult_last'] = "Last Name";
 // Errors
 $lang['error_getting_started_first'] = "Please enter your first name";
 $lang['error_getting_started_last'] = "Please enter your last name";
-$lang['error_getting_started_mi'] = "Please enter your middle initial";
+$lang['error_getting_started_mi'] = "Please enter MI";

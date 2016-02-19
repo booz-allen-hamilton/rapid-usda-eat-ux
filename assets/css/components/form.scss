@@ -6,11 +6,19 @@ a:hover {
 .mb15 {
 	margin-bottom: 15px;
 }
+.mb20 {
+	margin-bottom: 20px;
+}
 .mb25 {
 	margin-bottom: 25px;
 }
 .mr10 {
 	margin-right: 10px !important;
+}
+
+.asterisk {
+	font-size: 30px;
+	color: $color-action;
 }
 
 #page-application-form {

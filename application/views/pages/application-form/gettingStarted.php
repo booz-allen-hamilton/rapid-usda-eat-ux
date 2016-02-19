@@ -1,6 +1,6 @@
 <div class="row text-center">
 	<h2><?=$this->lang->line('getting_started_title')?></h2>
-	<p><?=$this->lang->line('getting_started_description')?><?=help_icon($this->lang->line('getting_started_help'))?></p>
+	<p class="text-large"><?=$this->lang->line('getting_started_description')?><?=help_icon($this->lang->line('getting_started_help'))?></p>
 
 	<div class="col-sm-12 col-md-offset-3 col-md-6">
 		<div class="form-group col-sm-12 col-md-5 mr10">
@@ -19,11 +19,13 @@
 			<div class="help-block with-errors"></div>
 		</div>
 		<div class="form-group col-sm-12">
-			<label class="checkbox-inline">
-				<input type="checkbox" name="overEighteen" data-error="<?=$this->lang->line('error_over_eighteen')?>" required>
-				<span class="checkbox-label"><?=$this->lang->line('welcome_over_eighteen')?></span>
-			</label>
-			<div class="help-block with-errors"></div>
+			<p class="text-large mb20"><?=$this->lang->line('getting_started_age')?></p>
+			<div class="col-sm-12 col-md-offset-3 col-md-3">
+				<a href="#" class="button button-invert-green"><span style="padding-right: 20px;">&#10004;</span><?=$this->lang->line('yes')?></a>
+			</div>
+			<div class="col-sm-12 col-md-3">
+				<a href="#" class="button button-invert-red"><span style="padding-right: 20px;">&#10006;</span><?=$this->lang->line('no')?></a>
+			</div>
 		</div>
 	</div>
 </div>
