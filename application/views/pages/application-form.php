@@ -3,9 +3,9 @@
 <?
 	$form_attributes = array(
 		'id'           => 'form-application',
-		'class'                            => 'form-horizontal container',
+		'class'        => 'form-horizontal container',
 		'role'         => "form",
-		'data-toggle'	 => "validator",
+		'data-toggle'	=> "validator",
 	);
 	echo form_open($form['process'], $form_attributes);
 	

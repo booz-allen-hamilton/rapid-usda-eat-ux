@@ -28,4 +28,22 @@ class Static_pages extends Client_controller {
 
 		$this->load->view('layout/application', $data);
 	}
+
+	public function debug()
+	{
+		
+		$data['app'] = array(
+			'title' => $this->lang->line('nav_help'),
+			'view'  => 'pages/debug'
+		);
+		
+		$data['form'] = array(
+			'process'       => 'apply/process',
+			'section'       => $this->uri->segment(2),
+		);
+		
+		$data['global'] = $this->global;
+
+		$this->load->view('layout/application', $data);
+	}
 }

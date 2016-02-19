@@ -10,9 +10,12 @@
 <body>
 	<?
 		$this->load->view('layout/header');
-		$this->load->view($app['view']);
 	?>
-
+	<div class="container">
+		<?
+			$this->load->view($app['view']);
+		?>
+	</div>
 	<div id="modal-help" class="modal fade" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-md" role="document">
 			<div class="modal-content">

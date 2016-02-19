@@ -100,7 +100,7 @@ button.button,
 	&:hover {color: $color_red;}
 }
 
-.button-orange {
+.button-orange, .button-orange:focus  {
 	background-color: $color_action;
 	color: #fff;
 	font-weight: $fw_bold;

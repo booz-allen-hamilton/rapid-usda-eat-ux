@@ -62,3 +62,6 @@ $route['apply/cancel'] 	         = 'client/form/cancel';
 $route['apply/process']          = 'client/form/process';
 $route['client/language/(:any)'] = 'client_controller/language/$1';
 $route['status']                 = 'client/form/status';
+
+
+$route['debug/(:any)'] = 'client/static_pages/debug/$1';
