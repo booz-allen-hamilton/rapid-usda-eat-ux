@@ -11,29 +11,29 @@
 </div>
 <div class="row tableHeaders">
 	<div class="col-sm-12 col-md-4">
-		<i class="fa fa-asterisk"></i> <?=$this->lang->line('label_first')?>
+		<span class="asterisk">*</span> <?=$this->lang->line('label_first')?>
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<i class="fa fa-asterisk"></i> <?=$this->lang->line('label_last')?>
+		<span class="asterisk">*</span> <?=$this->lang->line('label_last')?>
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<?=$this->lang->line('label_middle')?>
+		<span class="asterisk"></span><?=$this->lang->line('label_middle')?>
 	</div>
 	<div class="col-sm-12 col-md-2">&nbsp;</div>
 	<div class="col-sm-12"><hr class="divider" /></div>
 </div>
 
 <!-- Children rows -->
-<div id="row childName-list">
+<div id="childName-list">
 	<div class="row tableItems">
 		<div class="col-sm-12 col-md-4">
-			<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" name="child_first[]">
+			<input type="text" class="form-control input-lg" name="child_first[]">
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" name="child_last[]">
+			<input type="text" class="form-control input-lg" name="child_last[]">
 		</div>
 		<div class="col-sm-12 col-md-2">
-			<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" name="child_middle[]">
+			<input type="text" class="form-control input-lg" name="child_middle[]">
 		</div>
 		<div class="col-sm-12 col-md-2 text-right">
 			<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
@@ -44,13 +44,13 @@
 
 <div class="row tableItems hide" id="childName-template">
 	<div class="col-sm-12 col-md-4">
-		<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" data-name="child_first[]">
+		<input type="text" class="form-control input-lg" data-name="child_first[]">
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" data-name="child_last[]">
+		<input type="text" class="form-control input-lg" data-name="child_last[]">
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" data-name="child_middle[]">
+		<input type="text" class="form-control input-lg" data-name="child_middle[]">
 	</div>
 	<div class="col-sm-12 col-md-2 text-right">
 		<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
@@ -61,7 +61,7 @@
 <div class="row text-center" style="margin-bottom: 50px;">
 	<div class="col-sm-12">
 		<div>
-			<a href="#" class="white-button" data-clone="#childName-template" data-target="#childName-list"><i class="fa fa-plus"></i> <?=$this->lang->line('label_add_child')?></a>
+			<a href="#" class="button button-invert-blue" data-clone="#childName-template" data-target="#childName-list"><i class="fa fa-plus"></i> <?=$this->lang->line('label_add_child')?></a>
 		</div>
 	</div>
 </div>
@@ -73,29 +73,29 @@
 </div>
 <div class="row tableHeaders">
 	<div class="col-sm-12 col-md-4">
-		<i class="fa fa-asterisk"></i> <?=$this->lang->line('label_first')?>
+		<span class="asterisk">*</span> <?=$this->lang->line('label_first')?>
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<i class="fa fa-asterisk"></i> <?=$this->lang->line('label_last')?>
+		<span class="asterisk">*</span> <?=$this->lang->line('label_last')?>
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<?=$this->lang->line('label_middle')?>
+		<span class="asterisk"></span><?=$this->lang->line('label_middle')?>
 	</div>
 	<div class="col-sm-12 col-md-2">&nbsp;</div>
 	<div class="col-sm-12"><hr class="divider" /></div>
 </div>
 
 <!-- Adult rows -->
-<div id="row adultName-list">
+<div id="adultName-list">
 	<div class="row tableHeaders">
 		<div class="col-sm-12 col-md-4">
-			<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" name="adult_first[]">
+			<input type="text" class="form-control input-lg" name="adult_first[]">
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" name="adult_last[]">
+			<input type="text" class="form-control input-lg" name="adult_last[]">
 		</div>
 		<div class="col-sm-12 col-md-2">
-			<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" name="adult_middle[]">
+			<input type="text" class="form-control input-lg" name="adult_middle[]">
 		</div>
 		<div class="col-sm-12 col-md-2 text-right">(You)</div>
 		<div class="col-sm-12"><hr class="divider" /></div>
@@ -104,13 +104,13 @@
 
 <div class="row tableItems hide" id="adultName-template">
 	<div class="col-sm-12 col-md-4">
-		<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" data-name="adult_first[]">
+		<input type="text" class="form-control input-lg" data-name="adult_first[]">
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" data-name="adult_last[]">
+		<input type="text" class="form-control input-lg" data-name="adult_last[]">
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" data-name="adult_middle[]">
+		<input type="text" class="form-control input-lg" data-name="adult_middle[]">
 	</div>
 	<div class="col-sm-12 col-md-2 text-right">
 		<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
@@ -131,10 +131,10 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title"><?=$this->lang->line('household_member_modal_header')?></h4>
+				<h4 class="modal-title"></h4>
 			</div>
 			<div class="modal-body">
-				<p><?=$this->lang->line('household_member_modal_body')?></p>
+				<p></p>
 			</div>
 		</div>
 	</div>
