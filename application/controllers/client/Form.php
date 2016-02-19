@@ -31,7 +31,7 @@ class Form extends Client_controller {
 			$form_view = 'pages/application-form';
 			$form_section = $this->form_sections[$current_form_step];
 			$form_scripts = array(
-				'lib/bootstrap-validator/dist/validator.min.js',
+				'lib/validator/dist/validator.min.js',
 				'js/form/form.js',
 				'js/form/'.$this->form_sections[$current_form_step].'.js'
 			);
