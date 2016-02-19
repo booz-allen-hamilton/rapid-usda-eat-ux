@@ -27,13 +27,13 @@
 <div id="row childName-list">
 	<div class="row tableItems">
 		<div class="col-sm-12 col-md-4">
-			<input type="text" class="form-control input-lg" name="child_first[]">
+			<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" name="child_first[]">
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<input type="text" class="form-control input-lg" name="child_last[]">
+			<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" name="child_last[]">
 		</div>
 		<div class="col-sm-12 col-md-2">
-			<input type="text" class="form-control input-lg" name="child_middle[]">
+			<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" name="child_middle[]">
 		</div>
 		<div class="col-sm-12 col-md-2 text-right">
 			<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
@@ -44,13 +44,13 @@
 
 <div class="row tableItems hide" id="childName-template">
 	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control input-lg" data-name="child_first[]">
+		<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" data-name="child_first[]">
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control input-lg" data-name="child_last[]">
+		<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" data-name="child_last[]">
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<input type="text" class="form-control input-lg" data-name="child_middle[]">
+		<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" data-name="child_middle[]">
 	</div>
 	<div class="col-sm-12 col-md-2 text-right">
 		<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
@@ -89,13 +89,13 @@
 <div id="row adultName-list">
 	<div class="row tableHeaders">
 		<div class="col-sm-12 col-md-4">
-			<input type="text" class="form-control input-lg" name="adult_first[]">
+			<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" name="adult_first[]">
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<input type="text" class="form-control input-lg" name="adult_last[]">
+			<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" name="adult_last[]">
 		</div>
 		<div class="col-sm-12 col-md-2">
-			<input type="text" class="form-control input-lg" name="adult_middle[]">
+			<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" name="adult_middle[]">
 		</div>
 		<div class="col-sm-12 col-md-2 text-right">(You)</div>
 		<div class="col-sm-12"><hr class="divider" /></div>
@@ -104,13 +104,13 @@
 
 <div class="row tableItems hide" id="adultName-template">
 	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control input-lg" data-name="adult_first[]">
+		<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" data-name="adult_first[]">
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control input-lg" data-name="adult_last[]">
+		<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" data-name="adult_last[]">
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<input type="text" class="form-control input-lg" data-name="adult_middle[]">
+		<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" data-name="adult_middle[]">
 	</div>
 	<div class="col-sm-12 col-md-2 text-right">
 		<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
