@@ -16,6 +16,10 @@
 		margin-bottom: 25px;
 	}
 
+	h3 {
+		font-weight: bold;
+	}
+
 	p {
 		font-size: 18px;
 	}
@@ -32,6 +36,67 @@
 
 	.welcome-information {
 		margin-bottom: 30px;
+
+		.form-control-feedback {
+			right: 10px;
+		}
+
+		.form-group {
+			margin-bottom: 0;
+		}
+
+		.mr10 {
+			margin-right: 10px;
+		}
+	}
+
+	.button-holder {
+		margin: 20px auto;
+		padding-left: 0;
+
+		.button-orange, .button-orange:focus  {
+			background-color: $color_action;
+			color: #fff;
+			font-weight: $fw_bold;
+			border: none;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	.checkbox-inline {
+		font-size: 18px;
+
+		input[type=checkbox] {
+			width: 44px;
+			height: 44px;
+			cursor: pointer;
+			-webkit-appearance: none;
+			appearance: none;
+			border: 1px solid #CCC;
+			border-radius: 6px;
+			text-decoration: none;
+			box-sizing: border-box;
+			transition: all .3s linear;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+		}
+
+		.checkbox-label {
+			padding-left: 40px;
+			line-height: 50px;
+		}
+
+		input[type="checkbox"]:checked{
+			background-color: $color_subtitle;
+			text-decoration: none;
+			border: 1px solid $color_title;
+		}
+
+		input[type="checkbox"]:focus{
+			outline: 0 none;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+		}
 	}
 }
 

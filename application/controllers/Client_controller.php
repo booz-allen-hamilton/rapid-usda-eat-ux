@@ -47,7 +47,11 @@ class Client_controller extends Application_controller
 		$this->load->helper('form');
 		$data['app'] = array(
 			'title' => $this->lang->line('welcome_title'),
-			'view'  => 'pages/welcome'
+			'view'  => 'pages/welcome',
+			'scripts' =>array(
+				'lib/validator/dist/validator.min.js',
+				'js/form/form.js'
+			)
 		);
 		
 		$data['form'] = array(

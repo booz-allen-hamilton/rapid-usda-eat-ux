@@ -28,7 +28,9 @@ $lang['nav_help'] = "Help";
 // Page Titles
 $lang['welcome_title'] = "Apply for <strong>Free School Lunch!</strong>";
 $lang['welcome_description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.";
-$lang['welcome_required'] = "Things you'll need";
+$lang['welcome_required'] = "CHECK ELIGIBILITY";
+$lang['welcome_enter_name'] = "Enter your name";
+$lang['welcome_over_eighteen'] = "Over 18 years old";
 $lang['welcome_required_items'] = array(
 	array(
 		'text' => 'Household income',
@@ -119,3 +121,9 @@ $lang['subsection_adult_income'] = "ADULT INCOME";
 $lang['label_adult_income'] = "List all Household Members (including yourself) <strong>even if they do not receive income</strong>. If you enter 'No income' or leave any fields blank, you are certifying (promising) that there is no income to report.";
 $lang['label_adult_first'] = "Adult's First Name";
 $lang['label_adult_last'] = "Last Name";
+
+
+// Errors
+$lang['error_welcome_first_name'] = "Please enter your first name";
+$lang['error_welcome_last_name'] = "Please enter your last name";
+$lang['error_over_eighteen'] = "You must be over 18";
