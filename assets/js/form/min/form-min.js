@@ -1,1 +1,1 @@
-$("[data-clone]").click(function(e){e.preventDefault();var t=$(this).attr("data-clone"),a=$(this).attr("data-target");$(t).clone().removeClass("hide").removeAttr("id").appendTo(a)}),$(document).on("click",".remove-item",function(e){e.preventDefault(),$(this).parents(".tableItems").fadeOut(500,function(){$(this).remove()})}),$("#form-application").validator({feedback:{success:"glyphicon-ok",error:"glyphicon-remove"}});
+$("#form-application").validator({feedback:{success:"glyphicon-ok",error:"glyphicon-remove"}});

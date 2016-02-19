@@ -10,7 +10,7 @@
 	</div>
 	<div class="form-group">
 		<div class="col-sm-12 col-md-offset-5 col-md-2">
-			<input type="number" class="form-control input-lg" name="numberChildren" required data-error="error message" />
+			<input type="number" min="0" class="form-control input-lg" name="numberChildren" required data-error="<?=$this->lang->line('error_children_number_field')?>" placeholder="<?=$this->lang->line('label_add_child_number')?>" />
 			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 			<div class="help-block with-errors"></div>
 		</div>
@@ -25,7 +25,7 @@
 	</div>
 	<div class="form-group">
 		<div class="col-sm-12 col-md-offset-5 col-md-2">
-			<input type="number" class="form-control input-lg" name="numberAdults" required data-error="error message" />
+			<input type="number" min="0" class="form-control input-lg" name="numberAdults" required data-error="<?=$this->lang->line('error_adult_number_field')?>" placeholder="<?=$this->lang->line('label_add_adult_number')?>" />
 			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 			<div class="help-block with-errors"></div>
 		</div>
@@ -37,10 +37,10 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title"></h4>
+				<h4 class="modal-title"><?=$this->lang->line('number_children_modal_header')?></h4>
 			</div>
 			<div class="modal-body">
-				<p></p>
+				<p><?=$this->lang->line('number_children_modal_body')?></p>
 			</div>
 		</div>
 	</div>
@@ -51,10 +51,10 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title"></h4>
+				<h4 class="modal-title"><?=$this->lang->line('number_adults_modal_header')?></h4>
 			</div>
 			<div class="modal-body">
-				<p></p>
+				<p><?=$this->lang->line('number_adults_modal_body')?></p>
 			</div>
 		</div>
 	</div>

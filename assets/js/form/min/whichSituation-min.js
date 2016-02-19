@@ -1,0 +1,1 @@
+$(function(){$("[data-value]").click(function(n){n.preventDefault()})});
