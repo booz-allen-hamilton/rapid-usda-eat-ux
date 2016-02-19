@@ -130,4 +130,4 @@ $lang['label_adult_last'] = "Last Name";
 // Errors
 $lang['error_getting_started_first'] = "Please enter your first name";
 $lang['error_getting_started_last'] = "Please enter your last name";
-$lang['error_getting_started_mi'] = "Please enter your middle initial";
+$lang['error_getting_started_mi'] = "Please enter MI";

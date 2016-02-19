@@ -84,18 +84,20 @@ button.button,
     border: 2px solid #ccc !important;
     color: #ccc !important; }
 
-.button-invert-green {
+.button-invert-green, .button-invert-green:focus {
   border: 2px solid #3ab54a;
   color: #3ab54a;
-  font-weight: 700; }
-  .button-invert-green:hover {
+  font-weight: 700;
+  text-decoration: none; }
+  .button-invert-green:hover, .button-invert-green:focus:hover {
     color: #3ab54a; }
 
-.button-invert-red {
+.button-invert-red, .button-invert-red:focus {
   border: 2px solid #ee3e35;
   color: #ee3e35;
-  font-weight: 700; }
-  .button-invert-red:hover {
+  font-weight: 700;
+  text-decoration: none; }
+  .button-invert-red:hover, .button-invert-red:focus:hover {
     color: #ee3e35; }
 
 .button-orange, .button-orange:focus {
@@ -223,6 +225,10 @@ a:hover {
 
 .mr10 {
   margin-right: 10px !important; }
+
+.asterisk {
+  font-size: 30px;
+  color: #fbb03f; }
 
 #page-application-form {
   padding-bottom: 200px; }
