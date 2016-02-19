@@ -32,4 +32,5 @@
 	<div class="footer text-center">
 		<a href="<?=base_url('apply/cancel')?>" class="link">Cancel</a>
 	</div>
+	</div>
 </div>
