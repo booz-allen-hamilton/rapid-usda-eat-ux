@@ -27,25 +27,26 @@ $lang['nav_help'] = "Help";
 
 // Page Titles
 $lang['welcome_title'] = "Apply for <strong>Free School Lunch!</strong>";
-$lang['welcome_description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.";
-$lang['welcome_required'] = "CHECK ELIGIBILITY";
-$lang['welcome_enter_name'] = "Enter your name";
-$lang['welcome_over_eighteen'] = "Over 18 years old";
+$lang['welcome_description'] = "Welcome to the application for free and reduced price meals.";
+$lang['welcome_required'] = "You may be eligible if:";
 $lang['welcome_required_items'] = array(
 	array(
-		'text' => 'Household income',
+		'text' => 'You meet income level requirements',
 		'help' => 'help text'
 	),
 	array(
-		'text' => "Primary wage earner's Social Security #",
+		'text' => 'A household member is already receiving benefits from certain government programs',
 		'help' => 'help text'
 	),
 	array(
-		'text' => 'Case number if participating in an assistance program',
+		'text' => 'All foster children in household',
 		'help' => 'help text'
 	),
 );
-$lang['welcome_btn'] = "Get Started";
+$lang['welcome_btn'] = "Apply Now";
+
+$lang['welcome_enter_name'] = "Enter your name";
+$lang['welcome_over_eighteen'] = "Over 18 years old";
 
 // Section Titles
 $lang['application_apply'] = "Apply for <strong>Free School Lunch</strong>";

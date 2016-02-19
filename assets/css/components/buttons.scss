@@ -7,18 +7,18 @@
 		color: $color_action;
 	}
 
-	.fa-info {
+	.fa-question {
 		color: $color_action;
 	}
 
-	.fa-info:before {
-		content: "i";
+	.fa-question:before {
+		content: "?";
 		left: 0;
 		width: 24px!important;
+		font-weight: bold;
 		height: 24px;
 		margin-top: 0;
 		font-size: 20px;
-		font-weight: 500;
 		line-height: 23px;
 		text-align: center;
 		color: #FBB040  ;
