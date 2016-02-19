@@ -135,6 +135,9 @@ $lang['label_adult_income'] = "List all Household Members (including yourself) <
 $lang['label_adult_first'] = "Adult's First Name";
 $lang['label_adult_last'] = "Last Name";
 
+// Success
+$lang['success_submission_id'] = "Submission ID: ";
+$lang['success_return'] = "Return Home";
 
 // Errors
 $lang['error_getting_started_first'] = "Please enter your first name";

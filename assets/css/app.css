@@ -309,6 +309,18 @@ a:hover {
     font-weight: bold; }
     #page-application-form .white-button:hover {
       text-decoration: none; }
+  #page-application-form .success h2 {
+    color: #3ab54a; }
+  #page-application-form .success i {
+    background-color: #3ab54a;
+    color: white;
+    border-radius: 90px;
+    padding: 15px; }
+  #page-application-form .success .button {
+    margin-top: 30px;
+    color: #00aeef;
+    border-color: #00aeef;
+    font-weight: 500; }
   #page-application-form .black-button-large:hover {
     color: #FFF;
     text-decoration: none; }
@@ -320,11 +332,11 @@ a:hover {
     font-size: 18px; }
   #page-application-form .footer {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     height: 80px;
     border-top: 1px solid #BBB;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     background: #fff;
     padding: 20px 0; }
     #page-application-form .footer a.link {
