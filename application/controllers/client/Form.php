@@ -109,10 +109,12 @@ class Form extends Client_controller {
 
 	/**
 	 * Process Form
+	 * validate form and process 
 	 * @return [type] [description]
 	 */
 	public function process() {
 		$form_step = $this->get_form_step();
+		$this->load->library('form_validation');
 
 		switch($form_step) {
 			default:
@@ -121,7 +123,18 @@ class Form extends Client_controller {
 				redirect('apply');
 			break;
 			case 1:
-				$this->set_form_step(2);
+				$this->form_validation->set_rules('numberChildren', '', 'required|numeric');
+				$this->form_validation->set_rules('numberAdults', '', 'required|numeric');
+				if ($this->form_validation->run() == FALSE) {
+					$this->session->set_flashdata('error_alert', 'error');
+				} else {
+					$form_data = array(
+						'numberChildren' => $this->input->post('numberChildren'),
+						'numberAdults' => $this->input->post('numberAdults'),
+					);
+					$this->session->set_userdata('form_section_1', $form_data);
+					$this->set_form_step(2);
+				}
 				redirect('apply');
 			break;
 			case 2:
@@ -143,24 +156,6 @@ class Form extends Client_controller {
 			case 6:
 			break;
 		}
-
-
-
-		// $this->load->library('form_validation');
-		//
-		// //	validate form items
-		// $this->form_validation->set_rules('first_name', $this->lang->line('asdfsad'), 'required|max_length[50]');
-		// $this->form_validation->set_rules('last_name', $this->lang->line('asdfsad'), 'required|max_length[50]');
-		// $this->form_validation->set_rules('first_name', $this->lang->line('asdfsad'), 'required|max_length[50]');
-		// $this->form_validation->set_rules('first_name', $this->lang->line('asdfsad'), 'required|max_length[50]');
-		// $this->form_validation->set_rules('first_name', $this->lang->line('asdfsad'), 'required|max_length[50]');
-		// $this->form_validation->set_rules('first_name', $this->lang->line('asdfsad'), 'required|max_length[50]');
-		// $this->form_validation->set_rules('first_name', $this->lang->line('asdfsad'), 'required|max_length[50]');
-		//
-		// if ($this->form_validation->run() == FALSE) {
-		// 	$this->session->set_flashdata('error_alert', 'error');
-		// 	redirect('apply');
-		// }
 	}
 
 	protected function get_form_step() {
