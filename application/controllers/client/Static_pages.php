@@ -38,7 +38,7 @@ class Static_pages extends Client_controller {
 			'scripts' => array(
 				'lib/validator/dist/validator.min.js',
 				'js/form/form.js',
-				'js/form/'.$this->form_sections[$current_form_step].'.js'
+				'js/form/'.$this->uri->segment(2).'.js'
 			)
 		);
 		
