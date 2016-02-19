@@ -17,6 +17,8 @@ $lang['form_server_error'] = "There was a problem saving the form. Please try ag
 $lang['ssn'] = "Social Security Number";
 $lang['assistance_program_case_number'] = "Assistance Program Case Number";
 $lang['household_income'] = "Household Income";
+$lang['assistance_program'] = "Assistance Program";
+$lang['case_number'] = "Case Number";
 
 // Header
 $lang['nav_how_it_works'] = "How it Works";
@@ -78,6 +80,12 @@ $lang['modal_assistance_snap'] = "Supplemental Nutrition Assistance Program";
 $lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
 $lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
 $lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
+
+//Other Assistance
+$lang['other_assistance'] = "Other Assistance";
+$lang['other_assistance_subtitle'] = "Are you, or anyone in your household, currently a recipient of benefits under the <b>SNAP</b>, the <b>TANF</b> cash assistance program, or the <b>FDPIR</b>?";
+$lang['example_case_number'] = "ex. 2363954301";
+$lang['other_assistance_help'] = "Other assistance help";
 
 // Household
 $lang['title_household'] = "All Household Members";
