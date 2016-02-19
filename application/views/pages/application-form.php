@@ -3,8 +3,8 @@
 	$form_attributes = array(
 		'id'           => 'form-application',
 		'class'        => 'form-horizontal',
-		'data-toggle'	 => "validator",
 		'role'         => "form",
+		'data-toggle'	 => "validator",
 	);
 	echo form_open($form['process'], $form_attributes);
 	$this->load->view('pages/application-form/'.$form['section']);

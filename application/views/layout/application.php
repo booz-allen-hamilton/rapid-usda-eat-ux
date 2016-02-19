@@ -5,7 +5,6 @@
 	<title><?=$app['title']?></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?=PATH_VENDOR?>twbs/bootstrap/dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="<?=PATH_ASSETS?>lib/formValidation/dist/css/formValidation.css" />
 	<link rel="stylesheet" href="<?=PATH_ASSETS?>css/app.css" />
 </head>
 <body>
