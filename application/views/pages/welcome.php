@@ -1,19 +1,3 @@
-<?
-$form_attributes = array(
-	'id'           => 'form-application',
-	'class'        => 'form-horizontal container',
-	'role'         => "form",
-	 'data-toggle'	 => "validator",
-);
-echo form_open($form['process'], $form_attributes);
-
-//	error message
-if ($this->session->flashdata('error_alert')) { ?>
-<div class="alert alert-warning">
-  	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		<?=$this->lang->line('form_server_error');?>
-</div>
-<? } ?>
 <div id="page-welcome">
 	<div class="container">
 		<div class="row">
@@ -42,14 +26,5 @@ if ($this->session->flashdata('error_alert')) { ?>
 				<img src="<?=PATH_ASSETS?>img/apple.png" class="img-responsive" />
 			</div>
 		</div>
-		<div class="row">
-
-			<div class="col-sm-12 col-md-4 welcome-image">
-
-			</div>
-		</div>
 	</div>
 </div>
-<?
-echo form_close();
-?>
