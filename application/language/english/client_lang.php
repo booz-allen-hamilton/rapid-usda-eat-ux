@@ -135,6 +135,10 @@ $lang['label_adult_income'] = "List all Household Members (including yourself) <
 $lang['label_adult_first'] = "Adult's First Name";
 $lang['label_adult_last'] = "Last Name";
 
+// Electronic Signature
+$lang['electronic_sig_subtitle'] = "Please indicate that you comply with the statement below and enter last four digits of Social Security Number (if applicable).";
+$lang['electronic_sig_statement'] = "The person signing is furnishing true information and to advise that person that the application is being made in connection with the receipt of Federal funds; School officials may verify the information on the application; and Deliberate misrepresentation of the information may subject the applicant to prosecution under State and Federal statutes.";
+
 // Success
 $lang['success_submission_id'] = "Submission ID: ";
 $lang['success_return'] = "Return Home";
