@@ -5,7 +5,7 @@
 		'id'           => 'form-application',
 		'class'                            => 'form-horizontal container',
 		'role'         => "form",
-		// 'data-toggle'	 => "validator",
+		'data-toggle'	 => "validator",
 	);
 	echo form_open($form['process'], $form_attributes);
 	
@@ -15,7 +15,6 @@
 	<div class="alert alert-warning">
   	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		<?=$this->lang->line('form_server_error');?>
-		asdsdfds
 	</div>
 <?
 	}
