@@ -7,6 +7,7 @@
 			font-weight: $fw_extra_bold;
 		}
 	}
+
 	h2 {
 		color: $color_subtitle;
 		font-size: 24px;
@@ -14,16 +15,28 @@
 		margin-top: 45px;
 		margin-bottom: 25px;
 	}
+
 	p {
 		font-size: 18px;
 	}
+
 	ol {
 		font-weight: 300;
 		font-size: 22px;
-		padding-left: 20px;
+		padding-left: 30px;
 		margin-bottom: 50px;
 		li {
 			margin-bottom: 15px;
 		}
+	}
+
+	.welcome-information {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.welcome-image {
+		display: none;
 	}
 }

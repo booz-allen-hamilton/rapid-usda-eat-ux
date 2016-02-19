@@ -3,9 +3,9 @@ body {
 }
 
 .navbar.navbar-default.navbar-usda {
-	height: 70px;
 	background-color: #FFF;
 	border-bottom: 1px solid #ccc;
+
 	.nav.navbar-nav {
 		margin-top: 10px;
 		li {
@@ -17,7 +17,7 @@ body {
 		li.active {
 			a {
 				font-weight: bold;
-				background: none;
+				background: #FFF;
 			}
 		}
 		li:hover {
@@ -30,6 +30,7 @@ body {
 			}
 		}
 	}
+
 	.navbar-brand {
 		color: #000;
 		display: block;
