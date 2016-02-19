@@ -34,7 +34,12 @@ class Static_pages extends Client_controller {
 		
 		$data['app'] = array(
 			'title' => $this->lang->line('nav_help'),
-			'view'  => 'pages/debug'
+			'view'  => 'pages/debug',
+			'scripts' => array(
+				'lib/validator/dist/validator.min.js',
+				'js/form/form.js',
+				'js/form/'.$this->form_sections[$current_form_step].'.js'
+			)
 		);
 		
 		$data['form'] = array(
