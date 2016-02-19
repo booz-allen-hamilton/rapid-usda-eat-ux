@@ -18,7 +18,6 @@ $lang['ssn'] = "Social Security Number";
 $lang['assistance_program_case_number'] = "Assistance Program Case Number";
 $lang['household_income'] = "Household Income";
 
-
 // Header
 $lang['nav_how_it_works'] = "How it Works";
 $lang['nav_apply_now'] = "Apply Now";
@@ -45,6 +44,10 @@ $lang['welcome_required_items'] = array(
 );
 $lang['welcome_btn'] = "Apply Now";
 
+// Getting Started
+$lang['getting_started_title'] = "Getting Started";
+$lang['getting_started_description'] = "Please enter your name and if you are the household adult.";
+$land['getting_started_help'] = "Help text";
 $lang['welcome_enter_name'] = "Enter your name";
 $lang['welcome_over_eighteen'] = "Over 18 years old";
 
@@ -125,6 +128,6 @@ $lang['label_adult_last'] = "Last Name";
 
 
 // Errors
-$lang['error_welcome_first_name'] = "Please enter your first name";
-$lang['error_welcome_last_name'] = "Please enter your last name";
-$lang['error_over_eighteen'] = "You must be over 18";
+$lang['error_getting_started_first'] = "Please enter your first name";
+$lang['error_getting_started_last'] = "Please enter your last name";
+$lang['error_getting_started_mi'] = "Please enter your middle initial";
