@@ -137,22 +137,27 @@ body {
   margin-top: 20px; }
   #page-welcome h1 {
     font-size: 48px;
-    color: #038bce; }
+    color: #038bce;
+    margin-top: 70px; }
     #page-welcome h1 strong {
       font-weight: 900; }
   #page-welcome h2 {
     color: #00aeef;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
-    margin-top: 45px;
+    margin-top: 7px;
     margin-bottom: 25px; }
   #page-welcome h3 {
     font-weight: bold; }
   #page-welcome p {
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 100; }
+    #page-welcome p.text-large {
+      font-size: 22px; }
   #page-welcome ol {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 28px;
     padding-left: 30px;
     margin-bottom: 20px; }
     #page-welcome ol li {
@@ -209,6 +214,9 @@ a:hover {
 
 .mb15 {
   margin-bottom: 15px; }
+
+.mb20 {
+  margin-bottom: 20px; }
 
 .mb25 {
   margin-bottom: 25px; }
@@ -380,3 +388,5 @@ a:hover {
     height: auto; }
     #page-application-form .footer .footer-bav-connector {
       width: 27px; } }
+
+/*# sourceMappingURL=app.css.map */
