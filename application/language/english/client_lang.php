@@ -59,8 +59,9 @@ $lang['section_four_title'] = "Contact Information";
 // Which Situation Applies
 $lang['situation_heading'] = "Does one of these situations apply to you?";
 $lang['what_youll_need'] = "WHAT YOU'LL NEED";
-$lang['at_least_one_household_member'] = "At least one household member already receives assistance.";
-$lang['all_household_children'] = "All household children are foster children.";
+$lang['at_least_one_household_member'] = "At least one household member already receives SNAP, TANF or FDPIR";
+$lang['all_household_children'] = "<u>ALL</u> household children are foster children";
+$lang['none_apply'] = "None of these apply";
 
 // Assistance Skip Pattern
 $lang['title_assistance'] = "Other Assistance";

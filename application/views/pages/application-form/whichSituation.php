@@ -8,7 +8,7 @@
 			</a>
 		</p>
 		<a href="#" class="circular_button" data-value="assistance">
-			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 25%;">
+			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 20%;">
 				<?=$this->lang->line('at_least_one_household_member')?>
 			</div>
 		</a>
@@ -43,7 +43,7 @@
 	<div class="col-sm-12 col-md-4">
 		<a href="#" class="circular_button" data-value="no">
 			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 43%;">
-				<?=$this->lang->line('no')?>
+				<?=$this->lang->line('none_apply')?>
 			</div>
 		</a>
 		<div class="grey_header">
