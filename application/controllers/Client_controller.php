@@ -47,6 +47,10 @@ class Client_controller extends Application_controller
 			'title' => $this->lang->line('welcome_title'),
 			'view'  => 'pages/welcome'
 		);
+		
+		$data['form'] = array(
+			'process' => 'apply/process'
+		);
 
 		$data['global'] = $this->global;
 
