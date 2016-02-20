@@ -27,6 +27,7 @@ $lang['nav_application_status'] = "My Status";
 $lang['nav_help'] = "Help";
 
 // Page Titles
+$lang['welcome_page_title'] = "Apply for Free or Reduced-Price Meals";
 $lang['welcome_title'] = "Apply for <strong>Free</strong> or <strong>Reduced-Price Meals!</strong>";
 $lang['welcome_description_part_one'] = "This webform is your quick and secure way to apply. Everything you need to know about applying for free and reduced price meals can be found here. Click the yellow question mark icon";
 $lang['welcome_description_part_two'] = "to open up the Help Menu and click it again to close it. General FAQ contains information about elibility, questions about the process, and contact information for your school.<br /><br /> After you complete and submit this application, your school can review your eligibility for free and reduced price meals.";
@@ -52,6 +53,24 @@ $lang['getting_started_title'] = "Getting Started";
 $lang['getting_started_description'] = "Please enter your name and if you are the household adult.";
 $land['getting_started_help'] = "Help text";
 $lang['getting_started_age'] = "Are you over the age of 21?";
+$lang['getting_started_elements'] = array(
+	'first_name' => array(
+		'label'       => "First Name",
+		'placeholder' => "John",
+		'error'				=> "Please enter your first name"
+	),
+	'last_name' => array(
+		'label'       => "Last Name",
+		'placeholder' => "Doe",
+		'error'				=> "Please enter your first name"
+	),
+	'middle_initial' => array(
+		'label'       => "Middle",
+		'placeholder' => "C",
+		'error'				=> "Please enter your first name"
+	),
+);
+$lang['error_age_validation'] = "Sorry. You must be over 21 to proceed with the application.";
 
 // Section Titles
 $lang['application_apply'] = "Apply for <strong>Free School Lunch</strong>";
@@ -143,8 +162,3 @@ $lang['electronic_sig_statement'] = "The person signing is furnishing true infor
 // Success
 $lang['success_submission_id'] = "Submission ID: ";
 $lang['success_return'] = "Return Home";
-
-// Errors
-$lang['error_getting_started_first'] = "Please enter your first name";
-$lang['error_getting_started_last'] = "Please enter your last name";
-$lang['error_getting_started_mi'] = "Please enter MI";

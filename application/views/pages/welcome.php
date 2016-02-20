@@ -31,7 +31,9 @@
 					?>
 				</ol>
 				<div class="col-sm-12 button-holder">
-					<button type="submit" class="button button-lg button-orange"><?=$this->lang->line('welcome_btn')?> <i class="icon-right fa fa-angle-right"></i></button>
+					<a href="<?=base_url('apply')?>" class="button button-lg button-orange">
+						<?=$this->lang->line('welcome_btn')?><i class="icon-right fa fa-angle-right"></i>
+					</a>
 				</div>
 			</div>
 		</div>

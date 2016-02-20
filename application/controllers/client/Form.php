@@ -40,50 +40,51 @@ class Form extends Client_controller {
 	{
 		$this->load->helper('form');
 
-		//	get current form step
-		$current_form_step = $this->get_form_step();
-		$form_scenario = $this->get_form_scenario();
-		if ($current_form_step != FALSE) {
-			$form_view = 'pages/application-form';
-			
-			$form_sections = NULL;
-			if($form_scenario != FALSE) {
-				switch($form_scenario) {
-					case 'assistance':
-						$form_sections = $this->$form_scenario_a;
-						$current_form_section = $this->$form_scenario_a[$current_form_step];
-					break;
-					case 'foster':
-						$form_sections = $this->$form_scenario_b;
-						$current_form_section = $this->$form_scenario_b[$current_form_step];
-					break;
-					case 'no':
-						$form_sections = $this->$form_scenario_c;
-						$current_form_section = $this->$form_scenario_c[$current_form_step];
-					break;
-				}
-			} else {
-				$form_section = 'whichSituation';
+		//	get saved form data
+		$current_form_step     = $this->get_form_step();
+		$current_form_scenario = $this->get_form_scenario();
+
+		//	if step doesn't exist start user from beginning
+		if ($current_form_step == FALSE) {
+			$form_sections          = NULL;
+			$scenario_form_sections = NULL;
+			$current_form_section   = 'gettingStarted';
+		}
+		//	if session exists
+		else {
+			switch($current_form_scenario) {
+				case 'assistance':
+					$scenario_form_sections = $this->$form_scenario_a;
+					$current_form_section = $this->$form_scenario_a[$current_form_step];
+				break;
+				case 'foster':
+					$scenario_form_sections = $this->$form_scenario_b;
+					$current_form_section = $this->$form_scenario_b[$current_form_step];
+				break;
+				case 'no':
+					$scenario_form_sections = $this->$form_scenario_c;
+					$current_form_section = $this->$form_scenario_c[$current_form_step];
+				break;
+				default:
+					$scenario_form_sections = NULL;
+					$current_form_section = 'whichSituation';
+				break;
 			}
-			
-			$form_scripts = array(
-				'lib/validator/dist/validator.min.js',
-				'js/form/form.js',
-				'js/form/'.$this->form_sections[$current_form_step].'.js'
-			);
-		} else {
-			redirect(base_url());
 		}
 
 		$data['global'] = $this->global;
 		$data['app'] = array(
 			'title'   => $this->lang->line('welcome_title'),
-			'view'    => $form_view,
-			'scripts' => $form_scripts
+			'view'    => 'pages/application-form',
+			'scripts' => array(
+				'lib/validator/dist/validator.min.js',
+				'js/form/form.js',
+				'js/form/'.$current_form_section.'.js'
+			)
 		);
 
 		$data['form'] = array(
-			'form_sections' => $form_sections,
+			'form_sections' => $scenario_form_sections,
 			'process'       => 'apply/process',
 			'section'       => $current_form_section,
 			'step'          => $this->get_form_step()
@@ -142,30 +143,31 @@ class Form extends Client_controller {
 
 	/**
 	 * Process Form
-	 * validate form and process 
+	 * validate form and process
 	 * @return [type] [description]
 	 */
 	public function process() {
 		$form_step = $this->get_form_step();
 		$this->load->library('form_validation');
-		
+
+		$error_alert_message = 'error';	//	outputted with $this->lang->line('error');
 		switch($form_step) {
 			default:
 			case 'start':
-				$this->form_validation->set_rules('firstName', '', 'required|max_length[30]');
-				$this->form_validation->set_rules('lastName', '', 'required|max_length[30]');
-				$this->form_validation->set_rules('over18yearsold', '', 'required|in_list[1]');
+				$this->form_validation->set_rules('getting_started_first_name', '', 'required|max_length[30]');
+				$this->form_validation->set_rules('getting_started_last_name', '', 'required|max_length[30]');
+				$this->form_validation->set_rules('age_validation', '', 'required|in_list[1]');
 				$next_step = 'scenario';
+				$error_alert_message = 'error_age_validation';
 			break;
 			case 'scenario':
 				$this->form_validation->set_rules('scenario', '', 'required|in_list[assistance|foster|no]');
 			break;
 		}
-		
+
 		if ($this->form_validation->run() == FALSE) {
-			$this->session->set_flashdata('error_alert', 'error');
+			$this->session->set_flashdata('error_alert', $error_alert_message);
 		} else {
-			
 			switch($form_step) {
 				case 'start':
 					$primary_household_member = array(
@@ -180,9 +182,9 @@ class Form extends Client_controller {
 			}
 			$this->set_form_step($next_step);
 		}
-		
+
 		redirect('apply');
-		
+
 
 		// switch($form_step) {
 		// 	default:
@@ -190,8 +192,8 @@ class Form extends Client_controller {
 		// 		$this->form_validation->set_rules('firstName', '', 'required|max_length[30]');
 		// 		$this->form_validation->set_rules('lastName', '', 'required|max_length[30]');
 		// 		$this->form_validation->set_rules('over18yearsold', '', 'required|in_list[1]');
-		// 	
-		// 	
+		//
+		//
 		// 		$this->set_form_step(1);
 		// 		redirect('apply');
 		// 	break;
@@ -231,6 +233,10 @@ class Form extends Client_controller {
 		// }
 	}
 
+	/**
+	 * Get Form Step
+	 * @return [type] [description]
+	 */
 	protected function get_form_step() {
 		if (!$this->session->userdata('form_step')) {
 			return FALSE;
@@ -239,6 +245,10 @@ class Form extends Client_controller {
 		}
 	}
 
+	/**
+	 * Get Form Scenario
+	 * @return [type] [description]
+	 */
 	protected function get_form_scenario() {
 		if (!$this->session->userdata('form_scenario')) {
 			return FALSE;
@@ -247,6 +257,10 @@ class Form extends Client_controller {
 		}
 	}
 
+	/**
+	 * Set Form Step
+	 * @param [type] $step [description]
+	 */
 	protected function set_form_step($step) {
 		$this->session->set_userdata('form_step', $step);
 	}

@@ -3,18 +3,6 @@ a:hover {
  	text-decoration: none;
  	color: #000;
 }
-.mb15 {
-	margin-bottom: 15px;
-}
-.mb20 {
-	margin-bottom: 20px;
-}
-.mb25 {
-	margin-bottom: 25px;
-}
-.mr10 {
-	margin-right: 10px !important;
-}
 
 .asterisk {
 	font-size: 30px;
@@ -53,6 +41,9 @@ a:hover {
 		&.text-large {
 			font-size: 24px;
 		}
+	}
+	label {
+		font-size: 18px;
 	}
 	.tableHeaders {
 		hr.divider {
@@ -170,7 +161,7 @@ a:hover {
 		border-top: 1px solid #BBB;
 		left: 0;
 		right: 0;
-		background: #fff;
+		background: #f6f6f6;
 		padding: 20px 0;
 		a.link {
 			padding: 10px;

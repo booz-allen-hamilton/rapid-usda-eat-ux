@@ -43,6 +43,15 @@ button.button,
 			margin-left: 10px;
 		}
 	}
+	&.button-md {
+		padding: 10px 50px;
+		font-size: 20px;
+		i {
+			&.icon-right {
+				margin-left: 15px;
+			}
+		}
+	}
 	&.button-lg {
 		padding: 10px 50px;
 		font-size: 24px;

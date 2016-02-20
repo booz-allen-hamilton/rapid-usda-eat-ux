@@ -1,30 +1,53 @@
-<div class="row text-center">
-	<h2><?=$this->lang->line('getting_started_title')?></h2>
-	<p class="text-large"><?=$this->lang->line('getting_started_description')?><?=help_icon($this->lang->line('getting_started_help'))?></p>
-
-	<div class="col-sm-12 col-md-offset-3 col-md-6">
-		<div class="form-group col-sm-12 col-md-5 mr10">
-			<input type="text" class="form-control input-lg" name="submitter_first" placeholder="First Name" required data-error="<?=$this->lang->line('error_getting_started_first')?>" />
-			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-			<div class="help-block with-errors"></div>
+<?=form_hidden('age_validation', 0);?>
+<div class="row">
+	<div class="col-sm-12 text-center">
+		<h2><?=$this->lang->line('getting_started_title')?></h2>
+		<p class="text-large"><?=$this->lang->line('getting_started_description')?><?=help_icon($this->lang->line('getting_started_help'))?></p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12 col-md-offset-2 col-md-8">
+		<div class="row">
+			<div class="col-sm-12 col-md-5">
+				<div class="form-group">
+					<label><?=$this->lang->line('getting_started_elements')['first_name']['label']?></label>
+					<input type="text"
+						class="form-control input-lg"
+						name="getting_started_first_name"
+						placeholder="<?=$this->lang->line('getting_started_elements')['first_name']['placeholder']?>"
+						required
+						data-error="<?=$this->lang->line('getting_started_elements')['first_name']['error']?>" />
+					<div class="help-block with-errors"></div>
+				</div>
+			</div>
+			<div class="form-group col-sm-12 col-md-5">
+				<label><?=$this->lang->line('getting_started_elements')['last_name']['label']?></label>
+				<input type="text"
+					class="form-control input-lg"
+					name="getting_started_last_name"
+					placeholder="<?=$this->lang->line('getting_started_elements')['last_name']['placeholder']?>"
+					required
+					data-error="<?=$this->lang->line('getting_started_elements')['last_name']['error']?>" />
+				<div class="help-block with-errors"></div>
+			</div>
+			<div class="form-group col-sm-12 col-md-2">
+				<label><?=$this->lang->line('getting_started_elements')['middle_initial']['label']?></label>
+				<input type="text"
+					class="form-control input-lg col-md-1"
+					name="getting_started_middle_initial"
+					placeholder="<?=$this->lang->line('getting_started_elements')['middle_initial']['placeholder']?>"
+					required
+					data-error="<?=$this->lang->line('getting_started_elements')['middle_initial']['error']?>" />
+				<div class="help-block with-errors"></div>
+			</div>
 		</div>
-		<div class="form-group col-sm-12 col-md-5 mr10">
-			<input type="text" class="form-control input-lg" name="submitter_last" placeholder="Last Name" required data-error="<?=$this->lang->line('error_getting_started_last')?>" />
-			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-			<div class="help-block with-errors"></div>
-		</div>
-		<div class="form-group col-sm-12 col-md-2">
-			<input type="text" class="form-control input-lg" name="submitter_last" placeholder="MI" required data-error="<?=$this->lang->line('error_getting_started_mi')?>" />
-			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-			<div class="help-block with-errors"></div>
-		</div>
-		<div class="form-group col-sm-12">
-			<p class="text-large mb20"><?=$this->lang->line('getting_started_age')?></p>
+		<div class="form-group col-sm-12 text-center">
+			<p class="text-large mb-30"><?=$this->lang->line('getting_started_age')?></p>
 			<div class="col-sm-12 col-md-offset-3 col-md-3">
-				<a href="#" class="button button-invert-green"><span style="padding-right: 20px;">&#10004;</span><?=$this->lang->line('yes')?></a>
+				<button type="submit" data-value="1" class="button button-invert-green"><span style="padding-right: 20px;">&#10004;</span><?=$this->lang->line('yes')?></button>
 			</div>
 			<div class="col-sm-12 col-md-3">
-				<a href="#" class="button button-invert-red"><span style="padding-right: 20px;">&#10006;</span><?=$this->lang->line('no')?></a>
+				<button type="submit" data-value="0" class="button button-invert-red"><span style="padding-right: 20px;">&#10006;</span><?=$this->lang->line('no')?></button>
 			</div>
 		</div>
 	</div>
