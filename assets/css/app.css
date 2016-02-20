@@ -230,7 +230,7 @@ a:hover {
   font-size: 30px;
   color: #fbb03f;
   font-weight: bold;
-  margin-right: 10px; }
+  margin-right: 2px; }
 
 #page-application-form {
   padding-bottom: 200px; }
@@ -258,7 +258,10 @@ a:hover {
       font-size: 24px; }
   #page-application-form .tableHeaders {
     font-size: 18px;
-    text-align: left; }
+    text-align: left;
+    font-weight: bold; }
+    #page-application-form .tableHeaders hr.divider {
+      margin-top: 2px; }
   #page-application-form hr.divider {
     border-top: 1px solid #eee; }
   #page-application-form .tableItems .remove-item {
@@ -434,5 +437,3 @@ a:hover {
     height: auto; }
     #page-application-form .footer .footer-bav-connector {
       width: 27px; } }
-
-/*# sourceMappingURL=app.css.map */

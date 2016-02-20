@@ -20,7 +20,7 @@ a:hover {
 	font-size: 30px;
 	color: $color-action;
 	font-weight: bold;
-	margin-right: 10px;
+	margin-right: 2px;
 }
 
 #page-application-form {
@@ -55,8 +55,12 @@ a:hover {
 		}
 	}
 	.tableHeaders {
+		hr.divider {
+			margin-top: 2px;
+		}
 		font-size: 18px;
 		text-align: left;
+		font-weight: bold;
 	}
 	hr.divider {
 		border-top: 1px solid #eee;

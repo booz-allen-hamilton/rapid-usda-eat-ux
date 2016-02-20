@@ -1,15 +1,14 @@
 <div class="row text-center">
 	<div class="col-sm-12">
-		<h2><?=$this->lang->line('title_household_members')?></h2>
+		<h2><?=$this->lang->line('title_household_children')?></h2>
 		<p><?=$this->lang->line('subtitle_household_members')?>
 			<a href="#" data-toggle="modal" data-target="#householdMembersClarification">
 				<span class="glyphicon glyphicon-info-sign"></span>
 			</a>
 		</p>
-		<h3><?=$this->lang->line('section_title_children')?></h3>
 	</div>
 </div>
-<div class="row tableHeaders">
+<div class="row tableHeaders" style="margin-top: 20px;">
 	<div class="col-sm-12 col-md-4">
 		<span class="asterisk">*</span> <?=$this->lang->line('label_first')?>
 	</div>
@@ -27,13 +26,17 @@
 <div id="childName-list">
 	<div class="row tableItems">
 		<div class="col-sm-12 col-md-4">
-			<input type="text" class="form-control input-lg" name="child_first[]">
+			<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" name="child_first[]" required data-error="<?=$this->lang->line('error_household_students_first')?>">
+			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+			<div class="help-block with-errors"></div>
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<input type="text" class="form-control input-lg" name="child_last[]">
+			<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" name="child_last[]" required data-error="<?=$this->lang->line('error_household_students_last')?>">
+			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+			<div class="help-block with-errors"></div>
 		</div>
 		<div class="col-sm-12 col-md-2">
-			<input type="text" class="form-control input-lg" name="child_middle[]">
+			<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" name="child_middle[]">
 		</div>
 		<div class="col-sm-12 col-md-2 text-right">
 			<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
@@ -44,13 +47,17 @@
 
 <div class="row tableItems hide" id="childName-template">
 	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control input-lg" data-name="child_first[]">
+		<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" name="child_first[]" required data-error="<?=$this->lang->line('error_household_students_first')?>">
+		<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+		<div class="help-block with-errors"></div>
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<input type="text" class="form-control input-lg" data-name="child_last[]">
+		<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" name="child_last[]" required data-error="<?=$this->lang->line('error_household_students_last')?>">
+		<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+		<div class="help-block with-errors"></div>
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<input type="text" class="form-control input-lg" data-name="child_middle[]">
+		<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" name="child_middle[]">
 	</div>
 	<div class="col-sm-12 col-md-2 text-right">
 		<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>

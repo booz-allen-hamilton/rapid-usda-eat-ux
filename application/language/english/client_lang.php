@@ -89,6 +89,7 @@ $lang['other_assistance_help'] = "Other assistance help";
 
 // Household
 $lang['title_household'] = "All Household Members";
+$lang['title_household_children'] = "All Household Students";
 $lang['label_num_children'] = "How many children live with you, even if not related?";
 $lang['label_num_adults'] = "How many adults (including you) live at the residence?";
 $lang['error_children_number_field'] = "Please enter a valid number of children.";
@@ -102,7 +103,7 @@ $lang['number_adults_modal_body'] = "Adult Modla Body";
 
 // Household Members
 $lang['title_household_members'] = "Names of All Household Members";
-$lang['subtitle_household_members'] = "Please list all children and adults who live with you, even if they are not related.";
+$lang['subtitle_household_members'] = "Please list all children who live with you, even if they are not related.";
 $lang['section_title_children'] = "CHILDREN";
 $lang['section_title_adults'] = "ADULTS";
 $lang['label_first'] = "First Name";
