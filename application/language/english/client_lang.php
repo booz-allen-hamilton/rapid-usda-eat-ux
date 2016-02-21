@@ -145,15 +145,45 @@ $lang['label_child_ethnicity'] = "Ethnicity";
 $lang['label_child_hispanic'] = "Hispanic or Latino";
 $lang['label_child_race'] = "Race";
 
-// Section Three
-$lang['subsection_child_income'] = "CHILD INCOME";
-$lang['label_child_income'] = "Did any of the children you listed above earn any income?";
-$lang['label_child_income_total'] = "TOTAL income of all children listed above";
-
-$lang['subsection_adult_income'] = "ADULT INCOME";
-$lang['label_adult_income'] = "List all Household Members (including yourself) <strong>even if they do not receive income</strong>. If you enter 'No income' or leave any fields blank, you are certifying (promising) that there is no income to report.";
-$lang['label_adult_first'] = "Adult's First Name";
-$lang['label_adult_last'] = "Last Name";
+// Contact Information
+$lang['contact_info_title'] = "Contact Information";
+$lang['contact_info_subtitle'] = "Enter your contact information and how you would like us to communicate with you.";
+$lang['contact_info_elements'] = array(
+	'street_address' => array(
+		'label'			=> "Street Address",
+		'error'		 	=> "Please enter your address"
+	),
+	'apt' => array(
+		'label'       	=> "Apt #"
+	),
+	'city' => array(
+		'label'       	=> "City",
+		'error'			=> "Please enter a city"
+	),
+	'state' => array(
+		'label'       	=> "State",
+		'placeholder' 	=> "Choose State",
+		'error'			=> "Please select your state"
+	),
+	'zip' => array(
+		'label'       	=> "ZIP",
+		'error'			=> "Please enter your ZIP code"
+	),
+	'phone' => array(
+		'label'       	=> "Phone",
+		'placeholder' 	=> "555-555-5555",
+		'error'			=> "Please enter your phone number"
+	),
+	'email' => array(
+		'label'       	=> "Email",
+		'placeholder' 	=> "example@example.com",
+		'error'			=> "Please enter a valid email address"
+	),
+	'contact' => array(
+		'label'       	=> "Preferred contact method",
+		'error'			=> "Please select a preferred contact method"
+	),
+);
 
 // Confirmation
 $lang['confirmation_title'] = "Confirmation";
