@@ -1,10 +1,9 @@
 <div class="row text-center">
 	<div class="col-sm-12">
-		<h2><?=$this->lang->line('title_household_children')?></h2>
-		<p><?=$this->lang->line('subtitle_household_members')?>
-			<a href="#" data-toggle="modal" data-target="#householdMembersClarification">
-				<span class="glyphicon glyphicon-info-sign"></span>
-			</a>
+		<h2><?=$this->lang->line('household_students_title')?></h2>
+		<p class="text-large">
+			<?=$this->lang->line('household_students_subtitle')?>
+			<?=help_icon($this->lang->line('household_students_help'))?>
 		</p>
 	</div>
 </div>

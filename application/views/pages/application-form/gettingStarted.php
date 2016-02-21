@@ -20,34 +20,44 @@
 					<div class="help-block with-errors"></div>
 				</div>
 			</div>
-			<div class="form-group col-sm-12 col-md-5">
-				<label><?=$this->lang->line('getting_started_elements')['last_name']['label']?></label>
-				<input type="text"
-					class="form-control input-lg"
-					name="getting_started_last_name"
-					placeholder="<?=$this->lang->line('getting_started_elements')['last_name']['placeholder']?>"
-					required
-					data-error="<?=$this->lang->line('getting_started_elements')['last_name']['error']?>" />
-				<div class="help-block with-errors"></div>
+			<div class="col-sm-12 col-md-5">
+				<div class="form-group">
+					<label><?=$this->lang->line('getting_started_elements')['last_name']['label']?></label>
+					<input type="text"
+						class="form-control input-lg"
+						name="getting_started_last_name"
+						placeholder="<?=$this->lang->line('getting_started_elements')['last_name']['placeholder']?>"
+						required
+						data-error="<?=$this->lang->line('getting_started_elements')['last_name']['error']?>" />
+					<div class="help-block with-errors"></div>
+				</div>
 			</div>
-			<div class="form-group col-sm-12 col-md-2">
-				<label><?=$this->lang->line('getting_started_elements')['middle_initial']['label']?></label>
-				<input type="text"
-					class="form-control input-lg col-md-1"
-					name="getting_started_middle_initial"
-					placeholder="<?=$this->lang->line('getting_started_elements')['middle_initial']['placeholder']?>"
-					required
-					data-error="<?=$this->lang->line('getting_started_elements')['middle_initial']['error']?>" />
-				<div class="help-block with-errors"></div>
+			<div class="col-sm-12 col-md-2">
+				<div class="form-group">
+					<label><?=$this->lang->line('getting_started_elements')['middle_initial']['label']?></label>
+					<input type="text"
+						class="form-control input-lg col-md-1"
+						name="getting_started_middle_initial"
+						placeholder="<?=$this->lang->line('getting_started_elements')['middle_initial']['placeholder']?>"
+						required
+						data-error="<?=$this->lang->line('getting_started_elements')['middle_initial']['error']?>" />
+					<div class="help-block with-errors"></div>
+				</div>
 			</div>
 		</div>
-		<div class="form-group col-sm-12 text-center">
-			<p class="text-large mb-30"><?=$this->lang->line('getting_started_age')?></p>
-			<div class="col-sm-12 col-md-offset-3 col-md-3">
-				<button type="submit" data-value="1" class="button button-invert-green"><span style="padding-right: 20px;">&#10004;</span><?=$this->lang->line('yes')?></button>
-			</div>
-			<div class="col-sm-12 col-md-3">
-				<button type="submit" data-value="0" class="button button-invert-red"><span style="padding-right: 20px;">&#10006;</span><?=$this->lang->line('no')?></button>
+		<div class="col-sm-12 text-center">
+			<div class="form-group">
+				<p class="text-large mb-30"><?=$this->lang->line('getting_started_age')?></p>
+				<div class="col-sm-12 col-md-offset-3 col-md-3">
+					<button type="submit" data-value="1" class="button button-invert-green">
+						<i class="icon-left fa fa-check"></i><?=$this->lang->line('yes')?>
+					</button>
+				</div>
+				<div class="col-sm-12 col-md-3">
+					<button type="submit" data-value="0" class="button button-invert-red">
+						<i class="icon-left fa fa-times"></i><?=$this->lang->line('no')?>
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -13,12 +13,12 @@ $lang['required'] = "* Required";
 $lang['optional'] = "OPTIONAL";
 $lang['frequency'] = "Select Frequency";
 $lang['all_that_apply'] = "Select all that apply";
-$lang['form_server_error'] = "There was a problem saving the form. Please try again.";
 $lang['ssn'] = "Social Security Number";
 $lang['assistance_program_case_number'] = "Assistance Program Case Number";
 $lang['household_income'] = "Household Income";
 $lang['assistance_program'] = "Assistance Program";
 $lang['case_number'] = "Case Number";
+$lang['error_server_validation'] = "There was a problem saving the form. Please try again.";
 
 // Header
 $lang['nav_how_it_works'] = "How it Works";
@@ -106,6 +106,11 @@ $lang['other_assistance_subtitle'] = "Are you, or anyone in your household, curr
 $lang['example_case_number'] = "ex. 2363954301";
 $lang['other_assistance_help'] = "Other assistance help";
 
+// Household Students
+$lang['household_students_title'] = "All Household Students";
+$lang['household_students_subtitle'] = "Please list all children who live with you, even if they are not related.";
+$lang['household_students_help'] = "";
+
 // Household
 $lang['title_household'] = "All Household Members";
 $lang['title_household_children'] = "All Household Students";
@@ -156,10 +161,64 @@ $lang['subsection_child_income'] = "CHILD INCOME";
 $lang['label_child_income'] = "Did any of the children you listed above earn any income?";
 $lang['label_child_income_total'] = "TOTAL income of all children listed above";
 
-$lang['subsection_adult_income'] = "ADULT INCOME";
-$lang['label_adult_income'] = "List all Household Members (including yourself) <strong>even if they do not receive income</strong>. If you enter 'No income' or leave any fields blank, you are certifying (promising) that there is no income to report.";
-$lang['label_adult_first'] = "Adult's First Name";
-$lang['label_adult_last'] = "Last Name";
+// Contact Information
+$lang['contact_info_title'] = "Contact Information";
+$lang['contact_info_subtitle'] = "Enter your contact information and how you would like us to communicate with you.";
+$lang['contact_info_elements'] = array(
+	'street_address' => array(
+		'label'			=> "Street Address",
+		'error'		 	=> "Please enter your address"
+	),
+	'apt' => array(
+		'label'       	=> "Apt #"
+	),
+	'city' => array(
+		'label'       	=> "City",
+		'error'			=> "Please enter a city"
+	),
+	'state' => array(
+		'label'       	=> "State",
+		'placeholder' 	=> "Choose State",
+		'error'			=> "Please select your state"
+	),
+	'zip' => array(
+		'label'       	=> "ZIP",
+		'error'			=> "Please enter your ZIP code"
+	),
+	'phone' => array(
+		'label'       	=> "Phone",
+		'placeholder' 	=> "555-555-5555",
+		'error'			=> "Please enter your phone number"
+	),
+	'email' => array(
+		'label'       	=> "Email",
+		'placeholder' 	=> "example@example.com",
+		'error'			=> "Please enter a valid email address"
+	),
+	'contact' => array(
+		'label'       	=> "Preferred contact method",
+		'error'			=> "Please select a preferred contact method"
+	),
+);
+
+// Confirmation
+$lang['confirmation_title'] = "Confirmation";
+$lang['confirmation_subtitle'] = "Please review your application and confirm the information is correct.";
+$lang['confirmation_subtitle_help'] = "";
+$lang['confirmation_household_members'] = "HOUSEHOLD MEMBERS";
+$lang['confirmation_adults'] = "Adults";
+$lang['confirmation_children'] = "Children";
+$lang['confirmation_total_household_members'] = "Total household members";
+$lang['confirmation_contact_info'] = "CONTACT INFORMATION";
+$lang['confirmation_other_assistance'] = "OTHER ASSISTANCE";
+$lang['confirmation_household_income'] = "HOUSEHOLD INCOME";
+$lang['confirmation_address'] = "Address";
+$lang['confirmation_phone'] = "Phone";
+$lang['confirmation_email'] = "Email";
+$lang['confirmation_receive_updates'] = "Receive status updates via email";
+$lang['confirmation_assistance_program'] = "Assistance Program";
+$lang['confirmation_case_number'] = "Case Number";
+$lang['confirmation_not_required'] = "Not required";
 
 // Terms and Conditions
 $lang['terms_and_cond_title'] = "Terms and Conditions";

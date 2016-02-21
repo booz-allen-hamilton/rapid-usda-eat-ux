@@ -9,15 +9,15 @@ require_once APPPATH . '/controllers/Client_controller.php';
 class Form extends Client_controller {
 
 	public $form_scenario_a = array(
-		1 => 'assistance',
-		2 => 'householdChildren',
+		1 => 'otherAssistance',
+		2 => 'householdStudents',
 		3 => 'contactInformation',
 		4 => 'confirmation',
 		5 => 'termsAndConditions'
 	);
 
 	public $form_scenario_b = array(
-		1 => 'householdChildren',
+		1 => 'householdStudents',
 		2 => 'contactInformation',
 		3 => 'confirmation',
 		4 => 'termsAndConditions'
@@ -32,6 +32,8 @@ class Form extends Client_controller {
 		6 => 'termsAndConditions'
 	);
 
+	public $scenario;
+
 	/**
 	 * Index route
 	 * @return [type] [description]
@@ -45,36 +47,37 @@ class Form extends Client_controller {
 		$current_form_scenario = $this->get_form_scenario();
 
 		//	if step doesn't exist start user from beginning
-		if ($current_form_step == FALSE) {
+		if ($current_form_step == 'start') {
 			$form_sections          = NULL;
 			$scenario_form_sections = NULL;
 			$current_form_section   = 'gettingStarted';
 		}
 		//	if session exists
 		else {
-			switch($current_form_scenario) {
-				case 'assistance':
-					$scenario_form_sections = $this->$form_scenario_a;
-					$current_form_section = $this->$form_scenario_a[$current_form_step];
-				break;
-				case 'foster':
-					$scenario_form_sections = $this->$form_scenario_b;
-					$current_form_section = $this->$form_scenario_b[$current_form_step];
-				break;
-				case 'no':
-					$scenario_form_sections = $this->$form_scenario_c;
-					$current_form_section = $this->$form_scenario_c[$current_form_step];
-				break;
-				default:
-					$scenario_form_sections = NULL;
-					$current_form_section = 'yourSituation';
-				break;
+			if ($current_form_step == 'scenario') {
+				$scenario_form_sections = NULL;
+				$current_form_section = 'yourSituation';
+			} else {
+				switch($current_form_scenario) {
+					case 'assistance':
+						$scenario_form_sections = $this->form_scenario_a;
+						$current_form_section = $this->form_scenario_a[$current_form_step];
+					break;
+					case 'foster':
+						$scenario_form_sections = $this->form_scenario_b;
+						$current_form_section = $this->form_scenario_b[$current_form_step];
+					break;
+					case 'no':
+						$scenario_form_sections = $this->form_scenario_c;
+						$current_form_section = $this->form_scenario_c[$current_form_step];
+					break;
+				}
 			}
 		}
 
 		$data['global'] = $this->global;
 		$data['app'] = array(
-			'title'   => $this->lang->line('welcome_title'),
+			'title'   => $this->lang->line('welcome_page_title'),
 			'view'    => 'pages/application-form',
 			'scripts' => array(
 				'lib/validator/dist/validator.min.js',
@@ -150,9 +153,8 @@ class Form extends Client_controller {
 		$form_step = $this->get_form_step();
 		$this->load->library('form_validation');
 
-		$error_alert_message = 'error';	//	outputted with $this->lang->line('error');
+		$error_alert_message = 'error_server_validation';	//	outputted with $this->lang->line('error');
 		switch($form_step) {
-			default:
 			case 'start':
 				$this->form_validation->set_rules('getting_started_first_name', '', 'required|max_length[30]');
 				$this->form_validation->set_rules('getting_started_last_name', '', 'required|max_length[30]');
@@ -161,25 +163,68 @@ class Form extends Client_controller {
 				$error_alert_message = 'error_age_validation';
 			break;
 			case 'scenario':
-				$this->form_validation->set_rules('scenario', '', 'required|in_list[assistance|foster|no]');
+				$this->form_validation->set_rules('scenario', '', 'required|in_list[assistance,foster,no]');
+				$next_step = 1;
+			break;
+		}
+
+		//	if user is on numeric step
+		$form_step_section = NULL;
+		if (is_numeric($form_step)) {
+			$this->scenario = $this->get_form_scenario();
+			switch($this->scenario) {
+				case 'assistance':
+					$form_step_section = $this->form_scenario_a[$form_step];
+					$next_step = 2;
+				break;
+				case 'foster':
+					$form_step_section = $this->form_scenario_b[$form_step];
+				break;
+				case 'no':
+					$form_step_section = $this->form_scenario_c[$form_step];
+				break;
+			}
+		}
+
+		//	validate step
+		switch($form_step_section) {
+			case "otherAssistance":
+				$this->form_validation->set_rules('assistance_program', '', 'required|in_list[snap,tanf,fdpir]');
+				$this->form_validation->set_rules('case_number', '', 'required|max_length[30]');
 			break;
 		}
 
 		if ($this->form_validation->run() == FALSE) {
 			$this->session->set_flashdata('error_alert', $error_alert_message);
+
+			// echo validation_errors();
+			// die;
 		} else {
 			switch($form_step) {
+				default:
 				case 'start':
-					$primary_household_member = array(
-						'first_name' => $this->input->post('firstName'),
-						'last_name' => $this->input->post('lastName'),
+					$getting_started = array(
+						'getting_started_first_name'     => $this->input->post('getting_started_first_name'),
+						'getting_started_last_name'      => $this->input->post('getting_started_last_name'),
+						'getting_started_middle_initial' => $this->input->post('getting_started_middle_initial'),
 					);
-					$this->session->set_userdata('form_primary_household_member', $primary_household_member);
+					$this->session->set_userdata('form_getting_started', $getting_started);
 				break;
 				case 'scenario':
 					$this->session->set_userdata('form_scenario', $this->input->post('scenario'));
 				break;
 			}
+
+			switch($form_step_section) {
+				case "otherAssistance":
+					$other_assistance = array(
+						'assistance_program' => $this->input->post('assistance_program'),
+						'case_number'        => $this->input->post('case_number'),
+					);
+					$this->session->set_userdata('form_other_assistance', $other_assistance);
+				break;
+			}
+
 			$this->set_form_step($next_step);
 		}
 
@@ -239,10 +284,9 @@ class Form extends Client_controller {
 	 */
 	protected function get_form_step() {
 		if (!$this->session->userdata('form_step')) {
-			return FALSE;
-		} else {
-			return $this->session->userdata('form_step');
+			$this->set_form_step('start');
 		}
+		return $this->session->userdata('form_step');
 	}
 
 	/**
