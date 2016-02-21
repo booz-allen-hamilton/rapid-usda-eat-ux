@@ -36,6 +36,7 @@ class Client_controller extends Application_controller
 
 		//	load language file
 		$this->lang->load('client', $this->session->userdata('language'));
+		$this->output->enable_profiler(TRUE);
 	}
 
 	/**

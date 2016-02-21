@@ -7,7 +7,7 @@
 				<span class="button-orange glyphicon glyphicon-question-sign" style="float: right; right: 25%; top: 30px;"></span>
 			</a>
 		</p>
-		<a href="#" class="circular_button" data-value="assistance">
+		<a href="#" class="circular_button" data-scenario-value="assistance">
 			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 20%;">
 				<?=$this->lang->line('at_least_one_household_member')?>
 			</div>
@@ -28,7 +28,7 @@
 				<span class="button-orange glyphicon glyphicon-question-sign" style="float: right; right: 25%; top: 30px;"></span>
 			</a>
 		</p>
-		<a href="#" class="circular_button" data-value="foster">
+		<a href="#" class="circular_button" data-scenario-value="foster">
 			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 32%;">
 				<?=$this->lang->line('all_household_children')?>
 			</div>
@@ -41,7 +41,7 @@
 		</div>
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<a href="#" class="circular_button" data-value="no">
+		<a href="#" class="circular_button" data-scenario-value="no">
 			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 43%;">
 				<?=$this->lang->line('none_apply')?>
 			</div>

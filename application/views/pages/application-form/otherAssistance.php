@@ -8,7 +8,7 @@
 	<div class="form-group">
 		<div class="col-sm-12 col-md-3 col-md-offset-3">
 			<h4>*<?=$this->lang->line('assistance_program')?></h4>
-			<select class="form-control input-lg">
+			<select name="assistance_program" class="form-control input-lg">
 				<option selected="selected" disabled="disabled">Select Program</option>
 				<option value="snap">SNAP</option>
 				<option value="tanf">TANF</option>
@@ -17,7 +17,7 @@
 		</div>
 		<div class="col-sm-12 col-md-3">
 			<h4>*<?=$this->lang->line('case_number')?></h4>
-			<input type="text" placeholder="<?=$this->lang->line('example_case_number')?>" class="form-control input-lg" />
+			<input type="text" name="case_number" placeholder="<?=$this->lang->line('example_case_number')?>" class="form-control input-lg" />
 		</div>
 	</div>
 </div>
