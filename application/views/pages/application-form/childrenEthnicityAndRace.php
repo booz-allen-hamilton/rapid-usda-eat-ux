@@ -26,10 +26,10 @@
 		</div>
 		<div class="col-sm-12 col-md-3">
 			<div class="radio">
-			  <label><input type="radio" name="optradio">Hispanic/Latino</label>
+			  <label><input type="radio" name="eth-hispanic1">Hispanic/Latino</label>
 			</div>
 			<div class="radio">
-			  <label><input type="radio" name="optradio">Not Hispanic/Latino</label>
+			  <label><input type="radio" name="eth-hispanic1">Not Hispanic/Latino</label>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-4">
@@ -48,10 +48,10 @@
 		</div>
 		<div class="col-sm-12 col-md-3">
 			<div class="radio">
-			  <label><input type="radio" name="optradio">Hispanic/Latino</label>
+			  <label><input type="radio" name="eth-hispanic2">Hispanic/Latino</label>
 			</div>
 			<div class="radio">
-			  <label><input type="radio" name="optradio">Not Hispanic/Latino</label>
+			  <label><input type="radio" name="eth-hispanic2">Not Hispanic/Latino</label>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-4">
