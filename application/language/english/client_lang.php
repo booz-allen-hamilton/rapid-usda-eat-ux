@@ -13,12 +13,12 @@ $lang['required'] = "* Required";
 $lang['optional'] = "OPTIONAL";
 $lang['frequency'] = "Select Frequency";
 $lang['all_that_apply'] = "Select all that apply";
-$lang['form_server_error'] = "There was a problem saving the form. Please try again.";
 $lang['ssn'] = "Social Security Number";
 $lang['assistance_program_case_number'] = "Assistance Program Case Number";
 $lang['household_income'] = "Household Income";
 $lang['assistance_program'] = "Assistance Program";
 $lang['case_number'] = "Case Number";
+$lang['error_server_validation'] = "There was a problem saving the form. Please try again.";
 
 // Header
 $lang['nav_how_it_works'] = "How it Works";
@@ -44,7 +44,7 @@ $lang['welcome_required_items'] = array(
 	array(
 		'text' => 'All foster children in household',
 		'help' => 'help text'
-	),
+	)
 );
 $lang['welcome_btn'] = "Apply Now";
 
@@ -145,19 +145,82 @@ $lang['label_child_ethnicity'] = "Ethnicity";
 $lang['label_child_hispanic'] = "Hispanic or Latino";
 $lang['label_child_race'] = "Race";
 
-// Section Three
-$lang['subsection_child_income'] = "CHILD INCOME";
-$lang['label_child_income'] = "Did any of the children you listed above earn any income?";
-$lang['label_child_income_total'] = "TOTAL income of all children listed above";
+// Contact Information
+$lang['contact_info_title'] = "Contact Information";
+$lang['contact_info_subtitle'] = "Enter your contact information and how you would like us to communicate with you.";
+$lang['contact_info_elements'] = array(
+	'street_address' => array(
+		'label'			=> "Street Address",
+		'error'		 	=> "Please enter your address"
+	),
+	'apt' => array(
+		'label'       	=> "Apt #"
+	),
+	'city' => array(
+		'label'       	=> "City",
+		'error'			=> "Please enter a city"
+	),
+	'state' => array(
+		'label'       	=> "State",
+		'placeholder' 	=> "Choose State",
+		'error'			=> "Please select your state"
+	),
+	'zip' => array(
+		'label'       	=> "ZIP",
+		'error'			=> "Please enter your ZIP code"
+	),
+	'phone' => array(
+		'label'       	=> "Phone",
+		'placeholder' 	=> "555-555-5555",
+		'error'			=> "Please enter your phone number"
+	),
+	'email' => array(
+		'label'       	=> "Email",
+		'placeholder' 	=> "example@example.com",
+		'error'			=> "Please enter a valid email address"
+	),
+	'contact' => array(
+		'label'       	=> "Preferred contact method",
+		'error'			=> "Please select a preferred contact method"
+	),
+);
 
-$lang['subsection_adult_income'] = "ADULT INCOME";
-$lang['label_adult_income'] = "List all Household Members (including yourself) <strong>even if they do not receive income</strong>. If you enter 'No income' or leave any fields blank, you are certifying (promising) that there is no income to report.";
-$lang['label_adult_first'] = "Adult's First Name";
-$lang['label_adult_last'] = "Last Name";
+// Confirmation
+$lang['confirmation_title'] = "Confirmation";
+$lang['confirmation_subtitle'] = "Please review your application and confirm the information is correct.";
+$lang['confirmation_subtitle_help'] = "";
+$lang['confirmation_household_members'] = "HOUSEHOLD MEMBERS";
+$lang['confirmation_adults'] = "Adults";
+$lang['confirmation_children'] = "Children";
+$lang['confirmation_total_household_members'] = "Total household members";
+$lang['confirmation_contact_info'] = "CONTACT INFORMATION";
+$lang['confirmation_other_assistance'] = "OTHER ASSISTANCE";
+$lang['confirmation_household_income'] = "HOUSEHOLD INCOME";
+$lang['confirmation_address'] = "Address";
+$lang['confirmation_phone'] = "Phone";
+$lang['confirmation_email'] = "Email";
+$lang['confirmation_receive_updates'] = "Receive status updates via email";
+$lang['confirmation_assistance_program'] = "Assistance Program";
+$lang['confirmation_case_number'] = "Case Number";
+$lang['confirmation_not_required'] = "Not required";
+
+// Terms and Conditions
+$lang['terms_and_cond_title'] = "Terms and Conditions";
+$lang['terms_and_cond_subtitle'] = "Please read terms and conditions and indicate if you agree.";
+$lang['terms_and_cond_agree'] = "I agree to the terms and conditions";
+$lang['terms_and_cond_content'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?";
+$lang['terms_and_cond_help'] = "";
 
 // Electronic Signature
+$lang['electronic_sig_title'] = "Electronic Signature";
 $lang['electronic_sig_subtitle'] = "Please indicate that you comply with the statement below and enter last four digits of Social Security Number (if applicable).";
 $lang['electronic_sig_statement'] = "The person signing is furnishing true information and to advise that person that the application is being made in connection with the receipt of Federal funds; School officials may verify the information on the application; and Deliberate misrepresentation of the information may subject the applicant to prosecution under State and Federal statutes.";
+$lang['electronic_sig_not_available'] = "Not available";
+$lang['error_electronic_sig_agree'] = "";
+$lang['error_electronic_sig_name'] = "";
+$lang['error_electronic_sig_social'] = "";
+$lang['electronic_sig_subtitle_help'] = "";
+$lang['electronic_sig_ssn_help'] = "";
 
 // Success
 $lang['success_submission_id'] = "Submission ID: ";

@@ -10,14 +10,14 @@ class Form extends Client_controller {
 
 	public $form_scenario_a = array(
 		1 => 'otherAssistance',
-		2 => 'householdChildren',
+		2 => 'householdStudents',
 		3 => 'contactInformation',
 		4 => 'confirmation',
 		5 => 'termsAndConditions'
 	);
 
 	public $form_scenario_b = array(
-		1 => 'householdChildren',
+		1 => 'householdStudents',
 		2 => 'contactInformation',
 		3 => 'confirmation',
 		4 => 'termsAndConditions'
@@ -56,25 +56,21 @@ class Form extends Client_controller {
 		else {
 			if ($current_form_step == 'scenario') {
 				$scenario_form_sections = NULL;
-				$current_form_section   = 'whichSituation';
+				$current_form_section = 'yourSituation';
 			} else {
 				switch($current_form_scenario) {
 					case 'assistance':
 						$scenario_form_sections = $this->form_scenario_a;
-						$current_form_section   = $scenario_form_sections[$current_form_step];
+						$current_form_section = $this->form_scenario_a[$current_form_step];
 					break;
 					case 'foster':
 						$scenario_form_sections = $this->form_scenario_b;
-						$current_form_section = $scenario_form_sections[$current_form_step];
+						$current_form_section = $this->form_scenario_b[$current_form_step];
 					break;
 					case 'no':
 						$scenario_form_sections = $this->form_scenario_c;
-						$current_form_section = $scenario_form_sections[$current_form_step];
+						$current_form_section = $this->form_scenario_c[$current_form_step];
 					break;
-					// default:
-					// 	$scenario_form_sections = NULL;
-					// 	$current_form_section   = 'whichSituation';
-					// break;
 				}
 			}
 		}
@@ -157,7 +153,7 @@ class Form extends Client_controller {
 		$form_step = $this->get_form_step();
 		$this->load->library('form_validation');
 
-		$error_alert_message = 'error';	//	outputted with $this->lang->line('error');
+		$error_alert_message = 'error_server_validation';	//	outputted with $this->lang->line('error');
 		switch($form_step) {
 			case 'start':
 				$this->form_validation->set_rules('getting_started_first_name', '', 'required|max_length[30]');
@@ -173,6 +169,7 @@ class Form extends Client_controller {
 		}
 
 		//	if user is on numeric step
+		$form_step_section = NULL;
 		if (is_numeric($form_step)) {
 			$this->scenario = $this->get_form_scenario();
 			switch($this->scenario) {
@@ -217,6 +214,17 @@ class Form extends Client_controller {
 					$this->session->set_userdata('form_scenario', $this->input->post('scenario'));
 				break;
 			}
+
+			switch($form_step_section) {
+				case "otherAssistance":
+					$other_assistance = array(
+						'assistance_program' => $this->input->post('assistance_program'),
+						'case_number'        => $this->input->post('case_number'),
+					);
+					$this->session->set_userdata('form_other_assistance', $other_assistance);
+				break;
+			}
+
 			$this->set_form_step($next_step);
 		}
 

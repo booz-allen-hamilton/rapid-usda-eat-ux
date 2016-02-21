@@ -425,7 +425,7 @@ a:hover {
     #page-application-form .tableHeaders hr.divider {
       margin-top: 2px; }
   #page-application-form hr.divider {
-    border-top: 1px solid #eee; }
+    border-top: 2px solid #CCC; }
   #page-application-form .tableItems .remove-item {
     font-size: 32px;
     color: #555; }
@@ -540,13 +540,55 @@ a:hover {
       margin-right: -5px; }
   #page-application-form .form-group .form-control-feedback {
     right: 10px; }
-  #page-application-form .sig-statement {
+  #page-application-form .confirmation h3 {
+    color: #038bce;
+    font-weight: 500;
+    font-size: 26px; }
+  #page-application-form .confirmation h4 {
+    font-size: 24px;
+    margin-top: 20px; }
+  #page-application-form .confirmation em {
+    font-size: 18px; }
+  #page-application-form .confirmation.household-members {
+    margin-bottom: 60px; }
+  #page-application-form .confirmation .total-household-members {
+    background: #E5F3FC;
+    border: 2px solid #00aeef;
+    color: #038bce;
+    border-radius: 10px;
+    padding: 10px 5px; }
+    #page-application-form .confirmation .total-household-members h4 {
+      font-size: 28px;
+      margin-bottom: 0; }
+    #page-application-form .confirmation .total-household-members span {
+      color: black;
+      font-size: 40px; }
+  #page-application-form .scroller {
+    height: 250px;
+    overflow-y: scroll;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-size: 18px; }
+  #page-application-form .electronic-signature .sig-statement {
     margin-top: 14px; }
+  #page-application-form .electronic-signature p {
+    font-size: 20px; }
+  #page-application-form .electronic-signature span {
+    font-size: 16px; }
+  #page-application-form .electronic-signature .ssn {
+    width: 100px;
+    display: inline;
+    margin-right: 30px; }
+  #page-application-form .electronic-signature .checkbox-inline {
+    padding-top: 0; }
+    #page-application-form .electronic-signature .checkbox-inline input {
+      margin-top: 0; }
   #page-application-form .checkbox-inline {
     font-size: 18px; }
     #page-application-form .checkbox-inline input[type=checkbox] {
-      width: 44px;
-      height: 44px;
+      width: 46px;
+      height: 46px;
       cursor: pointer;
       -webkit-appearance: none;
       appearance: none;
@@ -599,3 +641,5 @@ a:hover {
     height: auto; }
     #page-application-form .footer .footer-bav-connector {
       width: 27px; } }
+
+/*# sourceMappingURL=app.css.map */
