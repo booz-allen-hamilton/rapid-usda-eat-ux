@@ -13,7 +13,7 @@
 					<label><?=$this->lang->line('getting_started_elements')['first_name']['label']?></label>
 					<input type="text"
 						class="form-control input-lg"
-						name="getting_started_first_name"
+						name="first_name"
 						placeholder="<?=$this->lang->line('getting_started_elements')['first_name']['placeholder']?>"
 						required
 						data-error="<?=$this->lang->line('getting_started_elements')['first_name']['error']?>" />
@@ -25,7 +25,7 @@
 					<label><?=$this->lang->line('getting_started_elements')['last_name']['label']?></label>
 					<input type="text"
 						class="form-control input-lg"
-						name="getting_started_last_name"
+						name="last_name"
 						placeholder="<?=$this->lang->line('getting_started_elements')['last_name']['placeholder']?>"
 						required
 						data-error="<?=$this->lang->line('getting_started_elements')['last_name']['error']?>" />
@@ -37,9 +37,9 @@
 					<label><?=$this->lang->line('getting_started_elements')['middle_initial']['label']?></label>
 					<input type="text"
 						class="form-control input-lg col-md-1"
-						name="getting_started_middle_initial"
+						name="middle_initial"
+						maxlength="1"
 						placeholder="<?=$this->lang->line('getting_started_elements')['middle_initial']['placeholder']?>"
-						required
 						data-error="<?=$this->lang->line('getting_started_elements')['middle_initial']['error']?>" />
 					<div class="help-block with-errors"></div>
 				</div>

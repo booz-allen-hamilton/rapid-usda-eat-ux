@@ -156,8 +156,9 @@ class Form extends Client_controller {
 		$error_alert_message = 'error_server_validation';	//	outputted with $this->lang->line('error');
 		switch($form_step) {
 			case 'start':
-				$this->form_validation->set_rules('getting_started_first_name', '', 'required|max_length[30]');
-				$this->form_validation->set_rules('getting_started_last_name', '', 'required|max_length[30]');
+				$this->form_validation->set_rules('first_name', '', 'required|max_length[30]');
+				$this->form_validation->set_rules('last_name', '', 'required|max_length[30]');
+				$this->form_validation->set_rules('middle_name', '', 'max_length[1]');
 				$this->form_validation->set_rules('age_validation', '', 'required|in_list[1]');
 				$next_step = 'scenario';
 				$error_alert_message = 'error_age_validation';
@@ -175,7 +176,12 @@ class Form extends Client_controller {
 			switch($this->scenario) {
 				case 'assistance':
 					$form_step_section = $this->form_scenario_a[$form_step];
-					$next_step = 2;
+					switch($form_step) {
+						case 1:		$next_step = 2;		break;
+						case 2:		$next_step = 3;		break;
+						case 3:		$next_step = 4;		break;
+						case 4:		$next_step = 5;		break;
+					}
 				break;
 				case 'foster':
 					$form_step_section = $this->form_scenario_b[$form_step];
@@ -192,23 +198,40 @@ class Form extends Client_controller {
 				$this->form_validation->set_rules('assistance_program', '', 'required|in_list[snap,tanf,fdpir]');
 				$this->form_validation->set_rules('case_number', '', 'required|max_length[30]');
 			break;
+			case "householdStudents":
+				$this->form_validation->set_rules('child_first[]', '', 'required|max_length[30]');
+				$this->form_validation->set_rules('child_last[]', '', 'required|max_length[30]');
+				$this->form_validation->set_rules('child_middle[]', '', 'max_length[5]');
+			break;
+			case "contactInformation":
+				$this->form_validation->set_rules('street_address', '', 'required');
+				//$this->form_validation->set_rules('apt', '', '');
+				$this->form_validation->set_rules('city', '', 'required');
+				$this->form_validation->set_rules('state', '', 'required');
+				$this->form_validation->set_rules('zip', '', 'required');
+				$this->form_validation->set_rules('phone', '', 'required');
+				$this->form_validation->set_rules('email', '', 'required');
+				// $this->form_validation->set_rules('status_text', '', 'required');
+				// $this->form_validation->set_rules('status_email', '', 'required');
+				// $this->form_validation->set_rules('status_phone', '', 'required');
+			break;
 		}
 
 		if ($this->form_validation->run() == FALSE) {
 			$this->session->set_flashdata('error_alert', $error_alert_message);
 
-			// echo validation_errors();
-			// die;
+			echo validation_errors();
+			die;
 		} else {
 			switch($form_step) {
-				default:
 				case 'start':
-					$getting_started = array(
-						'getting_started_first_name'     => $this->input->post('getting_started_first_name'),
-						'getting_started_last_name'      => $this->input->post('getting_started_last_name'),
-						'getting_started_middle_initial' => $this->input->post('getting_started_middle_initial'),
+					$householdMembers = array();
+					$householdMembers[] = array(
+						'first_name'  => $this->input->post('first_name'),
+						'last_name'   => $this->input->post('last_name'),
+						'middle_name' => $this->input->post('middle_name'),
 					);
-					$this->session->set_userdata('form_getting_started', $getting_started);
+					$this->session->set_userdata('form_household_members', $householdMembers);
 				break;
 				case 'scenario':
 					$this->session->set_userdata('form_scenario', $this->input->post('scenario'));
@@ -222,6 +245,37 @@ class Form extends Client_controller {
 						'case_number'        => $this->input->post('case_number'),
 					);
 					$this->session->set_userdata('form_other_assistance', $other_assistance);
+				break;
+				case "householdStudents":
+					$count = count($this->input->post('child_first'));
+					$students = array();
+					$child_first_name  = $this->input->post('child_first');
+					$child_last_name   = $this->input->post('child_last');
+					$child_middle_name = $this->input->post('child_middle');
+
+					for($i = 0; $i < $count; $i++) {
+						$students[] = array(
+							'first_name'  => $child_first_name[$i],
+							'last_name'   => $child_last_name[$i],
+							'middle_name' => $child_middle_name[$i],
+						);
+					}
+					$this->session->set_userdata('form_household_students', $students);
+				break;
+				case "contactInformation":
+					$contact_information = array(
+						'street_address' => $this->input->post('street_address'),
+						'apt'            => $this->input->post('apt'),
+						'city'           => $this->input->post('city'),
+						'state'          => $this->input->post('state'),
+						'zip'            => $this->input->post('zip'),
+						'phone'          => $this->input->post('apt'),
+						'email'          => $this->input->post('email'),
+						'status_text'    => $this->input->post('status_text'),
+						'status_email'   => $this->input->post('status_email'),
+						'status_phone'   => $this->input->post('status_phone'),
+					);
+					$this->session->set_userdata('form_contact_information', $contact_information);
 				break;
 			}
 

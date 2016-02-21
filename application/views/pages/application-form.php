@@ -1,5 +1,4 @@
 <div id="page-application-form">
-	<div class="container">
 <?
 	$form_attributes = array(
 		'id'           => 'form-application',
@@ -8,7 +7,7 @@
 		'data-toggle'	=> "validator",
 	);
 	echo form_open($form['process'], $form_attributes);
-
+	echo '<div class="container">';
 	//	error message
 	if ($this->session->flashdata('error_alert')) {
 ?>
@@ -18,11 +17,10 @@
 	</div>
 <?
 	}
-
 	//	load form section
 	$this->load->view('pages/application-form/'.$form['section']);
+	echo '</div>';
 ?>
-	</div>
 	<div class="footer">
 		<div class="container">
 			<div class="row">

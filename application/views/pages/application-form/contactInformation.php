@@ -40,7 +40,7 @@
 	<div class="col-sm-12 col-md-4">
 		<span class="asterisk">* </span>
 		<label><?=$this->lang->line('contact_info_elements')['state']['label']?></label>
-		<select class="form-control input-lg">
+		<select name="state" class="form-control input-lg">
 			<option selected="selected" disabled="disabled"><?=$this->lang->line('contact_info_elements')['state']['placeholder']?></option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
@@ -113,7 +113,7 @@
 		<label><?=$this->lang->line('contact_info_elements')['phone']['label']?></label>
 		<input type="text"
 			class="form-control input-lg"
-			name="zip"
+			name="phone"
 			placeholder="<?=$this->lang->line('contact_info_elements')['phone']['placeholder']?>"
 			required
 			data-error="<?=$this->lang->line('contact_info_elements')['phone']['error']?>" />
@@ -121,9 +121,9 @@
 	</div>
 	<div class="col-sm-12 col-md-5">
 		<label><?=$this->lang->line('contact_info_elements')['email']['label']?></label>
-		<input type="text"
+		<input type="email"
 			class="form-control input-lg"
-			name="zip"
+			name="email"
 			placeholder="<?=$this->lang->line('contact_info_elements')['email']['placeholder']?>"
 			required
 			data-error="<?=$this->lang->line('contact_info_elements')['email']['error']?>" />
