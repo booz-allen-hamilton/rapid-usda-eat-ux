@@ -218,16 +218,40 @@ a:hover {
 		}
 	}
 
-	.sig-statement {
-		margin-top: 14px;
+	.electronic-signature {
+		.sig-statement {
+			margin-top: 14px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		span {
+			font-size: 16px;
+		}
+
+		.ssn {
+			width: 100px;
+			display: inline;
+			margin-right:30px;
+		}
+
+		.checkbox-inline {
+			padding-top:0;
+
+			input {
+				margin-top: 0;
+			}
+		}
 	}
 
 	.checkbox-inline {
 		font-size: 18px;
 
 		input[type=checkbox] {
-			width: 44px;
-			height: 44px;
+			width: 46px;
+			height: 46px;
 			cursor: pointer;
 			-webkit-appearance: none;
 			appearance: none;

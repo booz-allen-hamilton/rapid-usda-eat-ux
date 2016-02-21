@@ -540,13 +540,25 @@ a:hover {
       margin-right: -5px; }
   #page-application-form .form-group .form-control-feedback {
     right: 10px; }
-  #page-application-form .sig-statement {
+  #page-application-form .electronic-signature .sig-statement {
     margin-top: 14px; }
+  #page-application-form .electronic-signature p {
+    font-size: 20px; }
+  #page-application-form .electronic-signature span {
+    font-size: 16px; }
+  #page-application-form .electronic-signature .ssn {
+    width: 100px;
+    display: inline;
+    margin-right: 30px; }
+  #page-application-form .electronic-signature .checkbox-inline {
+    padding-top: 0; }
+    #page-application-form .electronic-signature .checkbox-inline input {
+      margin-top: 0; }
   #page-application-form .checkbox-inline {
     font-size: 18px; }
     #page-application-form .checkbox-inline input[type=checkbox] {
-      width: 44px;
-      height: 44px;
+      width: 46px;
+      height: 46px;
       cursor: pointer;
       -webkit-appearance: none;
       appearance: none;
@@ -599,3 +611,5 @@ a:hover {
     height: auto; }
     #page-application-form .footer .footer-bav-connector {
       width: 27px; } }
+
+/*# sourceMappingURL=app.css.map */
