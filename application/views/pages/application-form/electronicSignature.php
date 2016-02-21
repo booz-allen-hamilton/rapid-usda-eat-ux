@@ -1,10 +1,10 @@
 <div class="row text-center">
 	<div class="col-sm-12 col-md-offset-2 col-md-8 electronic-signature">
-		<h2 class="mb25">Electronic Signature</h2>
+		<h2 class="mb25"><?=$this->lang->line('electronic_sig_title')?></h2>
 		<p class="text-large">
 			<span class="asterisk">*</span>
 			<?=$this->lang->line('electronic_sig_subtitle')?>
-			<?=help_icon("")?>
+			<?=help_icon($this->lang->line('electronic_sig_subtitle_help'))?>
 		</p>
 		<div class="row">
 			<div class="col-sm-12 col-md-1">
@@ -20,12 +20,12 @@
 		</div>
 		<div class="row mt-20">
 			<div class="col-sm-12 col-md-offset-1 col-md-11 text-left">
-				<h4>Last 4 digits of Social Security Number <?=help_icon("")?></h4>
+				<h4>Last 4 digits of Social Security Number <?=help_icon($this->lang->line('electronic_sig_ssn_help'))?></h4>
 				<span>XXX-XX-</span>
 				<input type="text" class="form-control input-lg ssn" maxlength="4" name="social_security_last_four" required data-error="<?=$this->lang->line('error_electronic_sig_social')?>" />
 				<label class="checkbox-inline ssn-checkbox">
 					<input type="checkbox" name="ssn_not_available">
-					<span class="checkbox-label">Not available</span>
+					<span class="checkbox-label"><?=$this->lang->line('electronic_sig_not_available')?></span>
 				</label>
 			</div>
 		</div>

@@ -540,6 +540,13 @@ a:hover {
       margin-right: -5px; }
   #page-application-form .form-group .form-control-feedback {
     right: 10px; }
+  #page-application-form .scroller {
+    height: 250px;
+    overflow-y: scroll;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-size: 18px; }
   #page-application-form .electronic-signature .sig-statement {
     margin-top: 14px; }
   #page-application-form .electronic-signature p {

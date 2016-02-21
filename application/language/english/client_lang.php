@@ -155,13 +155,23 @@ $lang['label_adult_income'] = "List all Household Members (including yourself) <
 $lang['label_adult_first'] = "Adult's First Name";
 $lang['label_adult_last'] = "Last Name";
 
+// Terms and Conditions
+$lang['terms_and_cond_title'] = "Terms and Conditions";
+$lang['terms_and_cond_subtitle'] = "Please read terms and conditions and indicate if you agree.";
+$lang['terms_and_cond_agree'] = "I agree to the terms and conditions";
+$lang['terms_and_cond_content'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?";
+$lang['terms_and_cond_help'] = "";
+
 // Electronic Signature
+$lang['electronic_sig_title'] = "Electronic Signature";
 $lang['electronic_sig_subtitle'] = "Please indicate that you comply with the statement below and enter last four digits of Social Security Number (if applicable).";
 $lang['electronic_sig_statement'] = "The person signing is furnishing true information and to advise that person that the application is being made in connection with the receipt of Federal funds; School officials may verify the information on the application; and Deliberate misrepresentation of the information may subject the applicant to prosecution under State and Federal statutes.";
 $lang['electronic_sig_not_available'] = "Not available";
 $lang['error_electronic_sig_agree'] = "";
 $lang['error_electronic_sig_name'] = "";
 $lang['error_electronic_sig_social'] = "";
+$lang['electronic_sig_subtitle_help'] = "";
+$lang['electronic_sig_ssn_help'] = "";
 
 // Success
 $lang['success_submission_id'] = "Submission ID: ";

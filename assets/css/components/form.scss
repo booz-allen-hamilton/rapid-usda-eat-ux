@@ -212,10 +212,20 @@ a:hover {
 			margin-right: -5px;
 		}
 	}
+
 	.form-group {
 		.form-control-feedback {
 			right: 10px;
 		}
+	}
+
+	.scroller {
+		height: 250px;
+		overflow-y: scroll;
+		border: 1px solid #CCC;
+		border-radius: 6px;
+		padding: 15px 20px;
+		font-size: 18px;
 	}
 
 	.electronic-signature {
