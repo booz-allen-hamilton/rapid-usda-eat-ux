@@ -67,7 +67,7 @@ class Form extends Client_controller {
 				break;
 				default:
 					$scenario_form_sections = NULL;
-					$current_form_section = 'whichSituation';
+					$current_form_section = 'yourSituation';
 				break;
 			}
 		}
