@@ -106,6 +106,11 @@ $lang['other_assistance_subtitle'] = "Are you, or anyone in your household, curr
 $lang['example_case_number'] = "ex. 2363954301";
 $lang['other_assistance_help'] = "Other assistance help";
 
+// Household Students
+$lang['household_students_title'] = "All Household Students";
+$lang['household_students_subtitle'] = "Please list all children who live with you, even if they are not related.";
+$lang['household_students_help'] = "";
+
 // Household
 $lang['title_household'] = "All Household Members";
 $lang['title_household_children'] = "All Household Students";

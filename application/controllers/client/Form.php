@@ -10,14 +10,14 @@ class Form extends Client_controller {
 
 	public $form_scenario_a = array(
 		1 => 'assistance',
-		2 => 'householdChildren',
+		2 => 'householdStudents',
 		3 => 'contactInformation',
 		4 => 'confirmation',
 		5 => 'termsAndConditions'
 	);
 
 	public $form_scenario_b = array(
-		1 => 'householdChildren',
+		1 => 'householdStudents',
 		2 => 'contactInformation',
 		3 => 'confirmation',
 		4 => 'termsAndConditions'
