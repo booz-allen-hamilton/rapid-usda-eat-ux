@@ -155,6 +155,25 @@ $lang['label_adult_income'] = "List all Household Members (including yourself) <
 $lang['label_adult_first'] = "Adult's First Name";
 $lang['label_adult_last'] = "Last Name";
 
+// Confirmation
+$lang['confirmation_title'] = "Confirmation";
+$lang['confirmation_subtitle'] = "Please review your application and confirm the information is correct.";
+$lang['confirmation_subtitle_help'] = "";
+$lang['confirmation_household_members'] = "HOUSEHOLD MEMBERS";
+$lang['confirmation_adults'] = "Adults";
+$lang['confirmation_children'] = "Children";
+$lang['confirmation_total_household_members'] = "Total household members";
+$lang['confirmation_contact_info'] = "CONTACT INFORMATION";
+$lang['confirmation_other_assistance'] = "OTHER ASSISTANCE";
+$lang['confirmation_household_income'] = "HOUSEHOLD INCOME";
+$lang['confirmation_address'] = "Address";
+$lang['confirmation_phone'] = "Phone";
+$lang['confirmation_email'] = "Email";
+$lang['confirmation_receive_updates'] = "Receive status updates via email";
+$lang['confirmation_assistance_program'] = "Assistance Program";
+$lang['confirmation_case_number'] = "Case Number";
+$lang['confirmation_not_required'] = "Not required";
+
 // Terms and Conditions
 $lang['terms_and_cond_title'] = "Terms and Conditions";
 $lang['terms_and_cond_subtitle'] = "Please read terms and conditions and indicate if you agree.";
