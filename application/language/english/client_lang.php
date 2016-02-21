@@ -145,6 +145,12 @@ $lang['label_child_ethnicity'] = "Ethnicity";
 $lang['label_child_hispanic'] = "Hispanic or Latino";
 $lang['label_child_race'] = "Race";
 
+// Children Ethnicity and Race
+$lang['children_ethnicity_race'] = "Children's Ethnicity and Race";
+$lang['children_ethnicity_race_subtitle'] = "We are required to ask for information about your children's race and ethnicity. This information is important and helps to make sure we are fully serving our community. Responding to this section is optional and does not affect your children's eligibility for free or reduced price meals.";
+$lang['ethnicity_table_header'] = "Ethnicity (Check One)";
+$lang['race_table_header'] = "Race (Check One or More)";
+
 // Section Three
 $lang['subsection_child_income'] = "CHILD INCOME";
 $lang['label_child_income'] = "Did any of the children you listed above earn any income?";
