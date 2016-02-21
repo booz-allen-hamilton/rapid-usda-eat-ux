@@ -1,0 +1,1 @@
+$(function(){$("[data-scenario-value]").click(function(a){a.preventDefault();var t=$(this).attr("data-scenario-value");$('[name="scenario"]').val(t),$("#form-application").submit()})});
