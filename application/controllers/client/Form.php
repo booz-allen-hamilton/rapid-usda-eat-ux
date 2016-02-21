@@ -74,7 +74,7 @@ class Form extends Client_controller {
 
 		$data['global'] = $this->global;
 		$data['app'] = array(
-			'title'   => $this->lang->line('welcome_title'),
+			'title'   => $this->lang->line('welcome_page_title'),
 			'view'    => 'pages/application-form',
 			'scripts' => array(
 				'lib/validator/dist/validator.min.js',
