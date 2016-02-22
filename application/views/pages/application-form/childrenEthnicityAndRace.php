@@ -26,7 +26,7 @@
 	?>
 	<div class="row tableItems text-left">
 		<div class="col-sm-12 col-md-3 col-md-offset-1">
-			<label><?=$student['first_name'].' '.$student['middle_name'].' '.$student['last_name']?></label>
+			<label><?=$student['first_name'].' '.$student['middle_initial'].' '.$student['last_name']?></label>
 		</div>
 		<div class="col-sm-12 col-md-3">
 			<div class="radio">

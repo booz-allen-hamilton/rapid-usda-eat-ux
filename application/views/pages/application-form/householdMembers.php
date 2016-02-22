@@ -61,7 +61,7 @@
 <div class="row text-center" style="margin-bottom: 50px;">
 	<div class="col-sm-12">
 		<div>
-			<a href="#" class="button button-invert-blue" data-clone="#childName-template" data-target="#childName-list"><i class="fa fa-plus"></i> <?=$this->lang->line('label_add_child')?></a>
+			<a href="#" class="button button-invert-blue" data-clone="#childName-template" data-target="#childName-list"><i class="fa fa-plus"></i> <?=$this->lang->line('household_members_add_child')?></a>
 		</div>
 	</div>
 </div>

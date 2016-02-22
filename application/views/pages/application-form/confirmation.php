@@ -29,7 +29,7 @@
 		<?
 			foreach($form_household_members as $member) {
 		?>
-		<p class="text-large"><?=$member['first_name']?> <?=$member['middle_name']?> <?=$member['last_name']?></p>
+		<p class="text-large"><?=$member['first_name']?> <?=$member['middle_initial']?> <?=$member['last_name']?></p>
 		<?
 			}
 		?>
@@ -39,7 +39,7 @@
 		<?
 			foreach($form_household_students as $student) {
 		?>
-		<p class="text-large"><?=$student['first_name']?> <?=$student['middle_name']?> <?=$student['last_name']?></p>
+		<p class="text-large"><?=$student['first_name']?> <?=$student['middle_initial']?> <?=$student['last_name']?></p>
 		<?
 			}
 		?>

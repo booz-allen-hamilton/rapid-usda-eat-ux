@@ -326,13 +326,13 @@ class Form extends Client_controller {
 					$students = array();
 					$child_first_name  = $this->input->post('child_first');
 					$child_last_name   = $this->input->post('child_last');
-					$child_middle_name = $this->input->post('child_middle');
+					$child_middle_initial = $this->input->post('child_middle');
 
 					for($i = 0; $i < $count; $i++) {
 						$students[] = array(
 							'first_name'  => $child_first_name[$i],
 							'last_name'   => $child_last_name[$i],
-							'middle_name' => $child_middle_name[$i],
+							'middle_initial' => $child_middle_initial[$i],
 						);
 					}
 					$this->session->set_userdata('form_household_students', $students);
@@ -362,7 +362,7 @@ class Form extends Client_controller {
 						$student_array[$loop] = array(
 							'first_name'  => $student['first_name'],
 							'last_name'   => $student['last_name'],
-							'middle_name' => $student['middle_name'],
+							'middle_initial' => $student['middle_initial'],
 							'ethnicity' => $ethnicity[$loop],
 							'race' => json_encode($race[$loop]),
 						);

@@ -16,9 +16,13 @@
 				<option selected="selected" disabled="disabled"><?=$this->lang->line('other_assistance_select_program')?></option>
 				<?
 					foreach($this->config->item('form_assistance_programs') as $assistance_program_key => $assistance_program_value) {
-				?>
-				<option value="<?=$assistance_program_key?>"><?=$assistance_program_value?></option>
-				<?
+						echo '<option value="'.$assistance_program_key.'" ';
+						if ($form['data']['other_assistance']['assistance_program'] == $assistance_program_key) {
+							echo 'selected="selected"';
+						}
+						echo '>';
+						echo $assistance_program_value;
+						echo '</option>';
 					}
 				?>
 			</select>
@@ -29,6 +33,7 @@
 				name="case_number" 
 				placeholder="<?=$this->lang->line('other_assistance_example')?>" 
 				class="form-control input-lg" 
+				value="<?=$form['data']['other_assistance']['case_number']?>"
 				required
 				maxlength="10" />
 		</div>
