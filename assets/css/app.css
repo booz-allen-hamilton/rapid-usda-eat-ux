@@ -538,6 +538,11 @@ a:hover {
       border: 1px solid #BBB;
       margin-left: -5px;
       margin-right: -5px; }
+  #page-application-form .your-situation span.icon-info {
+    display: inline;
+    float: right;
+    right: 20%;
+    top: 10px; }
   #page-application-form .form-group .form-control-feedback {
     right: 10px; }
   #page-application-form .confirmation h3 {
