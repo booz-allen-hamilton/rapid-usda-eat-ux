@@ -229,18 +229,32 @@ button.button,
     .button.button-lg i.icon-right, .button:active.button-lg i.icon-right, .button:focus.button-lg i.icon-right {
       margin-left: 15px; }
 
-.button-transparent {
+.button-transparent, .button-transparent:focus {
   padding: 10px 25px;
   color: #666; }
 
-.button-invert-blue {
+.button-blue, .button-blue:focus, .button-blue:active {
+  border: 2px solid #00aeef !important;
+  color: #FFF !important;
+  background-color: #00aeef !important;
+  font-weight: 700; }
+  .button-blue:hover, .button-blue:focus:hover, .button-blue:active:hover {
+    background-color: #FFF !important;
+    color: #00aeef !important; }
+  .button-blue.disabled, .button-blue:focus.disabled, .button-blue:active.disabled {
+    border: 2px solid #ccc !important;
+    color: #ccc !important;
+    font-weight: 700;
+    background-color: #eee !important; }
+
+.button-invert-blue, .button-invert-blue:focus, .button-invert-blue:active {
   border: 2px solid #00aeef;
   color: #00aeef;
   font-weight: 700; }
-  .button-invert-blue:hover {
+  .button-invert-blue:hover, .button-invert-blue:focus:hover, .button-invert-blue:active:hover {
     background-color: #00aeef;
     color: #fff; }
-  .button-invert-blue.disabled {
+  .button-invert-blue.disabled, .button-invert-blue:focus.disabled, .button-invert-blue:active.disabled {
     border: 2px solid #ccc !important;
     color: #ccc !important;
     font-weight: 700;
@@ -279,7 +293,7 @@ button.button,
   .button-orange:hover, .button-orange:focus:hover {
     color: #fff; }
 
-.button-orange-inverse {
+.button-orange-inverse, .button-orange-inverse:focus {
   border: 2px solid #fbb03f;
   color: #fbb03f;
   font-weight: 700; }
@@ -591,9 +605,9 @@ a:hover {
     padding-top: 0; }
     #page-application-form .electronic-signature .checkbox-inline input {
       margin-top: 0; }
-  #page-application-form .checkbox-inline {
+  #page-application-form .checkbox-inline, #page-application-form .radio-inline, #page-application-form .radio {
     font-size: 18px; }
-    #page-application-form .checkbox-inline input[type=checkbox] {
+    #page-application-form .checkbox-inline input[type=checkbox], #page-application-form .checkbox-inline input[type=radio], #page-application-form .radio-inline input[type=checkbox], #page-application-form .radio-inline input[type=radio], #page-application-form .radio input[type=checkbox], #page-application-form .radio input[type=radio] {
       width: 46px;
       height: 46px;
       cursor: pointer;
@@ -604,17 +618,26 @@ a:hover {
       text-decoration: none;
       box-sizing: border-box;
       transition: all .3s linear;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-    #page-application-form .checkbox-inline .checkbox-label {
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      margin-top: 0; }
+    #page-application-form .checkbox-inline div, #page-application-form .radio-inline div, #page-application-form .radio div {
+      margin: 9px 20px 0 40px;
+      font-weight: normal; }
+    #page-application-form .checkbox-inline .checkbox-label, #page-application-form .checkbox-inline .radio-inline label, #page-application-form .checkbox-inline .radio label, #page-application-form .radio-inline .checkbox-label, #page-application-form .radio-inline .radio-inline label, #page-application-form .radio-inline .radio label, #page-application-form .radio .checkbox-label, #page-application-form .radio .radio-inline label, #page-application-form .radio .radio label {
       padding-left: 40px;
       line-height: 50px; }
-    #page-application-form .checkbox-inline input[type="checkbox"]:checked {
+    #page-application-form .checkbox-inline input[type="checkbox"]:checked, #page-application-form .checkbox-inline input[type="radio"]:checked, #page-application-form .radio-inline input[type="checkbox"]:checked, #page-application-form .radio-inline input[type="radio"]:checked, #page-application-form .radio input[type="checkbox"]:checked, #page-application-form .radio input[type="radio"]:checked {
       background-color: #00aeef;
       text-decoration: none;
       border: 1px solid #038bce; }
-    #page-application-form .checkbox-inline input[type="checkbox"]:focus {
+    #page-application-form .checkbox-inline input[type="checkbox"]:focus, #page-application-form .checkbox-inline input[type="radio"]:focus, #page-application-form .radio-inline input[type="checkbox"]:focus, #page-application-form .radio-inline input[type="radio"]:focus, #page-application-form .radio input[type="checkbox"]:focus, #page-application-form .radio input[type="radio"]:focus {
       outline: 0 none;
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  #page-application-form .radio {
+    margin-bottom: 20px;
+    margin-top: 0; }
+  #page-application-form .multiselect-selected-text {
+    font-size: 18px; }
 
 .circular_button {
   display: block;

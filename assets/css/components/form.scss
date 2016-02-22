@@ -310,10 +310,10 @@ a:hover {
 		}
 	}
 
-	.checkbox-inline {
+	.checkbox-inline, .radio-inline, .radio {
 		font-size: 18px;
 
-		input[type=checkbox] {
+		input[type=checkbox], input[type=radio] {
 			width: 46px;
 			height: 46px;
 			cursor: pointer;
@@ -325,23 +325,38 @@ a:hover {
 			box-sizing: border-box;
 			transition: all .3s linear;
 			box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			margin-top: 0;
 		}
 
-		.checkbox-label {
+		div {
+			margin: 9px 20px 0 40px;
+			font-weight: normal;
+		}
+
+		.checkbox-label, .radio-inline label, .radio label {
 			padding-left: 40px;
 			line-height: 50px;
 		}
 
-		input[type="checkbox"]:checked{
+		input[type="checkbox"]:checked, input[type="radio"]:checked{
 			background-color: $color_subtitle;
 			text-decoration: none;
 			border: 1px solid $color_title;
 		}
 
-		input[type="checkbox"]:focus{
+		input[type="checkbox"]:focus, input[type="radio"]:focus{
 			outline: 0 none;
 			box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 		}
+	}
+
+	.radio {
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+
+	.multiselect-selected-text {
+		font-size: 18px;
 	}
 }
 

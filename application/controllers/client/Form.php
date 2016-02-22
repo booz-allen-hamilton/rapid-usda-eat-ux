@@ -46,6 +46,7 @@ class Form extends Client_controller {
 		//	get saved form data
 		$current_form_step     = $this->get_form_step();
 		$current_form_scenario = $this->get_form_scenario();
+		//echo $current_form_step;
 		//	if step doesn't exist start user from beginning
 		if ($current_form_step == 'start') {
 			$form_sections          = NULL;

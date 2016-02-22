@@ -62,12 +62,29 @@ button.button,
 		}
 	}
 }
-.button-transparent {
+.button-transparent, .button-transparent:focus {
 	padding: 10px 25px;
 	color: #666;
 }
 
-.button-invert-blue {
+.button-blue, .button-blue:focus, .button-blue:active {
+	border: 2px solid $color_subtitle !important;
+	color: #FFF !important;
+	background-color: $color_subtitle !important;
+	font-weight: $fw_bold;
+	&:hover {
+		background-color: #FFF !important;
+		color: $color_subtitle !important;
+	}
+	&.disabled {
+		border: 2px solid #ccc !important;
+		color: #ccc !important;
+		font-weight: $fw_bold;
+		background-color: #eee !important;
+	}
+}
+
+.button-invert-blue, .button-invert-blue:focus, .button-invert-blue:active {
 	border: 2px solid $color_subtitle;
 	color: $color_subtitle;
 	font-weight: $fw_bold;
@@ -120,7 +137,7 @@ button.button,
 	}
 }
 
-.button-orange-inverse {
+.button-orange-inverse, .button-orange-inverse:focus {
 	border: 2px solid $color_action;
 	color: $color_action;
 	font-weight: $fw_bold;
