@@ -1,59 +1,46 @@
 <?=form_hidden('scenario');?>
-<div class="row text-center">
-	<h3>*<?=$this->lang->line('situation_heading')?></h3>
+<div class="row text-center your-situation">
+	<h2><?=$this->lang->line('your_situation_title')?></h2>
+	<p class="text-large"><span class="asterisk">* </span><?=$this->lang->line('your_situation_subtitle')?></p>
 	<div class="col-sm-12 col-md-4">
-		<p>
-			<a href="#" data-toggle="modal" data-target="#atLeastOneClarification">
-				<span class="button-orange glyphicon glyphicon-question-sign" style="float: right; right: 25%; top: 30px;"></span>
-			</a>
-		</p>
+		<?=help_icon($this->lang->line('your_situation_scenario_a_help'))?>
 		<a href="#" class="circular_button" data-scenario-value="assistance">
 			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 20%;">
-				<?=$this->lang->line('at_least_one_household_member')?>
+				<?=$this->lang->line('your_situation_already')?>
 			</div>
 		</a>
 		<div class="grey_header">
-			<?=$this->lang->line('what_youll_need')?>
+			<?=$this->lang->line('your_situation_need')?>
 		</div>
-		<div style="margin-top: 10px; font-size: 16px;">
-			<?=$this->lang->line('assistance_program_case_number')?>
-		</div>
-		<div style="margin-top: 10px; font-size: 16px;">
-			<?=$this->lang->line('ssn')?>
-		</div>
+		<p class="mt-10">
+			<?=$this->lang->line('your_situation_case_number')?>
+		</p>
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<p>
-			<a href="#" data-toggle="modal" data-target="#allHouseholdChildrenOneClarification">
-				<span class="button-orange glyphicon glyphicon-question-sign" style="float: right; right: 25%; top: 30px;"></span>
-			</a>
-		</p>
+		<?=help_icon($this->lang->line('your_situation_scenario_b_help'))?>
 		<a href="#" class="circular_button" data-scenario-value="foster">
 			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 32%;">
-				<?=$this->lang->line('all_household_children')?>
+				<?=$this->lang->line('your_situation_all_foster')?>
 			</div>
 		</a>
 		<div class="grey_header">
-			<?=$this->lang->line('what_youll_need')?>
+			<?=$this->lang->line('your_situation_need')?>
 		</div>
-		<div style="margin-top: 10px; font-size: 16px;">
-			<?=$this->lang->line('ssn')?>
-		</div>
+		<p class="mt-10">
+			<?=$this->lang->line('your_situation_childrens_names')?>
+		</p>
 	</div>
 	<div class="col-sm-12 col-md-4">
 		<a href="#" class="circular_button" data-scenario-value="no">
 			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 43%;">
-				<?=$this->lang->line('none_apply')?>
+				<?=$this->lang->line('your_situation_none')?>
 			</div>
 		</a>
 		<div class="grey_header">
-			<?=$this->lang->line('what_youll_need')?>
+			<?=$this->lang->line('your_situation_need')?>
 		</div>
-		<div style="margin-top: 10px; font-size: 16px;">
-			<?=$this->lang->line('household_income')?>
-		</div>
-		<div style="margin-top: 10px; font-size: 16px;">
-			<?=$this->lang->line('ssn')?>
-		</div>
+		<p class="mt-10">
+			<?=$this->lang->line('your_situation_household_income')?>
+		</p>
 	</div>
 </div>

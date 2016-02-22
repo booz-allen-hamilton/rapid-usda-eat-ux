@@ -14,7 +14,6 @@ $lang['optional'] = "OPTIONAL";
 $lang['frequency'] = "Select Frequency";
 $lang['all_that_apply'] = "Select all that apply";
 $lang['ssn'] = "Social Security Number";
-$lang['assistance_program_case_number'] = "Assistance Program Case Number";
 $lang['household_income'] = "Household Income";
 $lang['assistance_program'] = "Assistance Program";
 $lang['case_number'] = "Case Number";
@@ -26,7 +25,7 @@ $lang['nav_apply_now'] = "Apply Now";
 $lang['nav_application_status'] = "My Status";
 $lang['nav_help'] = "Help";
 
-// Page Titles
+// Weclome
 $lang['welcome_page_title'] = "Apply for Free or Reduced-Price Meals";
 $lang['welcome_title'] = "Apply for <strong>Free</strong> or <strong>Reduced-Price Meals!</strong>";
 $lang['welcome_description_part_one'] = "This webform is your quick and secure way to apply. Everything you need to know about applying for free and reduced price meals can be found here. Click the yellow question mark icon";
@@ -72,22 +71,20 @@ $lang['getting_started_elements'] = array(
 );
 $lang['error_age_validation'] = "Sorry. You must be over 21 to proceed with the application.";
 
-// Section Titles
-$lang['application_apply'] = "Apply for <strong>Free School Lunch</strong>";
-$lang['application_title'] = "Apply for Free and Reduced School Lunch";
-$lang['section_one_title'] = "Please list ALL infants, children, and students up to and including grade 12 who are living with you and share income and expenses, even if not related (Household Members):";
-$lang['section_two_title'] = "Does anyone (including you) currently participate in one or more of the following assistance programs: SNAP, TANF, or FDPIR?";
-$lang['section_three_title'] = "Report Income for ALL Household Members";
-$lang['section_four_title'] = "Contact Information";
+// Your Situation
+$lang['your_situation_title'] = "Your Situation";
+$lang['your_situation_subtitle'] = "Does one of these situations apply to you?";
+$lang['your_situation_already'] = "At least one household member already receives SNAP, TANF or FDPIR";
+$lang['your_situation_need'] = "WHAT YOU'LL NEED";
+$lang['your_situation_all_foster'] = "<u>ALL</u> household children are foster children";
+$lang['your_situation_none'] = "None of these apply";
+$lang['your_situation_case_number'] = "Assistance Program Case Number";
+$lang['your_situation_childrens_names'] = "Just the child(ren)'s full name(s)";
+$lang['your_situation_household_income'] = "Household income amount(s), source(s), and frequency";
+$lang['your_situation_scenario_a_help'] = "";
+$lang['your_situation_scenario_b_help'] = "";
 
-// Which Situation Applies
-$lang['situation_heading'] = "Does one of these situations apply to you?";
-$lang['what_youll_need'] = "WHAT YOU'LL NEED";
-$lang['at_least_one_household_member'] = "At least one household member already receives SNAP, TANF or FDPIR";
-$lang['all_household_children'] = "<u>ALL</u> household children are foster children";
-$lang['none_apply'] = "None of these apply";
-
-// Assistance Skip Pattern
+// Other Assistance Skip Pattern
 $lang['title_assistance'] = "Other Assistance";
 $lang['label_assistance'] = "Do you or your kids participate in <strong>SNAP</strong>, <strong>TANF</strong>, or <strong>FDPIR</strong>?";
 $lang['label_assistance_clarification'] = "(If so, you are already eligible for free/reduced school lunch.)";
@@ -100,7 +97,7 @@ $lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
 $lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
 $lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
 
-//Other Assistance
+// Other Assistance
 $lang['other_assistance'] = "Other Assistance";
 $lang['other_assistance_subtitle'] = "Are you, or anyone in your household, currently a recipient of benefits under the <b>SNAP</b>, the <b>TANF</b> cash assistance program, or the <b>FDPIR</b>?";
 $lang['example_case_number'] = "ex. 2363954301";
