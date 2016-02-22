@@ -39,6 +39,10 @@
 						<?
 							for($i = 1; $i <= count($form['form_sections']); $i++) {
 								$step = ($i == $form['step'] ? 'step-active' : 'step-disabled');
+								
+								if ($form['step'] > $i) {
+									$step = 'step-complete';
+								}
 						?>
 							<td>
 								<div class="footer-progress-step <?=$step?>" id="step-<?=$i?>">

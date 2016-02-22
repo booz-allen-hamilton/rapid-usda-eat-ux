@@ -544,7 +544,7 @@ a:hover {
       #page-application-form .footer .footer-progress-step.step-complete .icon-number {
         display: none; }
       #page-application-form .footer .footer-progress-step.step-complete .icon-background {
-        color: #000; }
+        color: #fbb03f; }
       #page-application-form .footer .footer-progress-step.step-complete .icon-image {
         color: #fff; }
     #page-application-form .footer .footer-bav-connector {
@@ -671,5 +671,3 @@ a:hover {
     height: auto; }
     #page-application-form .footer .footer-bav-connector {
       width: 27px; } }
-
-/*# sourceMappingURL=app.css.map */

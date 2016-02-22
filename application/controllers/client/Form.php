@@ -277,8 +277,8 @@ class Form extends Client_controller {
 				$this->form_validation->set_rules('city', '', 'required');
 				$this->form_validation->set_rules('state', '', 'required');
 				$this->form_validation->set_rules('zip', '', 'required');
-				$this->form_validation->set_rules('phone', '', 'required');
-				$this->form_validation->set_rules('email', '', 'required');
+				// $this->form_validation->set_rules('phone', '', 'required');
+				// $this->form_validation->set_rules('email', '', 'required');
 				// $this->form_validation->set_rules('status_text', '', 'required');
 				// $this->form_validation->set_rules('status_email', '', 'required');
 				// $this->form_validation->set_rules('status_phone', '', 'required');
@@ -290,7 +290,7 @@ class Form extends Client_controller {
 				$this->form_validation->set_rules('terms_and_cond_agree', '', 'required|in_list[1]');
 			break;
 			case "childrenEthnicityAndRace":
-				$this->form_validation->set_rules('test', '', 'required|in_list[1]');
+				$this->form_validation->set_rules('children_ethnicity_race', '', 'required|in_list[1]');
 			break;
 		}
 		
@@ -354,19 +354,18 @@ class Form extends Client_controller {
 					$this->session->set_userdata('form_contact_information', $contact_information);
 				break;
 				case "childrenEthnicityAndRace":
-					// echo "<pre>";
-					// print_r($_POST);
-					// die;
 					$form_household_students  = $this->session->userdata('form_household_students');
 					$loop = 0;
+					$ethnicity = $this->input->post('ethnicity');
+					$race = $this->input->post('race');
 					$student_array = array();
 					foreach($form_household_students as $student) {
 						$student_array[$loop] = array(
 							'first_name'  => $student['first_name'],
 							'last_name'   => $student['last_name'],
 							'middle_initial' => $student['middle_initial'],
-							'ethnicity' => $this->input->post('ethnicity'.$loop),
-							'race' => $this->input->post('race_'.$loop),
+							'ethnicity' => (!empty($ethnicity[$loop]) ? $ethnicity[$loop] : NULL),
+							'race' => (!empty($race[$loop]) ? $race[$loop] : NULL),
 						);
 						$loop++;
 					}

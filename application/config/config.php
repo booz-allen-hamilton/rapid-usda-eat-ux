@@ -93,11 +93,17 @@ $config['form_assistance_programs'] = array(
 	'fdpir' => 'FDPIR'
 );
 
-$config['form_ethnicity_race'] = array(
-	'ethnicity_american_indian_alaskan_native',
-	'ethnicity_asian_black_african_american',
-	'ethnicity_native_hawaiian_other_pacific_islander',
-	'ethnicity_white',
+$config['form_ethnicity'] = array(
+	'ethnicity_no_answer',
+	'ethnicity_hispanic_latino',
+	'ethnicity_not_hispanic_latino'
+);
+
+$config['form_race'] = array(
+	'race_american_indian_alaskan_native',
+	'race_asian_black_african_american',
+	'race_native_hawaiian_other_pacific_islander',
+	'race_white',
 );
 
 $config['form_states'] = array(
