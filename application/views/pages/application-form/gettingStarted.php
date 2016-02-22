@@ -14,6 +14,7 @@
 					<input type="text"
 						class="form-control input-lg"
 						name="first_name"
+						value="<?=$form['data']['household_members'][0]['first_name']?>"
 						placeholder="<?=$this->lang->line('getting_started_elements')['first_name']['placeholder']?>"
 						required
 						data-error="<?=$this->lang->line('getting_started_elements')['first_name']['error']?>" />
@@ -26,6 +27,7 @@
 					<input type="text"
 						class="form-control input-lg"
 						name="last_name"
+						value="<?=$form['data']['household_members'][0]['last_name']?>"
 						placeholder="<?=$this->lang->line('getting_started_elements')['last_name']['placeholder']?>"
 						required
 						data-error="<?=$this->lang->line('getting_started_elements')['last_name']['error']?>" />
@@ -38,6 +40,7 @@
 					<input type="text"
 						class="form-control input-lg col-md-1"
 						name="middle_initial"
+						value="<?=$form['data']['household_members'][0]['middle_initial']?>"
 						maxlength="1"
 						placeholder="<?=$this->lang->line('getting_started_elements')['middle_initial']['placeholder']?>"
 						data-error="<?=$this->lang->line('getting_started_elements')['middle_initial']['error']?>" />
