@@ -112,7 +112,7 @@ $lang['household_students_subtitle'] = "Please list all children who live with y
 $lang['household_students_help'] = "";
 
 // Household
-$lang['title_household'] = "All Household Members";
+$lang['household_subtitle'] = "Please list all children and adults who live with you, even if they are not related.";
 $lang['title_household_children'] = "All Household Students";
 $lang['label_num_children'] = "How many children live with you, even if not related?";
 $lang['label_num_adults'] = "How many adults (including you) live at the residence?";
@@ -126,17 +126,21 @@ $lang['number_adults_modal_header'] = "Adult Modal Header";
 $lang['number_adults_modal_body'] = "Adult Modla Body";
 
 // Household Members
-$lang['title_household_members'] = "Names of All Household Members";
-$lang['subtitle_household_members'] = "Please list all children who live with you, even if they are not related.";
-$lang['section_title_children'] = "CHILDREN";
-$lang['section_title_adults'] = "ADULTS";
-$lang['label_first'] = "First Name";
-$lang['label_middle'] = "Middle Initial";
-$lang['label_last'] = "Last Name";
-$lang['label_add_child'] = "Add Child";
-$lang['label_add_adult'] = "Add Adult";
-$lang['household_member_modal_header'] = "Household Member Modal Header";
-$lang['household_member_modal_body'] = "Household Member Modal Body";
+$lang['household_members_title'] = "All Household Members";
+$lang['household_members_names'] = "Names of All Household Members";
+$lang['household_members_subtitle'] = "Please list all children who live with you, even if they are not related.";
+$lang['household_members_children'] = "CHILDREN";
+$lang['household_members_adults'] = "ADULTS";
+$lang['household_members_over_18'] = "Over the age of 18";
+$lang['household_members_under_18'] = "Under the age of 18";
+$lang['household_members_label_first'] = "First Name";
+$lang['household_members_label_middle'] = "MI";
+$lang['household_members_label_last'] = "Last Name";
+$lang['household_members_label_add_child'] = "Add Child";
+$lang['household_members_label_add_adult'] = "Add Adult";
+$lang['household_members_modal_header'] = "Household Member Modal Header";
+$lang['household_members_modal_body'] = "Household Member Modal Body";
+$lang['household_members_earns_income'] = "Earns Income";
 
 // Children Details
 $lang['title_children_details'] = "Children's Details";

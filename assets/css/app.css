@@ -636,10 +636,48 @@ a:hover {
   font-size: 16px;
   font-weight: bold; }
 
+.grey_text {
+  font-size: 16px;
+  color: #888; }
+
 @media (max-width: 767px) {
   #page-application-form .footer {
     height: auto; }
     #page-application-form .footer .footer-bav-connector {
       width: 27px; } }
+input[type="radio"].toggle {
+  display: none; }
 
-/*# sourceMappingURL=app.css.map */
+input[type="radio"].toggle:checked + label {
+  background-color: #00A8FF;
+  cursor: default;
+  color: #FFF;
+  border-color: transparent; }
+
+input[type="radio"].toggle + label {
+  width: 3em; }
+
+input[type="radio"].toggle:checked + label.btn:hover {
+  background-color: inherit;
+  background-position: 0 0;
+  -webkit-transition: none;
+  -moz-trainsition: none;
+  transition: none;
+  background-color: #00A8FF; }
+
+input[type="radio"].toggle-left + label {
+  border-right: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+input[type="radio"].toggle-right + label {
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
