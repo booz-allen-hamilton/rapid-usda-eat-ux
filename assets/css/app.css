@@ -592,7 +592,7 @@ a:hover {
     padding: 15px 20px;
     font-size: 18px; }
   #page-application-form .electronic-signature .sig-statement {
-    margin-top: 14px; }
+    margin-top: 6px; }
   #page-application-form .electronic-signature p {
     font-size: 20px; }
   #page-application-form .electronic-signature span {
@@ -671,3 +671,5 @@ a:hover {
     height: auto; }
     #page-application-form .footer .footer-bav-connector {
       width: 27px; } }
+
+/*# sourceMappingURL=app.css.map */
