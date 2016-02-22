@@ -273,13 +273,13 @@ class Form extends Client_controller {
 			break;
 			case "contactInformation":
 				$this->form_validation->set_rules('street_address', '', 'required');
-				//$this->form_validation->set_rules('apt', '', '');
+				// $this->form_validation->set_rules('apt', '', '');
 				$this->form_validation->set_rules('city', '', 'required');
 				$this->form_validation->set_rules('state', '', 'required');
 				$this->form_validation->set_rules('zip', '', 'required');
 				// $this->form_validation->set_rules('phone', '', 'required');
 				// $this->form_validation->set_rules('email', '', 'required');
-				$this->form_validation->set_rules('contact_method', '', 'required|in_list[contact_text,contact_email,contact_phone]');
+				// $this->form_validation->set_rules('contact_method', '', 'required|in_list[contact_text,contact_email,contact_phone]');
 			break;
 			case 'confirmation':
 				$this->form_validation->set_rules('confirmation', '', 'required|in_list[1]');

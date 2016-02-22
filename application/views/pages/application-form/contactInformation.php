@@ -105,13 +105,13 @@
 	</div>
 	<div class="col-sm-12 col-md-offset-1 col-md-11">
 		<div class="radio-inline">
-			<label><input type="radio" required name="contact_method" value="contact_text"><div><?=$this->lang->line('contact_info_text')?></div></label>
+			<label><input type="radio" name="contact_method" value="contact_text"><div><?=$this->lang->line('contact_info_text')?></div></label>
 		</div>
 		<div class="radio-inline">
-			<label><input type="radio" required name="contact_method" value="contact_email"><div><?=$this->lang->line('contact_info_email')?></div></label>
+			<label><input type="radio" name="contact_method" value="contact_email"><div><?=$this->lang->line('contact_info_email')?></div></label>
 		</div>
 		<div class="radio-inline">
-			<label><input type="radio" required name="contact_method" value="contact_phone"><div><?=$this->lang->line('contact_info_phone')?></div></label>
+			<label><input type="radio" name="contact_method" value="contact_phone"><div><?=$this->lang->line('contact_info_phone')?></div></label>
 		</div>
 	</div>
 </div>
