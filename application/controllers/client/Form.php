@@ -279,9 +279,7 @@ class Form extends Client_controller {
 				$this->form_validation->set_rules('zip', '', 'required');
 				// $this->form_validation->set_rules('phone', '', 'required');
 				// $this->form_validation->set_rules('email', '', 'required');
-				// $this->form_validation->set_rules('status_text', '', 'required');
-				// $this->form_validation->set_rules('status_email', '', 'required');
-				// $this->form_validation->set_rules('status_phone', '', 'required');
+				$this->form_validation->set_rules('contact_method', '', 'required|in_list[contact_text,contact_email,contact_phone]');
 			break;
 			case 'confirmation':
 				$this->form_validation->set_rules('confirmation', '', 'required|in_list[1]');
@@ -347,9 +345,7 @@ class Form extends Client_controller {
 						'zip'            => $this->input->post('zip'),
 						'phone'          => $this->input->post('apt'),
 						'email'          => $this->input->post('email'),
-						'status_text'    => $this->input->post('status_text'),
-						'status_email'   => $this->input->post('status_email'),
-						'status_phone'   => $this->input->post('status_phone'),
+						'contact_method' => $this->input->post('contact_method'),
 					);
 					$this->session->set_userdata('form_contact_information', $contact_information);
 				break;
