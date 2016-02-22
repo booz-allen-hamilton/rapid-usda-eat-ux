@@ -84,7 +84,7 @@ $lang['your_situation_household_income'] = "Household income amount(s), source(s
 $lang['your_situation_scenario_a_help'] = "";
 $lang['your_situation_scenario_b_help'] = "";
 
-// Assistance Skip Pattern
+// Other Assistance Skip Pattern
 $lang['title_assistance'] = "Other Assistance";
 $lang['label_assistance'] = "Do you or your kids participate in <strong>SNAP</strong>, <strong>TANF</strong>, or <strong>FDPIR</strong>?";
 $lang['label_assistance_clarification'] = "(If so, you are already eligible for free/reduced school lunch.)";
@@ -97,7 +97,7 @@ $lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
 $lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
 $lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
 
-//Other Assistance
+// Other Assistance
 $lang['other_assistance'] = "Other Assistance";
 $lang['other_assistance_subtitle'] = "Are you, or anyone in your household, currently a recipient of benefits under the <b>SNAP</b>, the <b>TANF</b> cash assistance program, or the <b>FDPIR</b>?";
 $lang['example_case_number'] = "ex. 2363954301";
