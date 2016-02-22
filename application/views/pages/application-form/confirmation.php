@@ -17,7 +17,7 @@
 </div>
 <div class="row confirmation">
 	<div class="col-sm-12 col-md-4">
-		<h3><?=$this->lang->line('confirmation_household_members')?> (3)</h3>
+		<h3><?=$this->lang->line('confirmation_household_members')?></h3>
 	</div>
 	<div class="col-sm-12 col-md-8 mt-15">
 		<hr class="divider">

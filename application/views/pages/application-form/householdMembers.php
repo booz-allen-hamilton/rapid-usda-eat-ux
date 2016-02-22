@@ -1,6 +1,6 @@
 <div class="row text-center">
 	<div class="col-sm-12">
-		<h2><?=$this->lang->line('title_household_members')?></h2>
+		<h2><?=$this->lang->line('household_members_title')?></h2>
 		<p><?=$this->lang->line('subtitle_household_members')?>
 			<a href="#" data-toggle="modal" data-target="#householdMembersClarification">
 				<span class="glyphicon glyphicon-info-sign"></span>

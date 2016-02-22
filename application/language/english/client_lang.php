@@ -15,8 +15,6 @@ $lang['frequency'] = "Select Frequency";
 $lang['all_that_apply'] = "Select all that apply";
 $lang['ssn'] = "Social Security Number";
 $lang['household_income'] = "Household Income";
-$lang['assistance_program'] = "Assistance Program";
-$lang['case_number'] = "Case Number";
 $lang['error_server_validation'] = "There was a problem saving the form. Please try again.";
 
 // Header
@@ -84,79 +82,51 @@ $lang['your_situation_household_income'] = "Household income amount(s), source(s
 $lang['your_situation_scenario_a_help'] = "";
 $lang['your_situation_scenario_b_help'] = "";
 
-// Other Assistance Skip Pattern
-$lang['title_assistance'] = "Other Assistance";
-$lang['label_assistance'] = "Do you or your kids participate in <strong>SNAP</strong>, <strong>TANF</strong>, or <strong>FDPIR</strong>?";
-$lang['label_assistance_clarification'] = "(If so, you are already eligible for free/reduced school lunch.)";
-$lang['link_define'] = "Program Definitions";
-
-// Assistance Modal
-$lang['modal_assistance_title'] = "Program Definitions";
-$lang['modal_assistance_snap'] = "Supplemental Nutrition Assistance Program";
-$lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
-$lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
-$lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
-
 // Other Assistance
-$lang['other_assistance'] = "Other Assistance";
+$lang['other_assistance_title'] = "Other Assistance";
 $lang['other_assistance_subtitle'] = "Are you, or anyone in your household, currently a recipient of benefits under the <b>SNAP</b>, the <b>TANF</b> cash assistance program, or the <b>FDPIR</b>?";
-$lang['example_case_number'] = "ex. 2363954301";
 $lang['other_assistance_help'] = "Other assistance help";
+$lang['other_assistance_program'] = "Assistance Program";
+$lang['other_assistance_case_number'] = "Case Number";
+$lang['other_assistance_example'] = "ex. 2363954301";
 
-// Household Students
+// All Household Students
 $lang['household_students_title'] = "All Household Students";
 $lang['household_students_subtitle'] = "Please list all children who live with you, even if they are not related.";
 $lang['household_students_help'] = "";
 
-// Household
-$lang['title_household'] = "All Household Members";
-$lang['title_household_children'] = "All Household Students";
-$lang['label_num_children'] = "How many children live with you, even if not related?";
-$lang['label_num_adults'] = "How many adults (including you) live at the residence?";
-$lang['error_children_number_field'] = "Please enter a valid number of children.";
-$lang['error_adult_number_field'] = "Please enter a valid number of adults.";
-$lang['label_add_child_number'] = "Number of Children";
-$lang['label_add_adult_number'] = "Number of Adults";
-$lang['number_children_modal_header'] = "Child Modal Header";
-$lang['number_children_modal_body'] = "Child Modal Body";
-$lang['number_adults_modal_header'] = "Adult Modal Header";
-$lang['number_adults_modal_body'] = "Adult Modla Body";
+// All Household Members
+$lang['household_members_title'] = "Names of All Household Members";
+$lang['household_members_subtitle'] = "Please list all children living with you, even if they are not related.";
+$lang['household_members_children'] = "CHILDREN";
+$lang['household_members_adults'] = "ADULTS";
+$lang['household_members_over_eighteen'] = "(Over the age of 18)";
+$lang['household_members_under_eighteen'] = "(Under the age of 18)";
+$lang['household_members_first'] = "First Name";
+$lang['household_members_middle'] = "Middle Initial";
+$lang['household_members_last'] = "Last Name";
+$lang['household_members_add_child'] = "Add Child";
+$lang['household_members_add_adult'] = "Add Adult";
+$lang['household_members_earns_income'] = "Earns income?";
+$lang['household_members_income'] = "Income?";
+$lang['household_members_student'] = "Student?";
+$lang['household_members_status'] = "Child Status";
+$lang['household_members_check_one'] = "(Check one or more)";
 
-// Household Members
-$lang['title_household_members'] = "Names of All Household Members";
-$lang['subtitle_household_members'] = "Please list all children who live with you, even if they are not related.";
-$lang['section_title_children'] = "CHILDREN";
-$lang['section_title_adults'] = "ADULTS";
-$lang['label_first'] = "First Name";
-$lang['label_middle'] = "Middle Initial";
-$lang['label_last'] = "Last Name";
-$lang['label_add_child'] = "Add Child";
-$lang['label_add_adult'] = "Add Adult";
-$lang['household_member_modal_header'] = "Household Member Modal Header";
-$lang['household_member_modal_body'] = "Household Member Modal Body";
-
-// Children Details
-$lang['title_children_details'] = "Children's Details";
-$lang['subtitle_children_details'] = "Please check all that apply to help determine eligibility.";
-$lang['label_select_all'] = "Select all that apply";
-$lang['label_child_student'] = "Student (K-12)";
-$lang['label_child_foster'] = "Foster Child";
-$lang['label_child_hmr'] = "Homeless, Migrant, or Runaway";
-$lang['label_child_head_start'] = "Head Start participant";
-$lang['label_child_ethnicity'] = "Ethnicity";
-$lang['label_child_hispanic'] = "Hispanic or Latino";
-$lang['label_child_race'] = "Race";
-
-// Children Ethnicity and Race
-$lang['children_ethnicity_race'] = "Children's Ethnicity and Race";
-$lang['children_ethnicity_race_subtitle'] = "We are required to ask for information about your children's race and ethnicity. This information is important and helps to make sure we are fully serving our community. Responding to this section is optional and does not affect your children's eligibility for free or reduced price meals.";
-$lang['ethnicity_table_header'] = "Ethnicity (Check One)";
-$lang['race_table_header'] = "Race (Check One or More)";
-
-// Section Three
-$lang['subsection_child_income'] = "CHILD INCOME";
-$lang['label_child_income'] = "Did any of the children you listed above earn any income?";
-$lang['label_child_income_total'] = "TOTAL income of all children listed above";
+// All Household Members - Income section
+$lang['household_income_adult_name_suffix'] = "'s Income (Adult)";
+$lang['household_income_child_name_suffix'] = "'s Income (Child)";
+$lang['household_income_gross'] = "Please enter gross income and how often it was received.";
+$lang['household_income_category'] = "Income Category";
+$lang['household_income_type'] = "Type";
+$lang['household_income_amount_freq'] = "Dollar Amount / Frequency";
+$lang['household_income_salary'] = "Salary";
+$lang['household_income_work'] = "Earnings from Work";
+$lang['household_income_public'] = "Public Assistance / Alimony / Child Support";
+$lang['household_income_pension'] = "Pensions / Retirement / All Other Income";
+$lang['household_income_ssn_benefits'] = "Social Security Benefits";
+$lang['household_income_spending'] = "Spending money or other income from friend or relative";
+$lang['household_income_other'] = "Income from any other source";
 
 // Contact Information
 $lang['contact_info_title'] = "Contact Information";
@@ -198,6 +168,12 @@ $lang['contact_info_elements'] = array(
 	),
 );
 
+// Children Ethnicity and Race
+$lang['children_ethnicity_race'] = "Children's Ethnicity and Race";
+$lang['children_ethnicity_race_subtitle'] = "We are required to ask for information about your children's race and ethnicity. This information is important and helps to make sure we are fully serving our community. Responding to this section is optional and does not affect your children's eligibility for free or reduced price meals.";
+$lang['ethnicity_table_header'] = "Ethnicity (Check One)";
+$lang['race_table_header'] = "Race (Check One or More)";
+
 // Confirmation
 $lang['confirmation_title'] = "Confirmation";
 $lang['confirmation_subtitle'] = "Please review your application and confirm the information is correct.";
@@ -238,3 +214,19 @@ $lang['electronic_sig_ssn_help'] = "";
 // Success
 $lang['success_submission_id'] = "Submission ID: ";
 $lang['success_return'] = "Return Home";
+
+
+// Possibly unused
+
+// Other Assistance Skip Pattern
+$lang['title_assistance'] = "Other Assistance";
+$lang['label_assistance'] = "Do you or your kids participate in <strong>SNAP</strong>, <strong>TANF</strong>, or <strong>FDPIR</strong>?";
+$lang['label_assistance_clarification'] = "(If so, you are already eligible for free/reduced school lunch.)";
+$lang['link_define'] = "Program Definitions";
+
+// Assistance Modal
+$lang['modal_assistance_title'] = "Program Definitions";
+$lang['modal_assistance_snap'] = "Supplemental Nutrition Assistance Program";
+$lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
+$lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
+$lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
