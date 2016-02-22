@@ -20,18 +20,17 @@ class Form extends Client_controller {
 	public $form_scenario_b = array(
 		1 => 'householdStudents',
 		2 => 'contactInformation',
-		4 => 'childrenEthnicityAndRace',
-		5 => 'confirmation',
-		6 => 'termsAndConditions'
+		3 => 'childrenEthnicityAndRace',
+		4 => 'confirmation',
+		5 => 'termsAndConditions'
 	);
 
 	public $form_scenario_c = array(
 		1 => 'householdMembers',
-		2 => 'householdIncome',
-		3 => 'contactInformation',
+		2 => 'contactInformation',
+		3 => 'childrenEthnicityAndRace',
 		4 => 'confirmation',
-		5 => 'childrenEthnicityAndRace',
-		6 => 'termsAndConditions'
+		5 => 'termsAndConditions'
 	);
 
 	public $scenario;
