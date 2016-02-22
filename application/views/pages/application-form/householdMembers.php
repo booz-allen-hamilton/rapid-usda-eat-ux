@@ -1,9 +1,16 @@
 <div class="row text-center">
 	<div class="col-sm-12">
 		<h2><?=$this->lang->line('household_members_title')?></h2>
+<<<<<<< HEAD
 		<p class="text-large">
 			<?=$this->lang->line('household_subtitle')?>
 			<?=help_icon($this->lang->line('household_students_help'))?>
+=======
+		<p><?=$this->lang->line('subtitle_household_members')?>
+			<a href="#" data-toggle="modal" data-target="#householdMembersClarification">
+				<span class="glyphicon glyphicon-info-sign"></span>
+			</a>
+>>>>>>> 4a45f978eb51bec305cb83f1d85b4b4a1774b18b
 		</p>
 	</div>
 	<h2 style="margin-bottom: 0px;"><?=$this->lang->line('household_members_adults')?></h2>
@@ -87,10 +94,49 @@
 	</div>
 	<div class="col-sm-12"><hr class="divider" /></div>
 </div>
+<<<<<<< HEAD
 <div class="earns-income-2" style="display: none;">
 	<div class="row">
 		<div class="col-md-offset-1 col-md-offset-10">
 			<h4>Jane Smith's Income</h4>
+=======
+
+<div class="row text-center" style="margin-bottom: 50px;">
+	<div class="col-sm-12">
+		<div>
+			<a href="#" class="button button-invert-blue" data-clone="#childName-template" data-target="#childName-list"><i class="fa fa-plus"></i> <?=$this->lang->line('household_members_add_child')?></a>
+		</div>
+	</div>
+</div>
+
+<div class="row text-center">
+	<div class="col-sm-12">
+		<h3><?=$this->lang->line('section_title_adults')?></h3>
+	</div>
+</div>
+<div class="row tableHeaders">
+	<div class="col-sm-12 col-md-4">
+		<span class="asterisk">*</span> <?=$this->lang->line('label_first')?>
+	</div>
+	<div class="col-sm-12 col-md-4">
+		<span class="asterisk">*</span> <?=$this->lang->line('label_last')?>
+	</div>
+	<div class="col-sm-12 col-md-2">
+		<span class="asterisk"></span><?=$this->lang->line('label_middle')?>
+	</div>
+	<div class="col-sm-12 col-md-2">&nbsp;</div>
+	<div class="col-sm-12"><hr class="divider" /></div>
+</div>
+
+<!-- Adult rows -->
+<div id="adultName-list">
+	<div class="row tableHeaders">
+		<div class="col-sm-12 col-md-4">
+			<input type="text" class="form-control input-lg" name="adult_first[]">
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<input type="text" class="form-control input-lg" name="adult_last[]">
+>>>>>>> 4a45f978eb51bec305cb83f1d85b4b4a1774b18b
 		</div>
 	</div>
 </div>

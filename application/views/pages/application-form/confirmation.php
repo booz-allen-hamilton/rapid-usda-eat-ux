@@ -17,7 +17,7 @@
 </div>
 <div class="row confirmation">
 	<div class="col-sm-12 col-md-4">
-		<h3><?=$this->lang->line('confirmation_household_members')?> (3)</h3>
+		<h3><?=$this->lang->line('confirmation_household_members')?></h3>
 	</div>
 	<div class="col-sm-12 col-md-8 mt-15">
 		<hr class="divider">
@@ -29,7 +29,7 @@
 		<?
 			foreach($form_household_members as $member) {
 		?>
-		<p class="text-large"><?=$member['first_name']?> <?=$member['middle_name']?> <?=$member['last_name']?></p>
+		<p class="text-large"><?=$member['first_name']?> <?=$member['middle_initial']?> <?=$member['last_name']?></p>
 		<?
 			}
 		?>
@@ -39,7 +39,7 @@
 		<?
 			foreach($form_household_students as $student) {
 		?>
-		<p class="text-large"><?=$student['first_name']?> <?=$student['middle_name']?> <?=$student['last_name']?></p>
+		<p class="text-large"><?=$student['first_name']?> <?=$student['middle_initial']?> <?=$student['last_name']?></p>
 		<?
 			}
 		?>

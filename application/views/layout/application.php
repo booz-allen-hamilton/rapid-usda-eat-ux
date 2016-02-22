@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title><?=$app['title']?></title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?=PATH_VENDOR?>twbs/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="<?=PATH_ASSETS?>css/app.css" />
-	<script src="<?=PATH_ASSETS?>js/form/jquery.multiSelect.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://davidstutz.github.io/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" type="text/css"/>		
 </head>
 <body>
 	<?
@@ -32,6 +31,7 @@
 	<script src="<?=PATH_VENDOR?>components/jquery/jquery.min.js"></script>
 	<script src="<?=PATH_VENDOR?>twbs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="<?=PATH_ASSETS?>js/app.js"></script>
+	<script type="text/javascript" src="http://davidstutz.github.io/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
 	<?
 		if (!empty($app['scripts'])) {
 			if (is_array($app['scripts'])) {

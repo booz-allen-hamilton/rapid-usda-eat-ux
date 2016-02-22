@@ -18,7 +18,7 @@
 			<div class="col-sm-12 col-md-11 text-left sig-statement">
 				<p><?=$this->lang->line('electronic_sig_statement')?></p>
 				<input type="text" class="form-control input-lg" name="electronic_signature" required data-error="<?=$this->lang->line('error_electronic_sig_name')?>" />
-				<span><?=$form_household_members[0]['first_name'].' '.$form_household_members[0]['middle_name'].' '.$form_household_members[0]['last_name']?></span>
+				<span><?=$form_household_members[0]['first_name'].' '.$form_household_members[0]['middle_initial'].' '.$form_household_members[0]['last_name']?></span>
 			</div>
 		</div>
 		<div class="row mt-20">

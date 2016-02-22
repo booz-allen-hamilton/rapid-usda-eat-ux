@@ -64,13 +64,13 @@
 					</table>
 				</div>
 				<div class="col-sm-12 col-md-6">
-					<button class="button button-invert-blue pull-right" type="submit">
+					<button class="button button-blue pull-right" type="submit">
 						<?=$this->lang->line('next')?><i class="icon-right fa fa-angle-right"></i>
 					</button>
-					<a href="#" class="button button-invert-blue mr10 pull-right" data-action="prev">
+					<a href="#" id="history-back" class="button button-blue mr-10 pull-right" data-action="prev">
 						<i class="icon-left fa fa-angle-left"></i><?=$this->lang->line('back')?>
 					</a>
-					<a href="<?=base_url('apply/cancel')?>" class="button button-transparent mr10 pull-right"><?=$this->lang->line('cancel')?></a>
+					<a href="<?=base_url('apply/cancel')?>" class="button button-transparent mr-10 pull-right"><?=$this->lang->line('cancel')?></a>
 					<div class="clearfix"></div>
 				</div>
 			<?
@@ -80,6 +80,14 @@
 		</div>
 	</div>
 <?
+	echo form_close();
+	 
+	//	form submission for back
+	$form_attributes = array(
+		'id' => 'form-application-back'
+	);
+	echo form_open($form['process'], $form_attributes);
+	echo form_hidden('back', 1);
 	echo form_close();
 ?>
 </div>

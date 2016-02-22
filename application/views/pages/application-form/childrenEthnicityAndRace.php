@@ -1,6 +1,4 @@
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript" src="http://davidstutz.github.io/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
-<link rel="stylesheet" href="http://davidstutz.github.io/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" type="text/css"/>		
+
 <div class="row text-center">
 	<div class="col-sm-12 col-md-12">
 		<h2><?=$this->lang->line('children_ethnicity_race')?></h2>
@@ -19,54 +17,54 @@
 		</div>
 	</div>
 	<hr/>
-	<form action="" method="post">
+	<?
+		$form_household_students  = $this->session->userdata('form_household_students');
+		$loop = 0;
+		foreach($form_household_students as $student) {
+	?>
 	<div class="row tableItems text-left">
 		<div class="col-sm-12 col-md-3 col-md-offset-1">
-			<label>Jack P. Smith</label>
+			<label><?=$student['first_name'].' '.$student['middle_initial'].' '.$student['last_name']?></label>
 		</div>
 		<div class="col-sm-12 col-md-3">
 			<div class="radio">
-			  <label><input type="radio" name="eth-hispanic1">Hispanic/Latino</label>
+			  <label><input type="radio" name="ethnicity_<?=$loop?>" value="hispanic_latino">Hispanic/Latino</label>
 			</div>
 			<div class="radio">
-			  <label><input type="radio" name="eth-hispanic1">Not Hispanic/Latino</label>
+			  <label><input type="radio" name="ethnicity_<?=$loop?>" value="not_hispanic_latino">Not Hispanic/Latino</label>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<select id="raceSelect1" multiple="multiple">
-			      <option value="1-1">American Indian or Alaskan Native</option>
-			      <option value="2-1">Asian, Black or African American</option>
-			      <option value="2-2">Native Hawaiian or Other Pacific Islander</option>
-			      <option value="2-3">White</option>
+			<select class="_multiselect_race" name="race_<?=$loop?>" multiple="multiple">
+				<?	
+					foreach($this->config->item('form_ethnicity_race') as $ethnicity_race) {
+						echo '<option value="'.$ethnicity_race.'" ';
+						if (!empty($student['race'])) {
+							$student_race = json_decode($student['race']);
+							if (is_array($student_race)) {
+								if ( in_array($ethnicity_race, json_decode($student['race'])) ) {
+									echo 'selected="selected"';
+								}
+							} else {
+								if ( $ethnicity_race == $student_race ) {
+									echo 'selected="selected"';
+								}
+							}
+						} 
+						echo '>';
+						echo $this->lang->line($ethnicity_race);
+						echo '</option>';
+					}
+				?>
 			</select>
 		</div>
 	</div>
 	<hr/>
-	<div class="row tableItems text-left">
-		<div class="col-sm-12 col-md-3 col-md-offset-1">
-			<label>Jill W. Smith</label>
-		</div>
-		<div class="col-sm-12 col-md-3">
-			<div class="radio">
-			  <label><input type="radio" name="eth-hispanic2">Hispanic/Latino</label>
-			</div>
-			<div class="radio">
-			  <label><input type="radio" name="eth-hispanic2">Not Hispanic/Latino</label>
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-4">
-			<select id="raceSelect2" multiple="multiple">
-			      <option value="1-1">American Indian or Alaskan Native</option>
-			      <option value="2-1">Asian, Black or African American</option>
-			      <option value="2-2">Native Hawaiian or Other Pacific Islander</option>
-			      <option value="2-3">White</option>
-			</select>
-		</div>
-	</div>
-</form>
+	<?
+			$loop++;
+		}
+	?>
 </div>
-
-<script>
-	$('#raceSelect1').multiselect({ nonSelectedText: 'Select all that apply' });
-	$('#raceSelect2').multiselect({ nonSelectedText: 'Select all that apply' });
-</script>
+<?
+	echo form_hidden('test', 1);
+?>

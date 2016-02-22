@@ -9,13 +9,13 @@
 </div>
 <div class="row tableHeaders" style="margin-top: 20px;">
 	<div class="col-sm-12 col-md-4">
-		<span class="asterisk">*</span> <?=$this->lang->line('label_first')?>
+		<span class="asterisk">*</span> <?=$this->lang->line('household_members_first')?>
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<span class="asterisk">*</span> <?=$this->lang->line('label_last')?>
+		<span class="asterisk">*</span> <?=$this->lang->line('household_members_last')?>
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<span class="asterisk"></span><?=$this->lang->line('label_middle')?>
+		<span class="asterisk"></span><?=$this->lang->line('household_members_middle')?>
 	</div>
 	<div class="col-sm-12 col-md-2">&nbsp;</div>
 	<div class="col-sm-12"><hr class="divider" /></div>
@@ -23,40 +23,89 @@
 
 <!-- Children rows -->
 <div id="childName-list">
-	<div class="row tableItems">
-		<div class="col-sm-12 col-md-4">
-			<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" name="child_first[]" required data-error="<?=$this->lang->line('error_household_students_first')?>">
-			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-			<div class="help-block with-errors"></div>
+<?
+	if (is_array($form['data']['household_students'])) {
+		foreach($form['data']['household_students'] as $student) {
+?>
+			<div class="row tableItems">
+				<div class="col-sm-12 col-md-4">
+					<input type="text" 
+						placeholder="<?=$this->lang->line('household_members_first')?>" 
+						class="form-control input-lg" 
+						name="child_first[]" 
+						value="<?=$student['first_name']?>"
+						required 
+						data-error="<?=$this->lang->line('error_household_students_first')?>">
+					<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+					<div class="help-block with-errors"></div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<input type="text" 
+						placeholder="<?=$this->lang->line('household_members_last')?>" 
+						class="form-control input-lg" 
+						name="child_last[]" 
+						value="<?=$student['last_name']?>"
+						required 
+						data-error="<?=$this->lang->line('error_household_students_last')?>">
+					<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+					<div class="help-block with-errors"></div>
+				</div>
+				<div class="col-sm-12 col-md-2">
+					<input type="text" 
+						placeholder="<?=$this->lang->line('household_members_middle')?>" 
+						class="form-control input-lg" 
+						value="<?=$student['middle_initial']?>"
+						name="child_middle[]"
+						maxlength="1" />
+				</div>
+				<div class="col-sm-12 col-md-2 text-right">
+					<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
+				</div>
+				<div class="col-sm-12"><hr class="divider" /></div>
+			</div>
+<?
+		}
+	} else {
+?>
+		<div class="row tableItems">
+			<div class="col-sm-12 col-md-4">
+				<input type="text" placeholder="<?=$this->lang->line('household_members_first')?>" class="form-control input-lg" name="child_first[]" required data-error="<?=$this->lang->line('error_household_students_first')?>">
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors"></div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<input type="text" placeholder="<?=$this->lang->line('household_members_last')?>" class="form-control input-lg" name="child_last[]" required data-error="<?=$this->lang->line('error_household_students_last')?>">
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors"></div>
+			</div>
+			<div class="col-sm-12 col-md-2">
+				<input type="text" placeholder="<?=$this->lang->line('household_members_middle')?>" class="form-control input-lg" name="child_middle[]"
+				maxlength="1" />
+			</div>
+			<div class="col-sm-12 col-md-2 text-right">
+				<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
+			</div>
+			<div class="col-sm-12"><hr class="divider" /></div>
 		</div>
-		<div class="col-sm-12 col-md-4">
-			<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" name="child_last[]" required data-error="<?=$this->lang->line('error_household_students_last')?>">
-			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-			<div class="help-block with-errors"></div>
-		</div>
-		<div class="col-sm-12 col-md-2">
-			<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" name="child_middle[]">
-		</div>
-		<div class="col-sm-12 col-md-2 text-right">
-			<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
-		</div>
-		<div class="col-sm-12"><hr class="divider" /></div>
-	</div>
+<?
+	}
+?>
 </div>
 
 <div class="row tableItems hide" id="childName-template">
 	<div class="col-sm-12 col-md-4">
-		<input type="text" placeholder="<?=$this->lang->line('label_first')?>" class="form-control input-lg" data-name="child_first" data-error="<?=$this->lang->line('error_household_students_first')?>">
+		<input type="text" placeholder="<?=$this->lang->line('household_members_first')?>" class="form-control input-lg" data-name="child_first" data-error="<?=$this->lang->line('error_household_students_first')?>">
 		<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 		<div class="help-block with-errors"></div>
 	</div>
 	<div class="col-sm-12 col-md-4">
-		<input type="text" placeholder="<?=$this->lang->line('label_last')?>" class="form-control input-lg" data-name="child_last" data-error="<?=$this->lang->line('error_household_students_last')?>">
+		<input type="text" placeholder="<?=$this->lang->line('household_members_last')?>" class="form-control input-lg" data-name="child_last" data-error="<?=$this->lang->line('error_household_students_last')?>">
 		<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 		<div class="help-block with-errors"></div>
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<input type="text" placeholder="<?=$this->lang->line('label_middle')?>" class="form-control input-lg" data-name="child_middle">
+		<input type="text" placeholder="<?=$this->lang->line('household_members_middle')?>" class="form-control input-lg" data-name="child_middle"
+		maxlength="1" />
 	</div>
 	<div class="col-sm-12 col-md-2 text-right">
 		<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
@@ -64,10 +113,10 @@
 	<div class="col-sm-12"><hr class="divider" /></div>
 </div>
 
-<div class="row text-center" style="margin-bottom: 50px;">
+<div class="row text-center mb-50">
 	<div class="col-sm-12">
 		<div>
-			<a href="#" class="button button-invert-blue" data-clone="#childName-template" data-target="#childName-list"><i class="fa fa-plus"></i> <?=$this->lang->line('label_add_child')?></a>
+			<a href="#" class="button button-invert-blue" data-clone="#childName-template" data-target="#childName-list"><i class="fa fa-plus"></i> <?=$this->lang->line('household_students_add')?></a>
 		</div>
 	</div>
 </div>

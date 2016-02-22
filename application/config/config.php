@@ -79,6 +79,81 @@ $config['language_list'] = array(
 	'korean' => '한국어',
 );
 
+/*
+|--------------------------------------------------------------------------
+| Form Configuration
+|--------------------------------------------------------------------------
+|
+| Stuff for the form
+|
+*/
+$config['form_assistance_programs'] = array(
+	'snap' => 'SNAP',
+	'tanf' => 'TANF',
+	'fdpir' => 'FDPIR'
+);
+
+$config['form_ethnicity_race'] = array(
+	'ethnicity_american_indian_alaskan_native',
+	'ethnicity_asian_black_african_american',
+	'ethnicity_native_hawaiian_other_pacific_islander',
+	'ethnicity_white',
+);
+
+$config['form_states'] = array(
+	"AL" => 'Alabama',
+	"AK" => 'Alaska',
+	"AZ" => 'Arizona',
+	"AR" => 'Arkansas',
+	"CA" => 'California',
+	"CO" => 'Colorado',
+	"CT" => 'Connecticut',
+	"DE" => 'Delaware',
+	"DC" => 'District Of Columbia',
+	"FL" => 'Florida',
+	"GA" => 'Georgia',
+	"HI" => 'Hawaii',
+	"ID" => 'Idaho',
+	"IL" => 'Illinois',
+	"IN" => 'Indiana',
+	"IA" => 'Iowa',
+	"KS" => 'Kansas',
+	"KY" => 'Kentucky',
+	"LA" => 'Louisiana',
+	"ME" => 'Maine',
+	"MD" => 'Maryland',
+	"MA" => 'Massachusetts',
+	"MI" => 'Michigan',
+	"MN" => 'Minnesota',
+	"MS" => 'Mississippi',
+	"MO" => 'Missouri',
+	"MT" => 'Montana',
+	"NE" => 'Nebraska',
+	"NV" => 'Nevada',
+	"NH" => 'New Hampshire',
+	"NJ" => 'New Jersey',
+	"NM" => 'New Mexico',
+	"NY" => 'New York',
+	"NC" => 'North Carolina',
+	"ND" => 'North Dakota',
+	"OH" => 'Ohio',
+	"OK" => 'Oklahoma',
+	"OR" => 'Oregon',
+	"PA" => 'Pennsylvania',
+	"RI" => 'Rhode Island',
+	"SC" => 'South Carolina',
+	"SD" => 'South Dakota',
+	"TN" => 'Tennessee',
+	"TX" => 'Texas',
+	"UT" => 'Utah',
+	"VT" => 'Vermont',
+	"VA" => 'Virginia',
+	"WA" => 'Washington',
+	"WV" => 'West Virginia',
+	"WI" => 'Wisconsin',
+	"WY" => 'Wyoming',
+);
+
 
 /*
 |--------------------------------------------------------------------------
