@@ -19,53 +19,41 @@
 		</div>
 	</div>
 	<hr/>
-	<form action="" method="post">
+	<?
+		$form_household_students  = $this->session->userdata('form_household_students');
+		$loop = 0;
+		foreach($form_household_students as $student) {
+	?>
 	<div class="row tableItems text-left">
 		<div class="col-sm-12 col-md-3 col-md-offset-1">
-			<label>Jack P. Smith</label>
+			<label><?=$student['first_name'].' '.$student['middle_name'].' '.$student['last_name']?></label>
 		</div>
 		<div class="col-sm-12 col-md-3">
 			<div class="radio">
-			  <label><input type="radio" name="eth-hispanic1">Hispanic/Latino</label>
+			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="hispanic_latino">Hispanic/Latino</label>
 			</div>
 			<div class="radio">
-			  <label><input type="radio" name="eth-hispanic1">Not Hispanic/Latino</label>
+			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="not_hispanic_latino">Not Hispanic/Latino</label>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<select id="raceSelect1" multiple="multiple">
-			      <option value="1-1">American Indian or Alaskan Native</option>
-			      <option value="2-1">Asian, Black or African American</option>
-			      <option value="2-2">Native Hawaiian or Other Pacific Islander</option>
-			      <option value="2-3">White</option>
+			<select id="raceSelect1" name="race[<?=$loop?>]" multiple="multiple">
+	      <option value="1-1">American Indian or Alaskan Native</option>
+	      <option value="2-1">Asian, Black or African American</option>
+	      <option value="2-2">Native Hawaiian or Other Pacific Islander</option>
+	      <option value="2-3">White</option>
 			</select>
 		</div>
 	</div>
 	<hr/>
-	<div class="row tableItems text-left">
-		<div class="col-sm-12 col-md-3 col-md-offset-1">
-			<label>Jill W. Smith</label>
-		</div>
-		<div class="col-sm-12 col-md-3">
-			<div class="radio">
-			  <label><input type="radio" name="eth-hispanic2">Hispanic/Latino</label>
-			</div>
-			<div class="radio">
-			  <label><input type="radio" name="eth-hispanic2">Not Hispanic/Latino</label>
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-4">
-			<select id="raceSelect2" multiple="multiple">
-			      <option value="1-1">American Indian or Alaskan Native</option>
-			      <option value="2-1">Asian, Black or African American</option>
-			      <option value="2-2">Native Hawaiian or Other Pacific Islander</option>
-			      <option value="2-3">White</option>
-			</select>
-		</div>
-	</div>
-</form>
+	<?
+			$loop++;
+		}
+	?>
 </div>
-
+<?
+	echo form_hidden('test', 1);
+?>
 <script>
 	$('#raceSelect1').multiselect({ nonSelectedText: 'Select all that apply' });
 	$('#raceSelect2').multiselect({ nonSelectedText: 'Select all that apply' });

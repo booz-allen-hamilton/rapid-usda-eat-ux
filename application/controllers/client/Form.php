@@ -12,15 +12,17 @@ class Form extends Client_controller {
 		1 => 'otherAssistance',
 		2 => 'householdStudents',
 		3 => 'contactInformation',
-		4 => 'confirmation',
-		5 => 'termsAndConditions'
+		4 => 'childrenEthnicityAndRace',
+		5 => 'confirmation',
+		6 => 'termsAndConditions'
 	);
 
 	public $form_scenario_b = array(
 		1 => 'householdStudents',
 		2 => 'contactInformation',
-		3 => 'confirmation',
-		4 => 'termsAndConditions'
+		4 => 'childrenEthnicityAndRace',
+		5 => 'confirmation',
+		6 => 'termsAndConditions'
 	);
 
 	public $form_scenario_c = array(
@@ -190,14 +192,10 @@ class Form extends Client_controller {
 				switch($this->scenario) {
 					case 'assistance':
 						$form_step_section = $this->form_scenario_a[$form_step];
-						switch($form_step) {
-							case 1:		$next_step = 2;		break;
-							case 2:		$next_step = 3;		break;
-							case 3:		$next_step = 4;		break;
-							case 4:		$next_step = 5;		break;
-							case 5:		
-								$next_step = 'electronicSignature'; 
-							break;
+						if ($form_step == count($this->form_scenario_a)) {
+							$next_step = 'electronicSignature';
+						} else {
+							$next_step = $form_step + 1;
 						}
 					break;
 					case 'foster':
@@ -232,8 +230,14 @@ class Form extends Client_controller {
 					// $this->form_validation->set_rules('status_email', '', 'required');
 					// $this->form_validation->set_rules('status_phone', '', 'required');
 				break;
+				case 'confirmation':
+					$this->form_validation->set_rules('confirmation', '', 'required|in_list[1]');
+				break;
 				case "termsAndConditions":
 					$this->form_validation->set_rules('terms_and_cond_agree', '', 'required|in_list[1]');
+				break;
+				case "childrenEthnicityAndRace":
+					$this->form_validation->set_rules('test', '', 'required|in_list[1]');
 				break;
 			}
 			
@@ -297,10 +301,25 @@ class Form extends Client_controller {
 						);
 						$this->session->set_userdata('form_contact_information', $contact_information);
 					break;
+					case "childrenEthnicityAndRace":
+						$form_household_students  = $this->session->userdata('form_household_students');
+						$ethnicity  = $this->input->post('ethnicity');
+						$race  = $this->input->post('race');
+						$loop = 0;
+						$student_array = array();
+						foreach($form_household_students as $student) {
+							$student_array[$loop] = array(
+								'first_name'  => $student['first_name'],
+								'last_name'   => $student['last_name'],
+								'middle_name' => $student['middle_name'],
+								'ethnicity' => $ethnicity[$loop],
+								'race' => json_encode($race[$loop]),
+							);
+							$loop++;
+						}
+						$this->session->set_userdata('form_household_students', $student_array);
+					break;
 				}
-				
-				
-
 				$this->set_form_step($next_step);
 			}
 
