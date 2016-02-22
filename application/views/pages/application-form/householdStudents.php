@@ -116,7 +116,7 @@
 <div class="row text-center mb-50">
 	<div class="col-sm-12">
 		<div>
-			<a href="#" class="button button-invert-blue" data-clone="#childName-template" data-target="#childName-list"><i class="fa fa-plus"></i> <?=$this->lang->line('household_members_add_child')?></a>
+			<a href="#" class="button button-invert-blue" data-clone="#childName-template" data-target="#childName-list"><i class="fa fa-plus"></i> <?=$this->lang->line('household_students_add')?></a>
 		</div>
 	</div>
 </div>

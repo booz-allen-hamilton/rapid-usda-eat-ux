@@ -19,7 +19,7 @@
 		<div class="help-block with-errors"></div>
 	</div>
 	<div class="col-sm-12 col-md-2">
-		<label><?=$this->lang->line('contact_info_elements')['apt']['label']?></label>
+		<label><span class="asterisk"></span><?=$this->lang->line('contact_info_elements')['apt']['label']?></label>
 		<input type="text"
 			class="form-control input-lg"
 			name="apt"
@@ -74,7 +74,7 @@
 	</div>
 </div>
 
-<div class="row" style="margin-top: 20px;">
+<div class="row mt-20">
 	<div class="col-sm-12 col-md-offset-1 col-md-3">
 		<label><?=$this->lang->line('contact_info_elements')['phone']['label']?></label>
 		<input type="text"
@@ -99,29 +99,20 @@
 	</div>
 </div>
 
-<div class="row" style="margin-top: 20px;">
+<div class="row mt-20">
 	<div class="col-sm-12 col-md-offset-1 col-md-10">
 		<label><?=$this->lang->line('contact_info_elements')['contact']['label']?></label>
 		<div class="help-block with-errors"></div>
 	</div>
-</div>
-<div class="row">
-	<div class="col-sm-12 col-md-offset-1 col-md-3">
-		<label class="checkbox-inline">
-			<input type="checkbox" name="status_text">
-			<span class="checkbox-label">Text message</span>
-		</label>
-	</div>
-	<div class="col-sm-12 col-md-2">
-		<label class="checkbox-inline">
-			<input type="checkbox" name="status_email">
-			<span class="checkbox-label">Email</span>
-		</label>
-	</div>
-	<div class="col-sm-12 col-md-3">
-		<label class="checkbox-inline">
-			<input type="checkbox" name="status_phone">
-			<span class="checkbox-label">Phone Call</span>
-		</label>
+	<div class="col-sm-12 col-md-offset-1 col-md-11">
+		<div class="radio-inline">
+			<label><input type="radio" name="contact_method" value="contact_text"><div><?=$this->lang->line('contact_info_text')?></div></label>
+		</div>
+		<div class="radio-inline">
+			<label><input type="radio" name="contact_method" value="contact_email"><div><?=$this->lang->line('contact_info_email')?></div></label>
+		</div>
+		<div class="radio-inline">
+			<label><input type="radio" name="contact_method" value="contact_phone"><div><?=$this->lang->line('contact_info_phone')?></div></label>
+		</div>
 	</div>
 </div>

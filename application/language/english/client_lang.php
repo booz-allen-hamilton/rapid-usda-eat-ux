@@ -93,6 +93,7 @@ $lang['other_assistance_example'] = "ex. 2363954301";
 // All Household Students
 $lang['household_students_title'] = "All Household Students";
 $lang['household_students_subtitle'] = "Please list all children who live with you, even if they are not related.";
+$lang['household_students_add'] = "Add Child";
 $lang['household_students_help'] = "";
 
 // All Household Members
@@ -167,12 +168,17 @@ $lang['contact_info_elements'] = array(
 		'error'			=> "Please select a preferred contact method"
 	),
 );
+$lang['contact_info_text'] = "Text Message";
+$lang['contact_info_email'] = "Email";
+$lang['contact_info_phone'] = "Phone Call";
 
 // Children Ethnicity and Race
 $lang['children_ethnicity_race'] = "Children's Ethnicity and Race";
 $lang['children_ethnicity_race_subtitle'] = "We are required to ask for information about your children's race and ethnicity. This information is important and helps to make sure we are fully serving our community. Responding to this section is optional and does not affect your children's eligibility for free or reduced price meals.";
 $lang['ethnicity_table_header'] = "Ethnicity (Check One)";
 $lang['race_table_header'] = "Race (Check One or More)";
+$lang['children_ethnicity_hispanic'] = "Hispanic/Latino";
+$lang['children_ethnicity_not_hispanic'] = "Not Hispanic/Latino";
 
 // Confirmation
 $lang['confirmation_title'] = "Confirmation";

@@ -64,10 +64,10 @@
 					</table>
 				</div>
 				<div class="col-sm-12 col-md-6">
-					<button class="button button-invert-blue pull-right" type="submit">
+					<button class="button button-blue pull-right" type="submit">
 						<?=$this->lang->line('next')?><i class="icon-right fa fa-angle-right"></i>
 					</button>
-					<a href="#" id="history-back" class="button button-invert-blue mr-10 pull-right" data-action="prev">
+					<a href="#" id="history-back" class="button button-blue mr-10 pull-right" data-action="prev">
 						<i class="icon-left fa fa-angle-left"></i><?=$this->lang->line('back')?>
 					</a>
 					<a href="<?=base_url('apply/cancel')?>" class="button button-transparent mr-10 pull-right"><?=$this->lang->line('cancel')?></a>

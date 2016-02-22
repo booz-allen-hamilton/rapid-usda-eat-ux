@@ -30,10 +30,10 @@
 		</div>
 		<div class="col-sm-12 col-md-3">
 			<div class="radio">
-			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="hispanic_latino">Hispanic/Latino</label>
+			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="hispanic_latino"><div><?=$this->lang->line('children_ethnicity_hispanic')?></div></label>
 			</div>
 			<div class="radio">
-			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="not_hispanic_latino">Not Hispanic/Latino</label>
+			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="not_hispanic_latino"><div><?=$this->lang->line('children_ethnicity_not_hispanic')?></div></label>
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-4">
