@@ -353,9 +353,10 @@ class Form extends Client_controller {
 					$this->session->set_userdata('form_contact_information', $contact_information);
 				break;
 				case "childrenEthnicityAndRace":
+					// echo "<pre>";
+					// print_r($_POST);
+					// die;
 					$form_household_students  = $this->session->userdata('form_household_students');
-					$ethnicity  = $this->input->post('ethnicity');
-					$race  = $this->input->post('race');
 					$loop = 0;
 					$student_array = array();
 					foreach($form_household_students as $student) {
@@ -363,8 +364,8 @@ class Form extends Client_controller {
 							'first_name'  => $student['first_name'],
 							'last_name'   => $student['last_name'],
 							'middle_initial' => $student['middle_initial'],
-							'ethnicity' => $ethnicity[$loop],
-							'race' => json_encode($race[$loop]),
+							'ethnicity' => $this->input->post('ethnicity'.$loop),
+							'race' => $this->input->post('race_'.$loop),
 						);
 						$loop++;
 					}

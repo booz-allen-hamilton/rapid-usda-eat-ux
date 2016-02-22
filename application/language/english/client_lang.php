@@ -174,6 +174,7 @@ $lang['children_ethnicity_race_subtitle'] = "We are required to ask for informat
 $lang['ethnicity_table_header'] = "Ethnicity (Check One)";
 $lang['race_table_header'] = "Race (Check One or More)";
 
+
 // Confirmation
 $lang['confirmation_title'] = "Confirmation";
 $lang['confirmation_subtitle'] = "Please review your application and confirm the information is correct.";
@@ -236,3 +237,9 @@ $lang['nav_faq'] = "FAQ";
 $lang['nav_required'] = "Required";
 
 $lang['other_assistance_select_program'] = "Select Program";
+$lang['ethnicity_select_all_that_apply'] = "Select all that apply";
+$lang['ethnicity_select_all_that_apply'] = "Select all that apply";
+$lang['ethnicity_american_indian_alaskan_native'] = "American Indian or Alaskan Native";
+$lang['ethnicity_asian_black_african_american'] = "Asian, Black or African American";
+$lang['ethnicity_native_hawaiian_other_pacific_islander'] = "Native Hawaiian or Other Pacific Islander";
+$lang['ethnicity_white'] = "White";

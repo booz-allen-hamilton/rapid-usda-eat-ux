@@ -93,6 +93,13 @@ $config['form_assistance_programs'] = array(
 	'fdpir' => 'FDPIR'
 );
 
+$config['form_ethnicity_race'] = array(
+	'ethnicity_american_indian_alaskan_native',
+	'ethnicity_asian_black_african_american',
+	'ethnicity_native_hawaiian_other_pacific_islander',
+	'ethnicity_white',
+);
+
 $config['form_states'] = array(
 	"AL" => 'Alabama',
 	"AK" => 'Alaska',
