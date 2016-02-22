@@ -47,7 +47,6 @@ class Form extends Client_controller {
 		//	get saved form data
 		$current_form_step     = $this->get_form_step();
 		$current_form_scenario = $this->get_form_scenario();
-		echo $current_form_step;
 		//	if step doesn't exist start user from beginning
 		if ($current_form_step == 'start') {
 			$form_sections          = NULL;
@@ -78,6 +77,13 @@ class Form extends Client_controller {
 					$current_form_section = $current_form_step;
 				}
 			}
+		}
+		
+		//	save that they are on the confirmation page
+		if ($current_form_section == 'confirmation') {
+			$this->session->userdata('form_confirmation', 1);
+		} else {
+			$this->session->unset_userdata('form_confirmation');
 		}
 
 		$data['global'] = $this->global;
@@ -290,7 +296,6 @@ class Form extends Client_controller {
 		
 		if ($this->form_validation->run() == FALSE) {
 			$this->session->set_flashdata('error_alert', $error_alert_message);
-
 			echo validation_errors();
 			die;
 		} else {
@@ -369,12 +374,8 @@ class Form extends Client_controller {
 			}
 			$this->set_form_step($next_step);
 		}
-
 		redirect('apply');
 	}
-
-
-
 
 	/**
 	 * Get Form Step

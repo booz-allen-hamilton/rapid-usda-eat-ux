@@ -230,3 +230,9 @@ $lang['modal_assistance_snap'] = "Supplemental Nutrition Assistance Program";
 $lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
 $lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
 $lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
+
+//	NEW STUFF
+$lang['nav_faq'] = "FAQ";
+$lang['nav_required'] = "Required";
+
+$lang['other_assistance_select_program'] = "Select Program";

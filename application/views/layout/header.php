@@ -9,8 +9,8 @@
 			<span class="icon-bar"></span>
 		  </button>
 		  <a class="navbar-brand" href="<?=base_url()?>">
-					<img src="<?=PATH_IMG?>header/logo.png" class="img-responsive" />
-				</a>
+				<img src="<?=PATH_IMG?>header/logo.png" class="img-responsive" />
+			</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,20 +33,40 @@
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="<?=($global['nav'] == 'how-it-works' ? 'active' : NULL)?>">
-					<a href="<?=base_url('how-it-works')?>"><span class="text"><?=$this->lang->line('nav_how_it_works')?></span></a>
+			<?
+				if ($this->uri->segment(1) == 'apply' && $this->session->userdata('form_confirmation') != 1) {
+			?>
+				<li>
+					<a href="#"><span class="asterisk" style="font-size: 16px;">*</span><span class="text"><?=$this->lang->line('nav_required')?></span></a>
 				</li>
-				<li class="<?=($global['nav'] == 'status' ? 'active' : NULL)?>">
-					<a href="<?=base_url('status')?>"><span class="text"><?=$this->lang->line('nav_application_status')?></span></a>
+			<?
+				} else {
+			?>
+				<li class="<?=($global['nav'] == 'faq' ? 'active' : NULL)?>">
+					<a href="<?=base_url('faq')?>"><span class="text"><?=$this->lang->line('nav_faq')?></span></a>
 				</li>
-				<li class="<?=($global['nav'] == 'help' ? 'active' : NULL)?>">
-					<a href="<?=base_url('help')?>"><span class="text"><?=$this->lang->line('nav_help')?></span></a>
-				</li>
-				<li class="<?=($global['nav'] == 'apply' ? 'active' : NULL)?>">
-					<a href="<?=base_url('apply')?>">
-						<span class="button button-orange-inverse"><?=$this->lang->line('nav_apply_now')?></span>
-					</a>
-				</li>
+			<?
+				}
+			?>
+			<?
+				/*
+			?>
+			<li class="<?=($global['nav'] == 'how-it-works' ? 'active' : NULL)?>">
+				<a href="<?=base_url('how-it-works')?>"><span class="text"><?=$this->lang->line('nav_how_it_works')?></span></a>
+			</li>
+			<li class="<?=($global['nav'] == 'status' ? 'active' : NULL)?>">
+				<a href="<?=base_url('status')?>"><span class="text"><?=$this->lang->line('nav_application_status')?></span></a>
+			</li>
+			<li class="<?=($global['nav'] == 'help' ? 'active' : NULL)?>">
+				<a href="<?=base_url('help')?>"><span class="text"><?=$this->lang->line('nav_help')?></span></a>
+			</li>
+			<li class="<?=($global['nav'] == 'apply' ? 'active' : NULL)?>">
+				<a href="<?=base_url('apply')?>">
+					<span class="button button-orange-inverse"><?=$this->lang->line('nav_apply_now')?></span>
+				</a>
+			</li>
+			*/
+			?>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
