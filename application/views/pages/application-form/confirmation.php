@@ -3,8 +3,8 @@
 	$form_household_members   = $this->session->userdata('form_household_members');
 	$form_household_students  = $this->session->userdata('form_household_students');
 	$form_contact_information = $this->session->userdata('form_contact_information');
+	echo form_hidden('confirmation', 1);
 ?>
-
 <div class="row text-center">
 	<div class="col-sm-12">
 		<h2 class="mb25"><?=$this->lang->line('confirmation_title')?></h2>

@@ -15,7 +15,7 @@
 	<div class="col-sm-12 col-md-offset-2 col-md-8">
 		<div class="text-center mt-20">
 			<label class="checkbox-inline">
-				<input type="checkbox" name="terms_and_cond_agree">
+				<input type="checkbox" name="terms_and_cond_agree" value="1" required />
 				<span class="checkbox-label"><?=$this->lang->line('terms_and_cond_agree')?></span>
 			</label>
 		</div>

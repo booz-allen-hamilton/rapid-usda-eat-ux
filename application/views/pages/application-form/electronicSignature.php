@@ -1,3 +1,6 @@
+<?
+	$form_household_members   = $this->session->userdata('form_household_members');
+?>
 <div class="row text-center">
 	<div class="col-sm-12 col-md-offset-2 col-md-8 electronic-signature">
 		<h2 class="mb25"><?=$this->lang->line('electronic_sig_title')?></h2>
@@ -15,7 +18,7 @@
 			<div class="col-sm-12 col-md-11 text-left sig-statement">
 				<p><?=$this->lang->line('electronic_sig_statement')?></p>
 				<input type="text" class="form-control input-lg" name="electronic_signature" required data-error="<?=$this->lang->line('error_electronic_sig_name')?>" />
-				<span>John Smith</span>
+				<span><?=$form_household_members[0]['first_name'].' '.$form_household_members[0]['middle_name'].' '.$form_household_members[0]['last_name']?></span>
 			</div>
 		</div>
 		<div class="row mt-20">
@@ -24,7 +27,7 @@
 				<span>XXX-XX-</span>
 				<input type="text" class="form-control input-lg ssn" maxlength="4" name="social_security_last_four" required data-error="<?=$this->lang->line('error_electronic_sig_social')?>" />
 				<label class="checkbox-inline ssn-checkbox">
-					<input type="checkbox" name="ssn_not_available">
+					<input type="checkbox" name="ssn_not_available" value="1">
 					<span class="checkbox-label"><?=$this->lang->line('electronic_sig_not_available')?></span>
 				</label>
 			</div>
