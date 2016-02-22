@@ -31,7 +31,7 @@
 				foreach($this->config->item('form_ethnicity') as $ethnicity_items) {
 			?>
 			<div class="radio">
-			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="<?=$ethnicity_items?>" <? if($student['ethnicity'] == $ethnicity_items) { echo 'checked="checked"'; } ?>><?=$this->lang->line($ethnicity_items)?></label>
+			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="<?=$ethnicity_items?>" <? if($student['ethnicity'] == $ethnicity_items) { echo 'checked="checked"'; } ?>><div><?=$this->lang->line($ethnicity_items)?></div></label>
 			</div>
 			<?
 				}
