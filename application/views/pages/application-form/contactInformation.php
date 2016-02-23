@@ -104,14 +104,16 @@
 		<div class="help-block with-errors"></div>
 	</div>
 	<div class="col-sm-12 col-md-offset-1 col-md-11">
-		<div class="radio-inline">
-			<label><input type="radio" name="contact_method" value="contact_text"><div><?=$this->lang->line('contact_info_text')?></div></label>
-		</div>
-		<div class="radio-inline">
-			<label><input type="radio" name="contact_method" value="contact_email"><div><?=$this->lang->line('contact_info_email')?></div></label>
-		</div>
-		<div class="radio-inline">
-			<label><input type="radio" name="contact_method" value="contact_phone"><div><?=$this->lang->line('contact_info_phone')?></div></label>
-		</div>
+		<?
+			foreach($this->config->item('form_contact_methods') as $contact_method) {
+				echo '<div class="radio-inline">';
+				echo '<label><input type="radio" name="contact_method" value="'.$contact_method.'" ';
+				if ((!empty($form['data']['contact_information']['contact_method']) ? $form['data']['contact_information']['contact_method'] : NULL) == $contact_method) {
+					echo 'checked';
+				}
+				echo '/><div>'.$this->lang->line($contact_method).'</div></label>';
+				echo '</div>';
+			}
+		?>
 	</div>
 </div>

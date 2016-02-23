@@ -74,7 +74,7 @@ $config['url_suffix'] = '';
 | Settings for language
 */
 $config['language_list'] = array(
-	'english' => 'English', 
+	'english' => 'English',
 	'spanish' => 'Español',
 	'korean' => '한국어',
 );
@@ -91,6 +91,12 @@ $config['form_assistance_programs'] = array(
 	'snap' => 'SNAP',
 	'tanf' => 'TANF',
 	'fdpir' => 'FDPIR'
+);
+
+$config['form_contact_methods'] = array(
+	'contact_info_text',
+	'contact_info_email',
+	'contact_info_phone'
 );
 
 $config['form_ethnicity'] = array(
