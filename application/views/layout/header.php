@@ -35,7 +35,7 @@
 			<ul class="nav navbar-nav navbar-right">
 			<?
 				if ($this->uri->segment(1) == 'apply') {
-					if ($this->session->userdata('form_confirmation') != 1) {
+					if ($this->session->userdata('hide_required') != 1) {
 			?>
 				<li>
 					<a href="#"><span class="asterisk" style="font-size: 16px;">*</span><span class="text"><?=$this->lang->line('nav_required')?></span></a>

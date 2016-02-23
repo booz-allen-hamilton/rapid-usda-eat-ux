@@ -80,14 +80,15 @@ class Form extends Client_controller {
 		}
 
 		//	save that they are on the confirmation page
-		if ($current_form_section == 'confirmation') {
-			$this->session->set_userdata('form_confirmation', 1);
+		if ($current_form_section == 'confirmation' && $current_form_section == 'success') {
+			$this->session->set_userdata('hide_required', 1);
 		} else {
-			$this->session->unset_userdata('form_confirmation');
+			$this->session->unset_userdata('hide_required');
 		}
 
-		if ($this->session->flashdata('application_id')) {
+		if ($current_form_section == 'success') {
 			$this->session->keep_flashdata('application_id');
+			$this->session->sess_destroy();
 		}
 
 		$data['global'] = $this->global;
@@ -190,10 +191,18 @@ class Form extends Client_controller {
 									}
 								break;
 								case 'foster':
-									$form_step_section = $this->form_scenario_b[$form_step];
+									if ($form_step == count($this->form_scenario_b)) {
+										$next_step = count($this->form_scenario_b) - 1;
+									} else {
+										$next_step = $form_step - 1;
+									}
 								break;
 								case 'no':
-									$form_step_section = $this->form_scenario_c[$form_step];
+									if ($form_step == count($this->form_scenario_c)) {
+										$next_step = count($this->form_scenario_c) - 1;
+									} else {
+										$next_step = $form_step - 1;
+									}
 								break;
 							}
 						}
@@ -251,9 +260,19 @@ class Form extends Client_controller {
 				break;
 				case 'foster':
 					$form_step_section = $this->form_scenario_b[$form_step];
+					if ($form_step == count($this->form_scenario_b)) {
+						$next_step = 'electronicSignature';
+					} else {
+						$next_step = $form_step + 1;
+					}
 				break;
 				case 'no':
 					$form_step_section = $this->form_scenario_c[$form_step];
+					if ($form_step == count($this->form_scenario_c)) {
+						$next_step = 'electronicSignature';
+					} else {
+						$next_step = $form_step + 1;
+					}
 				break;
 			}
 		}
@@ -374,7 +393,6 @@ class Form extends Client_controller {
 						// }
 						$loop++;
 					}
-					//$this->session->sess_destroy();
 					$this->session->set_flashdata('application_id', $application_id);
 				break;
 			}
