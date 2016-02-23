@@ -1,26 +1,34 @@
-$(document).on('click', '[data-clone]', function(e){
-	e.preventDefault();
-	var template = $(this).attr('data-clone');
-	var target = $(this).attr('data-target');
-	$(template).clone().removeClass('hide').removeAttr('id').appendTo(target);
-
-	$('#childName-list').find('[data-name="child_first"]').removeAttr('data-name').attr('name', 'child_first[]').attr('required', 'true');
-	$('#childName-list').find('[data-name="child_last"]').removeAttr('data-name').attr('name', 'child_last[]').attr('required', 'true');
-	$('#childName-list').find('[data-name="child_middle"]').removeAttr('data-name').attr('name', 'child_middle[]');
-});
-
-$(document).on('click', '.remove-item', function(e){
-	e.preventDefault();
-	$(this).parents('.tableItems').fadeOut(500, function(){
-		$(this).remove();
-	});
-});
-
-/*$('input[type="radio"]').click(function(){
-	var radioName = $(this).attr('name');
-	if ($(this).val() == 'true') {
-		$(this).parents('.main-something-container').find('.child-income-container').removeClass('hide');
+$(document).on('click', '[data-toggle-target] button', function(){
+	var toggle_value = $(this).attr('data-toggle-value');
+	var toggle_target = $(this).parent().attr('data-toggle-target');
+	$(this).parents('.main-adultRow-container').find('[name="'+toggle_target+'[]"]').val(toggle_value);
+	if (toggle_value == '1') {
+		$(this).addClass('btn-active').siblings('[data-toggle-value="0"]').removeClass('btn-active');
+		$('.'+toggle_target+'-container').removeClass('hide');
+		$('.'+toggle_target+'-add').removeClass('hide');
 	} else {
-		$(this).parents('.main-something-container').find('.child-income-container').addClass('hide');
+		$(this).addClass('btn-active').siblings('[data-toggle-value="1"]').removeClass('btn-active');
+		$('.'+toggle_target+'-container').addClass('hide');
+		$('.'+toggle_target+'-add').addClass('hide');
 	}
-});*/
+});
+
+
+
+// $(document).on('click', '#adultName-list .income-toggle', function(e){
+// 	var toggle_value = $(this).val();
+// 	if (toggle_value == 'true') {
+// 		$(this).parents('.main-adultRow-container').find('.adult-income-container').removeClass('hide');
+// 	} else {
+// 		$(this).parents('.main-adultRow-container').find('.adult-income-container').addClass('hide');
+// 	}
+// });
+// 
+// $(document).on('click', '#adultName-list .toggle-earnings-from-work', function(e){
+// 	var toggle_value = $(this).val();
+// 	if (toggle_value == 'true') {
+// 		$(this).parents('.main-adultRow-container').find('.adult-income-container').removeClass('hide');
+// 	} else {
+// 		$(this).parents('.main-adultRow-container').find('.adult-income-container').addClass('hide');
+// 	}
+// });

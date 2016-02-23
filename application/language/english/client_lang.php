@@ -119,23 +119,44 @@ $lang['household_members_pensions_help'] = "Pensions";
 $lang['household_members_child_status_help'] = "Child status help";
 
 // All Household Members - Income section
-$lang['household_income_adult_name_suffix'] = "'s Income (Adult)";
-$lang['household_income_child_name_suffix'] = "'s Income (Child)";
+$lang['household_income_adult_name_suffix'] = "{name}'s Income (Adult)";
+$lang['household_income_child_name_suffix'] = "{name}'s Income (Child)";
 $lang['household_income_gross'] = "Please enter gross income and how often it was received.";
 $lang['household_income_category'] = "Income Category";
 $lang['household_income_type'] = "Type";
 $lang['household_income_amount_freq'] = "Dollar Amount / Frequency";
 $lang['household_income_salary'] = "Salary";
-$lang['household_income_work'] = "Earnings from Work";
-$lang['household_income_public'] = "Public Assistance / Alimony / Child Support";
-$lang['household_income_pension'] = "Pensions / Retirement / All Other Income";
-$lang['household_income_ssn_benefits'] = "Social Security Benefits";
-$lang['household_income_ssn_benefits_help'] = "Social Security Benefits";
-$lang['household_income_spending'] = "Spending money or other income from friend or relative";
-$lang['household_income_spending_help'] = "Spending money or other income from friend or relative";
-$lang['household_income_other'] = "Income from any other source";
-$lang['household_income_other_help'] = "Income from any other source";
 $lang['household_income_add_another'] = "Add another";
+
+$lang['household_income_adult_earnings_from_work'] = array(
+	'title' => 'Earnings from Work',
+	'help' => "Earnings from Work"
+);
+$lang['household_income_adult_public_asst'] = array(
+	'title' => 'Public Assistance / Alimony / Child Support',
+	'help' => "Public Assistance / Alimony / Child Support"
+);
+$lang['household_income_adult_other_income'] = array(
+	'title' => 'Pensions / Retirement / All Other Income',
+	'help' => "Pensions / Retirement / All Other Income"
+);
+$lang['household_income_child_earnings_from_work'] = array(
+	'title' => 'Earnings from Work',
+	'help' => "Earnings from Work"
+);
+$lang['household_income_child_ssn_benefits'] = array(
+	'title' => 'Social Security Benefits',
+	'help' => "Social Security Benefits"
+);
+$lang['household_income_child_spending_other_income'] = array(
+	'title' => 'Spending money or other income from friend or relative',
+	'help' => "Spending money or other income from friend or relative"
+);
+$lang['household_income_child_other_income'] = array(
+	'title' => 'Income from any other source',
+	'help' => "Income from any other source"
+);
+
 
 // Contact Information
 $lang['contact_info_title'] = "Contact Information";

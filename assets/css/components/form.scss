@@ -358,6 +358,21 @@ a:hover {
 	.multiselect-selected-text {
 		font-size: 18px;
 	}
+	
+	
+	.btn-group {
+		&.btn-group-custom {
+			.btn-default {
+				
+			}
+			.btn-active {
+				background-color: $color_subtitle;
+				cursor: pointer;
+				color: #FFF;
+				border-color: transparent;
+			}
+		}
+	}
 }
 
 .circular_button {

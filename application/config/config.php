@@ -112,6 +112,18 @@ $config['form_race'] = array(
 	'race_white',
 );
 
+$config['form_income_adult'] = array(
+	'adult_earnings_from_work',
+	'adult_public_asst',
+	'adult_other_income',
+);
+$config['form_income_child'] = array(
+	'child_earnings_from_work',
+	'child_ssn_benefits',
+	'child_spending_other_income',
+	'child_other_income',
+);
+
 $config['form_states'] = array(
 	"AL" => 'Alabama',
 	"AK" => 'Alaska',
