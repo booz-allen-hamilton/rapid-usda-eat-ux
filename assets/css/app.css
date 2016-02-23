@@ -585,7 +585,7 @@ a:hover {
       color: black;
       font-size: 40px; }
   #page-application-form .scroller {
-    height: 250px;
+    height: 350px;
     overflow-y: scroll;
     border: 1px solid #CCC;
     border-radius: 6px;
@@ -711,3 +711,5 @@ input[type="radio"].toggle-right + label {
   -moz-border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
+
+/*# sourceMappingURL=app.css.map */

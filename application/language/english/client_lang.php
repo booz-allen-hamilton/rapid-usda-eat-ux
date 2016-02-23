@@ -139,7 +139,7 @@ $lang['household_income_add_another'] = "Add another";
 
 // Contact Information
 $lang['contact_info_title'] = "Contact Information";
-$lang['contact_info_subtitle'] = "Enter your contact information and how you would like us to communicate with you.";
+$lang['contact_info_subtitle'] = "Tell us how you would like us to communicate with you.";
 $lang['contact_info_elements'] = array(
 	'street_address' => array(
 		'label'			=> "Street Address",

@@ -37,8 +37,12 @@
 		<div class="row mt-20">
 			<div class="col-sm-12 col-md-offset-1 col-md-11 text-left">
 				<h4>Last 4 digits of Social Security Number <?=help_icon($this->lang->line('electronic_sig_ssn_help'))?></h4>
+			</div>
+			<div class="col-sm-12 col-md-offset-1 col-md-4 text-left">
 				<span>XXX-XX-</span>
 				<input type="text" class="form-control input-lg ssn" data-minlength="4" name="social_security_last_four" maxlength="4" required data-error="<?=$this->lang->line('error_electronic_sig_social')?>" />
+			</div>
+			<div class="col-sm-12 col-md-4 text-left">
 				<label class="checkbox-inline ssn-checkbox">
 					<input type="checkbox" name="ssn_not_available" value="1">
 					<span class="checkbox-label"><?=$this->lang->line('electronic_sig_not_available')?></span>

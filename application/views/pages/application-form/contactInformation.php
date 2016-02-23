@@ -2,13 +2,12 @@
 	<div class="col-sm-12 col-md-offset-1 col-md-10">
 		<h2 class="mb25"><?=$this->lang->line('contact_info_title')?></h2>
 		<p class="text-large">
-			<span class="asterisk">*</span>
 			<?=$this->lang->line('contact_info_subtitle')?>
 			<?=help_icon($this->lang->line('contact_info_help'))?>
 		</p>
 	</div>
 </div>
-<div class="row mt-50">
+<div class="row mt-20">
 	<div class="col-sm-12 col-md-offset-1 col-md-8">
 		<label><span class="asterisk">* </span><?=$this->lang->line('contact_info_elements')['street_address']['label']?></label>
 		<input type="text"
