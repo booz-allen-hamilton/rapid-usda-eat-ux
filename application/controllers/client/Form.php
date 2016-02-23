@@ -175,9 +175,8 @@ class Form extends Client_controller {
 						$next_step = 'electronicSignature';
 					break;
 					case 'electronicSignature':
-						//$this->scenario = $this->get_form_scenario();
-						//$next_step = count($this->form_scenario_a);
-						$next_step = 'success';
+						$this->scenario = $this->get_form_scenario();
+						$next_step = count($this->form_scenario_a);
 					break;
 					default:
 						if (is_numeric($form_step)) {
@@ -375,7 +374,7 @@ class Form extends Client_controller {
 						// }
 						$loop++;
 					}
-					$this->session->sess_destroy();
+					//$this->session->sess_destroy();
 					$this->session->set_flashdata('application_id', $application_id);
 				break;
 			}
