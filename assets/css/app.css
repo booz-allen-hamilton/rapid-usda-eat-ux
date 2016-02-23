@@ -544,7 +544,7 @@ a:hover {
       #page-application-form .footer .footer-progress-step.step-complete .icon-number {
         display: none; }
       #page-application-form .footer .footer-progress-step.step-complete .icon-background {
-        color: #000; }
+        color: #fbb03f; }
       #page-application-form .footer .footer-progress-step.step-complete .icon-image {
         color: #fff; }
     #page-application-form .footer .footer-bav-connector {
@@ -592,7 +592,7 @@ a:hover {
     padding: 15px 20px;
     font-size: 18px; }
   #page-application-form .electronic-signature .sig-statement {
-    margin-top: 14px; }
+    margin-top: 6px; }
   #page-application-form .electronic-signature p {
     font-size: 20px; }
   #page-application-form .electronic-signature span {

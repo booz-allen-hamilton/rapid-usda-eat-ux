@@ -1,4 +1,4 @@
-
+<?=form_hidden('children_ethnicity_race', 1)?>
 <div class="row text-center">
 	<div class="col-sm-12 col-md-12">
 		<h2><?=$this->lang->line('children_ethnicity_race')?></h2>
@@ -27,22 +27,25 @@
 			<label><?=$student['first_name'].' '.$student['middle_initial'].' '.$student['last_name']?></label>
 		</div>
 		<div class="col-sm-12 col-md-3">
+			<?	
+				foreach($this->config->item('form_ethnicity') as $ethnicity_items) {
+			?>
 			<div class="radio">
-			  <label><input type="radio" name="ethnicity_<?=$loop?>" value="hispanic_latino">Hispanic/Latino</label>
+			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="<?=$ethnicity_items?>" <? if($student['ethnicity'] == $ethnicity_items) { echo 'checked="checked"'; } ?>><div><?=$this->lang->line($ethnicity_items)?></div></label>
 			</div>
-			<div class="radio">
-			  <label><input type="radio" name="ethnicity_<?=$loop?>" value="not_hispanic_latino">Not Hispanic/Latino</label>
-			</div>
+			<?
+				}
+			?>
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<select class="_multiselect_race" name="race_<?=$loop?>" multiple="multiple">
+			<select class="_multiselect_race" name="race[<?=$loop?>][]" multiple="multiple">
 				<?	
-					foreach($this->config->item('form_ethnicity_race') as $ethnicity_race) {
+					foreach($this->config->item('form_race') as $ethnicity_race) {
 						echo '<option value="'.$ethnicity_race.'" ';
 						if (!empty($student['race'])) {
-							$student_race = json_decode($student['race']);
+							$student_race = $student['race'];
 							if (is_array($student_race)) {
-								if ( in_array($ethnicity_race, json_decode($student['race'])) ) {
+								if ( in_array($ethnicity_race, $student['race']) ) {
 									echo 'selected="selected"';
 								}
 							} else {
@@ -65,6 +68,3 @@
 		}
 	?>
 </div>
-<?
-	echo form_hidden('test', 1);
-?>

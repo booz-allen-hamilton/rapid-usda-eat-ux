@@ -70,7 +70,7 @@
 		<h3><?=$this->lang->line('confirmation_other_assistance')?></h3>
 
 		<h4><?=$this->lang->line('confirmation_assistance_program')?></h4>
-		<p class="text-large"><?=$form_other_assistance['assistance_program']?></p>
+		<p class="text-large"><?=strtoupper($form_other_assistance['assistance_program'])?></p>
 
 		<h4><?=$this->lang->line('confirmation_case_number')?></h4>
 		<p class="text-large"><?=$form_other_assistance['case_number']?></p>

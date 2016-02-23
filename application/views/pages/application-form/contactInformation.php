@@ -82,7 +82,6 @@
 			name="phone"
 			placeholder="<?=$this->lang->line('contact_info_elements')['phone']['placeholder']?>"
 			value="<?=$form['data']['contact_information']['phone']?>"
-			required
 			data-error="<?=$this->lang->line('contact_info_elements')['phone']['error']?>" />
 		<div class="help-block with-errors"></div>
 	</div>
@@ -93,7 +92,6 @@
 			name="email"
 			placeholder="<?=$this->lang->line('contact_info_elements')['email']['placeholder']?>"
 			value="<?=$form['data']['contact_information']['email']?>"
-			required
 			data-error="<?=$this->lang->line('contact_info_elements')['email']['error']?>" />
 		<div class="help-block with-errors"></div>
 	</div>
@@ -101,6 +99,7 @@
 
 <div class="row mt-20">
 	<div class="col-sm-12 col-md-offset-1 col-md-10">
+		<span class="asterisk">* </span>
 		<label><?=$this->lang->line('contact_info_elements')['contact']['label']?></label>
 		<div class="help-block with-errors"></div>
 	</div>

@@ -251,8 +251,12 @@ $lang['nav_faq'] = "FAQ";
 $lang['nav_required'] = "Required";
 
 $lang['other_assistance_select_program'] = "Select Program";
-$lang['ethnicity_select_all_that_apply'] = "Select all that apply";
-$lang['ethnicity_american_indian_alaskan_native'] = "American Indian or Alaskan Native";
-$lang['ethnicity_asian_black_african_american'] = "Asian, Black or African American";
-$lang['ethnicity_native_hawaiian_other_pacific_islander'] = "Native Hawaiian or Other Pacific Islander";
-$lang['ethnicity_white'] = "White";
+$lang['race_select_all_that_apply'] = "Select all that apply";
+$lang['race_american_indian_alaskan_native'] = "American Indian or Alaskan Native";
+$lang['race_asian_black_african_american'] = "Asian, Black or African American";
+$lang['race_native_hawaiian_other_pacific_islander'] = "Native Hawaiian or Other Pacific Islander";
+$lang['race_white'] = "White";
+
+$lang['ethnicity_no_answer'] = "No Answer";
+$lang['ethnicity_hispanic_latino'] = "Hispanic/Latino";
+$lang['ethnicity_not_hispanic_latino'] = "Not Hispanic/Latino";

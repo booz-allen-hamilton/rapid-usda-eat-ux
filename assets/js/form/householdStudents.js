@@ -11,7 +11,9 @@ $('[data-clone]').click(function(e){
 
 $(document).on('click', '.remove-item', function(e){
 	e.preventDefault();
-	$(this).parents('.tableItems').fadeOut(500, function(){
-		$(this).remove();
-	});
+	if ($(".tableItems").length > 2) {
+		$(this).parents('.tableItems').fadeOut(500, function() {
+			$(this).remove();
+		});
+	}
 });

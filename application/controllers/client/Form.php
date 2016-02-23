@@ -273,15 +273,13 @@ class Form extends Client_controller {
 			break;
 			case "contactInformation":
 				$this->form_validation->set_rules('street_address', '', 'required');
-				//$this->form_validation->set_rules('apt', '', '');
+				// $this->form_validation->set_rules('apt', '', '');
 				$this->form_validation->set_rules('city', '', 'required');
 				$this->form_validation->set_rules('state', '', 'required');
 				$this->form_validation->set_rules('zip', '', 'required');
-				$this->form_validation->set_rules('phone', '', 'required');
-				$this->form_validation->set_rules('email', '', 'required');
-				// $this->form_validation->set_rules('status_text', '', 'required');
-				// $this->form_validation->set_rules('status_email', '', 'required');
-				// $this->form_validation->set_rules('status_phone', '', 'required');
+				// $this->form_validation->set_rules('phone', '', 'required');
+				// $this->form_validation->set_rules('email', '', 'required');
+				// $this->form_validation->set_rules('contact_method', '', 'required|in_list[contact_text,contact_email,contact_phone]');
 			break;
 			case 'confirmation':
 				$this->form_validation->set_rules('confirmation', '', 'required|in_list[1]');
@@ -290,7 +288,7 @@ class Form extends Client_controller {
 				$this->form_validation->set_rules('terms_and_cond_agree', '', 'required|in_list[1]');
 			break;
 			case "childrenEthnicityAndRace":
-				$this->form_validation->set_rules('test', '', 'required|in_list[1]');
+				$this->form_validation->set_rules('children_ethnicity_race', '', 'required|in_list[1]');
 			break;
 		}
 		
@@ -347,26 +345,23 @@ class Form extends Client_controller {
 						'zip'            => $this->input->post('zip'),
 						'phone'          => $this->input->post('apt'),
 						'email'          => $this->input->post('email'),
-						'status_text'    => $this->input->post('status_text'),
-						'status_email'   => $this->input->post('status_email'),
-						'status_phone'   => $this->input->post('status_phone'),
+						'contact_method' => $this->input->post('contact_method'),
 					);
 					$this->session->set_userdata('form_contact_information', $contact_information);
 				break;
 				case "childrenEthnicityAndRace":
-					// echo "<pre>";
-					// print_r($_POST);
-					// die;
 					$form_household_students  = $this->session->userdata('form_household_students');
 					$loop = 0;
+					$ethnicity = $this->input->post('ethnicity');
+					$race = $this->input->post('race');
 					$student_array = array();
 					foreach($form_household_students as $student) {
 						$student_array[$loop] = array(
 							'first_name'  => $student['first_name'],
 							'last_name'   => $student['last_name'],
 							'middle_initial' => $student['middle_initial'],
-							'ethnicity' => $this->input->post('ethnicity'.$loop),
-							'race' => $this->input->post('race_'.$loop),
+							'ethnicity' => (!empty($ethnicity[$loop]) ? $ethnicity[$loop] : NULL),
+							'race' => (!empty($race[$loop]) ? $race[$loop] : NULL),
 						);
 						$loop++;
 					}

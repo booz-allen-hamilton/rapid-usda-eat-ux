@@ -198,7 +198,7 @@ a:hover {
 					display: none;
 				}
 				.icon-background{
-					color: #000;
+					color: $color_action;
 				}
 				.icon-image {
 					color: #fff;
@@ -284,7 +284,7 @@ a:hover {
 
 	.electronic-signature {
 		.sig-statement {
-			margin-top: 14px;
+			margin-top: 6px;
 		}
 
 		p {
