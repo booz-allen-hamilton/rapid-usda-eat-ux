@@ -175,8 +175,9 @@ class Form extends Client_controller {
 						$next_step = 'electronicSignature';
 					break;
 					case 'electronicSignature':
-						$this->scenario = $this->get_form_scenario();
-						$next_step = count($this->form_scenario_a);
+						//$this->scenario = $this->get_form_scenario();
+						//$next_step = count($this->form_scenario_a);
+						$next_step = 'success';
 					break;
 					default:
 						if (is_numeric($form_step)) {
