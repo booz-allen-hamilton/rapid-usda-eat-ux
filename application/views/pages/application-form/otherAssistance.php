@@ -9,10 +9,10 @@
 			<?=help_icon($this->lang->line('other_assistance_help'))?>
 		</p>
 	</div>
-	<div class="form-group">
-		<div class="col-sm-12 col-md-3 col-md-offset-3">
+	<div class="col-md-offset-4 col-md-4">
+		<div class="form-group">
 			<h4 class="text-left"><span class="asterisk">* </span><?=$this->lang->line('other_assistance_program')?></h4>
-			<select name="assistance_program" class="form-control input-lg" required>
+			<select name="assistance_program" class="form-control input-lg">
 				<option selected="selected" disabled="disabled"><?=$this->lang->line('other_assistance_select_program')?></option>
 				<?
 					foreach($this->config->item('form_assistance_programs') as $assistance_program_key => $assistance_program_value) {
@@ -27,7 +27,7 @@
 				?>
 			</select>
 		</div>
-		<div class="col-sm-12 col-md-3">
+		<div class="form-group">
 			<h4 class="text-left"><span class="asterisk">* </span><?=$this->lang->line('other_assistance_case_number')?></h4>
 			<input type="text" 
 				name="case_number" 
