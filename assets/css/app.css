@@ -712,4 +712,8 @@ input[type="radio"].toggle-right + label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
+.has-error, .has-error .form-control, .has-error .help-block {
+  color: #ee3e35 !important;
+  border-color: #ee3e35 !important; }
+
 /*# sourceMappingURL=app.css.map */
