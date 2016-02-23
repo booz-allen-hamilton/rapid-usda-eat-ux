@@ -24,26 +24,26 @@ $lang['nav_application_status'] = "My Status";
 $lang['nav_help'] = "Help";
 
 // Weclome
-$lang['welcome_page_title'] = "Apply for Free or Reduced-Price Meals";
-$lang['welcome_title'] = "Apply for <strong>Free</strong> or <strong>Reduced-Price Meals!</strong>";
-$lang['welcome_description_part_one'] = "This webform is your quick and secure way to apply. Everything you need to know about applying for free and reduced price meals can be found here. Click the yellow question mark icon";
-$lang['welcome_description_part_two'] = "to open up the Help Menu and click it again to close it. General FAQ contains information about elibility, questions about the process, and contact information for your school.<br /><br /> After you complete and submit this application, your school can review your eligibility for free and reduced price meals.";
-$lang['welcome_required'] = "You may be eligible if:";
+$lang['welcome_page_title'] = "Apply for Free and Low-cost School Lunches";
+$lang['welcome_title'] = "Apply for <strong>Free</strong> and Low-cost School Lunches";
+$lang['welcome_description_part_one'] = "30 million children depend on free or reduced-price school meals. Apply here with a few questions. Your school will receive your answers, and let you know about your child's meals.<br /><br />Need help with questions? Click the question marks";
+$lang['welcome_description_part_two'] = "for more info.";
+$lang['welcome_required'] = "Am I eligible?";
 $lang['welcome_required_items'] = array(
 	array(
-		'text' => 'You meet income level requirements',
-		'help' => 'help text'
+		'text' => 'Family income level',
+		'help' => 'help 1 text'
 	),
 	array(
-		'text' => 'A household member is already receiving benefits from certain government programs',
-		'help' => 'help text'
+		'text' => 'What current government benefits you receive',
+		'help' => 'help 2 text'
 	),
 	array(
-		'text' => 'All foster children in household',
-		'help' => 'help text'
+		'text' => 'Number of foster children',
+		'help' => 'help 3 text'
 	)
 );
-$lang['welcome_btn'] = "Apply Now";
+$lang['welcome_btn'] = "Get Started";
 
 // Getting Started
 $lang['getting_started_title'] = "Getting Started";
