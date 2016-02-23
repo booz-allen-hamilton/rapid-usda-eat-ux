@@ -1,4 +1,4 @@
-$('[data-clone]').click(function(e){
+$(document).on('click', '[data-clone]', function(e){
 	e.preventDefault();
 	var template = $(this).attr('data-clone');
 	var target = $(this).attr('data-target');
@@ -16,7 +16,11 @@ $(document).on('click', '.remove-item', function(e){
 	});
 });
 
-$('input[type="radio"]').click(function(){
+/*$('input[type="radio"]').click(function(){
 	var radioName = $(this).attr('name');
-	$("." + radioName).toggle();
-});
+	if ($(this).val() == 'true') {
+		$(this).parents('.main-something-container').find('.child-income-container').removeClass('hide');
+	} else {
+		$(this).parents('.main-something-container').find('.child-income-container').addClass('hide');
+	}
+});*/

@@ -113,6 +113,10 @@ $lang['household_members_income'] = "Income?";
 $lang['household_members_student'] = "Student?";
 $lang['household_members_status'] = "Child Status";
 $lang['household_members_check_one'] = "(Check one or more)";
+$lang['household_members_earnings_from_work_help'] = "Earnings from work";
+$lang['household_members_public_assistance_help'] = "Public assistance";
+$lang['household_members_pensions_help'] = "Pensions";
+$lang['household_members_child_status_help'] = "Child status help";
 
 // All Household Members - Income section
 $lang['household_income_adult_name_suffix'] = "'s Income (Adult)";
@@ -126,8 +130,12 @@ $lang['household_income_work'] = "Earnings from Work";
 $lang['household_income_public'] = "Public Assistance / Alimony / Child Support";
 $lang['household_income_pension'] = "Pensions / Retirement / All Other Income";
 $lang['household_income_ssn_benefits'] = "Social Security Benefits";
+$lang['household_income_ssn_benefits_help'] = "Social Security Benefits";
 $lang['household_income_spending'] = "Spending money or other income from friend or relative";
+$lang['household_income_spending_help'] = "Spending money or other income from friend or relative";
 $lang['household_income_other'] = "Income from any other source";
+$lang['household_income_other_help'] = "Income from any other source";
+$lang['household_income_add_another'] = "Add another";
 
 // Contact Information
 $lang['contact_info_title'] = "Contact Information";
@@ -243,7 +251,6 @@ $lang['nav_faq'] = "FAQ";
 $lang['nav_required'] = "Required";
 
 $lang['other_assistance_select_program'] = "Select Program";
-$lang['ethnicity_select_all_that_apply'] = "Select all that apply";
 $lang['ethnicity_select_all_that_apply'] = "Select all that apply";
 $lang['ethnicity_american_indian_alaskan_native'] = "American Indian or Alaskan Native";
 $lang['ethnicity_asian_black_african_american'] = "Asian, Black or African American";
