@@ -281,3 +281,8 @@ $lang['race_white'] = "White";
 $lang['ethnicity_no_answer'] = "No Answer";
 $lang['ethnicity_hispanic_latino'] = "Hispanic/Latino";
 $lang['ethnicity_not_hispanic_latino'] = "Not Hispanic/Latino";
+
+$lang['weekly'] = "Weekly";
+$lang['twice_a_week'] = "2 times a week";
+$lang['monthly'] = "Monthly";
+$lang['twice_a_month'] = "2 times a month";

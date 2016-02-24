@@ -99,6 +99,10 @@ $config['form_contact_methods'] = array(
 	'contact_info_phone'
 );
 
+$config['form_income_frequency'] = array(
+	'weekly', 'twice_a_week', 'monthly', 'twice_a_month'
+);
+
 $config['form_ethnicity'] = array(
 	'ethnicity_no_answer',
 	'ethnicity_hispanic_latino',

@@ -60,6 +60,7 @@ $route['apply']                  = 'client/form/index';
 $route['apply/standard']         = 'client/form/standard_form';
 $route['apply/cancel'] 	         = 'client/form/cancel';
 $route['apply/process']          = 'client/form/process';
+$route['apply/template/(:any)']  = 'client/form/template/$1';
 $route['client/language/(:any)'] = 'client_controller/language/$1';
 $route['status']                 = 'client/form/status';
 

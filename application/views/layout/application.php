@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?=PATH_VENDOR?>twbs/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="<?=PATH_ASSETS?>css/app.css" />
-	<link rel="stylesheet" href="http://davidstutz.github.io/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" type="text/css"/>		
+	<link rel="stylesheet" href="http://davidstutz.github.io/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" type="text/css"/>
 </head>
-<body>
+<body data-base="<?=base_url()?>">
 	<?
 		$this->load->view('layout/header');
 		$this->load->view($app['view']);

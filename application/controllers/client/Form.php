@@ -123,6 +123,27 @@ class Form extends Client_controller {
 		redirect();
 	}
 
+	public function template() {
+		$section = $this->uri->segment(3);
+		switch($section) {
+			case "adult_row":
+				$this->load->view('pages/application-form/template_adult_row');
+			break;
+			case "child_row":
+				$this->load->view('pages/application-form/template_child_row');
+			break;
+			case "adult_earnings_from_work":
+			case "adult_public_asst":
+			case "adult_other_income":
+			case "child_earnings_from_work":
+			case "child_ssn_benefits":
+			case "child_spending_other_income":
+			case "child_other_income":
+				$data['form_income_item'] = $section;
+				$this->load->view('pages/application-form/template_income', $data);
+			break;
+		}
+	}
 
 	public function standard_form()
 	{
