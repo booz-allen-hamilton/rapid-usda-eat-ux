@@ -99,6 +99,14 @@ $config['form_contact_methods'] = array(
 	'contact_info_phone'
 );
 
+$config['form_child_description'] = array(
+	'child_description_homeless',
+	'child_description_migrant',
+	'child_description_runaway',
+	'child_description_foster',
+	'child_description_none'
+);
+
 $config['form_income_frequency'] = array(
 	'weekly', 'twice_a_week', 'monthly', 'twice_a_month'
 );
@@ -121,6 +129,7 @@ $config['form_income_adult'] = array(
 	'adult_public_asst',
 	'adult_other_income',
 );
+
 $config['form_income_child'] = array(
 	'child_earnings_from_work',
 	'child_ssn_benefits',

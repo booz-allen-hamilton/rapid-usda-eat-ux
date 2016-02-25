@@ -78,7 +78,7 @@
 									</div>
 									<div class="<?=$form_income_item?>-container hide">
 										<div class="form-group col-sm-12 col-md-3">
-											<select name="<?=$form_income_item?>['type'][]" class="form-control input-lg" required>
+											<select name="<?=$form_income_item?>_type[]" class="form-control input-lg" required>
 												<option selected="selected"><?=$this->lang->line('household_income_salary')?></option>
 											</select>
 											<div class="help-block with-errors"></div>
@@ -86,7 +86,7 @@
 										<div class="form-group col-sm-12 col-md-2">
 											<div class="input-group">
 											  <span class="input-group-addon">$</span>
-											  <input type="text" name="<?=$form_income_item?>['amount'][]" class="form-control input-lg">
+											  <input type="text" name="<?=$form_income_item?>_amount[]" class="form-control input-lg">
 											</div>
 										</div>
 										<div class="form-group col-sm-12 col-md-2" style="margin-left: -30px;">

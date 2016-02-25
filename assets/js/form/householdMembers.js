@@ -13,15 +13,13 @@ $(document).on('click', '[data-toggle-target] button', function(){
 	}
 });
 
-$(document).on('click', '[data-clone-row]', function(){
+$(document).on('click', '[data-clone-row]', function(e){
+	e.preventDefault();
 	var clone = $(this).attr('data-clone-row');
 	var base_url = $('body').attr('data-base');
 	$.ajax({
 		url: base_url + 'apply/template/' + clone,
 		type: 'GET',
-		data: {
-			format: 'json'
-		},
 		error: function() {
 			alert('There was problem with your request');
 		},
@@ -40,7 +38,8 @@ $(document).on('click', '[data-clone-row]', function(){
 });
 
 
-$(document).on('click', '[data-clone-income]', function(){
+$(document).on('click', '[data-clone-income]', function(e){
+	e.preventDefault();
 	var clone = $(this).attr('data-clone-income');
 	var base_url = $('body').attr('data-base');
 	var parent = $(this).parents('.rowItemIncome').find('.rowItem-'+clone);
@@ -48,9 +47,6 @@ $(document).on('click', '[data-clone-income]', function(){
 	$.ajax({
 		url: base_url + 'apply/template/' + clone,
 		type: 'GET',
-		data: {
-			format: 'json'
-		},
 		error: function() {
 			alert('There was problem with your request');
 		},
@@ -68,22 +64,9 @@ $(document).on('click', '.remove-item', function(){
 	});
 });
 
-
-
-// $(document).on('click', '#adultName-list .income-toggle', function(e){
-// 	var toggle_value = $(this).val();
-// 	if (toggle_value == 'true') {
-// 		$(this).parents('.main-row-container').find('.adult-income-container').removeClass('hide');
-// 	} else {
-// 		$(this).parents('.main-row-container').find('.adult-income-container').addClass('hide');
-// 	}
-// });
-//
-// $(document).on('click', '#adultName-list .toggle-earnings-from-work', function(e){
-// 	var toggle_value = $(this).val();
-// 	if (toggle_value == 'true') {
-// 		$(this).parents('.main-row-container').find('.adult-income-container').removeClass('hide');
-// 	} else {
-// 		$(this).parents('.main-row-container').find('.adult-income-container').addClass('hide');
-// 	}
-// });
+$(function(){
+	$('._child_description').each(function(index, element){
+		var label = $(this).attr('data-label');
+		$(this).multiselect({ nonSelectedText: label });
+	});
+});

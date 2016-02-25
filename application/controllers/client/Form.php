@@ -300,6 +300,87 @@ class Form extends Client_controller {
 
 		//	validate step
 		switch($form_step_section) {
+			case "householdMembers":
+				$adult_first                        = $this->input->post('adult_first');
+				$adult_last                         = $this->input->post('adult_last');
+				$adult_middle                       = $this->input->post('adult_middle');
+				$adult_earns_income                 = $this->input->post('adult_earns_income');
+				$adult_earnings_from_work           = $this->input->post('adult_earnings_from_work');
+				$adult_earnings_from_work_type      = $this->input->post('adult_earnings_from_work_type');
+				$adult_earnings_from_work_amount    = $this->input->post('adult_earnings_from_work_amount');
+				$adult_public_asst                  = $this->input->post('adult_public_asst');
+				$adult_public_asst_type             = $this->input->post('adult_public_asst_type');
+				$adult_public_asst_amount           = $this->input->post('adult_public_asst_amount');
+				$adult_other_income                 = $this->input->post('adult_other_income');
+				$adult_other_income_type            = $this->input->post('adult_other_income_type');
+				$adult_other_income_amount          = $this->input->post('adult_other_income_amount');
+				$child_first                        = $this->input->post('child_first');
+				$child_last                         = $this->input->post('child_last');
+				$child_middle                       = $this->input->post('child_middle');
+				$child_earns_income                 = $this->input->post('child_earns_income');
+				$child_earnings_from_work           = $this->input->post('child_earnings_from_work');
+				$child_earnings_from_work_type      = $this->input->post('child_earnings_from_work_type');
+				$child_earnings_from_work_amount    = $this->input->post('child_earnings_from_work_amount');
+				$child_ssn_benefits                 = $this->input->post('child_ssn_benefits');
+				$child_ssn_benefit_type             = $this->input->post('child_ssn_benefit_type');
+				$child_ssn_benefit_amount           = $this->input->post('child_ssn_benefit_amount');
+				$child_spending_other_income        = $this->input->post('child_spending_other_income');
+				$child_spending_other_income_type   = $this->input->post('child_spending_other_income_type');
+				$child_spending_other_income_amount = $this->input->post('child_spending_other_income_amount');
+				$child_other_income                 = $this->input->post('child_other_income');
+				$child_other_income_type            = $this->input->post('child_other_income_type');
+				$child_other_income_amount          = $this->input->post('child_other_income_amount');
+
+				$adult_data = array();
+				for($i = 0; $i < count($adult_first); $i++) {
+					$adult_data[] = array(
+						'first_name'                => $adult_first[$i],
+						'last_name'                 => $adult_last[$i],
+						'middle_initial'            => $adult_middle[$i],
+						'earns_income'              => $adult_earns_income[$i],
+						'earnings_from_work'        => $adult_earnings_from_work[$i],
+						'earnings_from_work_type'   => $adult_earnings_from_work_type[$i],
+						'earnings_from_work_amount' => $adult_earnings_from_work_amount[$i],
+						'public_asst'               => $adult_public_asst[$i],
+						'public_asst_type'          => $adult_public_asst_type[$i],
+						'public_asst_amount'        => $adult_public_asst_amount[$i],
+						'other_income'              => $adult_other_income[$i],
+						'other_income_type'         => $adult_other_income_type[$i],
+						'other_income_amount'       => $adult_other_income_amount[$i],
+					);
+				}
+
+				$child_data = array();
+				for($i = 0; $i < count($child_first); $i++) {
+					$child_data[] = array(
+						'first_name'                   => $child_first[$i],
+						'last_name'                    => $child_last[$i],
+						'middle_initial'               => $child_middle[$i],
+						'earns_income'                 => $child_earns_income[$i],
+						'earnings_from_work'           => $child_earnings_from_work[$i],
+						'earnings_from_work_type'      => $child_earnings_from_work_type[$i],
+						'earnings_from_work_amount'    => $child_earnings_from_work_amount[$i],
+						'ssn_benefits'                 => $child_ssn_benefits[$i],
+						'ssn_benefits_type'            => $child_ssn_benefits_type[$i],
+						'ssn_benefits_amount'          => $child_ssn_benefits_amount[$i],
+						'spending_other_income'        => $child_spending_other_income[$i],
+						'spending_other_income_type'   => $child_spending_other_income_type[$i],
+						'spending_other_income_amount' => $child_spending_other_income_amount[$i],
+						'other_income'                 => $child_other_income[$i],
+						'other_income_type'            => $child_other_income_type[$i],
+						'other_income_amount'          => $child_other_income_amount[$i],
+					);
+				}
+
+				echo '<pre>';
+				print_r($adult_data);
+				print_r($child_data);
+				print_r($this->input->post());
+				die;
+
+				$this->form_validation->set_rules('assistance_program', '', 'required|in_list[snap,tanf,fdpir]');
+				$this->form_validation->set_rules('case_number', '', 'required|max_length[30]');
+			break;
 			case "otherAssistance":
 				$this->form_validation->set_rules('assistance_program', '', 'required|in_list[snap,tanf,fdpir]');
 				$this->form_validation->set_rules('case_number', '', 'required|max_length[30]');

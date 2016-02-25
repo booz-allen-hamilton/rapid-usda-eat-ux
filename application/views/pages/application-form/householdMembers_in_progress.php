@@ -28,28 +28,31 @@
 </div>
 
 <!-- adult rows -->
+<?
+	$default_index = 0;
+?>
 <div id="adultName-list">
-	<div class="main-row-container">
+	<div class="main-row-container" data-index="1">
 		<div class="row tableItems">
 			<div class="col-sm-12 col-md-3">
-				<input type="text" placeholder="<?=$this->lang->line('household_members_first')?>" class="form-control input-lg" name="adult_first[]" required data-error="<?=$this->lang->line('error_household_students_first')?>">
+				<input type="text" placeholder="<?=$this->lang->line('household_members_first')?>" class="form-control input-lg" name="adult[<?=$default_index?>][first_name]" required data-error="<?=$this->lang->line('error_household_students_first')?>">
 				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 				<div class="help-block with-errors"></div>
 			</div>
 			<div class="col-sm-12 col-md-3">
-				<input type="text" placeholder="<?=$this->lang->line('household_members_last')?>" class="form-control input-lg" name="adult_last[]" required data-error="<?=$this->lang->line('error_household_students_last')?>">
+				<input type="text" placeholder="<?=$this->lang->line('household_members_last')?>" class="form-control input-lg" name="adult[<?=$default_index?>][last_name]" required data-error="<?=$this->lang->line('error_household_students_last')?>">
 				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 				<div class="help-block with-errors"></div>
 			</div>
 			<div class="col-sm-12 col-md-2">
-				<input type="text" placeholder="<?=$this->lang->line('household_members_middle')?>" class="form-control input-lg" name="adult_middle[]">
+				<input type="text" placeholder="<?=$this->lang->line('household_members_middle')?>" class="form-control input-lg" name="adult[<?=$default_index?>][middle_initial]">
 			</div>
 			<div class="col-sm-12 col-md-2">
 				<div class="btn-group btn-group-custom" data-toggle-target="adult_earns_income" role="group">
 					<button type="button" class="btn btn-lg btn-default" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
 					<button type="button" class="btn btn-lg btn-default" data-toggle-value="0"><?=$this->lang->line('no')?></button>
 				</div>
-				<?=form_hidden('adult_earns_income[]', 0)?>
+				<?=form_hidden('adult['.$default_index.'][earns_income]', 0)?>
 			</div>
 			<div class="col-sm-12 col-md-1 text-right">
 				<div class="grey_text" style="margin-top: 10px;">(You)</div>
@@ -91,11 +94,11 @@
 											<button type="button" class="btn btn-lg btn-default" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
 											<button type="button" class="btn btn-lg btn-default" data-toggle-value="0"><?=$this->lang->line('no')?></button>
 										</div>
-										<?=form_hidden($form_income_item.'[]', 0)?>
+										<?=form_hidden('adult['.$default_index.'][income][]['.$form_income_item.'][status]', 0)?>
 									</div>
 									<div class="<?=$form_income_item?>-container hide">
 										<div class="form-group col-sm-12 col-md-3">
-											<select name="<?=$form_income_item?>['type'][]" class="form-control input-lg" required>
+											<select name="<?=$form_income_item?>_type[]" class="form-control input-lg" required>
 												<option selected="selected"><?=$this->lang->line('household_income_salary')?></option>
 											</select>
 											<div class="help-block with-errors"></div>
@@ -103,11 +106,11 @@
 										<div class="form-group col-sm-12 col-md-2">
 											<div class="input-group">
 											  <span class="input-group-addon">$</span>
-											  <input type="text" name="<?=$form_income_item?>['amount'][]" class="form-control input-lg">
+											  <input type="text" name="adult[<?=$default_index?>][income][][<?=$form_income_item?>][type]" class="form-control input-lg">
 											</div>
 										</div>
 										<div class="form-group col-sm-12 col-md-2" style="margin-left: -30px;">
-										  <select name="<?=$form_income_item?>['frequency'][]" class="form-control input-lg">
+										  <select name="adult[<?=$default_index?>][income][][<?=$form_income_item?>][frequency][]" class="form-control input-lg">
 											<?
 												foreach($this->config->item('form_income_frequency') as $income_frequency) {
 													echo '<option value="'.$income_frequency.'" ';
@@ -193,24 +196,24 @@ $default_index = 0;
 	<div class="main-row-container">
 		<div class="row tableItems">
 			<div class="col-sm-12 col-md-2">
-				<input type="text" placeholder="<?=$this->lang->line('household_members_first')?>" class="form-control input-lg" name="child_first[]" required data-error="<?=$this->lang->line('error_household_students_first')?>">
+				<input type="text" placeholder="<?=$this->lang->line('household_members_first')?>" class="form-control input-lg" name="child[<?=$default_index?>][first_name]" required data-error="<?=$this->lang->line('error_household_students_first')?>">
 				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 				<div class="help-block with-errors"></div>
 			</div>
 			<div class="col-sm-12 col-md-2">
-				<input type="text" placeholder="<?=$this->lang->line('household_members_last')?>" class="form-control input-lg" name="child_last[]" required data-error="<?=$this->lang->line('error_household_students_last')?>">
+				<input type="text" placeholder="<?=$this->lang->line('household_members_last')?>" class="form-control input-lg" name="child[<?=$default_index?>][last_name]" required data-error="<?=$this->lang->line('error_household_students_last')?>">
 				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 				<div class="help-block with-errors"></div>
 			</div>
 			<div class="col-sm-12 col-md-1">
-				<input type="text" placeholder="<?=$this->lang->line('household_members_middle')?>" class="form-control input-lg" name="child_middle[]">
+				<input type="text" placeholder="<?=$this->lang->line('household_members_middle')?>" class="form-control input-lg" name="child[<?=$default_index?>][middle_initial]">
 			</div>
 			<div class="col-sm-12 col-md-2">
 				<div class="btn-group btn-group-custom" data-toggle-target="child_earns_income" role="group">
 					<button type="button" class="btn btn-lg btn-default" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
 					<button type="button" class="btn btn-lg btn-default" data-toggle-value="0"><?=$this->lang->line('no')?></button>
 				</div>
-				<?=form_hidden('child_earns_income[]', 0)?>
+				<?=form_hidden('child['.$default_index.'][earns_income]', 0)?>
 			</div>
 			<div class="col-sm-12 col-md-2">
 				<input id="child-student-on-[]" class="child-student-on-[] toggle toggle-left" name="child-student-[]" value="true" type="radio">
@@ -219,7 +222,7 @@ $default_index = 0;
 				<label for="child-student-off-[]" class="btn"><?=$this->lang->line('no')?></label>
 			</div>
 			<div class="col-md-2">
-				<select class="_child_description" name="child_description[][]" multiple="multiple">
+				<select class="_child_description" name="child[<?=$default_index?>][child_description][]" multiple="multiple">
 					<?
 						foreach($this->config->item('form_child_description') as $child_description) {
 							echo '<option value="'.$child_description.'" ';
@@ -269,7 +272,7 @@ $default_index = 0;
 					<?
 						foreach($this->config->item('form_income_child') as $form_income_item) {
 					?>
-						<div class="rowItem-<?=$form_income_item?>">
+						<div class="rowItem-<?=$form_income_item?>" data-index="<?=$default_index?>">
 							<div class="rowItem">
 								<div class="col-sm-12"><hr class="divider" /></div>
 								<div class="row tableItems">
@@ -284,11 +287,11 @@ $default_index = 0;
 											<button type="button" class="btn btn-lg btn-default" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
 											<button type="button" class="btn btn-lg btn-default" data-toggle-value="0"><?=$this->lang->line('no')?></button>
 										</div>
-										<?=form_hidden($form_income_item.'[]', 0)?>
+										<?=form_hidden('child['.$default_index.'][income]['.$default_index.']['.$form_income_item.'][status]', 0)?>
 									</div>
 									<div class="<?=$form_income_item?>-container hide">
 										<div class="form-group col-sm-12 col-md-3">
-											<select name="<?=$form_income_item?>['type'][]" class="form-control input-lg" required>
+											<select name="<?=$form_income_item?>_type[]" class="form-control input-lg" required>
 												<option selected="selected"><?=$this->lang->line('household_income_salary')?></option>
 											</select>
 											<div class="help-block with-errors"></div>
@@ -296,11 +299,11 @@ $default_index = 0;
 										<div class="form-group col-sm-12 col-md-2">
 											<div class="input-group">
 											  <span class="input-group-addon">$</span>
-											  <input type="text" name="<?=$form_income_item?>['amount'][]" class="form-control input-lg">
+											  <input type="text" name="child[<?=$default_index?>][income][][<?=$form_income_item?>][type]" class="form-control input-lg">
 											</div>
 										</div>
 										<div class="form-group col-sm-12 col-md-2" style="margin-left: -30px;">
-										  <select name="<?=$form_income_item?>['frequency'][]" class="form-control input-lg">
+										  <select name="child[<?=$default_index?>][income][][<?=$form_income_item?>][frequency][]" class="form-control input-lg">
 											<?
 												foreach($this->config->item('form_income_frequency') as $income_frequency) {
 													echo '<option value="'.$income_frequency.'" ';
