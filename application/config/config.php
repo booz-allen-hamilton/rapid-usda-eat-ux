@@ -74,7 +74,7 @@ $config['url_suffix'] = '';
 | Settings for language
 */
 $config['language_list'] = array(
-	'english' => 'English', 
+	'english' => 'English',
 	'spanish' => 'Español',
 	'korean' => '한국어',
 );
@@ -93,6 +93,16 @@ $config['form_assistance_programs'] = array(
 	'fdpir' => 'FDPIR'
 );
 
+$config['form_contact_methods'] = array(
+	'contact_info_text',
+	'contact_info_email',
+	'contact_info_phone'
+);
+
+$config['form_income_frequency'] = array(
+	'weekly', 'twice_a_week', 'monthly', 'twice_a_month'
+);
+
 $config['form_ethnicity'] = array(
 	'ethnicity_no_answer',
 	'ethnicity_hispanic_latino',
@@ -104,6 +114,18 @@ $config['form_race'] = array(
 	'race_asian_black_african_american',
 	'race_native_hawaiian_other_pacific_islander',
 	'race_white',
+);
+
+$config['form_income_adult'] = array(
+	'adult_earnings_from_work',
+	'adult_public_asst',
+	'adult_other_income',
+);
+$config['form_income_child'] = array(
+	'child_earnings_from_work',
+	'child_ssn_benefits',
+	'child_spending_other_income',
+	'child_other_income',
 );
 
 $config['form_states'] = array(

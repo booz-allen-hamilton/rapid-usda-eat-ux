@@ -64,7 +64,7 @@
 
 		<h4><?=$this->lang->line('confirmation_email')?></h4>
 		<p class="text-large"><?=$form_contact_information['email']?></p>
-		<em><?=$this->lang->line('confirmation_receive_updates')?></em>
+		<em><?=lang_key('confirmation_receive_updates', array('contact_method' => $form['data']['contact_information']['contact_method']))?></em>
 	</div>
 	<div class="col-sm-12 col-md-4">
 		<h3><?=$this->lang->line('confirmation_other_assistance')?></h3>
@@ -77,7 +77,6 @@
 	</div>
 	<div class="col-sm-12 col-md-4">
 		<h3><?=$this->lang->line('confirmation_household_income')?></h3>
-
 		<p class="text-large"><?=$this->lang->line('confirmation_not_required')?></p>
 	</div>
 </div>

@@ -27,3 +27,23 @@ if ( ! function_exists('help_icon'))
 		return $html;
 	}
 }
+
+
+if ( ! function_exists('lang_key'))
+{
+	/**
+ 	 * Swaps values for language items
+	 * @param  [type] $lang_key    [description]
+	 * @param  [type] $value_array [description]
+	 * @return [type]              [description]
+	 */
+	function lang_key($lang_key, $value_array)
+	{
+		$ci =& get_instance();
+		$language_line = $ci->lang->line($lang_key);
+		foreach($value_array as $key => $value) {
+			$language_line = str_replace('{'.$key.'}', $ci->lang->line($value), $language_line);
+		}
+		return $language_line;
+	}
+}

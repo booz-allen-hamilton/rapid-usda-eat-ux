@@ -45,6 +45,12 @@ class Static_pages extends Client_controller {
 		$data['form'] = array(
 			'process'       => 'apply/process',
 			'section'       => $this->uri->segment(2),
+			'data'					=> array(
+				'other_assistance'    => $this->session->userdata('form_other_assistance'),
+				'household_members'   => $this->session->userdata('form_household_members'),
+				'household_students'  => $this->session->userdata('form_household_students'),
+				'contact_information' => $this->session->userdata('form_contact_information'),
+			)
 		);
 		
 		$data['global'] = $this->global;

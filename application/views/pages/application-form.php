@@ -20,6 +20,8 @@
 	//	load form section
 	$this->load->view('pages/application-form/'.$form['section']);
 	echo '</div>';
+	
+	if (!$this->session->flashdata('application_id')) {
 ?>
 	<div class="footer">
 		<div class="container">
@@ -41,6 +43,9 @@
 								$step = ($i == $form['step'] ? 'step-active' : 'step-disabled');
 								
 								if ($form['step'] > $i) {
+									$step = 'step-complete';
+								}
+								if ($form['step'] == 'electronicSignature') {
 									$step = 'step-complete';
 								}
 						?>
@@ -84,6 +89,7 @@
 		</div>
 	</div>
 <?
+	}
 	echo form_close();
 	 
 	//	form submission for back

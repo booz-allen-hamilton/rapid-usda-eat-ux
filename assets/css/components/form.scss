@@ -274,7 +274,7 @@ a:hover {
 	}
 
 	.scroller {
-		height: 250px;
+		height: 350px;
 		overflow-y: scroll;
 		border: 1px solid #CCC;
 		border-radius: 6px;
@@ -284,7 +284,7 @@ a:hover {
 
 	.electronic-signature {
 		.sig-statement {
-			margin-top: 14px;
+			margin-top: 6px;
 		}
 
 		p {
@@ -358,6 +358,21 @@ a:hover {
 	.multiselect-selected-text {
 		font-size: 18px;
 	}
+	
+	
+	.btn-group {
+		&.btn-group-custom {
+			.btn-default {
+				
+			}
+			.btn-active {
+				background-color: $color_subtitle;
+				cursor: pointer;
+				color: #FFF;
+				border-color: transparent;
+			}
+		}
+	}
 }
 
 .circular_button {
@@ -390,6 +405,11 @@ a:hover {
 	font-weight: bold;
 }
 
+.grey_text {
+	font-size: 16px;
+	color: #888;
+}
+
 @media (max-width: 767px) {
 	#page-application-form .footer {
 		height: auto;
@@ -398,4 +418,53 @@ a:hover {
 			width: 27px;
 		}
 	}
+}
+
+// Sliding radio button
+input[type="radio"].toggle {
+    display: none;
+}
+
+input[type="radio"].toggle:checked + label {
+	background-color: #00A8FF;
+    cursor: default;
+    color: #FFF;
+    border-color: transparent;
+}
+
+input[type="radio"].toggle + label {
+    width: 3em;
+}
+
+input[type="radio"].toggle:checked + label.btn:hover {
+    background-color: inherit;
+    background-position: 0 0;
+    -webkit-transition: none;
+    -moz-trainsition: none;
+    transition: none;
+	background-color: #00A8FF;
+}
+
+input[type="radio"].toggle-left + label {
+    border-right: 0;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type="radio"].toggle-right + label {
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-top-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.has-error, .has-error .form-control, .has-error .help-block {
+	color: #ee3e35 !important;
+	border-color: #ee3e35 !important;
 }

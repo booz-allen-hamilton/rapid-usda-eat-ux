@@ -42,7 +42,7 @@ class Form extends Client_controller {
 	public function index()
 	{
 		$this->load->helper('form');
-		
+
 		//	get saved form data
 		$current_form_step     = $this->get_form_step();
 		$current_form_scenario = $this->get_form_scenario();
@@ -70,7 +70,7 @@ class Form extends Client_controller {
 						$scenario_form_sections = $this->form_scenario_c;
 					break;
 				}
-				
+
 				if (is_numeric($current_form_step)) {
 					$current_form_section = $scenario_form_sections[$current_form_step];
 				} else {
@@ -78,12 +78,17 @@ class Form extends Client_controller {
 				}
 			}
 		}
-		
+
 		//	save that they are on the confirmation page
-		if ($current_form_section == 'confirmation') {
-			$this->session->userdata('form_confirmation', 1);
+		if ($current_form_section == 'confirmation' && $current_form_section == 'success') {
+			$this->session->set_userdata('hide_required', 1);
 		} else {
-			$this->session->unset_userdata('form_confirmation');
+			$this->session->unset_userdata('hide_required');
+		}
+
+		if ($current_form_section == 'success') {
+			$this->session->keep_flashdata('application_id');
+			$this->session->sess_destroy();
 		}
 
 		$data['global'] = $this->global;
@@ -118,6 +123,27 @@ class Form extends Client_controller {
 		redirect();
 	}
 
+	public function template() {
+		$section = $this->uri->segment(3);
+		switch($section) {
+			case "adult_row":
+				$this->load->view('pages/application-form/template_adult_row');
+			break;
+			case "child_row":
+				$this->load->view('pages/application-form/template_child_row');
+			break;
+			case "adult_earnings_from_work":
+			case "adult_public_asst":
+			case "adult_other_income":
+			case "child_earnings_from_work":
+			case "child_ssn_benefits":
+			case "child_spending_other_income":
+			case "child_other_income":
+				$data['form_income_item'] = $section;
+				$this->load->view('pages/application-form/template_income', $data);
+			break;
+		}
+	}
 
 	public function standard_form()
 	{
@@ -135,19 +161,6 @@ class Form extends Client_controller {
 
 		$this->load->view('layout/application', $data);
 	}
-
-	//
-	// public function form_assistance()
-	// {
-	// 	$data['app'] = array(
-	// 		'title' => $this->lang->line('welcome_title'),
-	// 		'view'  => 'pages/application-form'
-	// 	);
-	//
-	// 	$data['global'] = $this->global;
-	//
-	// 	$this->load->view('layout/application', $data);
-	// }
 
 	public function status()
 	{
@@ -170,15 +183,22 @@ class Form extends Client_controller {
 			redirect('error');
 		} else {
 			if ($this->input->post('back') == 1) {
-				
+
 				$form_step = $this->get_form_step();
 				$next_step = $form_step;
 				switch($form_step) {
 					case 'start':
 					case 'scenario':
 					break;
-					case 1:
+					case 'success':
 						$next_step = 'scenario';
+					break;
+					case 1:
+						$next_step = 'electronicSignature';
+					break;
+					case 'electronicSignature':
+						$this->scenario = $this->get_form_scenario();
+						$next_step = count($this->form_scenario_a);
 					break;
 					default:
 						if (is_numeric($form_step)) {
@@ -192,19 +212,27 @@ class Form extends Client_controller {
 									}
 								break;
 								case 'foster':
-									$form_step_section = $this->form_scenario_b[$form_step];
+									if ($form_step == count($this->form_scenario_b)) {
+										$next_step = count($this->form_scenario_b) - 1;
+									} else {
+										$next_step = $form_step - 1;
+									}
 								break;
 								case 'no':
-									$form_step_section = $this->form_scenario_c[$form_step];
+									if ($form_step == count($this->form_scenario_c)) {
+										$next_step = count($this->form_scenario_c) - 1;
+									} else {
+										$next_step = $form_step - 1;
+									}
 								break;
 							}
 						}
 					break;
 				}
-				
+
 				$this->set_form_step($next_step);
 				redirect('apply');
-				
+
 			} else {
 				$this->process_form();
 			}
@@ -234,7 +262,7 @@ class Form extends Client_controller {
 				if ($this->input->post('ssn_not_available') != 1) {
 					$this->form_validation->set_rules('social_security_last_four', '', 'required|min_length[4]|max_length[4]');
 				}
-				$next_step = 'success'; 
+				$next_step = 'success';
 			break;
 		}
 
@@ -253,9 +281,19 @@ class Form extends Client_controller {
 				break;
 				case 'foster':
 					$form_step_section = $this->form_scenario_b[$form_step];
+					if ($form_step == count($this->form_scenario_b)) {
+						$next_step = 'electronicSignature';
+					} else {
+						$next_step = $form_step + 1;
+					}
 				break;
 				case 'no':
 					$form_step_section = $this->form_scenario_c[$form_step];
+					if ($form_step == count($this->form_scenario_c)) {
+						$next_step = 'electronicSignature';
+					} else {
+						$next_step = $form_step + 1;
+					}
 				break;
 			}
 		}
@@ -273,13 +311,13 @@ class Form extends Client_controller {
 			break;
 			case "contactInformation":
 				$this->form_validation->set_rules('street_address', '', 'required');
-				//$this->form_validation->set_rules('apt', '', '');
+				// $this->form_validation->set_rules('apt', '', '');
 				$this->form_validation->set_rules('city', '', 'required');
 				$this->form_validation->set_rules('state', '', 'required');
 				$this->form_validation->set_rules('zip', '', 'required');
 				// $this->form_validation->set_rules('phone', '', 'required');
 				// $this->form_validation->set_rules('email', '', 'required');
-				$this->form_validation->set_rules('contact_method', '', 'required|in_list[contact_text,contact_email,contact_phone]');
+				// $this->form_validation->set_rules('contact_method', '', 'required|in_list[contact_text,contact_email,contact_phone]');
 			break;
 			case 'confirmation':
 				$this->form_validation->set_rules('confirmation', '', 'required|in_list[1]');
@@ -291,11 +329,9 @@ class Form extends Client_controller {
 				$this->form_validation->set_rules('children_ethnicity_race', '', 'required|in_list[1]');
 			break;
 		}
-		
+
 		if ($this->form_validation->run() == FALSE) {
 			$this->session->set_flashdata('error_alert', $error_alert_message);
-			echo validation_errors();
-			die;
 		} else {
 			switch($form_step) {
 				case 'start':
@@ -309,6 +345,76 @@ class Form extends Client_controller {
 				break;
 				case 'scenario':
 					$this->session->set_userdata('form_scenario', $this->input->post('scenario'));
+				break;
+				case "electronicSignature":
+					$ssn_not_available = 1;
+					$social_security_last_four = $this->input->post('social_security_last_four');
+					if ($this->input->post('ssn_not_available') != 1) {
+						$ssn_not_available = 0;
+						$social_security_last_four = NULL;
+					}
+
+					$other_assistance    = $this->session->userdata('form_other_assistance');
+					$household_members   = $this->session->userdata('form_household_members');
+					$household_students  = $this->session->userdata('form_household_students');
+					$contact_information = $this->session->userdata('form_contact_information');
+
+					$application_data = array(
+						'assistance_program' => $other_assistance['assistance_program'],
+						'case_number'        => $other_assistance['case_number'],
+						'address'            => $contact_information['street_address'],
+						'address2'           => $contact_information['apt'],
+						'city'               => $contact_information['city'],
+						'state'              => $contact_information['state'],
+						'zip'                => $contact_information['zip'],
+						'phone'              => $contact_information['phone'],
+						'email_address'      => $contact_information['email'],
+						'contact_method'     => $contact_information['contact_method'],
+						'ssn'                => $social_security_last_four,
+						'no_ssn'             => $ssn_not_available,
+						'created_at'         => time(),
+						'updated_at'         => time(),
+					);
+					$this->db->insert('applications', $application_data);
+					$application_id = $this->db->insert_id();
+
+					foreach($household_students as $student) {
+						$household_students_data = array(
+							'application_id'              => $application_id,
+							'first_name'                  => $student['first_name'],
+							'last_name'                   => $student['last_name'],
+							'middle_initial'              => $student['middle_initial'],
+							'is_student'                  => 0,
+							'is_foster'                   => 0,
+							'is_homeless_migrant_runaway' => 0,
+							'ethnicity'                   => $student['ethnicity'],
+							'race'                        => json_encode($student['race']),
+						);
+						$this->db->insert('household_students', $household_students_data);
+					}
+
+					$loop = 0;
+					foreach($household_members as $member) {
+						$household_members_data = array(
+							'application_id'                     => $application_id,
+							'first_name'                         => $member['first_name'],
+							'last_name'                          => $member['last_name'],
+							'middle_initial'                     => $member['middle_initial'],
+							'income_work'                        => NULL,
+							'income_work_frequency'              => NULL,
+							'income_public_assistance'           => NULL,
+							'income_public_assistance_frequency' => NULL,
+							'income_other'                       => NULL,
+							'income_other_frequency'             => NULL,
+						);
+						$this->db->insert('household_members', $household_members_data);
+						// if ($loop == 0) {
+						// 	//	get primary user
+						// 	$primary_member = $this->db->insert_id();
+						// }
+						$loop++;
+					}
+					$this->session->set_flashdata('application_id', $application_id);
 				break;
 			}
 
@@ -343,7 +449,7 @@ class Form extends Client_controller {
 						'city'           => $this->input->post('city'),
 						'state'          => $this->input->post('state'),
 						'zip'            => $this->input->post('zip'),
-						'phone'          => $this->input->post('apt'),
+						'phone'          => $this->input->post('phone'),
 						'email'          => $this->input->post('email'),
 						'contact_method' => $this->input->post('contact_method'),
 					);

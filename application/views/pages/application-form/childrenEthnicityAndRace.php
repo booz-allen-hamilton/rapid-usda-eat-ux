@@ -27,11 +27,11 @@
 			<label><?=$student['first_name'].' '.$student['middle_initial'].' '.$student['last_name']?></label>
 		</div>
 		<div class="col-sm-12 col-md-3">
-			<?	
+			<?
 				foreach($this->config->item('form_ethnicity') as $ethnicity_items) {
 			?>
 			<div class="radio">
-			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="<?=$ethnicity_items?>" <? if($student['ethnicity'] == $ethnicity_items) { echo 'checked="checked"'; } ?>><div><?=$this->lang->line($ethnicity_items)?></div></label>
+			  <label><input type="radio" name="ethnicity[<?=$loop?>]" value="<?=$ethnicity_items?>" <? if((!empty($student['ethnicity']) ? $student['ethnicity'] : NULL) == $ethnicity_items) { echo 'checked="checked"'; } ?>><div><?=$this->lang->line($ethnicity_items)?></div></label>
 			</div>
 			<?
 				}
@@ -39,7 +39,7 @@
 		</div>
 		<div class="col-sm-12 col-md-4">
 			<select class="_multiselect_race" name="race[<?=$loop?>][]" multiple="multiple">
-				<?	
+				<?
 					foreach($this->config->item('form_race') as $ethnicity_race) {
 						echo '<option value="'.$ethnicity_race.'" ';
 						if (!empty($student['race'])) {
@@ -53,7 +53,7 @@
 									echo 'selected="selected"';
 								}
 							}
-						} 
+						}
 						echo '>';
 						echo $this->lang->line($ethnicity_race);
 						echo '</option>';

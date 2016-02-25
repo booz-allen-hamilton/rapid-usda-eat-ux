@@ -24,26 +24,26 @@ $lang['nav_application_status'] = "My Status";
 $lang['nav_help'] = "Help";
 
 // Weclome
-$lang['welcome_page_title'] = "Apply for Free or Reduced-Price Meals";
-$lang['welcome_title'] = "Apply for <strong>Free</strong> or <strong>Reduced-Price Meals!</strong>";
-$lang['welcome_description_part_one'] = "This webform is your quick and secure way to apply. Everything you need to know about applying for free and reduced price meals can be found here. Click the yellow question mark icon";
-$lang['welcome_description_part_two'] = "to open up the Help Menu and click it again to close it. General FAQ contains information about elibility, questions about the process, and contact information for your school.<br /><br /> After you complete and submit this application, your school can review your eligibility for free and reduced price meals.";
-$lang['welcome_required'] = "You may be eligible if:";
+$lang['welcome_page_title'] = "Apply for Free and Low-cost School Lunches";
+$lang['welcome_title'] = "Apply for <strong>Free</strong> and Low-cost School Lunches";
+$lang['welcome_description_part_one'] = "30 million children depend on free or reduced-price school meals. Apply here with a few questions. Your school will receive your answers, and let you know about your child's meals.<br /><br />Need help with questions? Click the question marks";
+$lang['welcome_description_part_two'] = "for more info.";
+$lang['welcome_required'] = "Am I eligible?";
 $lang['welcome_required_items'] = array(
 	array(
-		'text' => 'You meet income level requirements',
-		'help' => 'help text'
+		'text' => 'Family income level',
+		'help' => 'help 1 text'
 	),
 	array(
-		'text' => 'A household member is already receiving benefits from certain government programs',
-		'help' => 'help text'
+		'text' => 'What current government benefits you receive',
+		'help' => 'help 2 text'
 	),
 	array(
-		'text' => 'All foster children in household',
-		'help' => 'help text'
+		'text' => 'Number of foster children',
+		'help' => 'help 3 text'
 	)
 );
-$lang['welcome_btn'] = "Apply Now";
+$lang['welcome_btn'] = "Get Started";
 
 // Getting Started
 $lang['getting_started_title'] = "Getting Started";
@@ -113,25 +113,54 @@ $lang['household_members_income'] = "Income?";
 $lang['household_members_student'] = "Student?";
 $lang['household_members_status'] = "Child Status";
 $lang['household_members_check_one'] = "(Check one or more)";
+$lang['household_members_earnings_from_work_help'] = "Earnings from work";
+$lang['household_members_public_assistance_help'] = "Public assistance";
+$lang['household_members_pensions_help'] = "Pensions";
+$lang['household_members_child_status_help'] = "Child status help";
 
 // All Household Members - Income section
-$lang['household_income_adult_name_suffix'] = "'s Income (Adult)";
-$lang['household_income_child_name_suffix'] = "'s Income (Child)";
+$lang['household_income_adult_name_suffix'] = "{name}'s Income (Adult)";
+$lang['household_income_child_name_suffix'] = "{name}'s Income (Child)";
 $lang['household_income_gross'] = "Please enter gross income and how often it was received.";
 $lang['household_income_category'] = "Income Category";
 $lang['household_income_type'] = "Type";
 $lang['household_income_amount_freq'] = "Dollar Amount / Frequency";
 $lang['household_income_salary'] = "Salary";
-$lang['household_income_work'] = "Earnings from Work";
-$lang['household_income_public'] = "Public Assistance / Alimony / Child Support";
-$lang['household_income_pension'] = "Pensions / Retirement / All Other Income";
-$lang['household_income_ssn_benefits'] = "Social Security Benefits";
-$lang['household_income_spending'] = "Spending money or other income from friend or relative";
-$lang['household_income_other'] = "Income from any other source";
+$lang['household_income_add_another'] = "Add another";
+
+$lang['household_income_adult_earnings_from_work'] = array(
+	'title' => 'Earnings from Work',
+	'help' => "Earnings from Work"
+);
+$lang['household_income_adult_public_asst'] = array(
+	'title' => 'Public Assistance / Alimony / Child Support',
+	'help' => "Public Assistance / Alimony / Child Support"
+);
+$lang['household_income_adult_other_income'] = array(
+	'title' => 'Pensions / Retirement / All Other Income',
+	'help' => "Pensions / Retirement / All Other Income"
+);
+$lang['household_income_child_earnings_from_work'] = array(
+	'title' => 'Earnings from Work',
+	'help' => "Earnings from Work"
+);
+$lang['household_income_child_ssn_benefits'] = array(
+	'title' => 'Social Security Benefits',
+	'help' => "Social Security Benefits"
+);
+$lang['household_income_child_spending_other_income'] = array(
+	'title' => 'Spending money or other income from friend or relative',
+	'help' => "Spending money or other income from friend or relative"
+);
+$lang['household_income_child_other_income'] = array(
+	'title' => 'Income from any other source',
+	'help' => "Income from any other source"
+);
+
 
 // Contact Information
 $lang['contact_info_title'] = "Contact Information";
-$lang['contact_info_subtitle'] = "Enter your contact information and how you would like us to communicate with you.";
+$lang['contact_info_subtitle'] = "Tell us how you would like us to communicate with you.";
 $lang['contact_info_elements'] = array(
 	'street_address' => array(
 		'label'			=> "Street Address",
@@ -195,7 +224,7 @@ $lang['confirmation_household_income'] = "HOUSEHOLD INCOME";
 $lang['confirmation_address'] = "Address";
 $lang['confirmation_phone'] = "Phone";
 $lang['confirmation_email'] = "Email";
-$lang['confirmation_receive_updates'] = "Receive status updates via email";
+$lang['confirmation_receive_updates'] = "Receive status updates via {contact_method}";
 $lang['confirmation_assistance_program'] = "Assistance Program";
 $lang['confirmation_case_number'] = "Case Number";
 $lang['confirmation_not_required'] = "Not required";
@@ -252,3 +281,8 @@ $lang['race_white'] = "White";
 $lang['ethnicity_no_answer'] = "No Answer";
 $lang['ethnicity_hispanic_latino'] = "Hispanic/Latino";
 $lang['ethnicity_not_hispanic_latino'] = "Not Hispanic/Latino";
+
+$lang['weekly'] = "Weekly";
+$lang['twice_a_week'] = "2 times a week";
+$lang['monthly'] = "Monthly";
+$lang['twice_a_month'] = "2 times a month";

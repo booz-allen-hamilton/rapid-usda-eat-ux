@@ -7,12 +7,12 @@
 		</p>
 		<p class="text-large">
 			<strong><?=$this->lang->line('success_submission_id')?></strong>
-			<span><!-- Submission ID --></span>
+			<span><?=$this->session->flashdata('application_id')?></span>
 		</p>
-		<div>
-			<button class="button white-button-large">
+		<div class="mt-50">
+			<a href="<?=base_url()?>" class="button white-button-large">
 				<?=$this->lang->line('success_return')?>
-			</button>
+			</a>
 		</div>
 	</div>
 </div>
