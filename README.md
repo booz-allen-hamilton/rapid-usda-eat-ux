@@ -10,9 +10,13 @@ Prototype url: http://usda-eat-dev.elasticbeanstalk.com/
 4. Configure database and server variables
 5. Start Apache Server
 
-###Technical Approach
+##Technical Approach
 
-We used all open source technologies and open sourced our LunchBox prototype.
+We used all open source technologies and open sourced library for our LunchBox prototype. It was built using a technical stack and architecture that is easily installed and deployed across different environment. It uses popular technical frameworks and open source technology to ensure that organizations are able to integrate the solution with their existing products. The application follows a standard model-view-controller (MVC) architecture and cloud infrastructure.
+
+###MVC Architecture Pattern
+The application was designed using the standard model-view-controller architecture. The following image lists the libraries and technology within each of those areas.
+
 
 [Architecture document]()
 
