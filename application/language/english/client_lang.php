@@ -48,7 +48,7 @@ $lang['welcome_btn'] = "Get Started";
 // Getting Started
 $lang['getting_started_title'] = "Getting Started";
 $lang['getting_started_description'] = "Please enter your name and if you are the household adult.";
-$land['getting_started_help'] = "Help text";
+$land['getting_started_help'] = "Help started text";
 $lang['getting_started_age'] = "Are you over the age of 21?";
 $lang['getting_started_elements'] = array(
 	'first_name' => array(
@@ -58,13 +58,13 @@ $lang['getting_started_elements'] = array(
 	),
 	'last_name' => array(
 		'label'       => "Last Name",
-		'placeholder' => "Doe",
-		'error'				=> "Please enter your first name"
+		'placeholder' => "Smith",
+		'error'				=> "Please enter your last name"
 	),
 	'middle_initial' => array(
 		'label'       => "Middle",
 		'placeholder' => "C",
-		'error'				=> "Please enter your first name"
+		'error'				=> "Please enter your middle initial"
 	),
 );
 $lang['error_age_validation'] = "Sorry. You must be over 21 to proceed with the application.";
@@ -79,8 +79,8 @@ $lang['your_situation_none'] = "None of these apply";
 $lang['your_situation_case_number'] = "Assistance Program Case Number";
 $lang['your_situation_childrens_names'] = "Just the child(ren)'s full name(s)";
 $lang['your_situation_household_income'] = "Household income amount(s), source(s), and frequency";
-$lang['your_situation_scenario_a_help'] = "";
-$lang['your_situation_scenario_b_help'] = "";
+$lang['your_situation_scenario_a_help'] = "FIXME a";
+$lang['your_situation_scenario_b_help'] = "FIXME b";
 
 // Other Assistance
 $lang['other_assistance_title'] = "Other Assistance";
@@ -94,7 +94,7 @@ $lang['other_assistance_example'] = "ex. 2363954301";
 $lang['household_students_title'] = "All Household Students";
 $lang['household_students_subtitle'] = "Please list all children who live with you, even if they are not related.";
 $lang['household_students_add'] = "Add Child";
-$lang['household_students_help'] = "";
+$lang['household_students_help'] = "FIXME stu";
 
 // All Household Members
 $lang['household_members_title'] = "Names of All Household Members";
@@ -113,10 +113,10 @@ $lang['household_members_income'] = "Income?";
 $lang['household_members_student'] = "Student?";
 $lang['household_members_status'] = "Child Status";
 $lang['household_members_check_one'] = "(Check one or more)";
-$lang['household_members_earnings_from_work_help'] = "Earnings from work";
-$lang['household_members_public_assistance_help'] = "Public assistance";
-$lang['household_members_pensions_help'] = "Pensions";
-$lang['household_members_child_status_help'] = "Child status help";
+$lang['household_members_earnings_from_work_help'] = "FIXME Earnings from work";
+$lang['household_members_public_assistance_help'] = "FIXME Public assistance";
+$lang['household_members_pensions_help'] = "FIXME Pensions";
+$lang['household_members_child_status_help'] = "FIXME Child status help";
 
 // All Household Members - Income section
 $lang['household_income_adult_name_suffix'] = "{name}'s Income (Adult)";
@@ -130,31 +130,31 @@ $lang['household_income_add_another'] = "Add another";
 
 $lang['household_income_adult_earnings_from_work'] = array(
 	'title' => 'Earnings from Work',
-	'help' => "Earnings from Work"
+	'help' => "FIXME Earnings from Work"
 );
 $lang['household_income_adult_public_asst'] = array(
 	'title' => 'Public Assistance / Alimony / Child Support',
-	'help' => "Public Assistance / Alimony / Child Support"
+	'help' => "FIXME Public Assistance / Alimony / Child Support"
 );
 $lang['household_income_adult_other_income'] = array(
 	'title' => 'Pensions / Retirement / All Other Income',
-	'help' => "Pensions / Retirement / All Other Income"
+	'help' => "FIXME Pensions / Retirement / All Other Income"
 );
 $lang['household_income_child_earnings_from_work'] = array(
 	'title' => 'Earnings from Work',
-	'help' => "Earnings from Work"
+	'help' => "FIXME Earnings from Work"
 );
 $lang['household_income_child_ssn_benefits'] = array(
 	'title' => 'Social Security Benefits',
-	'help' => "Social Security Benefits"
+	'help' => "FIXME Social Security Benefits"
 );
 $lang['household_income_child_spending_other_income'] = array(
 	'title' => 'Spending money or other income from friend or relative',
-	'help' => "Spending money or other income from friend or relative"
+	'help' => "FIXME Spending money or other income from friend or relative"
 );
 $lang['household_income_child_other_income'] = array(
 	'title' => 'Income from any other source',
-	'help' => "Income from any other source"
+	'help' => "FIXME Income from any other source"
 );
 
 
@@ -171,7 +171,7 @@ $lang['contact_info_elements'] = array(
 	),
 	'city' => array(
 		'label'       	=> "City",
-		'error'			=> "Please enter a city"
+		'error'			=> "Please enter your city"
 	),
 	'state' => array(
 		'label'       	=> "State",
@@ -206,14 +206,14 @@ $lang['children_ethnicity_race'] = "Children's Ethnicity and Race";
 $lang['children_ethnicity_race_subtitle'] = "We are required to ask for information about your children's race and ethnicity. This information is important and helps to make sure we are fully serving our community. Responding to this section is optional and does not affect your children's eligibility for free or reduced price meals.";
 $lang['ethnicity_table_header'] = "Ethnicity (Check One)";
 $lang['race_table_header'] = "Race (Check One or More)";
-$lang['children_ethnicity_hispanic'] = "Hispanic/Latino";
-$lang['children_ethnicity_not_hispanic'] = "Not Hispanic/Latino";
+$lang['children_ethnicity_hispanic'] = "Hispanic / Latino";
+$lang['children_ethnicity_not_hispanic'] = "Not Hispanic / Latino";
 
 
 // Confirmation
 $lang['confirmation_title'] = "Confirmation";
 $lang['confirmation_subtitle'] = "Please review your application and confirm the information is correct.";
-$lang['confirmation_subtitle_help'] = "";
+$lang['confirmation_subtitle_help'] = "FIXME confim sub";
 $lang['confirmation_household_members'] = "HOUSEHOLD MEMBERS";
 $lang['confirmation_adults'] = "Adults";
 $lang['confirmation_children'] = "Children";
@@ -234,18 +234,18 @@ $lang['terms_and_cond_title'] = "Terms and Conditions";
 $lang['terms_and_cond_subtitle'] = "Please read terms and conditions and indicate if you agree.";
 $lang['terms_and_cond_agree'] = "I agree to the terms and conditions";
 $lang['terms_and_cond_content'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?";
-$lang['terms_and_cond_help'] = "";
+$lang['terms_and_cond_help'] = "FIXME tandc";
 
 // Electronic Signature
 $lang['electronic_sig_title'] = "Electronic Signature";
 $lang['electronic_sig_subtitle'] = "Please indicate that you comply with the statement below and enter last four digits of Social Security Number (if applicable).";
 $lang['electronic_sig_statement'] = "The person signing is furnishing true information and to advise that person that the application is being made in connection with the receipt of Federal funds; School officials may verify the information on the application; and Deliberate misrepresentation of the information may subject the applicant to prosecution under State and Federal statutes.";
 $lang['electronic_sig_not_available'] = "Not available";
-$lang['error_electronic_sig_agree'] = "";
-$lang['error_electronic_sig_name'] = "";
-$lang['error_electronic_sig_social'] = "";
-$lang['electronic_sig_subtitle_help'] = "";
-$lang['electronic_sig_ssn_help'] = "";
+$lang['error_electronic_sig_agree'] = "FIXME? agree";
+$lang['error_electronic_sig_name'] = "FIXME? name";
+$lang['error_electronic_sig_social'] = "FIXME? social";
+$lang['electronic_sig_subtitle_help'] = "FIXME sub help";
+$lang['electronic_sig_ssn_help'] = "FIXME ssn help";
 
 // Success
 $lang['success_submission_id'] = "Submission ID: ";
@@ -279,10 +279,10 @@ $lang['race_native_hawaiian_other_pacific_islander'] = "Native Hawaiian or Other
 $lang['race_white'] = "White";
 
 $lang['ethnicity_no_answer'] = "No Answer";
-$lang['ethnicity_hispanic_latino'] = "Hispanic/Latino";
-$lang['ethnicity_not_hispanic_latino'] = "Not Hispanic/Latino";
+$lang['ethnicity_hispanic_latino'] = "Hispanic / Latino";
+$lang['ethnicity_not_hispanic_latino'] = "Not Hispanic / Latino";
 
 $lang['weekly'] = "Weekly";
-$lang['twice_a_week'] = "2 times a week";
+$lang['twice_a_week'] = "2 Times a Week";
 $lang['monthly'] = "Monthly";
-$lang['twice_a_month'] = "2 times a month";
+$lang['twice_a_month'] = "2 Times a Month";
