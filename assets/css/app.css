@@ -288,10 +288,10 @@ button.button,
 
 .button-orange, .button-orange:focus {
   background-color: #fbb03f;
-  color: #00aeef;
+  color: #fff;
   font-weight: 700; }
   .button-orange:hover, .button-orange:focus:hover {
-    color: #00aeef; }
+    color: #fff; }
 
 .button-orange-inverse, .button-orange-inverse:focus {
   border: 2px solid #fbb03f;
