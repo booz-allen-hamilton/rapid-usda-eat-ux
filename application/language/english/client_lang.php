@@ -213,7 +213,7 @@ $lang['children_ethnicity_not_hispanic'] = "Not Hispanic / Latino";
 // Confirmation
 $lang['confirmation_title'] = "Confirmation";
 $lang['confirmation_subtitle'] = "Please review your application and confirm the information is correct.";
-$lang['confirmation_subtitle_help'] = "FIXME confim sub";
+$lang['confirmation_subtitle_help'] = "Click the BACK button to edit information.";
 $lang['confirmation_household_members'] = "HOUSEHOLD MEMBERS";
 $lang['confirmation_adults'] = "Adults";
 $lang['confirmation_children'] = "Children";
