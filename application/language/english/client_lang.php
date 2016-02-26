@@ -24,7 +24,7 @@ $lang['nav_application_status'] = "My Status";
 $lang['nav_help'] = "Help";
 
 // Weclome
-$lang['welcome_page_title'] = "Apply for Free and Low-cost School Lunches";
+$lang['welcome_page_title'] = "Apply for Free and Low-Cost School Meals";
 $lang['welcome_title'] = "Apply for <strong>Free</strong> and <strong>Low-cost</strong> School Meals";
 $lang['welcome_description_part_one'] = "30 million children depend on free or reduced-price school meals. Apply here with a few questions. Your school will receive your answers, and let you know about your child's meals.<br /><br />Need help with questions? Click the question marks";
 $lang['welcome_description_part_two'] = "for more info.";
@@ -46,41 +46,43 @@ $lang['welcome_required_items'] = array(
 $lang['welcome_btn'] = "Get Started";
 
 // Getting Started
-$lang['getting_started_title'] = "Getting Started";
-$lang['getting_started_description'] = "Please enter your name and if you are the household adult.";
-$land['getting_started_help'] = "Help started text";
+$lang['getting_started_title'] = "What is your name?";
+$lang['getting_started_description'] = "This is the name of the person filling out this form. This is usually a parent or guardian. NOT the child's name.";
+$land['getting_started_help'] = "All applications must be signed by an adult of 21 years or older.";
 $lang['getting_started_age'] = "Are you over the age of 21?";
 $lang['getting_started_elements'] = array(
 	'first_name' => array(
 		'label'       => "First Name",
 		'placeholder' => "John",
-		'error'				=> "Please enter your first name"
+		'error'				=> "Please enter your first name."
 	),
 	'last_name' => array(
 		'label'       => "Last Name",
 		'placeholder' => "Smith",
-		'error'				=> "Please enter your last name"
+		'error'				=> "Please enter your last name."
 	),
 	'middle_initial' => array(
 		'label'       => "Middle",
 		'placeholder' => "C",
-		'error'				=> "Please enter your middle initial"
+		'error'				=> "Please enter your middle initial."
 	),
 );
-$lang['error_age_validation'] = "Sorry. You must be over 21 to proceed with the application.";
+$lang['error_age_validation'] = "Sorry. You must be over 21 or the legal guardian to continue with the application.";
 
 // Your Situation
-$lang['your_situation_title'] = "Your Situation";
-$lang['your_situation_subtitle'] = "Does one of these situations apply to you?";
-$lang['your_situation_already'] = "At least one household member already receives SNAP, TANF or FDPIR";
+$lang['your_situation_title'] = "Hello. Let's see if you are already eligable.";
+$lang['your_situation_subtitle'] = "Some situations may automatically qualify your child for free and reduced-priced meals. Choose the circle that applies to you.";
+$lang['your_situation_already'] = "At least one household member already receives SNAP, TANF or FDPIR.";
 $lang['your_situation_need'] = "WHAT YOU'LL NEED";
-$lang['your_situation_all_foster'] = "<u>ALL</u> household children are foster children";
+$lang['your_situation_all_foster'] = "<u>ALL</u> household children are foster, homeless, migrant, runaway, or Head Start.";
 $lang['your_situation_none'] = "None of these apply";
 $lang['your_situation_case_number'] = "Assistance Program Case Number";
 $lang['your_situation_childrens_names'] = "Just the child(ren)'s full name(s)";
 $lang['your_situation_household_income'] = "Household income amount(s), source(s), and frequency";
-$lang['your_situation_scenario_a_help'] = "FIXME a";
-$lang['your_situation_scenario_b_help'] = "FIXME b";
+$lang['your_situation_scenario_a_help'] = "If anyone in your household participates in The Supplemental Nutrition Assistance Program (SNAP), 
+Temporary Assistance for Needy Families (TANF), or The Food Distribution Program on Indian Reservations (FDPIR).
+You only need to write one case number. If you participate in one of these programs and do not know your case number, contact your local state agency. You must provide a case number on your application if you choose this option.";
+$lang['your_situation_scenario_b_help'] = "Foster children who live with you count as members of your household and should be listed on your application. Children who meet the definition of homeless, runaway, or migrant qualify for free meals.";
 
 // Other Assistance
 $lang['other_assistance_title'] = "Other Assistance";
