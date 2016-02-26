@@ -121,24 +121,24 @@ $lang['household_members_child_status_help'] = "FIXME Child status help";
 // All Household Members - Income section
 $lang['household_income_adult_name_suffix'] = "Income (Adult)";
 $lang['household_income_child_name_suffix'] = "Income (Child)";
-$lang['household_income_gross'] = "Please enter gross income and how often it was received.";
+$lang['household_income_gross'] = "Please select income category, income type, the dollor amount, and how frequently it is paid. Click the information icon on the right for more detail.";
 $lang['household_income_category'] = "Income Category";
 $lang['household_income_type'] = "Type";
 $lang['household_income_amount_freq'] = "Dollar Amount / Frequency";
-$lang['household_income_salary'] = "Salary";
+$lang['household_income_salary'] = "Income Type";
 $lang['household_income_add_another'] = "Add another";
 
 $lang['household_income_adult_earnings_from_work'] = array(
 	'title' => 'Earnings from Work and Military',
-	'help' => "This is usually the gross income received from working at jobs. If you are a self-employed business or farm owner, then report your net income."
+	'help' => "Put gross income from salary, wages, and cash bonuses each in its own row. Report your net income if you are a self-employed business or farm owner."
 );
 $lang['household_income_adult_public_asst'] = array(
-	'title' => 'Public Assistance / Alimony / Child Support',
-	'help' => "FIXME Public Assistance / Alimony / Child Support"
+	'title' => 'Public Assistance, Alimony, and Child Support',
+	'help' => "Many families may get child support payements, vertan's benefits, alimony payments, or cash assistance from the local or state government. Do you?"
 );
 $lang['household_income_adult_other_income'] = array(
-	'title' => 'Pensions / Retirement / All Other Income',
-	'help' => "FIXME Pensions / Retirement / All Other Income"
+	'title' => 'Pensions, Retiremet, and All Other Income',
+	'help' => "Do you get money from rent, social security, investment income, trusts, or regular cash payments?"
 );
 $lang['household_income_child_earnings_from_work'] = array(
 	'title' => 'Earnings from Work',
