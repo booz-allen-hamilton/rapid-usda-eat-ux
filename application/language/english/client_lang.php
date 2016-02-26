@@ -25,7 +25,7 @@ $lang['nav_help'] = "Help";
 
 // Weclome
 $lang['welcome_page_title'] = "Apply for Free and Low-cost School Lunches";
-$lang['welcome_title'] = "Apply for <strong>Free</strong> and Low-cost School Lunches";
+$lang['welcome_title'] = "Apply for <strong>Free</strong> and <strong>Low-cost</strong> School Meals";
 $lang['welcome_description_part_one'] = "30 million children depend on free or reduced-price school meals. Apply here with a few questions. Your school will receive your answers, and let you know about your child's meals.<br /><br />Need help with questions? Click the question marks";
 $lang['welcome_description_part_two'] = "for more info.";
 $lang['welcome_required'] = "Am I eligible?";
