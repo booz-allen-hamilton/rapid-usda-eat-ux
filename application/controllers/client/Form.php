@@ -203,7 +203,7 @@ class Form extends Client_controller {
 						$next_step = 'scenario';
 					break;
 					case 1:
-						$next_step = 'electronicSignature';
+						$next_step = 'scenario';
 					break;
 					case 'electronicSignature':
 						$this->scenario = $this->get_form_scenario();
