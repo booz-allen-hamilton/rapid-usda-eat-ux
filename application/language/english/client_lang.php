@@ -129,8 +129,8 @@ $lang['household_income_salary'] = "Salary";
 $lang['household_income_add_another'] = "Add another";
 
 $lang['household_income_adult_earnings_from_work'] = array(
-	'title' => 'Earnings from Work',
-	'help' => "FIXME Earnings from Work"
+	'title' => 'Earnings from Work and Military',
+	'help' => "This is usually the gross income received from working at jobs. If you are a self-employed business or farm owner, then report your net income."
 );
 $lang['household_income_adult_public_asst'] = array(
 	'title' => 'Public Assistance / Alimony / Child Support',
