@@ -1,8 +1,13 @@
 # Executive Summary
 ### Booz | Allen | Hamilton
-#### Submission to USDA EAT UX Challenge
+#### Project LunchBox - Submission to USDA EAT UX Challenge
 ------------------------------------------------------
 
+## Overview (The Pitch)
+30 million children participate in the free and reduced-price school lunch program every day. However, the application process is paper based and cumbersome making it challenging for applicants to receive the benefits they need. 2014 saw 5 million __paper applications__ submitted, so clearly there's a need to make this easier to apply and efficient to process. How do we make this process easier? To ensure that everyone who is eligible can benefit, we developed a web-form that makes it easy to apply quickly and accurately. Lunchbox is a free online application that uses plain language to reduce user error, features help text to answer applicants’ questions as they go, and provides completed applications to school administrators, thanks to input validation that doesn’t allow you to submit unless you’ve accurately entered all the necessary information.
+
+### [Watch More Here](Video Link)
+### [Try It Here](Demo Link)
 
 
 
