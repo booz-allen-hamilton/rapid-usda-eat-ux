@@ -4,7 +4,6 @@
 	</div>
 	<div class="col-sm-12 col-md-9 col-md-offset-1">
 		<p class="text-large">
-			<span class="asterisk">* </span>
 			<?=$this->lang->line('other_assistance_subtitle')?>
 			<?=help_icon($this->lang->line('other_assistance_help'))?>
 		</p>
