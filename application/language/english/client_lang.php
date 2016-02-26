@@ -70,7 +70,7 @@ $lang['getting_started_elements'] = array(
 $lang['error_age_validation'] = "Sorry. You must be 21 or older to continue with the application. Call the school if you have questions. ";
 
 // Your Situation
-$lang['your_situation_title'] = "{first_name}, let's check if you are already eligible.";
+$lang['your_situation_title'] = "Let's check if you are already eligible.";
 $lang['your_situation_subtitle'] = "Some situations may automatically qualify your child for free and reduced price meals. Choose the circle that applies to you.";
 $lang['your_situation_already'] = "At least one household member already receives SNAP, TANF or FDPIR";
 $lang['your_situation_need'] = "WHAT YOU'LL NEED";
@@ -119,8 +119,8 @@ $lang['household_members_pensions_help'] = "FIXME Pensions";
 $lang['household_members_child_status_help'] = "FIXME Child status help";
 
 // All Household Members - Income section
-$lang['household_income_adult_name_suffix'] = "{name}'s Income (Adult)";
-$lang['household_income_child_name_suffix'] = "{name}'s Income (Child)";
+$lang['household_income_adult_name_suffix'] = "Income (Adult)";
+$lang['household_income_child_name_suffix'] = "Income (Child)";
 $lang['household_income_gross'] = "Please enter gross income and how often it was received.";
 $lang['household_income_category'] = "Income Category";
 $lang['household_income_type'] = "Type";
