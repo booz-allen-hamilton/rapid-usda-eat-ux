@@ -1,8 +1,10 @@
 # Our Whole Story
+— "How to Rapidly Prototype a Modern Digital Solution in __7 Working-sesions__ Over __3 Weeks__"
 
+---------------------------------------------------------------------------
 ### *TABLE OF CONTENTS*
 1.	__LEARN__: [Defining the challenge](#learn-defining-the-challenge)
-2.	__LEARN__: Building empathy for the user’s current experience 
+2.	__LEARN__: [Building empathy for the user’s current experience]
 3.	__IDEATE__: Generating ideas inspired by people 
 4.	__MAKE__: Telling our story with flowcharts 
 5.	__MAKE__: Rapid prototyping to visualize concepts
@@ -11,18 +13,27 @@
 8.	__IDEATE+MAKE__: Rapid prototyping to encourage improvisation and improvement 
 9.	__MAKE__: Functional prototype + iterative development 
 10.	__CHECK__: Usability testing to identify improvements 
-
+---------------------------------------------------------------------------
 
 ## Human-Centered Design and Rapid Prototyping: Solutions for Humans
 Our work was completed in seven working sessions over three weeks. When you’re moving as quickly as we did, it’s important to bring a diverse team together to quickly build trust and create common ground. To do so, we held a **project kickoff** as our first iteration of the application. Our team of product managers, technologists, consultants, user experience experts, designers, storytellers, and researchers came together for an intense day of collaboration, ideas, and emotions.
 
-We used a human-centered design approach focused on learning fast through rapid prototyping. Our iterative process can be divided into four phases: **LEARN, IDEATE, MAKE, and CHECK**.
+We used a human-centered design approach focused on learning fast through rapid prototyping. Our iterative process can be divided into four phases: __LEARN, IDEATE, MAKE, and CHECK__.
 
 ![Learn Ideate Make Check](https://placeimg.com/1000/500/tech/grayscale)
 
 
 ![Section Image](http://placehold.it/1000x50)
-##LEARN: Defining the challenge
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# LEARN: Defining the challenge
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 ![Learn Ideate Make Check](https://placeimg.com/1000/500/tech/grayscale)
 
