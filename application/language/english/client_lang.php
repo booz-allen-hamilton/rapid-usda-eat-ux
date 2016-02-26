@@ -92,7 +92,7 @@ $lang['other_assistance_example'] = "ex. 2363954301";
 
 // All Household Students
 $lang['household_students_title'] = "Which children are students?";
-$lang['household_students_subtitle'] = "Type the names of all children in your household who are applying for free or reduced-price meals. ";
+$lang['household_students_subtitle'] = "Type the names of all students in your household who are applying for free or reduced-price meals. ";
 $lang['household_students_add'] = "Add Child";
 $lang['household_students_help'] = "List all people in your household who are children age 18 or under <strong>and</strong> who are supported by the household's income. List children who are in your care under a foster arrangement, or qualify as homeless, migrant, or runaway youth. Also list students attending school <em>regardless of age</em>.";
 
