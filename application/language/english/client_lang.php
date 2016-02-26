@@ -48,7 +48,7 @@ $lang['welcome_btn'] = "Get Started";
 // Getting Started
 $lang['getting_started_title'] = "What is your name?";
 $lang['getting_started_description'] = "This is the name of the person filling out this form. This is usually a parent or guardian. NOT the child's name.";
-$land['getting_started_help'] = "All applications must be signed by an adult of 21 years or older.";
+$land['getting_started_help'] = "All applications must be signed by an adult of 21 years or above.";
 $lang['getting_started_age'] = "Are you over the age of 21?";
 $lang['getting_started_elements'] = array(
 	'first_name' => array(
@@ -70,7 +70,7 @@ $lang['getting_started_elements'] = array(
 $lang['error_age_validation'] = "Sorry. You must be over 21 or the legal guardian to continue with the application.";
 
 // Your Situation
-$lang['your_situation_title'] = "Hello. Let's see if you are already eligable.";
+$lang['your_situation_title'] = "Okay, let's check if you are already eligable.";
 $lang['your_situation_subtitle'] = "Some situations may automatically qualify your child for free and reduced-priced meals. Choose the circle that applies to you.";
 $lang['your_situation_already'] = "At least one household member already receives SNAP, TANF or FDPIR.";
 $lang['your_situation_need'] = "WHAT YOU'LL NEED";
@@ -85,25 +85,26 @@ You only need to write one case number. If you participate in one of these progr
 $lang['your_situation_scenario_b_help'] = "Foster children who live with you count as members of your household and should be listed on your application. Children who meet the definition of homeless, runaway, or migrant qualify for free meals.";
 
 // Other Assistance
-$lang['other_assistance_title'] = "Other Assistance";
-$lang['other_assistance_subtitle'] = "Are you, or anyone in your household, currently a recipient of benefits under the <b>SNAP</b>, the <b>TANF</b> cash assistance program, or the <b>FDPIR</b>?";
-$lang['other_assistance_help'] = "Other assistance help";
-$lang['other_assistance_program'] = "Assistance Program";
+$lang['other_assistance_title'] = "Assistance Programs";
+$lang['other_assistance_subtitle'] = "You said that someone in your household participates in <b>SNAP</b>, the <b>TANF</b> cash assistance program, or the <b>FDPIR</b>. Choose the circle that applies to you.";
+$lang['other_assistance_help'] = "Click on a program to learn more: <a href="http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap">The Supplemental Nutrition Assistance Program (SNAP)</a>, 
+<a href="http://www.acf.hhs.gov/programs/ofa/programs/tanf/about">Temporary Assistance for Needy Families (TANF)</a>, or <a href="http://www.fns.usda.gov/fdpir/about-fdpir">The Food Distribution Program on Indian Reservations (FDPIR).</a>";
+$lang['other_assistance_program'] = "Select Assistance Program";
 $lang['other_assistance_case_number'] = "Case Number";
 $lang['other_assistance_example'] = "ex. 2363954301";
 
 // All Household Students
-$lang['household_students_title'] = "All Household Students";
-$lang['household_students_subtitle'] = "Please list all children who live with you, even if they are not related.";
+$lang['household_students_title'] = "Which children are students?";
+$lang['household_students_subtitle'] = "Type the names of all children in your household who are applying for free or reduced-price meals. ";
 $lang['household_students_add'] = "Add Child";
-$lang['household_students_help'] = "FIXME stu";
+$lang['household_students_help'] = "List all people in your household who are children age 18 or under <strong>and</strong> who are supported by the household's income. List children who are in your care under a foster arrangement, or qualify as homeless, migrant, or runaway youth. Also list students attending school <em>regardless of age</em>.";
 
 // All Household Members
-$lang['household_members_title'] = "Names of All Household Members";
-$lang['household_members_subtitle'] = "Please list all children living with you, even if they are not related.";
+$lang['household_members_title'] = "Who lives with you?";
+$lang['household_members_subtitle'] = "Many families have grandparents, extended family, or friends who live in the same house. List everyone who lives with you and shares income and expenses. Include their name even if they are not related to you.";
 $lang['household_members_children'] = "CHILDREN";
 $lang['household_members_adults'] = "ADULTS";
-$lang['household_members_over_eighteen'] = "(Over the age of 18)";
+$lang['household_members_over_eighteen'] = "(18 years and older)";
 $lang['household_members_under_eighteen'] = "(Under the age of 18)";
 $lang['household_members_first'] = "First Name";
 $lang['household_members_middle'] = "Middle Initial";
