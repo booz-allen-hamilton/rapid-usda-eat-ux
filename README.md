@@ -30,4 +30,4 @@ We love opportunities like these to help champion better digital services for ci
 For more info on prototyping your next digital challenge, email us at [FEDsolutions@bah.com](mailto:FEDsolutions@bah.com).
 
 
-##### [OpenSource MIT License](rapid-usda-eat-ux/LICENSE)
+##### [OpenSource MIT License](LICENSE)
