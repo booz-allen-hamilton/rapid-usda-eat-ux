@@ -11,7 +11,7 @@
 		<div class="row">
 			<div class="col-sm-12 col-md-5">
 				<div class="form-group">
-					<label><?=$this->lang->line('getting_started_elements')['first_name']['label']?></label>
+					<label><span class="asterisk">* </span><?=$this->lang->line('getting_started_elements')['first_name']['label']?></label>
 					<input type="text"
 						class="form-control input-lg"
 						name="first_name"
@@ -24,7 +24,7 @@
 			</div>
 			<div class="col-sm-12 col-md-5">
 				<div class="form-group">
-					<label><?=$this->lang->line('getting_started_elements')['last_name']['label']?></label>
+					<label><span class="asterisk">* </span><?=$this->lang->line('getting_started_elements')['last_name']['label']?></label>
 					<input type="text"
 						class="form-control input-lg"
 						name="last_name"
