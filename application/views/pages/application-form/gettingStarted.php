@@ -2,7 +2,8 @@
 <div class="row">
 	<div class="col-sm-12 text-center">
 		<h2><?=$this->lang->line('getting_started_title')?></h2>
-		<p class="text-large"><?=$this->lang->line('getting_started_description')?><?=help_icon($this->lang->line('getting_started_help'))?></p>
+		<p class="text-large"><?=$this->lang->line('getting_started_description')?>
+		<!--<=help_icon($this->lang->line('getting_started_help'))?>--></p>
 	</div>
 </div>
 <div class="row">
