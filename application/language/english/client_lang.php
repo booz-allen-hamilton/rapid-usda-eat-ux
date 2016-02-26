@@ -31,7 +31,7 @@ $lang['welcome_description_part_two'] = "for more info.";
 $lang['welcome_required'] = "Am I eligible?";
 $lang['welcome_required_items'] = array(
 	array(
-		'text' => 'Check your household's gross income',
+		'text' => "Check your household's gross income",
 		'help' => 'Your children can get free or reduced-price meals if your household’s gross income is within the free or reduced price limits on the Federal Income Eligibility Guidelines. Gross income is the total income received before taxes or deductions.'
 	),
 	array(
@@ -87,8 +87,7 @@ $lang['your_situation_scenario_b_help'] = "Foster children who live with you cou
 // Other Assistance
 $lang['other_assistance_title'] = "Assistance Programs";
 $lang['other_assistance_subtitle'] = "You said that someone in your household participates in <b>SNAP</b>, the <b>TANF</b> cash assistance program, or the <b>FDPIR</b>. Choose the circle that applies to you.";
-$lang['other_assistance_help'] = "Click on a program to learn more: <a href="http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap">The Supplemental Nutrition Assistance Program (SNAP)</a>, 
-<a href="http://www.acf.hhs.gov/programs/ofa/programs/tanf/about">Temporary Assistance for Needy Families (TANF)</a>, or <a href="http://www.fns.usda.gov/fdpir/about-fdpir">The Food Distribution Program on Indian Reservations (FDPIR).</a>";
+$lang['other_assistance_help'] = "Click on a program to learn more: <a href='http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap'>The Supplemental Nutrition Assistance Program (SNAP)</a>, <a href='http://www.acf.hhs.gov/programs/ofa/programs/tanf/about'>Temporary Assistance for Needy Families (TANF)</a>, or <a href='http://www.fns.usda.gov/fdpir/about-fdpir'>The Food Distribution Program on Indian Reservations (FDPIR).</a>";
 $lang['other_assistance_program'] = "Select Assistance Program";
 $lang['other_assistance_case_number'] = "Case Number";
 $lang['other_assistance_example'] = "ex. 2363954301";
