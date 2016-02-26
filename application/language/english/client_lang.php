@@ -84,7 +84,7 @@ $lang['your_situation_scenario_b_help'] = "Foster children who live with you cou
 
 // Other Assistance
 $lang['other_assistance_title'] = "Government Assistance Programs";
-$lang['other_assistance_subtitle'] = "You said that someone in your household participates in <a href="http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap">SNAP</a>, the <a href=href="http://www.acf.hhs.gov/programs/ofa/programs/tanf/about>TANF</a> cash assistance program, or the <a href="http://www.fns.usda.gov/fdpir/about-fdpir>FDPIR</a>. Choose the program that applies to you.";
+$lang['other_assistance_subtitle'] = "You said that someone in your household participates in <a href='http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap'>SNAP</a>, the <a href=href='http://www.acf.hhs.gov/programs/ofa/programs/tanf/about>TANF</a> cash assistance program, or the <a href='http://www.fns.usda.gov/fdpir/about-fdpir'>FDPIR</a>. Choose the program that applies to you.";
 $lang['other_assistance_help'] = "Click on a program to learn more: <a href='http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap'>The Supplemental Nutrition Assistance Program (SNAP)</a>, <a href='http://www.acf.hhs.gov/programs/ofa/programs/tanf/about'>Temporary Assistance for Needy Families (TANF)</a>, or <a href='http://www.fns.usda.gov/fdpir/about-fdpir'>The Food Distribution Program on Indian Reservations (FDPIR).</a>";
 $lang['other_assistance_program'] = "Select Assistance Program";
 $lang['other_assistance_case_number'] = "Case Number";
