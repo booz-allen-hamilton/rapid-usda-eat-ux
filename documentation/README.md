@@ -1,30 +1,51 @@
 # Executive Summary
 ### Booz | Allen | Hamilton
-#### Submission to USDA EAT UX Challenge
+#### Project LunchBox - Submission to USDA EAT UX Challenge
+------------------------------------------------------
+
+## Overview (The Pitch)
+30 million children participate in the free and reduced-price school lunch program every day. However, the application process is paper based and cumbersome making it challenging for applicants to receive the benefits they need. 2014 saw 5 million __paper applications__ submitted, so clearly there's a need to make this easier to apply and efficient to process. How do we make this process easier? To ensure that everyone who is eligible can benefit, we developed a web-form that makes it easy to apply quickly and accurately. Lunchbox is a free online application that uses plain language to reduce user error, features help text to answer applicants’ questions as they go, and provides completed applications to school administrators, thanks to input validation that doesn’t allow you to submit unless you’ve accurately entered all the necessary information.
+
+#### Watch More Here: [Video Link](Video Link)   or  Try It Here: [Demo Link](Demo Link) 
+
 ------------------------------------------------------
 
 
+## Our Inspiration
+The opportunity to ease the pain. We were inspired by the stories of the schools and parents that interface with the application process – and shocked at the paper pushing challenges existing in the internet era. Designing for and with the user enabled us to bring our theoretical prototype into a working product that put usability – ease of learning, decrease in errors, and increase in reporting – first.
 
-
-## Inspiration
-As consultants we get to work with government clients and tackle many complex problems. USDA is unique because the type of partnership we have allows us to see immediate impact, and this hackathon approach flows well with the way our rapid prototyping capability works. We were excited to participate in coming up with a digital solution that is front-line and citizen-facing.
-
-Faced with tackling an issue with the potential for such a large impact and the importance of usability, our solution took inspiration from other digital solutions that elegantly handle complex public-facing interactions, such as Intuit's TurboTax.
-
+Additionally, the challenge to transform digital government experience. We were inspired to change the pace at which government can bring services and products to their citizens. The hackathon approach worked well with our love for rapid prototyping and testing things fast with real users. As consultants, we get to tackle a variety of complex problems for government 
 
 
 
-## What It Does
-A program like this impacts so many people’s lives, so data accuracy and ease of use for both families and school administrators is critical. With these goals in mind, we decided to leverage Human Centered Design and rapid prototyping methodology to produce an effective application for both of these user groups with disparate but linked needs. In our application we included the following distinguishing features that address our users' pain points, pulled directly from our interviews and empathy research:
+## Our Approach
+We rapidly prototyped this solution at light speed in __7 team working sessions__ over __3 weeks__.  Our _Rapid Solution Sprint_ is a very creative and iterative process in which we focus on deep empathy and understanding of end users and constantly build, test, to learn, validate, and inform the end solution as it evolves.  The major components of this process are; 1) Defining the Challenge,  2) Empathy and User Research, 3) Collaborative and Insightful Ideation 4) Testing for Validation  5) Iterative Agile Development  6) Road-mapping Towards the Future Vision.
 
-* __Multilingual, Conversational Text__ throughout the application, including help text, educates and ensures our family user group members understand, according to their level of literacy, each point in the application
+[Read More on Our Story Here](our-story.md)
 
-* __Share Feature__ for the option to send the application via email so schools and the public can provide better awareness to the application for those who need it the most
 
-* The ability to implement continuous user learning and analytical tracking, so that school administrators may better understand where family member users are having trouble completing the application
 
-* The ability to easily extend and customize the application for each school/school district, as it's made with plug and play technology, such as Bootstrap, includes easy to maintain model-view-controller architecture and an optional API.
+## Key Features of Our Solution
+The National School Lunch program impacts the day-to-day lives of millions of Americans, so data accuracy and ease of use for both families and school administrators is critical. With these goals in mind, we included the following distinguishing features that address our users' pain points, pulled directly from our interviews and empathy research:
 
+* __Plain language:__ Our form uses simple, conversational language that removes a lot of jargon that might have confused users. Plus, we wanted people to be able to translate this text into other languages, and the plain language ensures that nothing is lost in translation. 
+
+* __Help Text:__ Our form also includes help text throughout the application that explains terms and requirements. This encourages applicants to provide accurate information, and also comforts those who don't have (or don't feel comfortable) sharing information like their social security number or race. 
+
+* __Share button:__ After talking to school administrators and potential applicants, we learned early on that just finding the application can be the hardest part. So we added a share button that makes it easy for school administrators, family, or friends to send the form to others who may benefit.  
+
+* __User behavior-tracking analytics:__ Our application can easily connect with an analytics platform. This gives the system owner the ability to track user behaviors within the form and constantly adapt the experience, based on those behaviors. 
+
+* __Customizable Style & Themes:__ A more subtle feature is how we used Bootstrap to style our form. Since we know most schools will want to make the form match their colors and existing sites, Bootstrap enables them to quickly change the look and feel through themes and easy to update code.   
+
+* __Easy to maintain/add new features:__ Another back-end feature is that we used MVC or model view controller as the framework for our form. It may seem complicated, but it just means that the application is easy to maintain. It enables the system owner to easily update the look, connect to third-party applications, and customize data storage. 
+
+
+
+## What’s Under the Hood
+We leveraged open source technologies to power the solution and used widely adopted platforms such as LAMP stack (Linux Apache MySql PHP) so that it can be easily integrated into existing school IT services.  The modular API architecture and backend validations ensure that the application can easily be customized, extended, and maintained.  The reference cloud hosting architecture utilizing Amazon Web Services also allows the solution to scale and increase performance while limiting unnecessary hosting costs.  This also provides a continuous development and integrations DevOps process so that updates and new features can rapidly be deployed.
+
+[Read More on our Technical Guide Here](technical-guide.md)
 
 
 
@@ -37,11 +58,7 @@ One of the biggest challenges we faced was around understanding the complexity o
 ## Accomplishments That We're Proud Of
 As a team spread across a fairly large geographical region, with multiple client commitments competing for our time, we were proud to be able to go from exploring the challenge parameters to high fidelity mockups in a number of hours over 2.5 days. We credit our human-centered design and rapid prototyping approach for this thoughtful and quick progress.
 
-_From low-fidelity:_
-![Learn Ideate Make Check](https://placeimg.com/1000/400/tech/grayscale)
-
-_To high-fidelity:_
-![Learn Ideate Make Check](https://placeimg.com/1000/400/tech/grayscale)
+![Learn Ideate Make Check](images/ExecSummary-Iteration.png)
 
 Additionally, we found it incredibly rewarding to receive and utilize feedback from our target users in the evolution of our application. At the outset of this challenge we realized that we were tackling an important issue and our laser focus on users made building a solution we are truly proud of possible.
 

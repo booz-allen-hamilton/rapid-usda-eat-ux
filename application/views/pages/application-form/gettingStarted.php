@@ -2,7 +2,8 @@
 <div class="row">
 	<div class="col-sm-12 text-center">
 		<h2><?=$this->lang->line('getting_started_title')?></h2>
-		<p class="text-large"><?=$this->lang->line('getting_started_description')?><?=help_icon($this->lang->line('getting_started_help'))?></p>
+		<p class="text-large"><?=$this->lang->line('getting_started_description')?>
+		<!--<=help_icon($this->lang->line('getting_started_help'))?>--></p>
 	</div>
 </div>
 <div class="row">
@@ -10,7 +11,7 @@
 		<div class="row">
 			<div class="col-sm-12 col-md-5">
 				<div class="form-group">
-					<label><?=$this->lang->line('getting_started_elements')['first_name']['label']?></label>
+					<label><span class="asterisk">* </span><?=$this->lang->line('getting_started_elements')['first_name']['label']?></label>
 					<input type="text"
 						class="form-control input-lg"
 						name="first_name"
@@ -23,7 +24,7 @@
 			</div>
 			<div class="col-sm-12 col-md-5">
 				<div class="form-group">
-					<label><?=$this->lang->line('getting_started_elements')['last_name']['label']?></label>
+					<label><span class="asterisk">* </span><?=$this->lang->line('getting_started_elements')['last_name']['label']?></label>
 					<input type="text"
 						class="form-control input-lg"
 						name="last_name"

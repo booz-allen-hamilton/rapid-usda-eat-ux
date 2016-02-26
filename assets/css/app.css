@@ -291,7 +291,8 @@ button.button,
   color: #fff;
   font-weight: 700; }
   .button-orange:hover, .button-orange:focus:hover {
-    color: #fff; }
+    color: #fff;
+    background-color: #00aeef !important; }
 
 .button-orange-inverse, .button-orange-inverse:focus {
   border: 2px solid #fbb03f;
@@ -720,3 +721,5 @@ input[type="radio"].toggle-right + label {
 .has-error, .has-error .form-control, .has-error .help-block {
   color: #ee3e35 !important;
   border-color: #ee3e35 !important; }
+
+/*# sourceMappingURL=app.css.map */

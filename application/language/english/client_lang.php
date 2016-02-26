@@ -9,10 +9,10 @@ $lang['remove'] = "Remove";
 $lang['cancel'] = "Cancel";
 $lang['back'] = "Back";
 $lang['next'] = "Next";
-$lang['required'] = "* Required";
+$lang['required'] = "* = Required";
 $lang['optional'] = "OPTIONAL";
 $lang['frequency'] = "Select Frequency";
-$lang['all_that_apply'] = "Select all that apply";
+$lang['all_that_apply'] = "Select all that Apply";
 $lang['ssn'] = "Social Security Number";
 $lang['household_income'] = "Household Income";
 $lang['error_server_validation'] = "There was a problem saving the form. Please try again.";
@@ -21,80 +21,78 @@ $lang['error_server_validation'] = "There was a problem saving the form. Please 
 $lang['nav_how_it_works'] = "How it Works";
 $lang['nav_apply_now'] = "Apply Now";
 $lang['nav_application_status'] = "My Status";
-$lang['nav_help'] = "Help";
+$lang['nav_help'] = "Questions and Answers";
 
 // Weclome
-$lang['welcome_page_title'] = "Apply for Free and Low-Cost School Meals";
-$lang['welcome_title'] = "Apply for <strong>Free</strong> and <strong>Low-cost</strong> School Meals";
-$lang['welcome_description_part_one'] = "30 million children depend on free or reduced-price school meals. Apply here with a few questions. Your school will receive your answers, and let you know about your child's meals.<br /><br />Need help with questions? Click the question marks";
-$lang['welcome_description_part_two'] = "for more info.";
+$lang['welcome_page_title'] = "Apply for Free and Reduced Price School Meals";
+$lang['welcome_title'] = "Apply for Free and Reduced Price School Meals";
+$lang['welcome_description_part_one'] = "Welcome to the (INSERT SCHOOL DISTRICT)'s application for free and reduced price school meals! On this site, you will be asked a series of questions that will provide your district with the information they need to certify your children for school meals. <br /><br /> If at any point you have questions about the form, eligibility, or what information to include, you can click the";
+$lang['welcome_description_part_two'] = " next to the question. You only need to fill out one application per household.";
 $lang['welcome_required'] = "Am I eligible?";
 $lang['welcome_required_items'] = array(
 	array(
 		'text' => "Check your household's gross income",
-		'help' => 'Your children can get free or reduced-price meals if your household’s gross income is within the free or reduced price limits on the Federal Income Eligibility Guidelines. Gross income is the total income received before taxes or deductions.'
+		'help' => 'Is your household’s gross income within the free or reduced price limits on the Federal Income Eligibility Guidelines? Gross income is the total income received before taxes or deductions.'
 	),
 	array(
 		'text' => 'Consider your current government benefits',
 		'help' => 'Children in households receiving benefits from SNAP or TANF or the Food Distribution Program on Indian Reservation can get free meals regardless of your income.'
 	),
 	array(
-		'text' => 'Do you have foster children?',
-		'help' => 'Foster children that are under the legal responsibility of a foster care agency or court are eligible for free meals. Any foster child in the household can get free meals regardless of income. children who meet the definition of homeless, runaway, or migrant qualify for free meals.'
+		'text' => 'Are there foster children?',
+		'help' => 'Foster children that are under the legal responsibility of a foster care agency or court are eligible for free meals. Children who meet the definition of homeless, runaway, or migrant qualify for free meals.'
 	)
 );
 $lang['welcome_btn'] = "Get Started";
 
 // Getting Started
 $lang['getting_started_title'] = "What is your name?";
-$lang['getting_started_description'] = "This is the name of the person filling out this form. This is usually a parent or guardian. NOT the child's name.";
-$land['getting_started_help'] = "All applications must be signed by an adult of 21 years or above.";
-$lang['getting_started_age'] = "Are you over the age of 21?";
+$lang['getting_started_description'] = "This is the name of the person filling out this form. This is usually a parent or guardian, not the child's name.";
+$land['getting_started_help'] = "All applications must be signed by an adult member of the household.";
+$lang['getting_started_age'] = "Are you age 21 or older?";
 $lang['getting_started_elements'] = array(
 	'first_name' => array(
 		'label'       => "First Name",
-		'placeholder' => "John",
+		'placeholder' => "ex: John",
 		'error'				=> "Please enter your first name."
 	),
 	'last_name' => array(
 		'label'       => "Last Name",
-		'placeholder' => "Smith",
+		'placeholder' => "ex: Smith",
 		'error'				=> "Please enter your last name."
 	),
 	'middle_initial' => array(
-		'label'       => "Middle",
-		'placeholder' => "C",
+		'label'       => "Middle Initial",
+		'placeholder' => "ex:C",
 		'error'				=> "Please enter your middle initial."
 	),
 );
-$lang['error_age_validation'] = "Sorry. You must be over 21 or the legal guardian to continue with the application.";
+$lang['error_age_validation'] = "Sorry. You must be 21 or older to continue with the application. Call the school if you have questions. ";
 
 // Your Situation
-$lang['your_situation_title'] = "Okay, let's check if you are already eligable.";
-$lang['your_situation_subtitle'] = "Some situations may automatically qualify your child for free and reduced-priced meals. Choose the circle that applies to you.";
-$lang['your_situation_already'] = "At least one household member already receives SNAP, TANF or FDPIR.";
+$lang['your_situation_title'] = "Let's check if you are already eligible.";
+$lang['your_situation_subtitle'] = "Some situations may automatically qualify your child for free and reduced price meals. Choose the circle that applies to you.";
+$lang['your_situation_already'] = "At least one household member already receives SNAP, TANF or FDPIR";
 $lang['your_situation_need'] = "WHAT YOU'LL NEED";
-$lang['your_situation_all_foster'] = "<u>ALL</u> household children are foster, homeless, migrant, runaway, or Head Start.";
+$lang['your_situation_all_foster'] = "<u>ALL</u> household children are foster, homeless, migrant, runaway, or Head Start";
 $lang['your_situation_none'] = "None of these apply";
 $lang['your_situation_case_number'] = "Assistance Program Case Number";
-$lang['your_situation_childrens_names'] = "Just the child(ren)'s full name(s)";
-$lang['your_situation_household_income'] = "Household income amount(s), source(s), and frequency";
-$lang['your_situation_scenario_a_help'] = "If anyone in your household participates in The Supplemental Nutrition Assistance Program (SNAP),
-Temporary Assistance for Needy Families (TANF), or The Food Distribution Program on Indian Reservations (FDPIR).
-You only need to write one case number. If you participate in one of these programs and do not know your case number, contact your local state agency. You must provide a case number on your application if you choose this option.";
+$lang['your_situation_childrens_names'] = "Just the children's full name";
+$lang['your_situation_household_income'] = "Household income amounts, sources, and frequency";
+$lang['your_situation_scenario_a_help'] = "If you participate in one of these programs and do not know your case number, contact: [State/local agency contacts here]. You must provide a case number on your application if you click here.";
 $lang['your_situation_scenario_b_help'] = "Foster children who live with you count as members of your household and should be listed on your application. Children who meet the definition of homeless, runaway, or migrant qualify for free meals.";
 
 // Other Assistance
-$lang['other_assistance_title'] = "Assistance Programs";
-$lang['other_assistance_subtitle'] = "You said that someone in your household participates in <b>SNAP</b>, the <b>TANF</b> cash assistance program, or the <b>FDPIR</b>. Choose the circle that applies to you.";
-$lang['other_assistance_help'] = "Click on a program to learn more: <a href='http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap'>The Supplemental Nutrition Assistance Program (SNAP)</a>, <a href='http://www.acf.hhs.gov/programs/ofa/programs/tanf/about'>Temporary Assistance for Needy Families (TANF)</a>, or <a href='http://www.fns.usda.gov/fdpir/about-fdpir'>The Food Distribution Program on Indian Reservations (FDPIR).</a>";
+$lang['other_assistance_title'] = "Government Assistance Programs";
+$lang['other_assistance_subtitle'] = "You said that someone in your household participates in <a href='http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap'>SNAP</a>, the <a href=href='http://www.acf.hhs.gov/programs/ofa/programs/tanf/about>TANF</a> cash assistance program, or the <a href='http://www.fns.usda.gov/fdpir/about-fdpir'>FDPIR</a>. Choose the program that applies to you.";
+$lang['other_assistance_help'] = 'Click on a program to learn more';
 $lang['other_assistance_program'] = "Select Assistance Program";
 $lang['other_assistance_case_number'] = "Case Number";
 $lang['other_assistance_example'] = "ex. 2363954301";
 
 // All Household Students
 $lang['household_students_title'] = "Which children are students?";
-$lang['household_students_subtitle'] = "Type the names of all children in your household who are applying for free or reduced-price meals. ";
+$lang['household_students_subtitle'] = "Type the names of all students in your household who are applying for free or reduced-price meals. ";
 $lang['household_students_add'] = "Add Child";
 $lang['household_students_help'] = "List all people in your household who are children age 18 or under <strong>and</strong> who are supported by the household's income. List children who are in your care under a foster arrangement, or qualify as homeless, migrant, or runaway youth. Also list students attending school <em>regardless of age</em>.";
 
@@ -123,40 +121,40 @@ $lang['household_members_child_status_help'] = "FIXME Child status help";
 // All Household Members - Income section
 $lang['household_income_adult_name_suffix'] = "Income (Adult)";
 $lang['household_income_child_name_suffix'] = "Income (Child)";
-$lang['household_income_gross'] = "Please enter gross income and how often it was received.";
+$lang['household_income_gross'] = "Please select income category, income type, the dollor amount, and how frequently it is paid. Click the information icon on the right for more detail.";
 $lang['household_income_category'] = "Income Category";
 $lang['household_income_type'] = "Type";
 $lang['household_income_amount_freq'] = "Dollar Amount / Frequency";
-$lang['household_income_salary'] = "Salary";
+$lang['household_income_salary'] = "Income Type";
 $lang['household_income_add_another'] = "Add another";
 
 $lang['household_income_adult_earnings_from_work'] = array(
-	'title' => 'Earnings from Work',
-	'help' => "FIXME Earnings from Work"
+	'title' => 'Earnings from Work and Military',
+	'help' => "Put gross income from salary, wages, and cash bonuses each in its own row. Report your net income if you are a self-employed business or farm owner."
 );
 $lang['household_income_adult_public_asst'] = array(
-	'title' => 'Public Assistance / Alimony / Child Support',
-	'help' => "FIXME Public Assistance / Alimony / Child Support"
+	'title' => 'Public Assistance, Alimony, and Child Support',
+	'help' => "Many families may get child support payements, vertan's benefits, alimony payments, or cash assistance from the local or state government. Do you?"
 );
 $lang['household_income_adult_other_income'] = array(
-	'title' => 'Pensions / Retirement / All Other Income',
-	'help' => "FIXME Pensions / Retirement / All Other Income"
+	'title' => 'Pensions, Retiremet, and All Other Income',
+	'help' => "Do you get money from rent, social security, investment income, trusts, or regular cash payments?"
 );
 $lang['household_income_child_earnings_from_work'] = array(
 	'title' => 'Earnings from Work',
-	'help' => "FIXME Earnings from Work"
+	'help' => "Does the child have a job where they earn a salary or wages?"
 );
 $lang['household_income_child_ssn_benefits'] = array(
 	'title' => 'Social Security Benefits',
-	'help' => "FIXME Social Security Benefits"
+	'help' => "Is the child blind or disabled and receives Social Security benefits? Is a parent disabled, retired, or deceased, and their child receives social security benefits?"
 );
 $lang['household_income_child_spending_other_income'] = array(
 	'title' => 'Spending money or other income from friend or relative',
-	'help' => "FIXME Spending money or other income from friend or relative"
+	'help' => "Sometimes, a friend or extended family member regularly gives a child spending money. Does this happen?"
 );
 $lang['household_income_child_other_income'] = array(
 	'title' => 'Income from any other source',
-	'help' => "FIXME Income from any other source"
+	'help' => "Does the child receive income from a private pension fund, annuity, or trust?"
 );
 
 
@@ -213,9 +211,9 @@ $lang['children_ethnicity_not_hispanic'] = "Not Hispanic / Latino";
 
 
 // Confirmation
-$lang['confirmation_title'] = "Confirmation";
-$lang['confirmation_subtitle'] = "Please review your application and confirm the information is correct.";
-$lang['confirmation_subtitle_help'] = "FIXME confim sub";
+$lang['confirmation_title'] = "Confirm Information";
+$lang['confirmation_subtitle'] = "Please review your answers to make sure everything is complete. You may go back to change information if you need to.";
+$lang['confirmation_subtitle_help'] = "Click the BACK button to edit information.";
 $lang['confirmation_household_members'] = "HOUSEHOLD MEMBERS";
 $lang['confirmation_adults'] = "Adults";
 $lang['confirmation_children'] = "Children";
@@ -233,21 +231,23 @@ $lang['confirmation_not_required'] = "Not required";
 
 // Terms and Conditions
 $lang['terms_and_cond_title'] = "Terms and Conditions";
-$lang['terms_and_cond_subtitle'] = "Please read terms and conditions and indicate if you agree.";
-$lang['terms_and_cond_agree'] = "I agree to the terms and conditions";
-$lang['terms_and_cond_content'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?";
+$lang['terms_and_cond_subtitle'] = "Please read the statements and indicate if you agree.";
+$lang['terms_and_cond_agree'] = "I agree to the terms and conditions.";
+$lang['terms_and_cond_content'] = "<strong>USDA Non-Discrimination Statement</strong><br></br>In accordance with Federal civil rights law and U.S. Department of Agriculture (USDA) civil rights regulations and policies, the USDA, its Agencies, offices, and employees, and institutions participating in or administering USDA programs are prohibited from discriminating based on race, color, national origin, sex, disability, age, or reprisal or retaliation for prior civil rights activity in any program or activity conducted or funded by USDA.<br></br>Persons with disabilities who require alternative means of communication for program information (e.g. Braille, large print, audiotape, American Sign Language, etc.), should contact the Agency (State or local) where they applied for benefits. Individuals who are deaf, hard of hearing or have speech disabilities may contact USDA through the Federal Relay Service at (800) 877-8339. Additionally, program information may be made available in languages other than English.
+<br></br>To file a program complaint of discrimination, complete the <a href='<a href='https://https://www.ascr.usda.gov/filing-program-discrimination-complaint-usda-customer'>https://www.ascr.usda.gov/filing-program-discrimination-complaint-usda-customer</a>. and at any USDA office, or write a letter addressed to USDA and provide in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to USDA by:<br></br>(1) Mail: U.S. Department of Agriculture Office of the Assistant Secretary for Civil Rights 1400 Independence Avenue, SW Washington, D.C. 20250-9410;<br></br>(2) Fax: (202) 690-7442; or<br></br>(3) Email: program.intake@usda.gov.
+<br></br><br></br><strong>Use of Information Statement</strong><br></br>The Richard B. Russell National School Lunch Act requires the information on this application. You do not have to give the information, but if you do not submit all needed information, we cannot approve your child for free or reduced price meals. You must include the last four digits of the social security number of the adult household member who signs the application. The social security number is not required when you apply on behalf of a foster child or you list a Supplemental Nutrition Assistance Program (SNAP), Temporary Assistance for Needy Families (TANF) Program or Food Distribution Program on Indian Reservations (FDPIR) case number or other FDPIR identifier for your child or when you indicate that the adult household member signing the application does not have a social security number. We will use your information to determine if your child is eligible for free or reduced price meals, and for administration and enforcement of the lunch and breakfast programs.<br></br> We may share your eligibility information with education, health, and nutrition programs to help them evaluate, fund, or determine benefits for their programs, auditors for program reviews, and law enforcement officials to help them look into violations of program rules.";
 $lang['terms_and_cond_help'] = "FIXME tandc";
 
 // Electronic Signature
-$lang['electronic_sig_title'] = "Electronic Signature";
-$lang['electronic_sig_subtitle'] = "Please indicate that you comply with the statement below and enter last four digits of Social Security Number (if applicable).";
-$lang['electronic_sig_statement'] = "The person signing is furnishing true information and to advise that person that the application is being made in connection with the receipt of Federal funds; School officials may verify the information on the application; and Deliberate misrepresentation of the information may subject the applicant to prosecution under State and Federal statutes.";
+$lang['electronic_sig_title'] = "Signature";
+$lang['electronic_sig_subtitle'] = "Please indicate that you comply with the statement below by selecting the box and typing your name.";
+$lang['electronic_sig_statement'] = "I promise  the information in this application is true and that I have reported all income. I understand that this information may grant me federal funds, and that my school may check the information. If I give false information on purpose, I am aware that my children may lose meal benefits and I may be prosecuted under the law.";
 $lang['electronic_sig_not_available'] = "Not available";
-$lang['error_electronic_sig_agree'] = "FIXME? agree";
-$lang['error_electronic_sig_name'] = "FIXME? name";
+$lang['error_electronic_sig_agree'] = "You must agree to continue";
+$lang['error_electronic_sig_name'] = "Please type your name.";
 $lang['error_electronic_sig_social'] = "FIXME? social";
 $lang['electronic_sig_subtitle_help'] = "FIXME sub help";
-$lang['electronic_sig_ssn_help'] = "FIXME ssn help";
+$lang['electronic_sig_ssn_help'] = "If you do not have an Social Security Number you can still be eligible to receive benefits.";
 
 // Success
 $lang['success_submission_id'] = "Submission ID: ";
@@ -294,4 +294,4 @@ $lang['child_description_homeless'] = 'Homeless';
 $lang['child_description_migrant'] = 'Migrant';
 $lang['child_description_runaway'] = 'Runaway';
 $lang['child_description_foster'] = 'Foster';
-$lang['child_description_none'] = 'None of the above';
+$lang['child_description_none'] = 'None of the Above';
