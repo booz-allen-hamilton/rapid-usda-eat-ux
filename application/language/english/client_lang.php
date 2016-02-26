@@ -142,19 +142,19 @@ $lang['household_income_adult_other_income'] = array(
 );
 $lang['household_income_child_earnings_from_work'] = array(
 	'title' => 'Earnings from Work',
-	'help' => "FIXME Earnings from Work"
+	'help' => "Does the child have a job where they earn a salary or wages?"
 );
 $lang['household_income_child_ssn_benefits'] = array(
 	'title' => 'Social Security Benefits',
-	'help' => "FIXME Social Security Benefits"
+	'help' => "Is the child blind or disabled and receives Social Security benefits? Is a parent disabled, retired, or deceased, and their child receives social security benefits?"
 );
 $lang['household_income_child_spending_other_income'] = array(
 	'title' => 'Spending money or other income from friend or relative',
-	'help' => "FIXME Spending money or other income from friend or relative"
+	'help' => "Sometimes, a friend or extended family member regularly gives a child spending money. Does this happen?"
 );
 $lang['household_income_child_other_income'] = array(
 	'title' => 'Income from any other source',
-	'help' => "FIXME Income from any other source"
+	'help' => "Does the child receive income from a private pension fund, annuity, or trust?"
 );
 
 
