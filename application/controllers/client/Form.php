@@ -124,23 +124,29 @@ class Form extends Client_controller {
 	}
 
 	public function template() {
+		$data['parent_index'] = $this->input->get('parent_index') + 1;
 		$section = $this->uri->segment(3);
 		switch($section) {
 			case "adult_row":
-				$this->load->view('pages/application-form/template_adult_row');
+				$this->load->view('pages/application-form/householdMembers-adult', $data);
 			break;
 			case "child_row":
-				$this->load->view('pages/application-form/template_child_row');
+				$this->load->view('pages/application-form/householdMembers-child', $data);
 			break;
 			case "adult_earnings_from_work":
 			case "adult_public_asst":
 			case "adult_other_income":
+				$data['income_index'] = $this->input->get('income_index') + 1;
+				$data['form_income_item'] = $section;
+				$this->load->view('pages/application-form/householdMembers-adult-income', $data);
+			break;
 			case "child_earnings_from_work":
 			case "child_ssn_benefits":
 			case "child_spending_other_income":
 			case "child_other_income":
+				$data['income_index'] = $this->input->get('income_index') + 1;
 				$data['form_income_item'] = $section;
-				$this->load->view('pages/application-form/template_income', $data);
+				$this->load->view('pages/application-form/householdMembers-child-income', $data);
 			break;
 		}
 	}
@@ -301,85 +307,7 @@ class Form extends Client_controller {
 		//	validate step
 		switch($form_step_section) {
 			case "householdMembers":
-				$adult_first                        = $this->input->post('adult_first');
-				$adult_last                         = $this->input->post('adult_last');
-				$adult_middle                       = $this->input->post('adult_middle');
-				$adult_earns_income                 = $this->input->post('adult_earns_income');
-				$adult_earnings_from_work           = $this->input->post('adult_earnings_from_work');
-				$adult_earnings_from_work_type      = $this->input->post('adult_earnings_from_work_type');
-				$adult_earnings_from_work_amount    = $this->input->post('adult_earnings_from_work_amount');
-				$adult_public_asst                  = $this->input->post('adult_public_asst');
-				$adult_public_asst_type             = $this->input->post('adult_public_asst_type');
-				$adult_public_asst_amount           = $this->input->post('adult_public_asst_amount');
-				$adult_other_income                 = $this->input->post('adult_other_income');
-				$adult_other_income_type            = $this->input->post('adult_other_income_type');
-				$adult_other_income_amount          = $this->input->post('adult_other_income_amount');
-				$child_first                        = $this->input->post('child_first');
-				$child_last                         = $this->input->post('child_last');
-				$child_middle                       = $this->input->post('child_middle');
-				$child_earns_income                 = $this->input->post('child_earns_income');
-				$child_earnings_from_work           = $this->input->post('child_earnings_from_work');
-				$child_earnings_from_work_type      = $this->input->post('child_earnings_from_work_type');
-				$child_earnings_from_work_amount    = $this->input->post('child_earnings_from_work_amount');
-				$child_ssn_benefits                 = $this->input->post('child_ssn_benefits');
-				$child_ssn_benefit_type             = $this->input->post('child_ssn_benefit_type');
-				$child_ssn_benefit_amount           = $this->input->post('child_ssn_benefit_amount');
-				$child_spending_other_income        = $this->input->post('child_spending_other_income');
-				$child_spending_other_income_type   = $this->input->post('child_spending_other_income_type');
-				$child_spending_other_income_amount = $this->input->post('child_spending_other_income_amount');
-				$child_other_income                 = $this->input->post('child_other_income');
-				$child_other_income_type            = $this->input->post('child_other_income_type');
-				$child_other_income_amount          = $this->input->post('child_other_income_amount');
-
-				$adult_data = array();
-				for($i = 0; $i < count($adult_first); $i++) {
-					$adult_data[] = array(
-						'first_name'                => $adult_first[$i],
-						'last_name'                 => $adult_last[$i],
-						'middle_initial'            => $adult_middle[$i],
-						'earns_income'              => $adult_earns_income[$i],
-						'earnings_from_work'        => $adult_earnings_from_work[$i],
-						'earnings_from_work_type'   => $adult_earnings_from_work_type[$i],
-						'earnings_from_work_amount' => $adult_earnings_from_work_amount[$i],
-						'public_asst'               => $adult_public_asst[$i],
-						'public_asst_type'          => $adult_public_asst_type[$i],
-						'public_asst_amount'        => $adult_public_asst_amount[$i],
-						'other_income'              => $adult_other_income[$i],
-						'other_income_type'         => $adult_other_income_type[$i],
-						'other_income_amount'       => $adult_other_income_amount[$i],
-					);
-				}
-
-				$child_data = array();
-				for($i = 0; $i < count($child_first); $i++) {
-					$child_data[] = array(
-						'first_name'                   => $child_first[$i],
-						'last_name'                    => $child_last[$i],
-						'middle_initial'               => $child_middle[$i],
-						'earns_income'                 => $child_earns_income[$i],
-						'earnings_from_work'           => $child_earnings_from_work[$i],
-						'earnings_from_work_type'      => $child_earnings_from_work_type[$i],
-						'earnings_from_work_amount'    => $child_earnings_from_work_amount[$i],
-						'ssn_benefits'                 => $child_ssn_benefits[$i],
-						'ssn_benefits_type'            => $child_ssn_benefits_type[$i],
-						'ssn_benefits_amount'          => $child_ssn_benefits_amount[$i],
-						'spending_other_income'        => $child_spending_other_income[$i],
-						'spending_other_income_type'   => $child_spending_other_income_type[$i],
-						'spending_other_income_amount' => $child_spending_other_income_amount[$i],
-						'other_income'                 => $child_other_income[$i],
-						'other_income_type'            => $child_other_income_type[$i],
-						'other_income_amount'          => $child_other_income_amount[$i],
-					);
-				}
-
-				echo '<pre>';
-				print_r($adult_data);
-				print_r($child_data);
-				print_r($this->input->post());
-				die;
-
-				$this->form_validation->set_rules('assistance_program', '', 'required|in_list[snap,tanf,fdpir]');
-				$this->form_validation->set_rules('case_number', '', 'required|max_length[30]');
+				$this->form_validation->set_rules('householdmembers', '', 'required');
 			break;
 			case "otherAssistance":
 				$this->form_validation->set_rules('assistance_program', '', 'required|in_list[snap,tanf,fdpir]');
@@ -460,6 +388,10 @@ class Form extends Client_controller {
 					$application_id = $this->db->insert_id();
 
 					foreach($household_students as $student) {
+						$income = array();
+						if (!empty($student['income'])) {
+							$income = $student['income'];
+						}
 						$household_students_data = array(
 							'application_id'              => $application_id,
 							'first_name'                  => $student['first_name'],
@@ -470,12 +402,17 @@ class Form extends Client_controller {
 							'is_homeless_migrant_runaway' => 0,
 							'ethnicity'                   => $student['ethnicity'],
 							'race'                        => json_encode($student['race']),
+							'income_data'                 => json_encode($income),
 						);
 						$this->db->insert('household_students', $household_students_data);
 					}
 
 					$loop = 0;
 					foreach($household_members as $member) {
+						$income = array();
+						if (!empty($member['income'])) {
+							$income = $member['income'];
+						}
 						$household_members_data = array(
 							'application_id'                     => $application_id,
 							'first_name'                         => $member['first_name'],
@@ -487,6 +424,7 @@ class Form extends Client_controller {
 							'income_public_assistance_frequency' => NULL,
 							'income_other'                       => NULL,
 							'income_other_frequency'             => NULL,
+							'income_data'                        => json_encode($income),
 						);
 						$this->db->insert('household_members', $household_members_data);
 						// if ($loop == 0) {
@@ -500,6 +438,10 @@ class Form extends Client_controller {
 			}
 
 			switch($form_step_section) {
+				case "householdMembers":
+					$this->session->set_userdata('form_household_members', $this->input->post('adult'));
+					$this->session->set_userdata('form_household_students', $this->input->post('child'));
+				break;
 				case "otherAssistance":
 					$other_assistance = array(
 						'assistance_program' => $this->input->post('assistance_program'),
