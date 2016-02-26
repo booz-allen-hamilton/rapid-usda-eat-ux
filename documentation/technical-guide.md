@@ -30,15 +30,15 @@ The application is hosted on the Amazon Web Services, and the architecture has b
 ![Tech Cloud](images/Tech-Cloud.png)
 
 
-Amazon EC2: web service that provides resizable compute capacity
+__Amazon EC2: web service that provides resizable compute capacity__
 -	Purpose: EC2 hosts our application, and depending on the load of the users to the site, they can scale up automatically to account for the additional traffic and workload
 
-Amazon Elastic Load Balancer: load balancer that redirects traffic to EC2 instance for a consistent application performance
+__Amazon Elastic Load Balancer: load balancer that redirects traffic to EC2 instance for a consistent application performance__
 -	Purpose: ELB distributes the traffic of our application and monitors the health of other application instance
 
-Amazon RDS: relational and scalable database
+__Amazon RDS: relational and scalable database__
 -	Purpose: A separated database hosted in the cloud is able to scale automatically based on the amount of in data in our application and replicated to ensure backups.
 
-Amazon CodePipeline: continuous delivery service for fast and reliable application updates
+__Amazon CodePipeline: continuous delivery service for fast and reliable application updates__
 -	Purpose: CodePipeline enables our team to automatically test and deploy updates according to our code repository. This has enabled much faster and reliable deployment to the environment and has saved the team developer time. 
 
