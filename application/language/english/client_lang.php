@@ -232,8 +232,8 @@ $lang['confirmation_not_required'] = "Not required";
 // Terms and Conditions
 $lang['terms_and_cond_title'] = "Terms and Conditions";
 $lang['terms_and_cond_subtitle'] = "Please read terms and conditions and indicate if you agree.";
-$lang['terms_and_cond_agree'] = "I agree to the terms and conditions";
-$lang['terms_and_cond_content'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?";
+$lang['terms_and_cond_agree'] = "I agree to the terms and conditions.";
+$lang['terms_and_cond_content'] = "USDA NON-DISCRIMINATION STATEMENT<br></br>In accordance with Federal civil rights law and U.S. Department of Agriculture (USDA) civil rights regulations and policies, the USDA, its Agencies, offices, and employees, and institutions participating in or administering USDA programs are prohibited from discriminating based on race, color, national origin, sex, disability, age, or reprisal or retaliation for prior civil rights activity in any program or activity conducted or funded by USDA.<br></br>Persons with disabilities who require alternative means of communication for program information (e.g. Braille, large print, audiotape, American Sign Language, etc.), should contact the Agency (State or local) where they applied for benefits. Individuals who are deaf, hard of hearing or have speech disabilities may contact USDA through the Federal Relay Service at (800) 877-8339. Additionally, program information may be made available in languages other than English.";
 $lang['terms_and_cond_help'] = "FIXME tandc";
 
 // Electronic Signature
@@ -245,7 +245,7 @@ $lang['error_electronic_sig_agree'] = "You must agree to continue";
 $lang['error_electronic_sig_name'] = "Please type your name.";
 $lang['error_electronic_sig_social'] = "FIXME? social";
 $lang['electronic_sig_subtitle_help'] = "FIXME sub help";
-$lang['electronic_sig_ssn_help'] = "If you do not have an SSN you can still be eligible to receive benefits.";
+$lang['electronic_sig_ssn_help'] = "If you do not have an Social Security Number you can still be eligible to receive benefits.";
 
 // Success
 $lang['success_submission_id'] = "Submission ID: ";
