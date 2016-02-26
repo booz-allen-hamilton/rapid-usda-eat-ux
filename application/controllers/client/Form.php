@@ -494,6 +494,7 @@ class Form extends Client_controller {
 							'middle_initial' => $student['middle_initial'],
 							'ethnicity' => (!empty($ethnicity[$loop]) ? $ethnicity[$loop] : NULL),
 							'race' => (!empty($race[$loop]) ? $race[$loop] : NULL),
+							'income' => (!empty($student['income']) ? $student['income'] : NULL),
 						);
 						$loop++;
 					}
