@@ -1,0 +1,2 @@
+# Technical Approach
+We used all open source technologies and open sourced library for our LunchBox prototype. It was built using a technical stack and architecture that is easily installed and deployed across different environment. It uses popular technical frameworks and open source technology to ensure that organizations are able to integrate the solution with their existing products. The application follows a standard model-view-controller (MVC) architecture and cloud infrastructure.
