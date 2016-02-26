@@ -31,16 +31,16 @@ $lang['welcome_description_part_two'] = "for more info.";
 $lang['welcome_required'] = "Am I eligible?";
 $lang['welcome_required_items'] = array(
 	array(
-		'text' => 'Family income level',
-		'help' => 'help 1 text'
+		'text' => 'Check your household's gross income',
+		'help' => 'Your children can get free or reduced-price meals if your household’s gross income is within the free or reduced price limits on the Federal Income Eligibility Guidelines. Gross income is the total income received before taxes or deductions.'
 	),
 	array(
-		'text' => 'What current government benefits you receive',
-		'help' => 'help 2 text'
+		'text' => 'Consider your current government benefits',
+		'help' => 'Children in households receiving benefits from SNAP or TANF or the Food Distribution Program on Indian Reservation can get free meals regardless of your income.'
 	),
 	array(
-		'text' => 'Number of foster children',
-		'help' => 'help 3 text'
+		'text' => 'Do you have foster children?',
+		'help' => 'Foster children that are under the legal responsibility of a foster care agency or court are eligible for free meals. Any foster child in the household can get free meals regardless of income. children who meet the definition of homeless, runaway, or migrant qualify for free meals.'
 	)
 );
 $lang['welcome_btn'] = "Get Started";
