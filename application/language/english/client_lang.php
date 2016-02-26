@@ -289,3 +289,10 @@ $lang['weekly'] = "Weekly";
 $lang['twice_a_week'] = "2 Times a Week";
 $lang['monthly'] = "Monthly";
 $lang['twice_a_month'] = "2 Times a Month";
+
+
+$lang['child_description_homeless'] = 'Homeless';
+$lang['child_description_migrant'] = 'Migrant';
+$lang['child_description_runaway'] = 'Runaway';
+$lang['child_description_foster'] = 'Foster';
+$lang['child_description_none'] = 'None of the above';

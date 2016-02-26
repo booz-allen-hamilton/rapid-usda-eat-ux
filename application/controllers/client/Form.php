@@ -124,23 +124,29 @@ class Form extends Client_controller {
 	}
 
 	public function template() {
+		$data['parent_index'] = $this->input->get('parent_index') + 1;
 		$section = $this->uri->segment(3);
 		switch($section) {
 			case "adult_row":
-				$this->load->view('pages/application-form/template_adult_row');
+				$this->load->view('pages/application-form/householdMembers-adult', $data);
 			break;
 			case "child_row":
-				$this->load->view('pages/application-form/template_child_row');
+				$this->load->view('pages/application-form/householdMembers-child', $data);
 			break;
 			case "adult_earnings_from_work":
 			case "adult_public_asst":
 			case "adult_other_income":
+				$data['income_index'] = $this->input->get('income_index') + 1;
+				$data['form_income_item'] = $section;
+				$this->load->view('pages/application-form/householdMembers-adult-income', $data);
+			break;
 			case "child_earnings_from_work":
 			case "child_ssn_benefits":
 			case "child_spending_other_income":
 			case "child_other_income":
+				$data['income_index'] = $this->input->get('income_index') + 1;
 				$data['form_income_item'] = $section;
-				$this->load->view('pages/application-form/template_income', $data);
+				$this->load->view('pages/application-form/householdMembers-child-income', $data);
 			break;
 		}
 	}
@@ -300,6 +306,9 @@ class Form extends Client_controller {
 
 		//	validate step
 		switch($form_step_section) {
+			case "householdMembers":
+				$this->form_validation->set_rules('householdmembers', '', 'required');
+			break;
 			case "otherAssistance":
 				$this->form_validation->set_rules('assistance_program', '', 'required|in_list[snap,tanf,fdpir]');
 				$this->form_validation->set_rules('case_number', '', 'required|max_length[30]');
@@ -379,6 +388,10 @@ class Form extends Client_controller {
 					$application_id = $this->db->insert_id();
 
 					foreach($household_students as $student) {
+						$income = array();
+						if (!empty($student['income'])) {
+							$income = $student['income'];
+						}
 						$household_students_data = array(
 							'application_id'              => $application_id,
 							'first_name'                  => $student['first_name'],
@@ -389,12 +402,17 @@ class Form extends Client_controller {
 							'is_homeless_migrant_runaway' => 0,
 							'ethnicity'                   => $student['ethnicity'],
 							'race'                        => json_encode($student['race']),
+							'income_data'                 => json_encode($income),
 						);
 						$this->db->insert('household_students', $household_students_data);
 					}
 
 					$loop = 0;
 					foreach($household_members as $member) {
+						$income = array();
+						if (!empty($member['income'])) {
+							$income = $member['income'];
+						}
 						$household_members_data = array(
 							'application_id'                     => $application_id,
 							'first_name'                         => $member['first_name'],
@@ -406,6 +424,7 @@ class Form extends Client_controller {
 							'income_public_assistance_frequency' => NULL,
 							'income_other'                       => NULL,
 							'income_other_frequency'             => NULL,
+							'income_data'                        => json_encode($income),
 						);
 						$this->db->insert('household_members', $household_members_data);
 						// if ($loop == 0) {
@@ -419,6 +438,10 @@ class Form extends Client_controller {
 			}
 
 			switch($form_step_section) {
+				case "householdMembers":
+					$this->session->set_userdata('form_household_members', $this->input->post('adult'));
+					$this->session->set_userdata('form_household_students', $this->input->post('child'));
+				break;
 				case "otherAssistance":
 					$other_assistance = array(
 						'assistance_program' => $this->input->post('assistance_program'),
