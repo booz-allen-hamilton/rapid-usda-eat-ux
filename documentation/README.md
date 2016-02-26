@@ -38,6 +38,9 @@ The National School Lunch program impacts the day-to-day lives of millions of Am
 
 
 
+## What’s Under the Hood
+We leveraged open source technologies to power the solution and used widely adopted platforms such as LAMP stack (Linux Apache MySql PHP) so that it can be easily integrated into existing school IT services.  The modular API architecture and backend validations ensure that the application can easily be customized, extended, and maintained.  The reference cloud hosting architecture utilizing Amazon Web Services also allows the solution to scale and increase performance while limiting unnecessary hosting costs.  This also provides a continuous development and integrations DevOps process so that updates and new features can rapidly be deployed.
+
 
 
 ## Challenges We Ran Into
