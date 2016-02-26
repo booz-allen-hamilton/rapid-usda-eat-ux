@@ -32,7 +32,7 @@ $lang['welcome_required'] = "Am I eligible?";
 $lang['welcome_required_items'] = array(
 	array(
 		'text' => "Check your household's gross income",
-		'help' => 'Your children can get free or reduced-price meals if your household’s gross income is within the free or reduced price limits on the Federal Income Eligibility Guidelines. Gross income is the total income received before taxes or deductions.'
+		'help' => 'Is your household’s gross income within the free or reduced price limits on the Federal Income Eligibility Guidelines? Gross income is the total income received before taxes or deductions.'
 	),
 	array(
 		'text' => 'Consider your current government benefits',
@@ -63,7 +63,7 @@ $lang['getting_started_elements'] = array(
 	),
 	'middle_initial' => array(
 		'label'       => "Middle Initial",
-		'placeholder' => "Ex:C",
+		'placeholder' => "ex:C",
 		'error'				=> "Please enter your middle initial."
 	),
 );
@@ -85,7 +85,7 @@ $lang['your_situation_scenario_b_help'] = "Foster children who live with you cou
 // Other Assistance
 $lang['other_assistance_title'] = "Government Assistance Programs";
 $lang['other_assistance_subtitle'] = "You said that someone in your household participates in <a href='http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap'>SNAP</a>, the <a href=href='http://www.acf.hhs.gov/programs/ofa/programs/tanf/about>TANF</a> cash assistance program, or the <a href='http://www.fns.usda.gov/fdpir/about-fdpir'>FDPIR</a>. Choose the program that applies to you.";
-$lang['other_assistance_help'] = 'Click on a program to learn more: <a href="http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap">The Supplemental Nutrition Assistance Program (SNAP)</a>, <a href="http://www.acf.hhs.gov/programs/ofa/programs/tanf/about">Temporary Assistance for Needy Families (TANF)</a>, or <a href="http://www.fns.usda.gov/fdpir/about-fdpir">The Food Distribution Program on Indian Reservations (FDPIR).</a>';
+$lang['other_assistance_help'] = 'Click on a program to learn more';
 $lang['other_assistance_program'] = "Select Assistance Program";
 $lang['other_assistance_case_number'] = "Case Number";
 $lang['other_assistance_example'] = "ex. 2363954301";
@@ -94,7 +94,7 @@ $lang['other_assistance_example'] = "ex. 2363954301";
 $lang['household_students_title'] = "Which children are students?";
 $lang['household_students_subtitle'] = "Type the names of all students in your household who are applying for free or reduced-price meals. ";
 $lang['household_students_add'] = "Add Child";
-$lang['household_students_help'] = "When filling out this section, please include all members in your household who are: (1) age 18 or under <strong>and</strong> who are supported by the household's income; or (2) In your care under a foster arrangement, or qualify as homeless, migrant, or runaway youth; or (3) attending school regardless of age.";
+$lang['household_students_help'] = "List all people in your household who are children age 18 or under <strong>and</strong> who are supported by the household's income. List children who are in your care under a foster arrangement, or qualify as homeless, migrant, or runaway youth. Also list students attending school <em>regardless of age</em>.";
 
 // All Household Members
 $lang['household_members_title'] = "Who lives with you?";
@@ -160,7 +160,7 @@ $lang['household_income_child_other_income'] = array(
 
 // Contact Information
 $lang['contact_info_title'] = "Contact Information";
-$lang['contact_info_subtitle'] = "Your information helps us contact you if we have questions about your application.";
+$lang['contact_info_subtitle'] = "Tell us how you would like us to communicate with you.";
 $lang['contact_info_elements'] = array(
 	'street_address' => array(
 		'label'			=> "Street Address",
@@ -171,16 +171,16 @@ $lang['contact_info_elements'] = array(
 	),
 	'city' => array(
 		'label'       	=> "City",
-		'error'			=> "Please enter your city."
+		'error'			=> "Please enter your city"
 	),
 	'state' => array(
 		'label'       	=> "State",
 		'placeholder' 	=> "Choose State",
-		'error'			=> "Please select your state."
+		'error'			=> "Please select your state"
 	),
 	'zip' => array(
 		'label'       	=> "ZIP",
-		'error'			=> "Type in your ZIP code."
+		'error'			=> "Please enter your ZIP code"
 	),
 	'phone' => array(
 		'label'       	=> "Phone",
@@ -189,7 +189,7 @@ $lang['contact_info_elements'] = array(
 	),
 	'email' => array(
 		'label'       	=> "Email",
-		'placeholder' 	=> "example@gmail.com",
+		'placeholder' 	=> "example@example.com",
 		'error'			=> "Please enter a valid email address"
 	),
 	'contact' => array(
