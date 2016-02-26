@@ -237,15 +237,15 @@ $lang['terms_and_cond_content'] = "Lorem ipsum dolor sit amet, consectetur adipi
 $lang['terms_and_cond_help'] = "FIXME tandc";
 
 // Electronic Signature
-$lang['electronic_sig_title'] = "Electronic Signature";
-$lang['electronic_sig_subtitle'] = "Please indicate that you comply with the statement below and enter last four digits of Social Security Number (if applicable).";
-$lang['electronic_sig_statement'] = "The person signing is furnishing true information and to advise that person that the application is being made in connection with the receipt of Federal funds; School officials may verify the information on the application; and Deliberate misrepresentation of the information may subject the applicant to prosecution under State and Federal statutes.";
+$lang['electronic_sig_title'] = "Signature";
+$lang['electronic_sig_subtitle'] = "Please indicate that you comply with the statement below by selecting the box and typing your name.";
+$lang['electronic_sig_statement'] = "I promise  the information in this application is true and that I have reported all income. I understand that this information may grant me federal funds, and that my school may check the information. If I give false information on purpose, I am aware that my children may lose meal benefits and I may be prosecuted under the law.";
 $lang['electronic_sig_not_available'] = "Not available";
-$lang['error_electronic_sig_agree'] = "FIXME? agree";
-$lang['error_electronic_sig_name'] = "FIXME? name";
+$lang['error_electronic_sig_agree'] = "You must agree to continue";
+$lang['error_electronic_sig_name'] = "Please type your name.";
 $lang['error_electronic_sig_social'] = "FIXME? social";
 $lang['electronic_sig_subtitle_help'] = "FIXME sub help";
-$lang['electronic_sig_ssn_help'] = "FIXME ssn help";
+$lang['electronic_sig_ssn_help'] = "If you do not have an SSN you can still be eligible to receive benefits.";
 
 // Success
 $lang['success_submission_id'] = "Submission ID: ";
