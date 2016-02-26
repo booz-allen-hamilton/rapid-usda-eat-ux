@@ -124,18 +124,20 @@ class Form extends Client_controller {
 	}
 
 	public function template() {
-		$data['parent_index'] = $this->input->get('parent_index') + 1;
 		$section = $this->uri->segment(3);
 		switch($section) {
 			case "adult_row":
+				$data['parent_index'] = $this->input->get('parent_index') + 1;
 				$this->load->view('pages/application-form/householdMembers-adult', $data);
 			break;
 			case "child_row":
+				$data['parent_index'] = $this->input->get('parent_index') + 1;
 				$this->load->view('pages/application-form/householdMembers-child', $data);
 			break;
 			case "adult_earnings_from_work":
 			case "adult_public_asst":
 			case "adult_other_income":
+				$data['parent_index'] = $this->input->get('parent_index');
 				$data['income_index'] = $this->input->get('income_index') + 1;
 				$data['form_income_item'] = $section;
 				$this->load->view('pages/application-form/householdMembers-adult-income', $data);
@@ -144,6 +146,7 @@ class Form extends Client_controller {
 			case "child_ssn_benefits":
 			case "child_spending_other_income":
 			case "child_other_income":
+				$data['parent_index'] = $this->input->get('parent_index');
 				$data['income_index'] = $this->input->get('income_index') + 1;
 				$data['form_income_item'] = $section;
 				$this->load->view('pages/application-form/householdMembers-child-income', $data);

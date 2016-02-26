@@ -33,8 +33,17 @@
 <div id="adultName-list">
 <?
 	$parent_index = 0;
-	$partial_data['parent_index'] = $parent_index;
-	$this->load->view('pages/application-form/householdMembers-adult', $partial_data);
+	if ($form['data']['household_members'] && is_array($form['data']['household_members'])) {
+		foreach($form['data']['household_members'] as $member) {
+			$partial_data['parent_index'] = $parent_index;
+			$partial_data['member'] = $member;
+			$this->load->view('pages/application-form/householdMembers-adult', $partial_data);
+			$parent_index++;
+		}
+	} else {
+		$partial_data['parent_index'] = $parent_index;
+		$this->load->view('pages/application-form/householdMembers-adult', $partial_data);
+	}
 ?>
 </div>
 <div class="row text-center mb-50">
@@ -82,8 +91,17 @@
 <div id="childName-list">
 <?
 	$parent_index = 0;
-	$partial_data['parent_index'] = $parent_index;
-	$this->load->view('pages/application-form/householdMembers-child', $partial_data);
+	if ($form['data']['household_students'] && is_array($form['data']['household_students'])) {
+		foreach($form['data']['household_students'] as $student) {
+			$partial_data['parent_index'] = $parent_index;
+			$partial_data['student'] = $student;
+			$this->load->view('pages/application-form/householdMembers-child', $partial_data);
+			$parent_index++;
+		}
+	} else {
+		$partial_data['parent_index'] = $parent_index;
+		$this->load->view('pages/application-form/householdMembers-child', $partial_data);
+	}
 ?>
 </div>
 

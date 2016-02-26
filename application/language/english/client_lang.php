@@ -79,7 +79,7 @@ $lang['your_situation_none'] = "None of these apply";
 $lang['your_situation_case_number'] = "Assistance Program Case Number";
 $lang['your_situation_childrens_names'] = "Just the child(ren)'s full name(s)";
 $lang['your_situation_household_income'] = "Household income amount(s), source(s), and frequency";
-$lang['your_situation_scenario_a_help'] = "If anyone in your household participates in The Supplemental Nutrition Assistance Program (SNAP), 
+$lang['your_situation_scenario_a_help'] = "If anyone in your household participates in The Supplemental Nutrition Assistance Program (SNAP),
 Temporary Assistance for Needy Families (TANF), or The Food Distribution Program on Indian Reservations (FDPIR).
 You only need to write one case number. If you participate in one of these programs and do not know your case number, contact your local state agency. You must provide a case number on your application if you choose this option.";
 $lang['your_situation_scenario_b_help'] = "Foster children who live with you count as members of your household and should be listed on your application. Children who meet the definition of homeless, runaway, or migrant qualify for free meals.";
@@ -121,8 +121,8 @@ $lang['household_members_pensions_help'] = "FIXME Pensions";
 $lang['household_members_child_status_help'] = "FIXME Child status help";
 
 // All Household Members - Income section
-$lang['household_income_adult_name_suffix'] = "{name}'s Income (Adult)";
-$lang['household_income_child_name_suffix'] = "{name}'s Income (Child)";
+$lang['household_income_adult_name_suffix'] = "Income (Adult)";
+$lang['household_income_child_name_suffix'] = "Income (Child)";
 $lang['household_income_gross'] = "Please enter gross income and how often it was received.";
 $lang['household_income_category'] = "Income Category";
 $lang['household_income_type'] = "Type";

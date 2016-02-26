@@ -1,30 +1,50 @@
-<div class="main-row-container" data-index="<?=$parent_index?>">
+<div class="main-row-container" data-index="<?=$parent_index?>" data-group="adult">
 	<div class="row tableItems">
 		<div class="col-sm-12 col-md-3">
-			<input type="text" placeholder="<?=$this->lang->line('household_members_first')?>" class="form-control input-lg" name="adult[<?=$parent_index?>][first_name]" required data-error="<?=$this->lang->line('error_household_students_first')?>">
+			<input type="text"
+				placeholder="<?=$this->lang->line('household_members_first')?>"
+				class="form-control input-lg"
+				name="adult[<?=$parent_index?>][first_name]"
+				value="<?=(!empty($member['first_name']) ? $member['first_name'] : NULL)?>"
+				required
+				data-error="<?=$this->lang->line('error_household_students_first')?>">
 			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 			<div class="help-block with-errors"></div>
 		</div>
 		<div class="col-sm-12 col-md-3">
-			<input type="text" placeholder="<?=$this->lang->line('household_members_last')?>" class="form-control input-lg" name="adult[<?=$parent_index?>][last_name]" required data-error="<?=$this->lang->line('error_household_students_last')?>">
+			<input type="text"
+				placeholder="<?=$this->lang->line('household_members_last')?>"
+				class="form-control input-lg"
+				name="adult[<?=$parent_index?>][last_name]"
+				value="<?=(!empty($member['last_name']) ? $member['last_name'] : NULL)?>"
+				required
+				data-error="<?=$this->lang->line('error_household_students_last')?>">
 			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 			<div class="help-block with-errors"></div>
 		</div>
 		<div class="col-sm-12 col-md-2">
-			<input type="text" placeholder="<?=$this->lang->line('household_members_middle')?>" class="form-control input-lg" name="adult[<?=$parent_index?>][middle_initial]">
+			<input type="text"
+			placeholder="<?=$this->lang->line('household_members_middle')?>"
+			class="form-control input-lg"
+			name="adult[<?=$parent_index?>][middle_initial]"
+			value="<?=(!empty($member['middle_initial']) ? $member['middle_initial'] : NULL)?>"
+			maxlength="1" />
 		</div>
 		<div class="col-sm-12 col-md-2">
-			<div class="btn-group btn-group-custom" data-toggle-target="adult_earns_income" role="group">
-				<button type="button" class="btn btn-lg btn-default" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
-				<button type="button" class="btn btn-lg btn-default btn-active" data-toggle-value="0"><?=$this->lang->line('no')?></button>
+			<?
+				$default_state = (!empty($member['earns_income']) ? $member['earns_income'] : 0);
+			?>
+			<div class="btn-group btn-group-custom" data-container="adult_earns_income" data-toggle-target="adult[<?=$parent_index?>][earns_income]" role="group" data-type="income">
+				<button type="button" class="btn btn-lg btn-default <?=($default_state == 1 ? 'btn-active' : NULL)?>" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
+				<button type="button" class="btn btn-lg btn-default <?=($default_state == 0 ? 'btn-active' : NULL)?>" data-toggle-value="0"><?=$this->lang->line('no')?></button>
 			</div>
-			<?=form_hidden('adult['.$parent_index.'][earns_income]', 0)?>
+			<?=form_hidden('adult['.$parent_index.'][earns_income]', $default_state)?>
 		</div>
 		<div class="col-sm-12 col-md-1 text-right">
 		<?
 			if ($parent_index != 0) {
 		?>
-			<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
+			<a href="#" class="remove-item" data-remove=".main-row-container"><i class="fa fa-times-circle"></i></a>
 		<?
 			} else {
 		?>
@@ -34,7 +54,7 @@
 		?>
 		</div>
 	</div>
-	<div class="row adult_earns_income-container hide">
+	<div class="row adult_earns_income-container <?=($default_state != 1 ? 'hide' : NULL)?>">
 		<div class="earns_income">
 			<div class="col-md-offset-1 col-md-10 well mt-20">
 				<h3><?=$this->lang->line('household_income_adult_name_suffix')?></h3>
@@ -53,62 +73,90 @@
 				</div>
 				<div class="rowItemIncome">
 				<?
-					$income_index = 0;
 					foreach($this->config->item('form_income_adult') as $form_income_item) {
+						$income_index = 0;
+						$form_income_item_stem = 'adult['.$parent_index.'][income]['.$form_income_item.']['.$income_index.']';
+						$default_array 	   = (!empty($member['income'][$form_income_item]) ? $member['income'][$form_income_item]                                                         : NULL);
+						$default_state     = (!empty($member['income'][$form_income_item][0]['status']) ? $member['income'][$form_income_item][0]['status']       : 0);
+						$default_amount    = (!empty($member['income'][$form_income_item][$income_index]['amount']) ? $member['income'][$form_income_item][$income_index]['amount']       : NULL);
+						$default_frequency = (!empty($member['income'][$form_income_item][$income_index]['frequency']) ? $member['income'][$form_income_item][$income_index]['frequency'] : NULL);
+						$default_type      = (!empty($member['income'][$form_income_item][$income_index]['type']) ? $member['income'][$form_income_item][$income_index]['type']           : NULL);
 				?>
-					<div class="rowItem-<?=$form_income_item?>">
-						<div class="rowItem" data-index="<?=$income_index?>">
-							<div class="col-sm-12"><hr class="divider" /></div>
-							<div class="row tableItems">
-								<div class="col-sm-12 col-md-12">
-									<h4 class="mt-0 mb-15">
-										<?=$this->lang->line('household_income_'.$form_income_item)['title']?>
-										<?=help_icon($this->lang->line('household_income_'.$form_income_item)['help'])?>
-									</h4>
-								</div>
-								<div class="col-sm-12 col-md-3">
-									<div class="btn-group btn-group-custom" data-toggle-target="<?=$form_income_item?>" role="group">
-										<button type="button" class="btn btn-lg btn-default" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
-										<button type="button" class="btn btn-lg btn-default btn-active" data-toggle-value="0"><?=$this->lang->line('no')?></button>
+					<div class="rowItemContainerMain rowItem-<?=$form_income_item?>">
+						<div class="rowItemContainer">
+							<div class="rowItem" data-index="<?=$income_index?>">
+								<div class="col-sm-12"><hr class="divider" /></div>
+								<div class="row tableItems">
+									<div class="col-sm-12 col-md-12">
+										<h4 class="mt-0 mb-15">
+											<?=$this->lang->line('household_income_'.$form_income_item)['title']?>
+											<?=help_icon($this->lang->line('household_income_'.$form_income_item)['help'])?>
+										</h4>
 									</div>
-									<?=form_hidden('adult['.$parent_index.'][income]['.$form_income_item.']['.$income_index.'][status]', 0)?>
-								</div>
-								<div class="<?=$form_income_item?>-container hide">
-									<div class="form-group col-sm-12 col-md-3">
-										<select name="adult[<?=$parent_index?>][income][<?=$form_income_item?>][<?=$income_index?>][type]" class="form-control input-lg" required>
-											<option selected="selected"><?=$this->lang->line('household_income_salary')?></option>
-										</select>
-										<div class="help-block with-errors"></div>
-									</div>
-									<div class="form-group col-sm-12 col-md-2">
-										<div class="input-group">
-										  <span class="input-group-addon">$</span>
-										  <input type="text" name="adult[<?=$parent_index?>][income][<?=$form_income_item?>][<?=$income_index?>][amount]" class="form-control input-lg">
+									<div class="col-sm-12 col-md-3">
+										<div class="btn-group btn-group-custom" data-container="adult_sub_income" data-type="income_details" data-toggle-target="<?=$form_income_item_stem?>[status]" role="group">
+											<button type="button" class="btn btn-lg btn-default <?=($default_state == 1 ? 'btn-active' : NULL)?>" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
+											<button type="button" class="btn btn-lg btn-default <?=($default_state == 0 ? 'btn-active' : NULL)?>" data-toggle-value="0"><?=$this->lang->line('no')?></button>
 										</div>
+										<?=form_hidden($form_income_item_stem.'[status]', $default_state)?>
 									</div>
-									<div class="form-group col-sm-12 col-md-2" style="margin-left: -30px;">
-									  <select name="adult[<?=$parent_index?>][income][<?=$form_income_item?>][<?=$income_index?>][frequency]" class="form-control input-lg">
-										<?
-											foreach($this->config->item('form_income_frequency') as $income_frequency) {
-												echo '<option value="'.$income_frequency.'" ';
-												// if ($form['data']['other_assistance']['assistance_program'] == $income_frequency) {
-												// 	echo 'selected="selected"';
-												// }
-												echo '>';
-												echo $this->lang->line($income_frequency);
-												echo '</option>';
-											}
-										?>
-									  </select>
+									<div class="adult_sub_income-container <?=($default_state != 1 ? 'hide' : NULL)?>">
+										<div class="form-group col-sm-12 col-md-3">
+											<select name="<?=$form_income_item_stem?>[type]" class="form-control input-lg" required>
+												<option selected="selected"><?=$this->lang->line('household_income_salary')?></option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div>
+										<div class="form-group col-sm-12 col-md-2">
+											<div class="input-group">
+											  <span class="input-group-addon">$</span>
+											  <input type="number" name="<?=$form_income_item_stem?>[amount]" value="<?=$default_amount?>" class="form-control input-lg">
+											</div>
+										</div>
+										<div class="form-group col-sm-12 col-md-2" style="margin-left: -30px;">
+										  <select name="<?=$form_income_item_stem?>[frequency]" class="form-control input-lg">
+											<?
+												foreach($this->config->item('form_income_frequency') as $income_frequency) {
+													echo '<option value="'.$income_frequency.'" ';
+													if ($default_frequency == $income_frequency) {
+														echo 'selected="selected"';
+													}
+													echo '>';
+													echo $this->lang->line($income_frequency);
+													echo '</option>';
+												}
+											?>
+										  </select>
+										</div>
 									</div>
 								</div>
 							</div>
+							<?
+								if (is_array($default_array) && count($default_array) > 1) {
+									$income_index++;
+									$loop = 0;
+									foreach($default_array as $default_array_item) {
+										$partial_data_income = array(
+											'parent_index'     => $parent_index,
+											'income_index'     => $income_index,
+											'form_income_item' => $form_income_item,
+											'member'           => $member,
+										);
+
+										if ($loop > 0) {
+											$this->load->view('pages/application-form/householdMembers-adult-income', $partial_data_income);
+										}
+										$income_index++;
+										$loop++;
+									}
+								}
+							?>
 						</div>
-					</div>
-					<div class="<?=$form_income_item?>-add hide">
-						<div class="col-sm-12 col-md-3 col-md-offset-3">
-							<button class="form-control input-lg"
-							data-group="adult_row" data-clone-income="<?=$form_income_item?>"><?=$this->lang->line('household_income_add_another')?></button>
+						<div class="adult_sub_income-add  <?=($default_state != 1 ? 'hide' : NULL)?>">
+							<div class="col-sm-12 col-md-3 col-md-offset-3">
+								<button class="form-control input-lg"
+								data-group="adult_row" data-clone-income="<?=$form_income_item?>"><?=$this->lang->line('household_income_add_another')?></button>
+							</div>
 						</div>
 					</div>
 					<?
