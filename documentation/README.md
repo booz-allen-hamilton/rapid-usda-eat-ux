@@ -6,7 +6,7 @@
 ## Overview (The Pitch)
 30 million children participate in the free and reduced-price school lunch program every day. However, the application process is paper based and cumbersome making it challenging for applicants to receive the benefits they need. 2014 saw 5 million __paper applications__ submitted, so clearly there's a need to make this easier to apply and efficient to process. How do we make this process easier? To ensure that everyone who is eligible can benefit, we developed a web-form that makes it easy to apply quickly and accurately. Lunchbox is a free online application that uses plain language to reduce user error, features help text to answer applicants’ questions as they go, and provides completed applications to school administrators, thanks to input validation that doesn’t allow you to submit unless you’ve accurately entered all the necessary information.
 
-### Watch More Here: [Video Link](Video Link)   or  Try It Here: [Demo Link](Demo Link) 
+#### Watch More Here: [Video Link](Video Link)   or  Try It Here: [Demo Link](Demo Link) 
 
 
 
@@ -17,6 +17,7 @@ As consultants ...
 
 ## Our Approach
 We rapidly prototyped this solution at light speed in __7 team working sessions__ over __3 weeks__.  Our _Rapid Solution Sprint_ is a very creative and iterative process in which we focus on deep empathy and understanding of end users and constantly build, test, to learn, validate, and inform the end solution as it evolves.  The major components of this process are; 1) Defining the Challenge,  2) Empathy and User Research, 3) Collaborative and Insightful Ideation 4) Testing for Validation  5) Iterative Agile Development  6) Road-mapping Towards the Future Vision.
+
 [Read More on Our Story Here](our-story.md)
 
 
