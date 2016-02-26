@@ -12,7 +12,7 @@
 			<div class="col-sm-12 col-md-6">
 				<p class="text-large">
 					<?=$this->lang->line('welcome_description_part_one')?>
-					<?=help_icon("")?>
+					<?=help_icon("Help is Here!")?>
 					<?=$this->lang->line('welcome_description_part_two')?>
 				</p>
 			</div>
