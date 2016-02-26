@@ -1,7 +1,7 @@
 <?=form_hidden('scenario');?>
 <div class="row text-center your-situation">
 	<h2><?=$this->lang->line('your_situation_title')?></h2>
-	<p class="text-large"><span class="asterisk">* </span><?=$this->lang->line('your_situation_subtitle')?></p>
+	<p class="text-large"><?=$this->lang->line('your_situation_subtitle')?></p>
 	<div class="col-sm-12 col-md-4">
 		<?=help_icon($this->lang->line('your_situation_scenario_a_help'))?>
 		<a href="#" class="circular_button" data-scenario-value="assistance">
@@ -19,7 +19,7 @@
 	<div class="col-sm-12 col-md-4">
 		<?=help_icon($this->lang->line('your_situation_scenario_b_help'))?>
 		<a href="#" class="circular_button" data-scenario-value="foster">
-			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 32%;">
+			<div style="width: 85%; margin-left: auto; margin-right: auto; position: relative; top: 22%;">
 				<?=$this->lang->line('your_situation_all_foster')?>
 			</div>
 		</a>
