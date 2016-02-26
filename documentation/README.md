@@ -8,10 +8,13 @@
 
 #### Watch More Here: [Video Link](Video Link)   or  Try It Here: [Demo Link](Demo Link) 
 
+------------------------------------------------------
 
 
-## Inspiration
-As consultants ...
+## Our Inspiration
+The opportunity to ease the pain. We were inspired by the stories of the schools and parents that interface with the application process – and shocked at the paper pushing challenges existing in the internet era. Designing for and with the user enabled us to bring our theoretical prototype into a working product that put usability – ease of learning, decrease in errors, and increase in reporting – first.
+
+Additionally, the challenge to transform digital government experience. We were inspired to change the pace at which government can bring services and products to their citizens. The hackathon approach worked well with our love for rapid prototyping and testing things fast with real users. As consultants, we get to tackle a variety of complex problems for government 
 
 
 
