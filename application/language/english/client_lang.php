@@ -94,7 +94,7 @@ $lang['other_assistance_example'] = "ex. 2363954301";
 $lang['household_students_title'] = "Which children are students?";
 $lang['household_students_subtitle'] = "Type the names of all students in your household who are applying for free or reduced-price meals. ";
 $lang['household_students_add'] = "Add Child";
-$lang['household_students_help'] = "List all people in your household who are children age 18 or under <strong>and</strong> who are supported by the household's income. List children who are in your care under a foster arrangement, or qualify as homeless, migrant, or runaway youth. Also list students attending school <em>regardless of age</em>.";
+$lang['household_students_help'] = "When filling out this section, please include all members in your household who are: (1) age 18 or under <strong>and</strong> who are supported by the household's income; or (2) In your care under a foster arrangement, or qualify as homeless, migrant, or runaway youth; or (3) attending school regardless of age.";
 
 // All Household Members
 $lang['household_members_title'] = "Who lives with you?";
@@ -160,7 +160,7 @@ $lang['household_income_child_other_income'] = array(
 
 // Contact Information
 $lang['contact_info_title'] = "Contact Information";
-$lang['contact_info_subtitle'] = "Tell us how you would like us to communicate with you.";
+$lang['contact_info_subtitle'] = "Your information helps us contact you if we have questions about your application.";
 $lang['contact_info_elements'] = array(
 	'street_address' => array(
 		'label'			=> "Street Address",
@@ -171,16 +171,16 @@ $lang['contact_info_elements'] = array(
 	),
 	'city' => array(
 		'label'       	=> "City",
-		'error'			=> "Please enter your city"
+		'error'			=> "Please enter your city."
 	),
 	'state' => array(
 		'label'       	=> "State",
 		'placeholder' 	=> "Choose State",
-		'error'			=> "Please select your state"
+		'error'			=> "Please select your state."
 	),
 	'zip' => array(
 		'label'       	=> "ZIP",
-		'error'			=> "Please enter your ZIP code"
+		'error'			=> "Type in your ZIP code."
 	),
 	'phone' => array(
 		'label'       	=> "Phone",
@@ -189,7 +189,7 @@ $lang['contact_info_elements'] = array(
 	),
 	'email' => array(
 		'label'       	=> "Email",
-		'placeholder' 	=> "example@example.com",
+		'placeholder' 	=> "example@gmail.com",
 		'error'			=> "Please enter a valid email address"
 	),
 	'contact' => array(
