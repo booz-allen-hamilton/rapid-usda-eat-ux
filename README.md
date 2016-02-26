@@ -1,31 +1,33 @@
-# rapid-usda-eat-ux
+![LunchBox](http://usda-eat-dev.elasticbeanstalk.com/assets/img/header/logo.png)
 
-Prototype url: http://usda-eat-dev.elasticbeanstalk.com/
+#### _An OpenSource Solution for Families to Apply for Free & Low-Cost School Meal Programs_
 
-## Installation Guide
+__The Challenge: Electronic Application Transformation__ – Create a model electronic application for the National School Lunch Program and help millions of American students access school meals. Learn more about the public challenge hosted by the U.S. Department of Agriculture, Food and Nutrition Service at http://lunchux.devpost.com/
 
-1. Install Composer - [https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
-2. Install MAMP (Lamp for Windows) or any Apache Server
-3. Run `php composer.phar install`
-4. Configure database and server variables
-5. Start Apache Server
+## Demo & Video Overview
+- Latest Version Running at http://usda-eat-dev.elasticbeanstalk.com/
 
-##Technical Approach
-
-We used all open source technologies and open sourced library for our LunchBox prototype. It was built using a technical stack and architecture that is easily installed and deployed across different environment. It uses popular technical frameworks and open source technology to ensure that organizations are able to integrate the solution with their existing products. The application follows a standard model-view-controller (MVC) architecture and cloud infrastructure.
-
-###MVC Architecture Pattern
-The application was designed using the standard model-view-controller architecture. The following image lists the libraries and technology within each of those areas.
+## Features
+* Feature 1
+* Feature 2
+* Feature 3
+* Feature 4
 
 
-[Architecture document]()
+## [Read the Exec Summary](documentation/README.md)
 
-Open source license:
+## [Read the Technical Overview](documentation/technical-guide.md)
 
-[https://github.com/booz-allen-hamilton/rapid-usda-eat-ux](https://github.com/booz-allen-hamilton/rapid-usda-eat-ux)
+## [Read about How We Rapidly Prototype](documentation/our-story.md)
 
-Licenses for open source technologies:
 
-* Codeigniter (PHP Framework)
-* Twitter Bootstrap
-* MySql
+
+## Contributing
+We love opportunities like these to help champion better digital services for citizens and benifit recipients! If you'd like to contribute to the project, feel free to submit a Pull Request (PR). But we ask that you post your ideas or requests in a Github issue to make sure no one else is working on it and aligns well with the project direction.
+
+
+## Contact Us
+For more info on prototyping your next digital challenge, email us at [FEDsolutions@bah.com](mailto:FEDsolutions@bah.com).
+
+
+##### [OpenSource MIT License](rapid-usda-eat-ux/LICENSE)
