@@ -43,7 +43,7 @@
 				?>
 				</select>
 			</div>
-			<div class="form-group col-sm-12 col-md-1">
+			<div class="form-group col-sm-12 col-md-2 text-center">
 				<a href="#" class="remove-item" data-remove=".rowItem"><i class="fa fa-times-circle"></i></a>
 			</div>
 		</div>
