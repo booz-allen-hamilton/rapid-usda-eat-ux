@@ -12,17 +12,15 @@
 		<p class="text-large">
 			<span class="asterisk">*</span>
 			<?=$this->lang->line('electronic_sig_subtitle')?>
-			<?=help_icon($this->lang->line('electronic_sig_subtitle_help'))?>
 		</p>
 		<div class="row">
 			<div class="form-group">
-				<div class="col-sm-12 col-md-1">
-					<label class="checkbox-inline">
-						<input type="checkbox" name="electronicSignature" data-error="<?=$this->lang->line('error_electronic_sig_agree')?>" required>
-					</label>
-				</div>
-				<div class="col-sm-12 col-md-11 text-left sig-statement">
+				<div class="col-sm-12 text-left sig-statement">
 					<p><?=$this->lang->line('electronic_sig_statement')?></p>
+					<label class="checkbox-inline mb-30 col-md-12 text-center">
+						<input type="checkbox" name="electronicSignature" data-error="<?=$this->lang->line('error_electronic_sig_agree')?>" required>
+						<span class="checkbox-label"><?=$this->lang->line('electronic_sig_accept')?></span>
+					</label>
 					<input type="text"
 						class="form-control input-lg"
 						name="electronic_signature"
@@ -38,10 +36,10 @@
 		</div>
 		<div class="form-group">
 			<div class="row mt-20">
-				<div class="col-sm-12 col-md-offset-1 col-md-11 text-left">
+				<div class="col-sm-12 text-left">
 					<h4>Last 4 digits of Social Security Number <?=help_icon($this->lang->line('electronic_sig_ssn_help'))?></h4>
 				</div>
-				<div class="col-sm-12 col-md-offset-1 col-md-4 text-left">
+				<div class="col-sm-12 col-md-4 text-left">
 					<span>XXX-XX-</span>
 					<input type="text" class="form-control input-lg ssn" data-minlength="4" name="social_security_last_four" maxlength="4" required data-error="<?=$this->lang->line('error_electronic_sig_social')?>" />
 					<div class="help-block with-errors"></div>
