@@ -5,20 +5,21 @@ We used all open source technologies and open sourced library for our LunchBox p
 
 ![Tech Architecture](images/Tech-Arch.png)
 
-
-
 ## Dependencies
-___>>>>>> Describe any dependencies that must be installed for this software to work. This includes programming languages, databases or other storage mechanisms, build tools, frameworks, and so forth. If specific versions of other software are required, or known not to work, call that out.___
-
 The application was designed on a LAMP (Linux Apache MySql PHP) stack using the standard model-view-controller architecture. The following collection lists the libraries and technology within each of those areas and their purpose within our application.
 
-- **Codeigniter:** _PHP web application framework_ - [License](https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst)
+We manage all of our dependencies through Composer. The versions are located in the `composer.json` file at the root directory. Running `php composer.phar install` will install all the dependencies needed other than the MySql database.
 
-- **Twitter Bootstrap:** _Responsive CSS Framework and front-end library_ - [License](http://getbootstrap.com/getting-started/#license-faqs)
+- **Codeigniter (v3.0.4):** _PHP web application framework_ - [License](https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst)
+	- Resource: [Documentation](https://codeigniter.com/)	
+- **Twitter Bootstrap (v3.3):** _Responsive CSS Framework and front-end library_ - [License](http://getbootstrap.com/getting-started/#license-faqs)
+	- Resource: [Documentation](http://getbootstrap.com/)
 
-- **JQuery:** - _JavaScript library for event handling_ - [License](https://jquery.org/license/)
+- **JQuery (v2.2):** - _JavaScript library for event handling_ - [License](https://jquery.org/license/)
+	- Resource: [Documentation](https://jquery.com/)
 
-- **MySql:** _Database_ - [License](http://www.mysql.com/about/legal/)
+- **MySql (v5.6.26):** _Database_ - [License](http://www.mysql.com/about/legal/)
+	- [Installation instructions](http://www.mysql.com/downloads/)
 
 #### Optional Supporting Services
 - **Google Analytics:** _User Behavior and Usage Tracking_ - [Link](https://www.google.com/analytics/)
@@ -48,22 +49,59 @@ The application is hosted on the Amazon Web Services, and the architecture has b
 
 
 ## Installation (Local)
-___>>>>>> Detailed instructions on how to install, configure, and get the project running. This should be frequently tested to ensure reliability. Alternatively, link to a separate INSTALL document.____
 
 1. [Install Composer](https://getcomposer.org/doc/00-intro.md)
-2. Install MAMP (Lamp for Windows) or any Apache Server
-3. Run `php composer.phar install`
+2. [Install MAMP](https://documentation.mamp.info/en/documentation/mamp/) (Lamp for Windows) or any Apache Server
+	3. 	Load the root directory of the application into the document root and start the server
+3. Open Terminal and navigate to the root of the repository
+3. Run `php composer.phar install` to download all the libraries needed for the application
 4. Configure database and server variables
-5. Start Apache Server
+	* Set the `base_url` in `config/config.php` to your root url
+	* Load the base MySql Database template into a local database. You can file the template database at `documentation/usda_eat_2016-02-27.sql`
+	
+	```	
+	$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => DB_HOSTNAME,
+	'username' => DB_USERNAME,
+	'password' => DB_PASSWORD,
+	'database' => DB_DATABASE,
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+		'save_queries' => TRUE
+	);
+	```
+	7. Add database configurations into `config/database.php`
+	
+	```	
+	$config['base_url'] = "usda/";
+	```
+
+5. Start Apache Server and navigate to your defined url `example http://usda/`
 
 
 
 ## Configuration
-___>>>>>> If the software is configurable, describe it in detail, either here or in other documentation to which you link.___
-
-
+Lunchbox has been designed with purpose of being configured for specifically to the look and feel of your school district's applications. Feel free to edit the colors settings in the `assets/css/app.scss` file to align with your application. 
 
 ## AWS Cloud Deployment
-___>>>>>> If the software is configurable, describe it in detail, either here or in other documentation to which you link.___
+The application has been deployed and designed for use with Amazon Web Services' Elastic Beanstalk service for easy and scalability. In the situation that you need to deploy it in a different manner, the database can be hosted along with the rest of the application on the same server if necessary. This approach can be accomplished using AWS' EC2 service.
+
+To deploy into Elastic Beanstalk, please reference the following documentation: [Configuring PHP Environments with Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_PHP.container.html)
+
+To use dedicated EC2 servers, please reference the following documentation: [Installing a Lamp Web Server on Amazon Linux](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html)
+
+*For other type of cloud or private datacenter deployments, the EC2 server documentation will be the most useful*
 
 
