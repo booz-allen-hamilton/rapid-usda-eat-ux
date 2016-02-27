@@ -27,7 +27,7 @@
 						class="form-control input-lg">
 				</div>
 			</div>
-			<div class="form-group col-sm-12 col-md-3" style="margin-left: -30px;">
+			<div class="form-group col-sm-12 col-md-3">
 				<select name="child[<?=$parent_index?>][income][<?=$form_income_item?>][<?=$income_index?>][frequency]"
 					class="form-control input-lg">
 				<?
