@@ -45,7 +45,8 @@
 				} else {
 			?>
 				<li class="<?=($global['nav'] == 'faq' ? 'active' : NULL)?>">
-					<a href="<?=base_url('faq')?>"><span class="text"><?=$this->lang->line('nav_faq')?></span></a>
+					<?/* <a href="<?=base_url('faq')?>"> */?>
+					<a href="#" data-elevio-module="5019"><span class="text"><?=$this->lang->line('nav_faq')?></span></a>
 				</li>
 			<?
 				}
