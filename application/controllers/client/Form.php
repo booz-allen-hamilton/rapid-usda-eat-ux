@@ -322,7 +322,7 @@ class Form extends Client_controller {
 				$this->form_validation->set_rules('child_middle[]', '', 'max_length[5]');
 			break;
 			case "contactInformation":
-				$this->form_validation->set_rules('street_address', '', 'required');
+				// $this->form_validation->set_rules('street_address', '', 'required');
 				// $this->form_validation->set_rules('apt', '', '');
 				$this->form_validation->set_rules('city', '', 'required');
 				$this->form_validation->set_rules('state', '', 'required');
