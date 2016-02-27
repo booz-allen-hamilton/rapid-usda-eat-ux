@@ -4,7 +4,6 @@
 		<p class="text-large">
 			<span class="asterisk">*</span>
 			<?=$this->lang->line('terms_and_cond_subtitle')?>
-			<?=help_icon($this->lang->line('terms_and_cond_help'))?>
 		</p>
 	</div>
 	<div class="col-sm-12">
