@@ -62,7 +62,7 @@ $lang['getting_started_elements'] = array(
 		'error'				=> "Please enter your last name."
 	),
 	'middle_initial' => array(
-		'label'       => "Middle Initial",
+		'label'       => "MI",
 		'placeholder' => "ex:C",
 		'error'				=> "Please enter your middle initial."
 	),
