@@ -3,7 +3,6 @@
 		<h2 class="mb25"><?=$this->lang->line('contact_info_title')?></h2>
 		<p class="text-large">
 			<?=$this->lang->line('contact_info_subtitle')?>
-			<?=help_icon($this->lang->line('contact_info_help'))?>
 		</p>
 	</div>
 </div>
