@@ -205,7 +205,13 @@ With a functional prototype, we were excited to learn how people like Ronaldo an
 
 ![Usability Test Plan](images/Test-Usability-Plan.png)
 
-:
+We also did a few in-person moderated tests. We learned about communication preferences and gained some insight about how people look for information. Here are some quotes:
+
+**"I'd prefer if you text me because I don't have a computer."**
+**"If there is information I need to know, you don't want to hide it (behind a menu)."**
+
+In one test, Lucinda, a 43 year-old single mother of two, filled out the adult income and clicked, "save." She wanted to go back to make edits and was confused about how to go back to our modal box. She asked out loud, "How do I get back to income?" The design team changed some language on the form to make the functionality more clear. 
+
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
