@@ -75,7 +75,7 @@
 		</div>
 		<div class="col-sm-12 col-md-1 text-right">
 			<div class="col-sm-12 col-md-2 text-right">
-				<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
+				<a href="#" class="remove-item" data-remove=".main-row-container"><i class="fa fa-times-circle"></i></a>
 			</div>
 		</div>
 	</div>
