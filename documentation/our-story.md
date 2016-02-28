@@ -106,7 +106,7 @@ Our small groups presented each of their concepts to the larger team and continu
 # Mapping out Our Solution
 ![Section Make](images/Step-Make-H.png)
 
-![Alexis Maps](images/Flow-1b.jpg)
+![Alexis Maps](images/Flow-Alexis.png)
 ![Whiteboard Flow](images/Flow-1.jpg)
 
 Having gained an understanding of both Ronaldo, the head of household user, and Phyllis, the school administrator user, we brainstormed ideas big and small to meet our users’ needs and prioritized them to guide our design approach. We mapped several different screen flows and chose what we thought was the best one. At this point, we focused mostly on the users and technical feasibility,but what about USDA? We created a requirements matrix to ensure we were meeting USDA’s challenge parameters. 
