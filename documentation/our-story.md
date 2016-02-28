@@ -188,12 +188,9 @@ As a team, we went through each screen to make edits in lanauge and check agains
 # DevOps to Drive Learning
 ![Section Make](images/Step-Make-H.png)
 
-Using the InVision application, we defined the interactions and behavior prompts for our development team. While the team was building, we set up our test on usertesting.com to test five people with low computer literacy in an unmoderated usability test. 
+DevOps is the process that enables us to build, test, and learn. We shortened our learning cycle to minutes rather than a more traditional monthly release schedule. We used Amazon Web Services, Elastic Beanstalk, AWS CodePipeline, GitHub, and Trello to enable this rapid learning and team communication. 
 
-![Tech Arch](images/Tech-Arch.png)
-![Tech Cloud](images/Tech-Cloud.png)
-
-FIXME FIXME FIXME FIXME
+![DevOps](images/DevOps-Logos.png)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
@@ -201,16 +198,18 @@ FIXME FIXME FIXME FIXME
 # Usability Testing
 ![Section Check](images/Step-Check-H.png)
 
-With a functional prototype, we were excited to learn how people like Ronaldo and Phyllis interact with our form. We created a research plan for in-person interviews. Due to time constraints, we chose to leverage an online platform, UserTesting.com, to conduct a remote unmoderated test. We created a screener targeting a population that had low-computer literacy in order to test whether the interface was easy to use. We used the Lean Research plan template to prioritize what we wanted to learn and what we wanted to ask. Here is the test scenario we created:
+With a functional prototype, we were excited to learn how people like Ronaldo and Phyllis interact with our form. We created a research plan for interviews. Due to time constraints, we chose to leverage an online platform, UserTesting.com, to conduct a remote unmoderated test. We created a screener targeting a population that had low-computer literacy in order to test whether the interface was easy to use. We used the Lean Research plan template to prioritize what we wanted to learn and what we wanted to ask. Here is the test scenario we created:
 
 ![Usability Test Plan](images/Test-Usability-Plan.png)
 
-We also did a few in-person moderated tests. We learned about communication preferences and gained some insight about how people look for information. Here are some quotes:
+We conducted a few in-person moderated tests. We learned about communication preferences and gained some insight about how people look for information. Here are some quotes:
 
 **"I'd prefer if you text me because I don't have a computer."**
 **"If there is information I need to know, you don't want to hide it (behind a menu)."**
 
-In one test, Lucinda, a 43 year-old single mother of two, filled out the adult income and clicked, "save." She wanted to go back to make edits and was confused about how to go back to our modal box. She asked out loud, "How do I get back to income?" The design team changed some language on the form to make the functionality more clear. 
+In one test, Lucinda, a 43 year-old single mother of two, filled out the adult income and clicked, "save." She wanted to go back to make edits and was confused about how to go back to our modal box. She asked out loud, "How do I get back to income?" The design team changed some language on the form to make the functionality more clear. Here is the questionnaire that she filled out after her test:
+
+To learn a little more, we set up a test on **usertesting.com** to test five people with low computer literacy in an unmoderated usability test. 
 
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
