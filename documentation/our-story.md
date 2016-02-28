@@ -23,7 +23,7 @@
 
 Our work was completed in seven working sessions over three weeks. When you’re moving as quickly as we did, it’s important to bring a diverse team together to quickly build trust and create common ground. To do so, we held a **project kickoff** as our first iteration of the application. Our team of product managers, technologists, consultants, user experience experts, designers, storytellers, and researchers came together for an intense day of collaboration, ideas, and emotions.
 
-We used a human-centered design approach focused on learning fast through rapid prototyping. Our iterative process can be divided into four phases: __LEARN, IDEATE, MAKE, and CHECK__.
+We worked closely throughout the project, using a human-centered design approach focused on **identifying user needs as a starting point to product development.** Our iterative process involved rapid prototyping and can be divided into four phases: __LEARN, IDEATE, MAKE, and CHECK__.
 
 ![Section](images/Steps.png)
 
