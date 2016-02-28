@@ -27,6 +27,8 @@ We used a human-centered design approach focused on learning fast through rapid 
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Section Learn](images/Step-Learn-H.png)
+
 # Defining the Challenge
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -45,6 +47,7 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Section Learn](images/Step-Learn-H.png)
 
 # Building Empathy
 
@@ -58,6 +61,8 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+![Section Ideate](images/Step-Ideate-H.png)
+
 # Generating Ideas from Insights
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -69,6 +74,7 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Section Make](images/Step-Make-H.png)
 
 # Mapping out Our Solution
 
@@ -81,6 +87,7 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Section Make](images/Step-Make-H.png)
 
 # First Round of Wireframes
 
@@ -93,6 +100,7 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Section Check](images/Step-Check-H.png)
 
 # Validating Ideas with Users
 
@@ -105,6 +113,7 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Section Make](images/Step-Make-H.png)
 
 # Iteration 2 Mockups
 
@@ -117,6 +126,7 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Section Ideate](images/Step-Ideate-H.png)
 
 # Minimum Viable Prototype
 
@@ -129,6 +139,7 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Section Make](images/Step-Make-H.png)
 
 # DevOps to Drive Learning
 
@@ -141,6 +152,7 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Section Check](images/Step-Check-H.png)
 
 # Usability Testing
 
@@ -157,7 +169,10 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
+![Section Learn](images/Step-Learn-H.png)
+![Section Learn](images/Step-Ideate-H.png)
+![Section Learn](images/Step-Make-H.png)
+![Section Learn](images/Step-Check-H.png)
 
 
 
