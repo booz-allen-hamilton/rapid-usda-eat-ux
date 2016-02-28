@@ -96,7 +96,7 @@ Based on our research, we built a refined persona for each user group around whi
 **Why are people misreporting? How can we encourage accurate reporting?**
 We set up our brainstorming session so that we could break away from groupthink. We divided into three teams and brainstormed, using our Challenge Brief and Personas to inspires ideas. Our ideation session had both technical input from our development team, design input from our designers, client input from a subject matter expert who had worked with USDA, as well as product and user input. 
 
-![Group sketching](images/sketching.png)
+![Group sketching](images/Sketching.png)
 Our small groups presented each of their concepts to the larger team and continued our brainstorm by externalizing ideas on the wall using sticky notes. After discussing the benefits and drawbacks of different approaches, we decided to make two versions of the website design: a Wizard and a Single Scroll.
 ![Brainstorm](images/brainstorm.jpg)
 
