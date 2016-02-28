@@ -174,10 +174,13 @@ In rapid prototyping, nothing you make is perfect, but everything you make is an
 
 ![Question Hover](images/UI-Question-Hover.png)
 
-Below is an example of that language evolution that focused on behavioral prompts. In constructing our words, we considered digital literacy and how we might reduce the stigma of filling out the form. By giving examples in the instructional text we get rid of the social bias that families are always related. We hope that this will decrease the number of reporting errors due to household size. 
+Below is an example of that language evolution that focused on behavioral prompts. In constructing our words, we considered different levesl of digital literacy and how we might reduce the stigma of filling out the form. By giving examples in the instructional text we get rid of the social bias that families are always related. We hope that this will decrease the number of reporting errors due to household size. 
 
 ![Language Form](images/z-Lang-1.png)
 
+As a team, we went through each screen to make edits in lanauge and check against requirements one more time. 
+
+![Language Form](images/Team-1.jpg)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
@@ -185,12 +188,11 @@ Below is an example of that language evolution that focused on behavioral prompt
 # DevOps to Drive Learning
 ![Section Make](images/Step-Make-H.png)
 
+Using the InVision application, we defined the interactions and behavior prompts for our development team. While the team was building, we set up our test on usertesting.com to test five people with low computer literacy in an unmoderated usability test. 
 
-FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-
-Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
-
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+![Tech Arch](images/Test-Arch.png)
+![Tech Cloud](images/Test-Cloud.png)
+FIXMECoFIXME FIXME FIXME
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
@@ -198,12 +200,11 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 # Usability Testing
 ![Section Check](images/Step-Check-H.png)
 
+With a functional prototype, we were excited to learn how people like Ronaldo and Phyllis interact with our form. We created a research plan for in-person interviews. Due to time constraints, we chose to leverage an online platform, UserTesting.com, to conduct a remote unmoderated test. We created a screener targeting a population that had low-computer literacy in order to test whether the interface was easy to use. We used the Lean Research plan template to prioritize what we wanted to learn and what we wanted to ask. Here is the test scenario we created:
 
-FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+![Usability Test Plan](images/Test-Usability-Plan.png)
 
-Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
-
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+:
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
