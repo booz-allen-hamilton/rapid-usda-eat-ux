@@ -47,3 +47,25 @@ if ( ! function_exists('lang_key'))
 		return $language_line;
 	}
 }
+
+if ( ! function_exists('annualize_income'))
+{
+	function annualize_income($key, $value)
+	{
+		switch($key) {
+			case "weekly":
+				$value = $value * 52;
+			break;
+			case "twice_a_week":
+				$value = $value * 26;
+			break;
+			case "monthly":
+				$value = $value * 12;
+			break;
+			case "twice_a_month":
+				$value = $value * 24;
+			break;
+		}
+		return $value;
+	}
+}

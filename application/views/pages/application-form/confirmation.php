@@ -77,6 +77,7 @@
 	<div class="col-sm-12 col-md-4">
 		<h3><?=$this->lang->line('confirmation_household_income')?></h3>
 		<?
+			$total = 0;
 			if (count($form_household_members) + count($form_household_students) > 0) {
 				foreach($form_household_members as $member) {
 					echo '<p class="text-large"><strong>'.$member['first_name'].' '.$member['middle_initial'].' '.$member['last_name'].'</strong></p>';
@@ -86,6 +87,7 @@
 								echo '<p><span style="font-size: 18px; font-weight: bold; color: #666;">'.$this->lang->line('household_income_'.$income_key)['title'].'</span><br /><span style="font-size: 14px;">';
 								foreach($income_data as $income_data_item) {
 									if (!empty($income_data_item['amount'])) {
+										$total += annualize_income($income_data_item['frequency'], $income_data_item['amount']);
 										echo $this->lang->line($income_key.'_list_'.$income_data_item['type']).': ';
 										echo '$'.number_format($income_data_item['amount'], 2);
 										echo ' ';
@@ -107,6 +109,7 @@
 								echo '<p><span style="font-size: 18px; font-weight: bold; color: #666;">'.$this->lang->line('household_income_'.$income_key)['title'].'</span><br /><span style="font-size: 14px;">';
 								foreach($income_data as $income_data_item) {
 									if (!empty($income_data_item['amount'])) {
+										$total += annualize_income($income_data_item['frequency'], $income_data_item['amount']);
 										echo $this->lang->line($income_key.'_list_'.$income_data_item['type']).': ';
 										echo '$'.number_format($income_data_item['amount'], 2);
 										echo ' ';
@@ -120,6 +123,8 @@
 						}
 					}
 				}
+				echo '<hr />';
+				echo '<p class="text-large" style="font-size: 16px; font-weight:bold;">'.$this->lang->line('total_annualized_income').': $'.number_format($total, 2).'</p>';
 			} else {
 				echo '<p class="text-large">'.$this->lang->line('confirmation_not_required').'</p>';
 			}

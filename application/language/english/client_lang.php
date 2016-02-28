@@ -330,3 +330,4 @@ $lang['child_spending_other_income_list_1'] = 'Regular spending money';
 $lang['child_other_income_list_1'] = 'Private pension fund';
 $lang['child_other_income_list-2'] = 'Annuity';
 $lang['child_other_income_list_3'] = 'Trust';
+$lang['total_annualized_income'] = 'Total Annualized Income';
