@@ -88,13 +88,12 @@ $config['language_list'] = array(
 |
 */
 $config['form_assistance_programs'] = array(
-	'snap' => 'SNAP',
-	'tanf' => 'TANF',
-	'fdpir' => 'FDPIR'
+	'snap' => 'Supplemental Nutrition Assistance Program (SNAP)',
+	'tanf' => 'Temporary Assistance for Needy Families (TANF)',
+	'fdpir' => 'Food Distribution Program on Indian Reservations (FDPIR)'
 );
 
 $config['form_contact_methods'] = array(
-	'contact_info_text',
 	'contact_info_email',
 	'contact_info_phone'
 );

@@ -3,11 +3,7 @@
 <div class="row text-center">
 	<div class="col-sm-12">
 		<h2><?=$this->lang->line('household_members_title')?></h2>
-		<p><?=$this->lang->line('household_members_subtitle')?>
-			<a href="#" data-toggle="modal" data-target="#householdMembersClarification">
-				<span class="glyphicon glyphicon-info-sign"></span>
-			</a>
-		</p>
+		<p><?=$this->lang->line('household_members_subtitle')?></p>
 	</div>
 	<h2 style="margin-bottom: 0px;"><?=$this->lang->line('household_members_adults')?></h2>
 	<div class="grey_text"><?=$this->lang->line('household_members_over_eighteen')?></div>

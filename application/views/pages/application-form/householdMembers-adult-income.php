@@ -39,7 +39,7 @@
 						class="form-control input-lg">
 				</div>
 			</div>
-			<div class="form-group col-sm-12 col-md-2" style="margin-left: -30px;">
+			<div class="form-group col-sm-12 col-md-3">
 				<select name="adult[<?=$parent_index?>][income][<?=$form_income_item?>][<?=$income_index?>][frequency]"
 					class="form-control input-lg">
 				<?
@@ -55,7 +55,7 @@
 				?>
 				</select>
 			</div>
-			<div class="form-group col-sm-12 col-md-2">
+			<div class="form-group col-sm-12 col-md-2 text-center">
 				<a href="#" class="remove-item" data-remove=".rowItem"><i class="fa fa-times-circle"></i></a>
 			</div>
 		</div>

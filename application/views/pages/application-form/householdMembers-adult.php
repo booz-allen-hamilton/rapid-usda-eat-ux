@@ -125,7 +125,7 @@
 											  <input type="number" name="<?=$form_income_item_stem?>[amount]" value="<?=$default_amount?>" class="form-control input-lg">
 											</div>
 										</div>
-										<div class="form-group col-sm-12 col-md-2" style="margin-left: -30px;">
+										<div class="form-group col-sm-12 col-md-3">
 										  <select name="<?=$form_income_item_stem?>[frequency]" class="form-control input-lg">
 											<?
 												foreach($this->config->item('form_income_frequency') as $income_frequency) {

@@ -11,7 +11,6 @@
 		<p class="text-large">
 			<span class="asterisk">*</span>
 			<?=$this->lang->line('confirmation_subtitle')?>
-			<?=help_icon($this->lang->line('confirmation_subtitle_help'))?>
 		</p>
 	</div>
 </div>
