@@ -1,7 +1,7 @@
 # Our Whole Story
 — "How to Rapidly Prototype a Modern Digital Solution in __7 Working-sesions__ Over __3 Weeks__"
 
-[BACK HOME](../README.md)
+###### [ [BACK HOME](../README.md) ]
 
 ---------------------------------------------------------------------------
 
@@ -42,7 +42,7 @@ ___I am a `target user` who needs `insert needs` so that I can `emotional benefi
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -54,7 +54,7 @@ Efficiently unleash cross-media information without cross-media value. Quickly m
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -66,7 +66,7 @@ Efficiently unleash cross-media information without cross-media value. Quickly m
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -78,7 +78,7 @@ Efficiently unleash cross-media information without cross-media value. Quickly m
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -90,7 +90,7 @@ Efficiently unleash cross-media information without cross-media value. Quickly m
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -102,7 +102,7 @@ Efficiently unleash cross-media information without cross-media value. Quickly m
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -114,7 +114,7 @@ Efficiently unleash cross-media information without cross-media value. Quickly m
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -126,7 +126,7 @@ Efficiently unleash cross-media information without cross-media value. Quickly m
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -138,7 +138,7 @@ Efficiently unleash cross-media information without cross-media value. Quickly m
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -150,7 +150,7 @@ Efficiently unleash cross-media information without cross-media value. Quickly m
 
 Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 
 
