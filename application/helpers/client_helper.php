@@ -57,7 +57,7 @@ if ( ! function_exists('annualize_income'))
 				$value = $value * 52;
 			break;
 			case "twice_a_week":
-				$value = $value * 26;
+				$value = $value * 104;
 			break;
 			case "monthly":
 				$value = $value * 12;
