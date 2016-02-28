@@ -2,6 +2,7 @@
 — "How to Rapidly Prototype a Modern Digital Solution in __7 Working-sesions__ Over __3 Weeks__"
 
 ---------------------------------------------------------------------------
+
 ### *TABLE OF CONTENTS*
 1.	__LEARN__: [Defining the Challenge](#defining-the-challenge)
 2.	__LEARN__: [Building Empathy](#building-empathy)
@@ -13,6 +14,7 @@
 8.	__IDEATE + MAKE__: [Minimum Viable Prototype](#minimum-viable-prototype) 
 9.	__MAKE__: [DevOps to Drive Learning](#devops-to-drive-learning)
 10.	__CHECK__: [Usability Testing](#usability-testing)
+
 ---------------------------------------------------------------------------
 
 ### Human-Centered Design + Rapid Prototyping = Solutions for Humans
