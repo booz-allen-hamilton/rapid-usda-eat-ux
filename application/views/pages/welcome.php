@@ -34,6 +34,7 @@
 					<a href="<?=base_url('apply')?>" class="button button-lg button-orange">
 						<?=$this->lang->line('welcome_btn')?><i class="icon-right fa fa-angle-right"></i>
 					</a>
+					<span style="font-size:28px; padding-left:5px; padding-right:5px; color:#ABADB0;">OR</span><a href="mailto:?subject=Apply for free and reduced lunch&body=Hello,%0D%0A  %0D%0A Did you know that you can apply for free and reduced price school meals online. Click the link to go to the application and learn more.%0D%0A  %0D%0A http://usda-eat.us-east-1.elasticbeanstalk.com/"><span class="glyphicon glyphicon-envelope" style="font-size:24px; color:#038bce; padding-left:10px; padding-right:5px;"></span><span style="font-size:28px; color: #038bce;  text-decoration: none;">Share</span></a>
 				</div>
 			</div>
 		</div>
