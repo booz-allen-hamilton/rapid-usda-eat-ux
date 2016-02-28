@@ -137,6 +137,14 @@ $config['form_income_child'] = array(
 	'child_other_income',
 );
 
+$config['income_list_adult_earnings_from_work']    = 5;
+$config['income_list_adult_public_asst']           = 7;
+$config['income_list_adult_other_income']          = 7;
+$config['income_list_child_earnings_from_work']    = 1;
+$config['income_list_child_ssn_benefits']          = 2;
+$config['income_list_child_spending_other_income'] = 1;
+$config['income_list_child_other_income']          = 3;
+
 $config['form_states'] = array(
 	"AL" => 'Alabama',
 	"AK" => 'Alaska',
