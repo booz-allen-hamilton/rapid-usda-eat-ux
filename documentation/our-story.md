@@ -32,14 +32,12 @@ We worked closely throughout the project, using a human-centered design approach
 ![Section Learn](images/Step-Learn-H.png)
 
 
-FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-
-We kicked off the day by establishing ground rules and going over the requirements of the competition. With our goals in mind, we brainstormed target audiences and what would provide value to said audience in what we call a Visioning Session. The session was designed like a mad lib:
+We kicked off the project by establishing ground rules and going over the requirements of the competition. Once goals were defined, we brainstormed about target audiences and what would provide value in a Visioning Session, which was designed like a Mad Lib:
 
 ___I am a `target user` who needs `insert needs` so that I can `emotional benefit.` This form is different because `key differentiator.`___
 
 
-![Section Image](http://placehold.it/1000x50)
+![Section Image](images/Postits-windows.png)
 
 ![Title of Image](https://placeimg.com/1000/500/tech/grayscale)
 
