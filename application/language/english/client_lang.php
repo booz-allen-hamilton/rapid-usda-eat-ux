@@ -25,7 +25,7 @@ $lang['nav_help'] = "Questions and Answers";
 
 // Weclome
 $lang['welcome_page_title'] = "Apply for Free and Reduced Price School Meals";
-$lang['welcome_title'] = "Apply for Free and Reduced Price School Meals";
+$lang['welcome_title'] = "Apply for Free and Reduced Price Meals";
 $lang['welcome_description_part_one'] = "Welcome to the (INSERT SCHOOL DISTRICT)'s application for free and reduced price school meals! On this site, you will be asked a series of questions that will provide your district with the information they need to certify your children for school meals. <br /><br /> If at any point you have questions about the form, eligibility, or what information to include, you can click the";
 $lang['welcome_description_part_two'] = " next to the question. You only need to fill out one application per household.";
 $lang['welcome_required'] = "Am I eligible?";
@@ -35,7 +35,7 @@ $lang['welcome_required_items'] = array(
 		'help' => 'Is your household’s gross income within the free or reduced price limits on the Federal Income Eligibility Guidelines? Gross income is the total income received before taxes or deductions.'
 	),
 	array(
-		'text' => 'Consider your current government benefits',
+		'text' => 'Consider your current benefits',
 		'help' => 'Children in households receiving benefits from SNAP or TANF or the Food Distribution Program on Indian Reservation can get free meals regardless of your income.'
 	),
 	array(
