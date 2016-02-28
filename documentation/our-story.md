@@ -106,8 +106,8 @@ Our small groups presented each of their concepts to the larger team and continu
 # Mapping out Our Solution
 ![Section Make](images/Step-Make-H.png)
 
-![Alexis Maps](images/Flow-1b.png)
-![Whiteboard Flow](images/Flow-1.png)
+![Alexis Maps](images/Flow-1b.jpg)
+![Whiteboard Flow](images/Flow-1.jpg)
 
 Having gained an understanding of both Ronaldo, the head of household user, and Phyllis, the school administrator user, we brainstormed ideas big and small to meet our users’ needs and prioritized them to guide our design approach. We mapped several different screen flows and chose what we thought was the best one. At this point, we focused mostly on the users and technical feasibility,but what about USDA? We created a requirements matrix to ensure we were meeting USDA’s challenge parameters. 
 
@@ -119,8 +119,8 @@ Having gained an understanding of both Ronaldo, the head of household user, and 
 
 Once the application flow was established, the design team created two prototypes, using the same flow and content—a single scroll form and a Wizard form. Our philosophy is to test concepts early and often. In order to test which format would be the most easy to use, we set up an A/B test with 20 respondents for our first point of validation. This helped us determine which design approach was the most effective, and reduce the risk of creating something that is difficult to use. 
 
-![Alexis Maps](images/Test-AB-Single.png)
-![Whiteboard Flow](images/Test-AB-Wizard.png)
+![Single Scroll](images/Test-AB-Single.png)
+![Wizard Form](images/Test-AB-Wizard.png)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
