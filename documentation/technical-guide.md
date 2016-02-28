@@ -105,7 +105,20 @@ Lunchbox has been designed with purpose of being configured for specifically to 
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
+## Exporting Data
+To capture the data collected through the application. Run the following sql query to capture all the relevant data across the application, household_members, and household_student tables.
 
+An example of the output from the query can be found at the following link: [Example Export](applications_export_example.csv)
+
+```
+SELECT *
+FROM applications
+INNER JOIN household_members
+ON applications.id=household_members.application_id
+INNER JOIN household_students
+ON applications.id=household_students.application_id;
+```
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ## AWS Cloud Deployment
 The application has been deployed and designed for use with Amazon Web Services' Elastic Beanstalk service for easy and scalability. In the situation that you need to deploy it in a different manner, the database can be hosted along with the rest of the application on the same server if necessary. This approach can be accomplished using AWS' EC2 service.
