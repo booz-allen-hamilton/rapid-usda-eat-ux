@@ -56,13 +56,13 @@ One of the biggest challenges we faced was around understanding the complexity o
 
 
 
-## Accomplishments That We're Proud Of
-As a team spread across a fairly large geographical region, with multiple client commitments competing for our time, we were proud to be able to go from exploring the challenge parameters to high fidelity mockups in a number of hours over 2.5 days. We credit our human-centered design and rapid prototyping approach for this thoughtful and quick progress.
+## What We're Proud Of
+In less than a month, balancing the challenges of a distributed team, our “day jobs” and client commitments, our team has been to create a solution that can impact millions of families across the U.S and the school systems that support them. We were proud to be able to go from exploring the challenge at a high level to having a deep understanding of the people that use the programs.  Even in this very rapid and time limited cycle we were able to hold interviews and user testing that guided our design – demonstrating our commitment to truly understanding the problem and how it can be solved. At the onset of this challenge, we knew that having a laser focus on users’ needs was key in building an impactful solution.
+
 
 ![Learn Ideate Make Check](images/ExecSummary-Iteration.png)
 
-Additionally, we found it incredibly rewarding to receive and utilize feedback from our target users in the evolution of our application. At the outset of this challenge we realized that we were tackling an important issue and our laser focus on users made building a solution we are truly proud of possible.
-
+None of this would be possible without our rapid prototyping process. Ideas and insights that were rough sketches went to high-fidelity mockups literally overnight. The greater number of iterations allowed us to have a deeper understanding and truly drive learning. 
 
 
 
@@ -81,7 +81,13 @@ We were shocked, however, that the current digitization effort is extremely expe
 
 
 ## What's Next
-As a team, are focused on solidifying our learning from this challenge to build out our digital strategy, rapid prototyping and development capability so that we are able to quickly and effectively provide technology solutions to the government industry's most complex user-facing challenges.
+
+We look forward to the opportunity to meet with USDA stakeholders to explore strategies to fully implement this solution.  With our partnership and deep embedded experience, we believe we are uniquely positioned to help execute this at a national level. This was a great opportunity to also demonstrate our ability to quickly build a digital solution that drives increased engagement, higher satisfaction with end recipients, and significant savings in both time and infrastructure costs. 
+
+We also know that there are other digital service solutions this approach can tackle and we look forward to working with the USDA to identify those next challenges that have the opportunity to make gigantic impact. 
+
+As a team, we will be focused on spreading the word by highlighting this challenge as an example of how government can engage with the public to capture a broader spectrum of solutions and build the next generation of digital services by the people, for the people.
+
 
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
