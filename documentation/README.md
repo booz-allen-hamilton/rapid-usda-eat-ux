@@ -66,18 +66,6 @@ Additionally, we found it incredibly rewarding to receive and utilize feedback f
 
 
 
-## What We Learned
-Throughout the hackathon, we learned quite a bit about both the program and the application itself. For example, in our interviews, we weren’t surprised to hear that school administrators preferred online applications to paper versions, both in terms of accuracy and collection ease.
-
-For example, here are some quotes from school administrators we spoke to:
-
-* _"Online runs smoother because [the application] does not allow parents to proceed without filling out all application [fields]."_ - Cathy (Austin School District)
-
-* _“Online is definitely better... The paper ones, we scan them also. [However,] they do the wrong ink color or they leave out information. They don’t sign it or leave off a kid.”_ – Theresa (Tustin Unified School District)
-
-We were shocked, however, that the current digitization effort is extremely expensive, complex and disparate; often schools in the same state use multiple vendors across different school districts. We addressed this issue by creating a consistent, yet flexible and customizable, platform for our solution. In terms of the application itself, we initially assumed that misreporting information attributed to lack of understanding could be rectified by ensuring the application was translated into languages other than English; however, the true issue was not multilingual availability, but complex wording across all languages, including English. Even as a group of native English speakers, we were confused by some of the terminology. This is one reason we prioritized plain language usage in our solution.
-
-
 
 ## What We Learned
 
