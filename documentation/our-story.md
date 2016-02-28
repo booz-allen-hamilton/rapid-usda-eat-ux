@@ -176,6 +176,8 @@ In rapid prototyping, nothing you make is perfect, but everything you make is an
 
 Below is an example of that language evolution that focused on behavioral prompts. In constructing our words, we considered digital literacy and how we might reduce the stigma of filling out the form. By giving examples in the instructional text we get rid of the social bias that families are always related. We hope that this will decrease the number of reporting errors due to household size. 
 
+![Language Form](images/z-Lang-1.png)
+
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
