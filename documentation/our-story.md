@@ -119,8 +119,8 @@ Having gained an understanding of both Ronaldo, the head of household user, and 
 
 Once the application flow was established, the design team created two prototypes, using the same flow and content—a single scroll form and a Wizard form. Our philosophy is to test concepts early and often. In order to test which format would be the most easy to use, we set up an A/B test with 20 respondents for our first point of validation. This helped us determine which design approach was the most effective, and reduce the risk of creating something that is difficult to use. 
 
-![Single Scroll](images/Test-AB-Single.png)
-![Wizard Form](images/UI-Wizard-Form.png)
+![Single Scroll](images/UI-Single-Scroll.png)
+![Wizard Form](images/Test-AB-Wizard.png)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
