@@ -41,7 +41,7 @@ ___I am a `target user` who needs `insert needs` so that I can `emotional benefi
 
 The Visioning Session resulted in two project charters and a challenge brief that defined our area for experimentation around user needs. Our two target audiences were school administrators and parents.  
 
-![Admin Vision Statement](images/UX-Vision-Admin.jpg)
+![Admin Vision Statement](images/Vision-Statements.png)
 
 Below is an image of the Challenge Brief that we created to align on our scope, constraints, target users, and expected outcomes. The Challenge brief can change as we learn more from our prototypes. 
 
@@ -63,8 +63,8 @@ Armed with our hypotheses and existing knowledge, we created a journey map for t
 
 Next, we created the first draft of our personas, or characterizations that represent end users. We split into two teams and sketched personas, which enabled us to generate ideas that would meet the needs of the users. We created Run-down Ronaldo, a single dad who is trying to raise a family on little income, and Frazzled Phyllis, a school administrator that is over-worked and short on time. Establishing personas at this phase of the project ensures that we are creating a solution for our end-users. 
 
-![Ronaldo Sketch](images/UX-Persona-Parent-Sketch.jpg)
-![Ronaldo Sketch](images/UX-Persona-Admin-Sketch.jpg)
+![Ronaldo Sketch](images/UX-Persona-Parent-Sketch.png)
+![Admin sketch](images/UX-Persona-Admin-Sketch.png)
 
 Most of the population that we were designing for were using mobile devices to access the internet. We used Bootstrap to develop our solution because it provided a robust grid system and pre-styled HTML elements that enabled us to quickly and effectively make a website that is responsive to multiple devices. 
 
@@ -75,12 +75,12 @@ Most of the population that we were designing for were using mobile devices to a
 # Generating Ideas from Insights
 ![Section Ideate](images/Step-Ideate-H.png)
 
+**Why are people misreporting? How can we encourage accurate reporting?**
+We set up our brainstorming session so that we could break away from groupthink. We divided into three teams and brainstormed, using our Challenge Brief and Personas to inspires ideas. Our ideation session had both technical input from our development team, design input from our designers, client input from a subject matter expert who had worked with USDA, as well as product and user input. 
 
-FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-
-Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
-
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+![Brainstorm](images/sketching.png)
+Our small groups presented each of their concepts to the larger team and continued our brainstorm by externalizing ideas on the wall using sticky notes. After discussing the benefits and drawbacks of different approaches, we decided to make two versions of the website design: a Wizard and a Single Scroll.
+![Brainstorm](images/brainstorm.jpg)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
