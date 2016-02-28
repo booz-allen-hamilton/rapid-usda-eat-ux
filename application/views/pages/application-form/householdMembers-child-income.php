@@ -15,6 +15,18 @@
 					value="<?=$default_type?>"
 					required>
 					<option selected="selected"><?=$this->lang->line('household_income_salary')?></option>
+					<?
+						$income_item_total = $this->config->item('income_list_'.$form_income_item);
+						for($i = 1; $i <= $income_item_total; $i++) {
+							echo '<option value="'.$i.'" ';
+							if ($default_type == $i) {
+								echo 'selected="selected"';
+							}
+							echo '>';
+							echo $this->lang->line($form_income_item.'_list_'.$i);
+							echo '</option>';
+						}
+					?>
 				</select>
 				<div class="help-block with-errors"></div>
 			</div>

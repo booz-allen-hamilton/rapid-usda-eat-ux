@@ -75,7 +75,7 @@
 		</div>
 		<div class="col-sm-12 col-md-1 text-right">
 			<div class="col-sm-12 col-md-2 text-right">
-				<a href="#" class="remove-item"><i class="fa fa-times-circle"></i></a>
+				<a href="#" class="remove-item" data-remove=".main-row-container"><i class="fa fa-times-circle"></i></a>
 			</div>
 		</div>
 	</div>
@@ -129,6 +129,18 @@
 										<div class="form-group col-sm-12 col-md-3">
 											<select name="<?=$form_income_item_stem?>[type]" class="form-control input-lg" required>
 												<option selected="selected"><?=$this->lang->line('household_income_salary')?></option>
+												<?
+													$income_item_total = $this->config->item('income_list_'.$form_income_item);
+													for($i = 1; $i <= $income_item_total; $i++) {
+														echo '<option value="'.$i.'" ';
+														if ($default_type == $i) {
+															echo 'selected="selected"';
+														}
+														echo '>';
+														echo $this->lang->line($form_income_item.'_list_'.$i);
+														echo '</option>';
+													}
+												?>
 											</select>
 											<div class="help-block with-errors"></div>
 										</div>
