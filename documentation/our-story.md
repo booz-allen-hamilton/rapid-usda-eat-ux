@@ -131,7 +131,6 @@ Once the application flow was established, the design team created two prototype
 We shared a link to the mockups using InVision and had friends, family, and our target user groups give us high-level feedback on functionality and usability. Additionally, we included an A/B test to determine whether our audience preferred the wizard format or single scrolling page:
 
 ![Single Scroll](images/Test-Invision-2.png)
-![Wizard Form](images/Test-Invision.png)
 
 When the feedback rolled in from 20 testers, we expected the wizard version to win the test hands down. To our surprise, respondents voted both formats equally! With a 50% split of the votes, we came together to critique the mockups and align on what we learned. We used the prompts, “I like….I wish…I wonder,” to surface trends in our data. 
 
@@ -148,6 +147,7 @@ When the feedback rolled in from 20 testers, we expected the wizard version to w
 From these trends, we combined the best elements of each original prototype to come up with our next iteration: a high fidelity mockup that shared elements of a single scroll and a wizard. In the design process, **making is thinking.** In creating the new version of our form we knew we needed to check our flow. We went back to the requirements matrix and defined three different flows/skip patterns for the parent:
 
 ![Mockup2](images/Flow-2.jpg)
+
 Here is a version we made a day later:
 ![Mockup2](images/Flow-3.jpg)
 
@@ -164,7 +164,9 @@ Our new flow inspired a few additions to the wirefreams. The first is shown in a
 **To high fidelity...**
 ![Hi Fi Situation](images/UI-Situation-Screen.png)
 
-The second addition was the introduction of a modal screen for adult and children income. Our intention here was to reduce the amount of information on one screen. In two days we went from **low-fidelity...**
+The second addition was the introduction of a modal screen for adult and children income. Our intention here was to reduce the amount of information on one screen. 
+
+In two days we went from **low-fidelity...**
 ![modal sketch](images/UI-Sketch-Modal.jpg)
 
 To **high-fidelity**
