@@ -4,7 +4,6 @@ $(document).on('click', '[data-toggle-target] button', function(){
 	var toggle_container = $(this).parent().attr('data-container');
 	var toggle_type      = $(this).parent().attr('data-type');
 	$(this).parents('.main-row-container').find('[name="'+toggle_target+'"]').val(toggle_value);
-
 	if (toggle_type == 'income_details') {
 		var target_row = $(this).parents('.rowItem').parent().parent();
 	} else {
@@ -25,12 +24,13 @@ $(document).on('click', '[data-toggle-target] button', function(){
 $(document).on('click', '[data-toggle-simple-target] button', function(){
 	var toggle_value = $(this).attr('data-toggle-value');
 	var toggle_target = $(this).parent().attr('data-toggle-simple-target');
-	$(this).parents('.main-row-container').find('[name="'+toggle_target+'"]').val(toggle_value);
+	$(this).parents('.main-row-container').find('[name="'+toggle_target+'"]').attr('value', toggle_value);
 	if (toggle_value == '1') {
 		$(this).addClass('btn-active').siblings('[data-toggle-value="0"]').removeClass('btn-active');
 	} else {
 		$(this).addClass('btn-active').siblings('[data-toggle-value="1"]').removeClass('btn-active');
 	}
+	$('#form-application').validator('validate');
 });
 
 
