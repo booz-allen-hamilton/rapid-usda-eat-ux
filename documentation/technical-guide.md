@@ -1,5 +1,8 @@
 # Technical Guide
 
+###### [ [BACK HOME](../README.md) ]
+
+
 ## Approach
 We used all open source technologies and open sourced library for our LunchBox prototype. It was built using a technical stack and architecture that is easily installed and deployed across different environment. It uses popular technical frameworks and open source technology to ensure that organizations are able to integrate the solution with their existing products. The application follows the widely addopted model-view-controller (MVC) architecture and cloud infrastructure.
 
@@ -26,6 +29,8 @@ We manage all of our dependencies through Composer. The versions are located in 
 - **Elevio:** _Live User Support & Interactive On-Screen Help Guide_ - [Link](https://elev.io/)
 - **UserVoice:** _Product Management & Customer Support Ticketing_ - [Link](https://www.uservoice.com/)
 
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
+
 
 
 ## Scalable Cloud Architecture w/ DevOps
@@ -45,6 +50,7 @@ The application is hosted on the Amazon Web Services, and the architecture has b
 
 ![Tech Cloud](images/Tech-Cloud.png) 
 
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 
 
@@ -90,10 +96,16 @@ The application is hosted on the Amazon Web Services, and the architecture has b
 
 5. Start Apache Server and navigate to your defined url `example http://usda/`
 
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
+
 
 
 ## Configuration
 Lunchbox has been designed with purpose of being configured for specifically to the look and feel of your school district's applications. Feel free to edit the colors settings in the `assets/css/app.scss` file to align with your application. 
+
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
+
+
 
 ## AWS Cloud Deployment
 The application has been deployed and designed for use with Amazon Web Services' Elastic Beanstalk service for easy and scalability. In the situation that you need to deploy it in a different manner, the database can be hosted along with the rest of the application on the same server if necessary. This approach can be accomplished using AWS' EC2 service.
@@ -103,5 +115,7 @@ To deploy into Elastic Beanstalk, please reference the following documentation: 
 To use dedicated EC2 servers, please reference the following documentation: [Installing a Lamp Web Server on Amazon Linux](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html)
 
 *For other type of cloud or private datacenter deployments, the EC2 server documentation will be the most useful*
+
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 

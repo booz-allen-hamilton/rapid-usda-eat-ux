@@ -8,7 +8,7 @@
 			<?=help_icon($this->lang->line('other_assistance_help'))?>
 		</p>
 	</div>
-	<div class="col-md-offset-4 col-md-4">
+	<div class="col-md-offset-3 col-md-6">
 		<div class="form-group">
 			<h4 class="text-left"><span class="asterisk">* </span><?=$this->lang->line('other_assistance_program')?></h4>
 			<select name="assistance_program" class="form-control input-lg">

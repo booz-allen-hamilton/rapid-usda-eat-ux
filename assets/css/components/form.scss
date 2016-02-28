@@ -464,7 +464,7 @@ input[type="radio"].toggle-right + label {
     border-bottom-left-radius: 0;
 }
 
-.has-error, .has-error .form-control, .has-error .help-block {
+.has-error, .has-error .form-control, .has-error .help-block, .has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
 	color: #ee3e35 !important;
 	border-color: #ee3e35 !important;
 }

@@ -4,21 +4,29 @@
 
 __The Challenge: Electronic Application Transformation__ – Create a model electronic application for the National School Lunch Program and help millions of American students access school meals. Learn more about the public challenge hosted by the U.S. Department of Agriculture, Food and Nutrition Service at http://lunchux.devpost.com/
 
-## Demo & Video Overview
-- Latest Version Running at http://usda-eat-dev.elasticbeanstalk.com/
-
-## Features
-* Feature 1
-* Feature 2
-* Feature 3
-* Feature 4
-
-
 ## [Read the Exec Summary](documentation/README.md)
 
 ## [Read the Technical Overview](documentation/technical-guide.md)
 
 ## [Read about How We Rapidly Prototype](documentation/our-story.md)
+
+
+
+## Demo, Videos, and More
+- Live Demo at http://usda-eat-dev.elasticbeanstalk.com/
+- [Watch our Submission Video]()
+- [Watch more on our Rapid Solutions Sprint]()
+- See Our Iterations from ["A"](https://invis.io/NW68ENL57) and ["B"](https://invis.io/R768ENQSC) to [Wireframes](https://invis.io/U868ENTMK) to [HiFi Mockups](https://invis.io/CD68ENVYB) 
+
+
+
+## Some Features
+* __Share Button__ for Increased Awareness
+* __Plain Language & Help Guides__ to Make the Form Easy and Friendly
+* __Customizable Style & Theming__ to Match Existing School Systems
+* __Analytics Tracking__ for Understanding User Behavior
+* __Modern MVC Architecture__ for Easy to Maintain and Extinsible Code
+* __Modern Open Source Frameworks__ such as PHP, CodeIgniter, MySql, Apache, Bootstrap, JQuery
 
 
 

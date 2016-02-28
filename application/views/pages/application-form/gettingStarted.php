@@ -37,7 +37,7 @@
 			</div>
 			<div class="col-sm-12 col-md-2">
 				<div class="form-group">
-					<label><?=$this->lang->line('getting_started_elements')['middle_initial']['label']?></label>
+					<label><span class="asterisk"></span><?=$this->lang->line('getting_started_elements')['middle_initial']['label']?></label>
 					<input type="text"
 						class="form-control input-lg col-md-1"
 						name="middle_initial"
