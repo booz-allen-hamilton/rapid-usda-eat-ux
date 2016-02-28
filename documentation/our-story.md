@@ -37,11 +37,19 @@ We kicked off the project by establishing ground rules and going over the requir
 ___I am a `target user` who needs `insert needs` so that I can `emotional benefit.` This form is different because `key differentiator.`___
 
 
-![Section Image](images/Postits-windows.png)
+![Mad Libs](images/Mad-libs.png)
 
-![Title of Image](https://placeimg.com/1000/500/tech/grayscale)
+The Visioning Session resulted in two project charters and a challenge brief that defined our area for experimentation around user needs. Our two target audiences were school administrators and parents.  
 
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+![Admin Vision Statement](images/UX-Vision-admin.jpg)
+
+Below is an image of the Challenge Brief that we created to align on our scope, constraints, target users, and expected outcomes. The Challenge brief can change as we learn more from our prototypes. 
+
+![Challenge Brief](images/HCD-Challenge-Brief.png)
+
+Once we defined what we were making, we drafted assumptions that we planned to test in our research. Assumption testing focuses on identifying the parts of our concept that we think are essential. 
+
+![Challenge Brief](images/HCD-Assumptions.png)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
