@@ -143,12 +143,13 @@ When the feedback rolled in from 20 testers, we expected the wizard version to w
 # Iteration 2 Mockups
 ![Section Make](images/Step-Make-H.png)
 
+![Mockup2](images/UI-Wires-2.png)
 
-FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+From these trends, we combined the best elements of each original prototype to come up with our next iteration: a high fidelity mockup that shared elements of a single scroll and a wizard. In the design process, **making is thinking.** In creating the new version of our form we knew we needed to check our flow. We went back to the requirements matrix and defined three different flows/skip patterns for the parent:
 
-Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
-
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+![Mockup2](images/Flow-2.jpg)
+Here is a version we made a day later:
+![Mockup2](images/Flow-3.jpg)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
@@ -156,12 +157,18 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 # Minimum Viable Prototype
 ![Section Ideate](images/Step-Ideate-H.png)
 
+Our new flow inspired a few additions to the wirefreams. The first is shown in a sketch below. In an effort to narrow down the number of steps and flows we show all the scenarios on one page. We went from **low-fiedlity...**
 
-FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+![Situation sketch](images/UI-Wire-1.jpg)
 
-Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+**To high fidelity...**
+![Hi Fi Situation](images/UI-Situation-Screen.png)
 
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+The second addition was the introduction of a modal screen for adult and children income. Our intention here was to reduce the amount of information on one screen. In two days we went from **low-fidelity...**
+![modal sketch](images/UI-Sketch-Modal.jpg)
+
+To **high-fidelity**
+![UI Modal Hi Fi](images/UI-Adult-Income-Modal.png)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
