@@ -28,7 +28,6 @@ We used a human-centered design approach focused on learning fast through rapid 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Section Learn](images/Step-Learn-H.png)
-
 # Defining the Challenge
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -48,7 +47,6 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Section Learn](images/Step-Learn-H.png)
-
 # Building Empathy
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -60,9 +58,7 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 ![Section Ideate](images/Step-Ideate-H.png)
-
 # Generating Ideas from Insights
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -75,7 +71,6 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Section Make](images/Step-Make-H.png)
-
 # Mapping out Our Solution
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -88,7 +83,6 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Section Make](images/Step-Make-H.png)
-
 # First Round of Wireframes
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -101,7 +95,6 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Section Check](images/Step-Check-H.png)
-
 # Validating Ideas with Users
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -114,7 +107,6 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Section Make](images/Step-Make-H.png)
-
 # Iteration 2 Mockups
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -127,7 +119,6 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Section Ideate](images/Step-Ideate-H.png)
-
 # Minimum Viable Prototype
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -140,7 +131,6 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Section Make](images/Step-Make-H.png)
-
 # DevOps to Drive Learning
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -153,7 +143,6 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![Section Check](images/Step-Check-H.png)
-
 # Usability Testing
 
 FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -170,9 +159,9 @@ Completely synergize resource taxing relationships via premier niche markets. Pr
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![Section Learn](images/Step-Learn-H.png)
-![Section Learn](images/Step-Ideate-H.png)
-![Section Learn](images/Step-Make-H.png)
-![Section Learn](images/Step-Check-H.png)
+![Section Ideate](images/Step-Ideate-H.png)
+![Section Make](images/Step-Make-H.png)
+![Section Check](images/Step-Check-H.png)
 
 
 
