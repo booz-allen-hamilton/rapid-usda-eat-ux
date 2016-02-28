@@ -35,10 +35,14 @@
 				$default_state = (!empty($member['earns_income']) ? $member['earns_income'] : 0);
 			?>
 			<div class="btn-group btn-group-custom" data-container="adult_earns_income" data-toggle-target="adult[<?=$parent_index?>][earns_income]" role="group" data-type="income">
-				<button type="button" class="btn btn-lg btn-default <?=($default_state == 1 ? 'btn-active' : NULL)?>" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
-				<button type="button" class="btn btn-lg btn-default <?=($default_state == 0 ? 'btn-active' : NULL)?>" data-toggle-value="0"><?=$this->lang->line('no')?></button>
+				<button type="button" class="btn btn-lg btn-default <?=($default_state === 1 ? 'btn-active' : NULL)?>" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
+				<button type="button" class="btn btn-lg btn-default <?=($default_state === 0 ? 'btn-active' : NULL)?>" data-toggle-value="0"><?=$this->lang->line('no')?></button>
 			</div>
-			<?=form_hidden('adult['.$parent_index.'][earns_income]', $default_state)?>
+			<?
+				echo '<div  style="position:fixed; top: -10000px; ">';
+				echo '<input type="text" name="adult['.$parent_index.'][earns_income]" required value="'.$default_state.'" />';
+				echo '</div>';
+			?>
 		</div>
 		<div class="col-sm-12 col-md-1 text-right">
 		<?

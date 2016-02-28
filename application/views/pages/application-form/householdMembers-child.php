@@ -31,23 +31,31 @@
 		</div>
 		<div class="col-sm-12 col-md-2">
 			<?
-				$default_state = (!empty($student['earns_income']) ? $student['earns_income'] : 0);
+				$default_state = (!empty($student['earns_income']) ? $student['earns_income'] : NULL);
 			?>
 			<div class="btn-group btn-group-custom" data-container="child_earns_income" data-toggle-target="child[<?=$parent_index?>][earns_income]" role="group" data-type="income">
-				<button type="button" class="btn btn-lg btn-default <?=($default_state == 1 ? 'btn-active' : NULL)?>" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
-				<button type="button" class="btn btn-lg btn-default <?=($default_state == 0 ? 'btn-active' : NULL)?>" data-toggle-value="0"><?=$this->lang->line('no')?></button>
+				<button type="button" class="btn btn-lg btn-default <?=($default_state === 1 ? 'btn-active' : NULL)?>" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
+				<button type="button" class="btn btn-lg btn-default <?=($default_state === 0 ? 'btn-active' : NULL)?>" data-toggle-value="0"><?=$this->lang->line('no')?></button>
 			</div>
-			<?=form_hidden('child['.$parent_index.'][earns_income]', $default_state)?>
+			<?
+				echo '<div  style="position:fixed; top: -10000px; ">';
+				echo '<input type="text" name="child['.$parent_index.'][earns_income]" required value="'.$default_student_status.'" />';
+				echo '</div>';
+			?>
 		</div>
 		<div class="col-sm-12 col-md-2">
 			<?
-				$default_student_status = (!empty($student['is_student']) ? $student['is_student'] : 0);
+				$default_student_status = (!empty($student['is_student']) ? $student['is_student'] : NULL);
 			?>
 			<div class="btn-group btn-group-custom" data-toggle-simple-target="child[<?=$parent_index?>][is_student]" role="group">
-				<button type="button" class="btn btn-lg btn-default <?=($default_student_status == 1 ? 'btn-active' : NULL)?>" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
-				<button type="button" class="btn btn-lg btn-default <?=($default_student_status == 0 ? 'btn-active' : NULL)?>" data-toggle-value="0"><?=$this->lang->line('no')?></button>
+				<button type="button" class="btn btn-lg btn-default <?=($default_student_status === 1 ? 'btn-active' : NULL)?>" data-toggle-value="1"><?=$this->lang->line('yes')?></button>
+				<button type="button" class="btn btn-lg btn-default <?=($default_student_status === 0 ? 'btn-active' : NULL)?>" data-toggle-value="0"><?=$this->lang->line('no')?></button>
 			</div>
-			<?=form_hidden('child['.$parent_index.'][is_student]', $default_student_status)?>
+			<?
+				echo '<div  style="position:fixed; top: -10000px; ">';
+				echo '<input type="text" name="child['.$parent_index.'][is_student]" required value="'.$default_student_status.'" />';
+				echo '</div>';
+			?>
 		</div>
 		<div class="col-md-2">
 			<select class="_child_description" name="child[<?=$parent_index?>][child_description][]" multiple="multiple">
