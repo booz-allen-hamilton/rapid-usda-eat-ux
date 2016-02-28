@@ -68,6 +68,24 @@ Next, we created the first draft of our personas, or characterizations that repr
 
 Most of the population that we were designing for were using mobile devices to access the internet. We used Bootstrap to develop our solution because it provided a robust grid system and pre-styled HTML elements that enabled us to quickly and effectively make a website that is responsive to multiple devices. 
 
+Next, team members conducted fieldwork to gather insight into how school lunch programs work. We cold-called three school district administrators from different geographic areas and had conversations with friends and family who work in schools. 
+In our interviews, we weren’t surprised to hear that school administrators preferred online applications to paper versions, both in terms of accuracy and collection ease. Here is what they said:
+
+"Online runs smoother because [the application] does not allow parents to proceed without filling out all application [fields]." - Cathy (Austin School District)
+
+“Online is definitely better... The paper ones, we scan them also. [However,] they do the wrong ink color or they leave out information. They don’t sign it or leave off a kid.” – Theresa (Tustin Unified School District)
+
+We were surprised, however, that the current digitization effort is extremely complex and costly; often school districts in the same state use multiple vendors. Small school districts struggle to justify the cost of finding and implementing vendor applications. 
+Additionally, we learned that a large part of the school admin job is follow up:
+
+ “It’s hard to understand one economic unit when multiple families are living together. When there are two households together, then it’s hard to understand the economic unit. It’s just a lot, there is always follow up.” – Wendy (Washington State)
+ 
+Even when translated, language is a barrier. Wendy also told us that one challenge for families is not that the application isn’t offered in their native tongue, but that the language itself is too complex, particularly for those with lower literacy levels. To solve for this, we made sure our translation into Spanish wasn’t too formal.
+
+Based on our research, we built a refined persona for each user group around which to design:
+
+![Admin Persona](images/UX-Persona-Admin.jpg)
+![Parent Persona](images/UX-Persona-Parent.jpg)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
@@ -78,7 +96,7 @@ Most of the population that we were designing for were using mobile devices to a
 **Why are people misreporting? How can we encourage accurate reporting?**
 We set up our brainstorming session so that we could break away from groupthink. We divided into three teams and brainstormed, using our Challenge Brief and Personas to inspires ideas. Our ideation session had both technical input from our development team, design input from our designers, client input from a subject matter expert who had worked with USDA, as well as product and user input. 
 
-![Brainstorm](images/sketching.png)
+![Group sketching](images/sketching.png)
 Our small groups presented each of their concepts to the larger team and continued our brainstorm by externalizing ideas on the wall using sticky notes. After discussing the benefits and drawbacks of different approaches, we decided to make two versions of the website design: a Wizard and a Single Scroll.
 ![Brainstorm](images/brainstorm.jpg)
 
