@@ -41,7 +41,7 @@
 				</div>
 				<div class="col-sm-12 col-md-4 text-left">
 					<span>XXX-XX-</span>
-					<input type="text" class="form-control input-lg ssn" data-minlength="4" name="social_security_last_four" maxlength="4" required data-error="<?=$this->lang->line('error_electronic_sig_social')?>" />
+					<input type="text" class="form-control input-lg ssn" name="social_security_last_four" data-error="<?=$this->lang->line('error_electronic_sig_social')?>" />
 					<div class="help-block with-errors"></div>
 				</div>
 				<div class="col-sm-12 col-md-4 text-left">
