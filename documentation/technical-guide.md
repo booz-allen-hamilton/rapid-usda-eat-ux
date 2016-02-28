@@ -15,7 +15,7 @@ We manage all of our dependencies through Composer. The versions are located in 
 
 - **Codeigniter (v3.0.4):** _PHP web application framework_ - [License](https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst)
 	- Resource: [Documentation](https://codeigniter.com/)	
-- **Twitter Bootstrap (v3.3):** _Responsive CSS Framework and front-end library_ - [License](http://getbootstrap.com/getting-started/#license-faqs)
+- **Bootstrap (v3.3):** _Responsive CSS Framework and front-end library_ - [License](http://getbootstrap.com/getting-started/#license-faqs)
 	- Resource: [Documentation](http://getbootstrap.com/)
 
 - **JQuery (v2.2):** - _JavaScript library for event handling_ - [License](https://jquery.org/license/)
