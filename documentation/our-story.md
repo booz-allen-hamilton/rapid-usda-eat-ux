@@ -128,12 +128,14 @@ Once the application flow was established, the design team created two prototype
 # Validating Ideas with Users
 ![Section Check](images/Step-Check-H.png)
 
+We shared a link to the mockups using InVision and had friends, family, and our target user groups give us high-level feedback on functionality and usability. Additionally, we included an A/B test to determine whether our audience preferred the wizard format or single scrolling page:
 
-FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+![Single Scroll](images/Test-Invision-2.png)
+![Wizard Form](images/ Test-Invision.png)
 
-Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+When the feedback rolled in from 20 testers, we expected the wizard version to win the test hands down. To our surprise, respondents voted both formats equally! With a 50% split of the votes, we came together to critique the mockups and align on what we learned. We used the prompts, “I like….I wish…I wonder,” to surface trends in our data. 
 
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+![Critique](images/UX-Design-Critique.jpeg)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
