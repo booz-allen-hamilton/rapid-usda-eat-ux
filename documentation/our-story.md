@@ -64,7 +64,7 @@ Armed with our hypotheses and existing knowledge, we created a journey map for t
 Next, we created the first draft of our personas, or characterizations that represent end users. We split into two teams and sketched personas, which enabled us to generate ideas that would meet the needs of the users. We created Run-down Ronaldo, a single dad who is trying to raise a family on little income, and Frazzled Phyllis, a school administrator that is over-worked and short on time. Establishing personas at this phase of the project ensures that we are creating a solution for our end-users. 
 
 ![Ronaldo Sketch](images/UX-Persona-Parent-Sketch.png)
-![Admin sketch](images/UX-Persona-Admin-Sketch.png)
+![Admin sketch](images/UX-Persona-Admin-Sketch.pdf)
 
 Most of the population that we were designing for were using mobile devices to access the internet. We used Bootstrap to develop our solution because it provided a robust grid system and pre-styled HTML elements that enabled us to quickly and effectively make a website that is responsive to multiple devices. 
 
@@ -120,7 +120,7 @@ Having gained an understanding of both Ronaldo, the head of household user, and 
 Once the application flow was established, the design team created two prototypes, using the same flow and content—a single scroll form and a Wizard form. Our philosophy is to test concepts early and often. In order to test which format would be the most easy to use, we set up an A/B test with 20 respondents for our first point of validation. This helped us determine which design approach was the most effective, and reduce the risk of creating something that is difficult to use. 
 
 ![Single Scroll](images/Test-AB-Single.png)
-![Wizard Form](images/Test-AB-Wizard.png)
+![Wizard Form](images/UI-Wizard-Form.png)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
