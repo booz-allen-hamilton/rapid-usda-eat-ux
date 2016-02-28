@@ -41,7 +41,7 @@ ___I am a `target user` who needs `insert needs` so that I can `emotional benefi
 
 The Visioning Session resulted in two project charters and a challenge brief that defined our area for experimentation around user needs. Our two target audiences were school administrators and parents.  
 
-![Admin Vision Statement](images/UX-Vision-admin.jpg)
+![Admin Vision Statement](images/UX-Vision-Admin.jpg)
 
 Below is an image of the Challenge Brief that we created to align on our scope, constraints, target users, and expected outcomes. The Challenge brief can change as we learn more from our prototypes. 
 
@@ -49,7 +49,7 @@ Below is an image of the Challenge Brief that we created to align on our scope, 
 
 Once we defined what we were making, we drafted assumptions that we planned to test in our research. Assumption testing focuses on identifying the parts of our concept that we think are essential. 
 
-![Challenge Brief](images/HCD-Assumptions.png)
+![Assumptions](images/HCD-Assumptions.png)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
@@ -57,12 +57,17 @@ Once we defined what we were making, we drafted assumptions that we planned to t
 # Building Empathy
 ![Section Learn](images/Step-Learn-H.png)
 
+Armed with our hypotheses and existing knowledge, we created a journey map for the parent and the school administrator. The map resulted in the identification of pain points, areas where design and engineering could come together to improve the user experience. We journey map because we tend to misjudge what users want. Journey mapping gets us closer to user problems and frustrations. Below is what the current state journey map looked like for the school administrator and parent: 
 
-FIXMECollaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+![Journey Map](images/UX-JourneyMap.jpg)
 
-Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+Next, we created the first draft of our personas, or characterizations that represent end users. We split into two teams and sketched personas, which enabled us to generate ideas that would meet the needs of the users. We created Run-down Ronaldo, a single dad who is trying to raise a family on little income, and Frazzled Phyllis, a school administrator that is over-worked and short on time. Establishing personas at this phase of the project ensures that we are creating a solution for our end-users. 
 
-Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+![Ronaldo Sketch](images/UX-Persona-Parent-Sketch.jpg)
+![Ronaldo Sketch](images/UX-Persona-Admin-Sketch.jpg)
+
+Most of the population that we were designing for were using mobile devices to access the internet. We used Bootstrap to develop our solution because it provided a robust grid system and pre-styled HTML elements that enabled us to quickly and effectively make a website that is responsive to multiple devices. 
+
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
