@@ -174,7 +174,7 @@ In rapid prototyping, nothing you make is perfect, but everything you make is an
 
 ![Question Hover](images/UI-Question-Hover.png)
 
-Below is an example of that language evolution that focused on behavioral prompts. In constructing our words, we considered different levesl of digital literacy and how we might reduce the stigma of filling out the form. By giving examples in the instructional text we get rid of the social bias that families are always related. We hope that this will decrease the number of reporting errors due to household size. 
+Below is an example of the language evolution of the form. In constructing our words, we considered different levesl of digital literacy and how we might reduce the stigma of filling out the form. By giving examples in the instructional text we get rid of the social bias that families are always related. We hope that this will decrease the number of reporting errors due to household size. 
 
 ![Language Form](images/z-Lang-1.png)
 
@@ -188,7 +188,7 @@ As a team, we went through each screen to make edits in lanauge and check agains
 # DevOps to Drive Learning
 ![Section Make](images/Step-Make-H.png)
 
-DevOps is the process that enables us to build, test, and learn. We shortened our learning cycle to minutes rather than a more traditional monthly release schedule. We used Amazon Web Services, Elastic Beanstalk, AWS CodePipeline, GitHub, and Trello to enable this rapid learning and team communication. 
+DevOps is the process that enables us to build, test, and learn. Rather than a more traditional monthly release schedule, we shortened our learning cycle to minutes. We used Amazon Web Services, Elastic Beanstalk, AWS CodePipeline, GitHub, and Trello to enable this rapid learning and team communication. 
 
 ![DevOps](images/DevOps-Logos.png)
 
@@ -218,12 +218,6 @@ To learn a little more, we set up a test on **usertesting.com** to test five peo
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-![Section Learn](images/Step-Learn-H.png)
-![Section Ideate](images/Step-Ideate-H.png)
-![Section Make](images/Step-Make-H.png)
-![Section Check](images/Step-Check-H.png)
-
 
 
 
