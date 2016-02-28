@@ -14,7 +14,7 @@
 					class="form-control input-lg"
 					value="<?=$default_type?>"
 					required>
-					<option selected="selected"><?=$this->lang->line('household_income_salary')?></option>
+					<option value=""><?=$this->lang->line('household_income_salary')?></option>
 					<?
 						$income_item_total = $this->config->item('income_list_'.$form_income_item);
 						for($i = 1; $i <= $income_item_total; $i++) {
