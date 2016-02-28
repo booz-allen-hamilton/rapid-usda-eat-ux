@@ -170,6 +170,13 @@ The second addition was the introduction of a modal screen for adult and childre
 To **high-fidelity**
 ![UI Modal Hi Fi](images/UI-Adult-Income-Modal.png)
 
+In rapid prototyping, nothing you make is perfect, but everything you make is an opportunity to learn. During the process, everything from the design to the language of the form continuously evolved. We introduced interactive features, such as an orange <?> button to solve this design challenge and promote accurate reporting.  
+
+![Question Hover](images/UI-Question-Hover.png)
+
+Below is an example of that language evolution that focused on behavioral prompts. In constructing our words, we considered digital literacy and how we might reduce the stigma of filling out the form. By giving examples in the instructional text we get rid of the social bias that families are always related. We hope that this will decrease the number of reporting errors due to household size. 
+
+
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
