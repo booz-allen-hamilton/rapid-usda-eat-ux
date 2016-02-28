@@ -298,11 +298,11 @@ $lang['child_description_none'] = 'None of the Above';
 
 
 //	indexes will serve as keys
-$lang['adult_earnings_from_work_list_1'] = 'salary, wages, cash bonuses';
-$lang['adult_earnings_from_work_list_2'] = 'net income from self employment';
-$lang['adult_earnings_from_work_list_3'] = 'strike benefits';
-$lang['adult_earnings_from_work_list_4'] = 'allowances for off-base housing, food, and clothing';
-$lang['adult_earnings_from_work_list_5'] = 'military pay and cash bonuses (do not include combat pay, FSSA or privatized housing allowances)';
+$lang['adult_earnings_from_work_list_1'] = 'Salary, wages, cash bonuses';
+$lang['adult_earnings_from_work_list_2'] = 'Net income from self employment';
+$lang['adult_earnings_from_work_list_3'] = 'Strike benefits';
+$lang['adult_earnings_from_work_list_4'] = 'Allowances for off-base housing, food, and clothing';
+$lang['adult_earnings_from_work_list_5'] = 'Military pay and cash bonuses (do not include combat pay, FSSA or privatized housing allowances)';
 
 $lang['adult_public_asst_list_1'] = "Unemployment benefits";
 $lang['adult_public_asst_list_2'] = "Worker's compensation";
@@ -320,13 +320,13 @@ $lang['adult_other_income_list_5'] = "Investment income";
 $lang['adult_other_income_list_6'] = "Rental income";
 $lang['adult_other_income_list_7'] = "Regular cash payments from outside household";
 
-$lang['child_earnings_from_work_list_1'] = 'job';
+$lang['child_earnings_from_work_list_1'] = 'Job';
 
-$lang['child_ssn_benefits_list_1'] = 'disability benefits';
-$lang['child_ssn_benefits_list_2'] = 'survivors benefits';
+$lang['child_ssn_benefits_list_1'] = 'Disability benefits';
+$lang['child_ssn_benefits_list_2'] = 'Survivors benefits';
 
-$lang['child_spending_other_income_list_1'] = 'regular spending money';
+$lang['child_spending_other_income_list_1'] = 'Regular spending money';
 
-$lang['child_other_income_list_1'] = 'private pension fund';
-$lang['child_other_income_list-2'] = 'annuity';
-$lang['child_other_income_list_3'] = 'trust';
+$lang['child_other_income_list_1'] = 'Private pension fund';
+$lang['child_other_income_list-2'] = 'Annuity';
+$lang['child_other_income_list_3'] = 'Trust';

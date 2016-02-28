@@ -76,7 +76,7 @@ $config['url_suffix'] = '';
 $config['language_list'] = array(
 	'english' => 'English',
 	'spanish' => 'Español',
-	'korean' => '한국어',
+	//'korean' => '한국어',
 );
 
 /*
