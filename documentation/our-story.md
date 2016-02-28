@@ -25,6 +25,7 @@ Our work was completed in seven working sessions over three weeks. When you’re
 
 We used a human-centered design approach focused on learning fast through rapid prototyping. Our iterative process can be divided into four phases: __LEARN, IDEATE, MAKE, and CHECK__.
 
+![Section](images/Steps.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Defining the Challenge
