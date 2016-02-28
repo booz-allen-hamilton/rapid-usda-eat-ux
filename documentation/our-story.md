@@ -190,9 +190,10 @@ As a team, we went through each screen to make edits in lanauge and check agains
 
 Using the InVision application, we defined the interactions and behavior prompts for our development team. While the team was building, we set up our test on usertesting.com to test five people with low computer literacy in an unmoderated usability test. 
 
-![Tech Arch](images/Test-Arch.png)
-![Tech Cloud](images/Test-Cloud.png)
-FIXMECoFIXME FIXME FIXME
+![Tech Arch](images/Tech-Arch.png)
+![Tech Cloud](images/Tech-Cloud.png)
+
+FIXME FIXME FIXME FIXME
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
