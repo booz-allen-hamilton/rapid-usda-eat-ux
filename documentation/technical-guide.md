@@ -1,6 +1,6 @@
 # Technical Guide
 
-[BACK HOME](../README.md)
+###### [ [BACK HOME](../README.md) ]
 
 
 ## Approach
@@ -29,7 +29,7 @@ We manage all of our dependencies through Composer. The versions are located in 
 - **Elevio:** _Live User Support & Interactive On-Screen Help Guide_ - [Link](https://elev.io/)
 - **UserVoice:** _Product Management & Customer Support Ticketing_ - [Link](https://www.uservoice.com/)
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 
 
@@ -50,7 +50,7 @@ The application is hosted on the Amazon Web Services, and the architecture has b
 
 ![Tech Cloud](images/Tech-Cloud.png) 
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 
 
@@ -96,14 +96,14 @@ The application is hosted on the Amazon Web Services, and the architecture has b
 
 5. Start Apache Server and navigate to your defined url `example http://usda/`
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 
 
 ## Configuration
 Lunchbox has been designed with purpose of being configured for specifically to the look and feel of your school district's applications. Feel free to edit the colors settings in the `assets/css/app.scss` file to align with your application. 
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 
 
@@ -116,6 +116,6 @@ To use dedicated EC2 servers, please reference the following documentation: [Ins
 
 *For other type of cloud or private datacenter deployments, the EC2 server documentation will be the most useful*
 
-[TOP](#) | [BACK HOME](../README.md)
+###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 
