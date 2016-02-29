@@ -678,7 +678,8 @@ a:hover {
 
 @media (max-width: 767px) {
   #page-application-form .footer {
-    height: auto; }
+    height: auto;
+    margin-bottom: 35px; }
     #page-application-form .footer .footer-bav-connector {
       width: 27px; } }
 input[type="radio"].toggle {
