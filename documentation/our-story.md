@@ -28,7 +28,7 @@ We worked closely throughout the project, using a human-centered design approach
 ![Section](images/Steps.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Desinging with Intent
+# Designing with Intent
 ![Section Learn](images/Step-Learn-H.png)
 
 In the project kickoff we established ground rules and went over the challenge requirements. From there, we brainstormed our target audiences, their needs, and what emotional benefit our form might provide. We designed this activity like a Mad Lib:
