@@ -6,7 +6,7 @@
 ---------------------------------------------------------------------------
 
 ### *TABLE OF CONTENTS*
-1.	__LEARN__: [Defining the Challenge](#defining-the-challenge)
+1.	__LEARN__: [Desinging with Intent](#designing-with-intent)
 2.	__LEARN__: [Building Empathy](#building-empathy)
 3.	__IDEATE__: [Generating Ideas from Insights](#generating-ideas-from-insights)
 4.	__MAKE__: [Mapping out Our Solution](#mapping-out-our-solution)
@@ -21,25 +21,24 @@
 
 ### Human-Centered Design + Rapid Prototyping = Solutions for Humans
 
-Our work was completed in seven working sessions over three weeks. When you’re moving as quickly as we did, it’s important to bring a diverse team together to quickly build trust and create common ground. To do so, we held a **project kickoff** as our first iteration of the application. Our team of product managers, technologists, consultants, user experience experts, designers, storytellers, and researchers came together for an intense day of collaboration, ideas, and emotions.
+Our work was completed in seven working sessions over three weeks. When you’re moving as quickly as we did, it’s important to bring a team together to quickly build trust and create common ground. To do so, we held a **project kickoff.** In the kickoff we created our first iteration of the application. Our team of product managers, technologists, consultants, user experience experts, designers, storytellers, and researchers came together for an intense day of collaboration and ideas.
 
 We worked closely throughout the project, using a human-centered design approach focused on **identifying user needs as a starting point to product development.** Our iterative process involved rapid prototyping and can be divided into four phases: __LEARN, IDEATE, MAKE, and CHECK__.
 
 ![Section](images/Steps.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Defining the Challenge
+# Desinging with Intent
 ![Section Learn](images/Step-Learn-H.png)
 
-
-We kicked off the project by establishing ground rules and going over the requirements of the competition. Once goals were defined, we brainstormed about target audiences and what would provide value in a Visioning Session, which was designed like a Mad Lib:
+In the project kickoff we established ground rules and went over the challenge requirements. From there, we brainstormed our target audiences, their needs, and what emotional benefit our form might provide. We designed this activity like a Mad Lib:
 
 ___I am a `target user` who needs `insert needs` so that I can `emotional benefit.` This form is different because `key differentiator.`___
 
 
 ![Mad Libs](images/Mad-libs.png)
 
-The Visioning Session resulted in two project charters and a challenge brief that defined our area for experimentation around user needs. Our two target audiences were school administrators and parents.  
+The Visioning Session resulted in two project charters and a challenge brief that defined our area for experimentation. Our two target audiences were school administrators and parents.  
 
 ![Admin Vision Statement](images/Vision-Statements.png)
 
@@ -54,14 +53,14 @@ Below is an image of the Challenge Brief that we created to align on our scope, 
 # Building Empathy
 ![Section Learn](images/Step-Learn-H.png)
 
-Armed with our hypotheses and existing knowledge, we created a journey map for the parent and the school administrator. We looked the **emotional journey of applying for meals.** What are our stakeholders doing before, during, and after the application process? The map resulted in the identification of pain points, areas where design and engineering could come together to improve the user experience. We journey map because we tend to misjudge what users want. Journey mapping gets us closer to user problems and frustrations. Below is what the current state journey map looked like for the school administrator and parent: 
+Armed with our hypotheses and existing knowledge, we created a journey map for the parent and the school administrator. A journey map looks at the **emotional journey of applying for meals.** What are our stakeholders doing before, during, and after the application process? The map resulted in the identification of pain points, areas where design and engineering could come together to improve the user experience. Journey mapping gets us closer to user problems and frustrations. Below is what the current state journey map looked like for the school administrator and parent: 
 
 ![Journey Map](images/UX-JourneyMap.jpg)
 
-Next, we created the first draft of our personas, or characterizations that represent end users. We split into two teams and sketched personas, which enabled us to generate ideas that would meet the needs of the users. We created Run-down Ronaldo, a single dad who is trying to raise a family on little income, and Frazzled Phyllis, a school administrator that is over-worked and short on time. Establishing personas at this phase of the project ensures that we are creating a solution for our end-users. 
+Next, we created the first draft of our personas, or archetypes that represent end users. We split into two teams and sketched personas, which enabled us to generate ideas that would meet the needs of the users. We created Run-down Ronaldo, a single dad who is trying to raise a family on little income, and Frazzled Phyllis, a school administrator that is over-worked and short on time. Check out our sketches:
 
 ![Ronaldo Sketch](images/UX-Persona-Parent-Sketch.png)
-![Admin sketch](images/UX-Persona-Admin-Sketch.pdf)
+![Admin sketch](images/school-admin-sketch.pdf)
 
 Most of the population that we were designing for were using mobile devices to access the internet. We used Bootstrap to develop our solution because it provided a robust grid system and pre-styled HTML elements that enabled us to quickly and effectively make a website that is responsive to multiple devices. 
 
