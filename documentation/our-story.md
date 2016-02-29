@@ -57,14 +57,15 @@ Armed with our hypotheses and existing knowledge, we created a journey map for t
 
 ![Journey Map](images/UX-JourneyMap.jpg)
 
-Next, we created the first draft of our personas, or archetypes that represent end users. We split into two teams and sketched personas, which enabled us to generate ideas that would meet the needs of the users. We created Run-down Ronaldo, a single dad who is trying to raise a family on little income, and Frazzled Phyllis, a school administrator that is over-worked and short on time. Check out our sketches:
+Next, we created the first draft of our personas, or archetypes that represent end users. We split into two teams and sketched personas, which enabled us to generate ideas that would meet the needs of the users. We created Run-down Ronaldo, a single dad who is trying to raise a family on little income, and Frazzled Phyllis, a school administrator that is over-worked and short on time. Check out our fine artwork:
 
 ![Ronaldo Sketch](images/UX-Persona-Parent-Sketch.png)
 ![Admin sketch](images/school-admin-sketch.pdf)
 
-Most of the population that we were designing for were using mobile devices to access the internet. We used Bootstrap to develop our solution because it provided a robust grid system and pre-styled HTML elements that enabled us to quickly and effectively make a website that is responsive to multiple devices. 
+If we were Rondalo, where would we be filling out this form? Maybe on our home computer, perhaps at a public library, but mostly, we found this population accesses the internet from their mobile device. So we used Bootstrap to develop our solution. It provided a robust grid system and pre-styled HTML elements that enabled us to quickly and effectively make a website that is responsive to multiple devices. 
 
-Next, team members conducted fieldwork to gather insight into how school lunch programs work. We cold-called three school district administrators from different geographic areas and had conversations with friends and family who work in schools. 
+**Interviews**
+Next, team members conducted fieldwork to gather insight into how school meal applications work. We cold-called three school district administrators from around the country and had conversations with friends and family who work in schools. 
 In our interviews, we weren’t surprised to hear that school administrators preferred online applications to paper versions, both in terms of accuracy and collection ease. Here is what they said:
 
 "Online runs smoother because [the application] does not allow parents to proceed without filling out all application [fields]." - Cathy (Austin School District)
@@ -72,13 +73,14 @@ In our interviews, we weren’t surprised to hear that school administrators pre
 “Online is definitely better... The paper ones, we scan them also. [However,] they do the wrong ink color or they leave out information. They don’t sign it or leave off a kid.” – Theresa (Tustin Unified School District)
 
 We were surprised, however, that the current digitization effort is extremely complex and costly; often school districts in the same state use multiple vendors. Small school districts struggle to justify the cost of finding and implementing vendor applications. 
+
 Additionally, we learned that a large part of the school admin job is follow up:
 
  “It’s hard to understand one economic unit when multiple families are living together. When there are two households together, then it’s hard to understand the economic unit. It’s just a lot, there is always follow up.” – Wendy (Washington State)
  
-Even when translated, language is a barrier. Wendy also told us that one challenge for families is not that the application isn’t offered in their native tongue, but that the language itself is too complex, particularly for those with lower literacy levels. To solve for this, we made sure our translation into Spanish wasn’t too formal.
+Wendy also told us that one challenge for families is not that the application isn’t offered in their native tongue, but that the language itself is too complex, particularly for those with lower literacy levels. To solve for this, we made sure our translation into Spanish wasn’t too formal.
 
-Based on our research, we built a refined persona for each user group around which to design:
+After our round of research, we built a refined persona for each user group around which to design:
 
 ![Admin Persona](images/UX-Persona-Admin.jpg)
 ![Parent Persona](images/UX-Persona-Parent.jpg)
