@@ -47,9 +47,6 @@ Below is an image of the Challenge Brief that we created to align on our scope, 
 
 ![Challenge Brief](images/HCD-Challenge-Brief.png)
 
-Once we defined what we were making, we drafted assumptions that we planned to test in our research. Assumption testing focuses on identifying the parts of our concept that we think are essential. 
-
-![Assumptions](images/HCD-Assumptions.png)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
@@ -57,7 +54,7 @@ Once we defined what we were making, we drafted assumptions that we planned to t
 # Building Empathy
 ![Section Learn](images/Step-Learn-H.png)
 
-Armed with our hypotheses and existing knowledge, we created a journey map for the parent and the school administrator. The map resulted in the identification of pain points, areas where design and engineering could come together to improve the user experience. We journey map because we tend to misjudge what users want. Journey mapping gets us closer to user problems and frustrations. Below is what the current state journey map looked like for the school administrator and parent: 
+Armed with our hypotheses and existing knowledge, we created a journey map for the parent and the school administrator. We looked the **emotional journey of applying for meals.** What are our stakeholders doing before, during, and after the application process? The map resulted in the identification of pain points, areas where design and engineering could come together to improve the user experience. We journey map because we tend to misjudge what users want. Journey mapping gets us closer to user problems and frustrations. Below is what the current state journey map looked like for the school administrator and parent: 
 
 ![Journey Map](images/UX-JourneyMap.jpg)
 
