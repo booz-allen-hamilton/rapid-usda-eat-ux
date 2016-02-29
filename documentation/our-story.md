@@ -6,7 +6,7 @@
 ---------------------------------------------------------------------------
 
 ### *TABLE OF CONTENTS*
-1.	__LEARN__: [Desinging with Intent](#designing-with-intent)
+1.	__LEARN__: [Designing with Intent](#designing-with-intent)
 2.	__LEARN__: [Building Empathy](#building-empathy)
 3.	__IDEATE__: [Generating Ideas from Insights](#generating-ideas-from-insights)
 4.	__MAKE__: [Mapping out Our Solution](#mapping-out-our-solution)
