@@ -96,7 +96,7 @@ We set up our brainstorming session so that we could break away from groupthink.
 
 ![Group sketching](images/Sketching.png)
 Our small groups presented each of their concepts to the larger team and continued our brainstorm by externalizing ideas on the wall using sticky notes. After discussing the benefits and drawbacks of different approaches, we decided to make two versions of the website design: a Wizard and a Single Scroll.
-![Brainstorm](images/brainstorm.jpg)
+![Brainstorm](images/brainstorm.jpeg)
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
@@ -107,7 +107,7 @@ Our small groups presented each of their concepts to the larger team and continu
 ![Alexis Maps](images/Flow-Alexis.png)
 ![Whiteboard Flow](images/Flow-1.jpg)
 
-Having gained an understanding of both Ronaldo, the head of household user, and Phyllis, the school administrator user, we brainstormed ideas big and small to meet our users’ needs and prioritized them to guide our design approach. We mapped several different screen flows and chose what we thought was the best one. At this point, we focused mostly on the users and technical feasibility,but what about USDA? We created a requirements matrix to ensure we were meeting USDA’s challenge parameters. 
+Having gained an understanding of both Ronaldo, the head of household user, and Phyllis, the school administrator, we brainstormed ideas big and small to meet our users’ needs and prioritized them to guide our approach. We mapped several different screen flows and chose what we thought was the most efficient one. To ensure that we were complying with USDA requriemetns, we created a requirements matrix to check our designs. 
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
