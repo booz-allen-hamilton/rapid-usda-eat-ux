@@ -84,7 +84,7 @@ $lang['your_situation_scenario_b_help'] = "Foster children who live with you cou
 
 // Other Assistance
 $lang['other_assistance_title'] = "Government Assistance Programs";
-$lang['other_assistance_subtitle'] = "You said that someone in your household participates in <a href='http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap'>SNAP</a>, the <a href='http://www.acf.hhs.gov/programs/ofa/programs/tanf/about'>TANF</a> cash assistance program, or the <a href='http://www.fns.usda.gov/fdpir/about-fdpir'>FDPIR</a>. Choose the program that applies to you.";
+$lang['other_assistance_subtitle'] = "You said that someone in your household participates in <a href='http://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program-snap' target='_blank'>SNAP</a>, the <a href='http://www.acf.hhs.gov/programs/ofa/programs/tanf/about' target='_blank'>TANF</a> cash assistance program, or the <a href='http://www.fns.usda.gov/fdpir/about-fdpir' target='_blank'>FDPIR</a>. Choose the program that applies to you.";
 $lang['other_assistance_help'] = 'Click on a program to learn more';
 $lang['other_assistance_program'] = "Select Assistance Program";
 $lang['other_assistance_case_number'] = "Case Number";
