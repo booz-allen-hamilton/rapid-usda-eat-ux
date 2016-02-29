@@ -24,7 +24,7 @@ $lang['nav_application_status'] = "My Status";
 $lang['nav_help'] = "Questions and Answers";
 
 // Weclome
-$lang['welcome_page_title'] = "Apply for Free and Reduced Price School Meals";
+$lang['welcome_page_title'] = "School Meals for Kids";
 $lang['welcome_title'] = "Meals for Kids";
 $lang['welcome_description_part_one'] = "Welcome to the (INSERT SCHOOL DISTRICT)'s application for free and reduced price school meals! On this site, you will be asked a series of questions that will provide your district with the information they need to certify your children for school meals. <br /><br /> If at any point you have questions about the form, eligibility, or what information to include, you can click the";
 $lang['welcome_description_part_two'] = " next to the question. You only need to fill out one application per household.";
