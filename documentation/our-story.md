@@ -55,7 +55,7 @@ Below is an image of the Challenge Brief that we created to align on our scope, 
 
 Armed with our hypotheses and existing knowledge, we created a journey map for the parent and the school administrator. A journey map looks at the **emotional journey of applying for meals.** What are our stakeholders doing before, during, and after the application process? The map resulted in the identification of pain points, areas where design and engineering could come together to improve the user experience. Journey mapping gets us closer to user problems and frustrations. Below is what the current state journey map looked like for the school administrator and parent: 
 
-![Journey Map](images/UX-JourneyMap.jpg)
+![Journey Map](images/journey-map-paper-03)
 
 Next, we created the first draft of our personas, or archetypes that represent end users. We split into two teams and sketched personas, which enabled us to generate ideas that would meet the needs of the users. We created Run-down Ronaldo, a single dad who is trying to raise a family on little income, and Frazzled Phyllis, a school administrator that is over-worked and short on time. Check out our fine artwork:
 
