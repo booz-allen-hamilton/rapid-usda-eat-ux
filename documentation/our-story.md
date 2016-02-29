@@ -182,6 +182,11 @@ As a team, we went through each screen to make edits in lanauge and check agains
 
 ![Language Form](images/Team-1.jpg)
 
+**Connecting people with the benfits they need**
+If your kids are hungry, it's also possible that you don't have a good internet connection or a reliable phone. In our early ideation sessions we had the idea of using the school meal form to connect people with other benfits. Although we didn't have time to work this into our MVP we came up with a workaround that include other benefits information and frequently asked questions. We used **elevio** so to house this information. You can see what it looks like on our home screen in the image below:
+
+![Information bar](images/FAQ-plugin.png)
+
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
