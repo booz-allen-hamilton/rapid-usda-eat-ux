@@ -121,7 +121,7 @@ $lang['household_members_child_status_help'] = "FIXME Child status help";
 // All Household Members - Income section
 $lang['household_income_adult_name_suffix'] = "Income (Adult)";
 $lang['household_income_child_name_suffix'] = "Income (Child)";
-$lang['household_income_gross'] = "Please select income category, income type, the dollor amount, and how frequently it is paid. Click the information icon on the right for more detail.";
+$lang['household_income_gross'] = "Please select income category, income type, the dollar amount, and how frequently it is paid. Report all amounts in gross income ONLY. Gross income is the total income received before taxes or deductions. Select your type of income under each category. Click the information icon on the right for more detail.";
 $lang['household_income_category'] = "Income Category";
 $lang['household_income_type'] = "Type";
 $lang['household_income_amount_freq'] = "Dollar Amount / Frequency";

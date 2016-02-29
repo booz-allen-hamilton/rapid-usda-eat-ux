@@ -62,7 +62,7 @@
 		<div class="earns_income">
 			<div class="col-md-offset-1 col-md-10 well mt-20">
 				<h3><?=$this->lang->line('household_income_adult_name_suffix')?></h3>
-				<h4 style="font-weight: normal;"><?=$this->lang->line('household_income_gross')?></h4>
+				<h4 style="font-weight: normal;"><?=$this->lang->line('household_income_gross')?>
 				<div class="row tableHeaders mt-20">
 					<div class="col-sm-12 col-md-3">
 						<span class="asterisk">*</span> <?=$this->lang->line('household_income_category')?>
