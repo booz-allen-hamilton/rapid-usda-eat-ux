@@ -167,7 +167,7 @@ Our new flow inspired a few additions to the wirefreams. The first is shown in a
 The second addition was the introduction of a modal screen for adult and children income. Our intention here was to reduce the amount of information on one screen. 
 
 In two days we went from **low-fidelity...**
-![modal sketch](images/UI-Sketch-Modal.jpg)
+![modal sketch](images/UI-Modal-Sketch2.png)
 
 To **high-fidelity**
 ![UI Modal Hi Fi](images/UI-Adult-Income-Modal.png)
