@@ -116,7 +116,7 @@ $lang['household_members_check_one'] = "(Check one or more)";
 $lang['household_members_earnings_from_work_help'] = "FIXME Earnings from work";
 $lang['household_members_public_assistance_help'] = "FIXME Public assistance";
 $lang['household_members_pensions_help'] = "FIXME Pensions";
-$lang['household_members_child_status_help'] = "FIXME Child status help";
+$lang['household_members_child_status_help'] = "Select the box that describes your child.";
 
 // All Household Members - Income section
 $lang['household_income_adult_name_suffix'] = "Income (Adult)";
@@ -230,7 +230,7 @@ $lang['confirmation_not_required'] = "Not required";
 
 // Terms and Conditions
 $lang['terms_and_cond_title'] = "Terms and Conditions";
-$lang['terms_and_cond_subtitle'] = "Please read the statements and indicate if you agree.";
+$lang['terms_and_cond_subtitle'] = "Please read the statements and say if you agree.";
 $lang['terms_and_cond_agree'] = "I agree to the terms and conditions.";
 $lang['terms_and_cond_content'] = "<strong>USDA Non-Discrimination Statement</strong><br></br>In accordance with Federal civil rights law and U.S. Department of Agriculture (USDA) civil rights regulations and policies, the USDA, its Agencies, offices, and employees, and institutions participating in or administering USDA programs are prohibited from discriminating based on race, color, national origin, sex, disability, age, or reprisal or retaliation for prior civil rights activity in any program or activity conducted or funded by USDA.<br></br>Persons with disabilities who require alternative means of communication for program information (e.g. Braille, large print, audiotape, American Sign Language, etc.), should contact the Agency (State or local) where they applied for benefits. Individuals who are deaf, hard of hearing or have speech disabilities may contact USDA through the Federal Relay Service at (800) 877-8339. Additionally, program information may be made available in languages other than English.
 <br></br>To file a program complaint of discrimination, complete the <a href='<a href='https://https://www.ascr.usda.gov/filing-program-discrimination-complaint-usda-customer'>https://www.ascr.usda.gov/filing-program-discrimination-complaint-usda-customer</a>. and at any USDA office, or write a letter addressed to USDA and provide in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to USDA by:<br></br>(1) Mail: U.S. Department of Agriculture Office of the Assistant Secretary for Civil Rights 1400 Independence Avenue, SW Washington, D.C. 20250-9410;<br></br>(2) Fax: (202) 690-7442; or<br></br>(3) Email: program.intake@usda.gov.
@@ -239,7 +239,7 @@ $lang['terms_and_cond_help'] = "FIXME tandc";
 
 // Electronic Signature
 $lang['electronic_sig_title'] = "Signature";
-$lang['electronic_sig_subtitle'] = "Please indicate that you comply with the statement below by selecting the box and typing your name.";
+$lang['electronic_sig_subtitle'] = "Please confirm that you comply with the statement below by selecting the box and typing your name.";
 $lang['electronic_sig_statement'] = "I promise the information in this application is true and that I have reported all income. I understand that this information may grant me federal funds, and that my school may check the information. If I give false information on purpose, I am aware that my children may lose meal benefits and I may be prosecuted under the law.";
 $lang['electronic_sig_accept'] = "Accept";
 $lang['electronic_sig_not_available'] = "Not available";
