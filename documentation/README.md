@@ -78,9 +78,9 @@ Our team consisted of diverse set of volunteers in Booz Allen with a passion for
 
 Getting this foundational understanding directly from school administrators, potential users, and our own research allowed us to create a solution that we were extremely proud of.   Yes, it met the field requirements, process flows, and back end architecture requirements.   More than that, though, it made the application process smoother, easier to understand, and quicker to complete.  And because we used technologies like bootstrap and MVC, our solution is something all States could quickly leverage and implement.  Supporting an effort that could potentially impact millions of families across the nation gave us all a sense of pride – something none of us are shy about communicating to our fellow colleagues!  We walked away from this challenge with a deeper understanding and appreciation for the families in need, and an even stronger commitment to helping FNS address some of its key digital and program transformation efforts moving forward.
 
-
-
 ![Learn Ideate Make Check](https://github.com/booz-allen-hamilton/rapid-usda-eat-ux/blob/master/documentation/images/ExecSummary-Iteration.png)
+
+
 
 
 ## What We Learned
@@ -92,7 +92,6 @@ As a long term partner of FNS, we’ve learned a lot about the NSLP and other nu
 * _“Online is definitely better... The paper ones, we scan them also. [However,] they do the wrong ink color or they leave out information. They don’t sign it or leave off a kid.”_ – Theresa (Tustin Unified School District)
 
 We also learned that efforts to transform paper-based processes into online forms or applications was often times prohibitively expensive, which has the unintended consequence of different states tackling the same problem in different ways, including (in some cases) districts within the same state creating different solutions.  We addressed this issue by creating a consistent, yet flexible and customizable platform for our solution. In terms of the application itself, we initially assumed that misreporting information attributed to lack of understanding could be rectified by ensuring the application was translated into languages other than English; however, the true issue was not multilingual availability, but complex wording across all languages, including English. Even as a group of native English speakers, we were confused by some of the terminology. This is one reason we prioritized plain language usage in our solution.
-
 
 
 
