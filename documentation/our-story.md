@@ -252,7 +252,11 @@ Average confidence rating = 4
 ![Usability Data](images/Usability-test-data.png)
 
 **What did we learn?** 
-From our test we learned that we could improve the wording in the instructions up front. No one opened the FAQ or toolbar, so we might want to revisit what utility that provides. There is also some work to be done around clarifying the use of the SSN and why we are asking about race and ethnicity - some users found this to be threatening. We were happy with the way the aesthetics of the form were recieved - 5/5 users found the experience enjoyable. 
+From our experiment we learned that we could improve the wording in the instructions. No one opened the FAQ or toolbar, so we might want to revisit what utility that provides. There is also work to be done around clarifying the use of the SSN and why we are asking about race and ethnicity - some users found this to be threatening. We were happy with the way the aesthetics of the form were recieved - 5/5 users found the experience enjoyable. Overall, we (and our users!) we are proud of the MVP we made and tested in three weeks. Here's the last screen shot of the home page. Instead of starting the application, a user can click the **share button** to email the form to other people in need. Are your kids hungry? Apply for school meals at LunchBox!
+
+![Share Lunchbox](images/Share-screen.png)
+
+
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
