@@ -32,7 +32,7 @@ Additionally, we were inspired to change the pace at which government can bring 
 
 Our approach began and ended with a focus on the customer.  It started with us really putting ourselves in the shoes of the customer – creating a journey map (informed by interviews) that walked through the process they would follow.  That journey began before they started filling out a free and reduced price meal application, and ended well after they turned it in.   This gave us perspective, empathy, and understanding of the challenges and emotions each user group faced throughout their journey.
 
-![Journey Maps](https://github.com/booz-allen-hamilton/rapid-usda-eat-ux/blob/master/documentation/images/Journey-Map-Paper-03.png)
+![Journey Maps](https://raw.githubusercontent.com/booz-allen-hamilton/rapid-usda-eat-ux/master/documentation/images/Journey-Map-Paper-03.png)
 
 Using the journey map as a background, we rapidly prototyped a solution using our Rapid Solution Sprint approach, which is a very creative and iterative cycle in which we focus on empathy and understanding of end users and quickly build, test, learn, and validate our solution.  Each iteration building on the last and changing based on the ideas and feedback we obtain through user testing.  For more details on our six phased approach, including how we developed the journey maps and how we iterated and tested our evolving solution, click below.
 
@@ -78,7 +78,7 @@ Our team consisted of diverse set of volunteers in Booz Allen with a passion for
 
 Getting this foundational understanding directly from school administrators, potential users, and our own research allowed us to create a solution that we were extremely proud of.   Yes, it met the field requirements, process flows, and back end architecture requirements.   More than that, though, it made the application process smoother, easier to understand, and quicker to complete.  And because we used technologies like bootstrap and MVC, our solution is something all States could quickly leverage and implement.  Supporting an effort that could potentially impact millions of families across the nation gave us all a sense of pride – something none of us are shy about communicating to our fellow colleagues!  We walked away from this challenge with a deeper understanding and appreciation for the families in need, and an even stronger commitment to helping FNS address some of its key digital and program transformation efforts moving forward.
 
-![Learn Ideate Make Check](https://github.com/booz-allen-hamilton/rapid-usda-eat-ux/blob/master/documentation/images/ExecSummary-Iteration.png)
+![Learn Ideate Make Check](https://raw.githubusercontent.com/booz-allen-hamilton/rapid-usda-eat-ux/master/documentation/images/ExecSummary-Iteration.png)
 
 
 
