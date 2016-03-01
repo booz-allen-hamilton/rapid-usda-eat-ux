@@ -1,4 +1,4 @@
-![LunchBox](http://usda-eat-dev.elasticbeanstalk.com/assets/img/header/logo.png)
+![LunchBox](http://lunchbox.digitalinteractivedevelopers.com/assets/img/header/logo.png)
 
 #### _An OpenSource Solution for Families to Apply for Free & Low-Cost School Meal Programs_
 
@@ -13,9 +13,9 @@ __The Challenge: Electronic Application Transformation__ – Create a model elec
 
 
 ## Demo, Videos, and More
-- Live Demo at http://usda-eat-dev.elasticbeanstalk.com/
-- [Watch our Submission Video]()
-- [Watch more on our Rapid Solutions Sprint]()
+- Live Demo at http://lunchbox.digitalinteractivedevelopers.com
+- [Watch our Submission Video](https://vimeo.com/157173503)
+- [Watch more on our Rapid Solutions Sprint](bit.ly/bah-rapid-solutions)
 - See Our Iterations from ["A"](https://invis.io/NW68ENL57) and ["B"](https://invis.io/R768ENQSC) to [Wireframes](https://invis.io/U868ENTMK) to [HiFi Mockups](https://invis.io/CD68ENVYB) 
 
 
