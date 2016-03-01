@@ -215,8 +215,29 @@ We conducted a few in-person moderated tests. We learned about communication pre
 
 In one test, Lucinda, a 43 year-old single mother of two, filled out the adult income and clicked, "save." She wanted to go back to make edits and was confused about how to go back to our modal box. She asked out loud, "How do I get back to income?" The design team changed some language on the form to make the functionality more clear. Here is the questionnaire that she filled out after her test:
 
-To learn a little more, we set up a test on **usertesting.com** to test five people with low computer literacy in an unmoderated usability test. 
+To learn a little more, we set up a test on **usertesting.com** to test five people with low computer literacy in an unmoderated usability test. We gave users a scenario that they were applying for benefits for their three children - two children and one foster childer. Our user poor had average to low computer literacy, took the test on a desktop computer, made under $40,000 a year, and were parents or foster parents between the ages of 18-50. Overall, 3/5 users completed scenario C successfully. Other users went straight for the option of recieveing other benefits. Here is what they said:
 
+**On Aesthetics**
+"The forms look and feel were great in the sense that made the process feel not as difficult or stressful. My overall impression was i feel comfortable in checking to see if my children and I are eligable for free lunches during their school year."
+
+"Very clean and easy to use. Categorization was spot on. Color scheme was uniform and clear."
+
+**On Instructions**
+"I'd like it if you told me what to expect up front."
+
+**On Ease of Use**
+"The site was put together and laid out very well. The site makes a very stressful and depressing process less stressful and not as deressing. No magic wand needed for this site."
+
+"Again, [I liked] the simplicity. Acessible to any person with even the most basic computer skills."
+
+**On Answer Accuracy**
+Average confidence rating = 4
+
+**Overall Feedback About the Form**
+" I would probably include and explanation as to why the ethnicity and race is important. Maybe just mentioning that it is for statistitcal services would suffice. I also found it strange how the ethnicities are combined."
+"I would add clearer options to the home page and maybe some color to take away the blandness of it all."
+
+What did we learn? From our test we learned that we could improve the wording in the instructions up front. No one opened the FAQ or toolbar, so we might want to revisit what utility that provides. We can also improve the clarity in the choices on the scenarios page. We were happy with the way the aesthetics of the form were recieved. 
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
