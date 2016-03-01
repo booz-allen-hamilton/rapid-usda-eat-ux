@@ -73,7 +73,7 @@ Getting this foundational understanding directly from school administrators, pot
 
 
 
-![Learn Ideate Make Check](images/ExecSummary-Iteration.png)
+![Learn Ideate Make Check](https://github.com/booz-allen-hamilton/rapid-usda-eat-ux/blob/master/documentation/images/ExecSummary-Iteration.png)
 
 
 ## What We Learned
