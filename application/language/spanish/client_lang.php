@@ -26,7 +26,7 @@ $lang['nav_help'] = "Preguntas y Respuestas";
 // Weclome
 $lang['welcome_page_title'] = "Alimentos gratis o a precio rebajado para los niños";
 $lang['welcome_title'] = "Alimentos gratis o a precio rebajado para los niños";
-$lang['welcome_description_part_one'] = "Bienvenido al (Districto de escuales) aplicacion para alimentos gratis o precio reducido. En este sitio, le haremos preguntas que van a proveer informacion que su districto necesita para aprobar los alimentos de sus hijos. <br /><br /> Si en algun momento tiene preguntas es este formulario, el ser elegible, o que informacion debe incluir, usted puede hacer click en el";
+$lang['welcome_description_part_one'] = "Bienvenido al (Districto de escuelas) aplicacion para alimentos gratis o precio reducido. En este pagina, le haremos preguntas que van a proveer informacion que su districto necesita para aprobar los alimentos de sus hijos. <br /><br /> Si en algun momento tiene preguntas es este formulario, el ser elegible, o que informacion debe incluir, usted puede hacer click en el";
 $lang['welcome_description_part_two'] = "para mas informacion. Solamente necesita llenar una aplicacion por hogar..";
 $lang['welcome_required'] = "Soy elegible?";
 $lang['welcome_required_items'] = array(
@@ -50,17 +50,17 @@ $lang['getting_started_description'] = "Este es el nombre de la persona que llen
 $land['getting_started_help'] = "Todas las aplicaciones deben estar firmados por un miembro adulto de la familia.";
 $lang['getting_started_age'] = "Tienes 21 años o mas?";
 $lang['getting_started_elements'] = array(
-	'primer_nombre' => array(
+	'first_name' => array(
 		'label'       => "Primer Nombre",
 		'placeholder' => "ex: Jose",
 		'error'				=> "Primer nombre por favor."
 	),
-	'apellido_name' => array(
-		'label'       => "Apellido Name",
+	'last_name' => array(
+		'label'       => "Apellido",
 		'placeholder' => "ex: Gutierrez",
 		'error'				=> "Apellido por favor."
 	),
-	'inicial_segundo_nombre' => array(
+	'middle_initial' => array(
 		'label'       => "Inicial Segundo Nombre",
 		'placeholder' => "ex:C",
 		'error'				=> "Inicial segundo nombre por favor."
@@ -119,7 +119,7 @@ $lang['household_members_child_status_help'] = "Select the box that describes yo
 // All Household Members - Income section
 $lang['household_income_adult_name_suffix'] = "Ingreso (Adulto)";
 $lang['household_income_child_name_suffix'] = "Ingreso (Niño)";
-$lang['household_income_gross'] = "Por favor seleccione la categoría de ingresos, tipo de ingreso, cantidad de dollares, y con qué frecuencia le pagan. Haga clic en la informacion de la derecha.";
+$lang['household_income_gross'] = "Por favor selecione la categoría de ingresos, tipo de ingreso, cantidad de dollares, y con qué frecuencia le pagan. Haga clic en la informacion de la derecha.";
 $lang['household_income_category'] = "Categoria de ingreso";
 $lang['household_income_type'] = "Tipo";
 $lang['household_income_amount_freq'] = "Cantidad en dollares/frecuencia";
@@ -135,7 +135,7 @@ $lang['household_income_adult_public_asst'] = array(
 );
 $lang['household_income_adult_other_income'] = array(
 	'title' => 'Las pensiones, Retiro, y todos los demás ingresos',
-	'help' => "Recive dinero de renta, seguro social, ingresos por inversiones, fondo de herencia,  o pagos en efectivo?"
+	'help' => "Recibe dinero de renta, seguro social, ingresos por inversiones, fondo de herencia,  o pagos en efectivo?"
 );
 $lang['household_income_child_earnings_from_work'] = array(
 	'title' => 'Lo que gana en el trabajo',
@@ -234,12 +234,12 @@ $lang['electronic_sig_title'] = "Firma";
 $lang['electronic_sig_subtitle'] = "Por favor indique que usted ha cumplido con la declaracion, escribiendo su nombre en el espacio correspondiente.";
 $lang['electronic_sig_statement'] = "Yo prometo que la informacion en esta aplicacion es verdadera y que he reportado todos mis ingresos.  Yo entiendo que esta informacion ese verdadera y puede concederme fondos federales, y que mi escuela puede investigar la informacion. Estoy conciente que mis niñoss pueden perder los beneficios de alimento y yo puedo ser procesado bajo la ley si yo doy informacion falsa a proposito.";
 $lang['electronic_sig_accept'] = "Accept";
-$lang['electronic_sig_not_available'] = "Not available";
+$lang['electronic_sig_not_available'] = "No disponible";
 $lang['error_electronic_sig_agree'] = "You must agree to continue";
 $lang['error_electronic_sig_name'] = "Por favor escriba su nombre.";
-$lang['error_electronic_sig_social'] = "SSN";
+$lang['error_electronic_sig_social'] = "Numero de Seguro Social";
 $lang['electronic_sig_subtitle_help'] = "FIXME sub help";
-$lang['electronic_sig_ssn_help'] = "Si usted no tiene un SSN puede todavía ser elegible para recibir beneficios.";
+$lang['electronic_sig_ssn_help'] = "Si usted no tiene un numero de Seguro Social puede todavía ser elegible para recibir beneficios.";
 
 // Success
 $lang['success_submission_id'] = "Submission ID: ";
@@ -252,12 +252,14 @@ $lang['title_assistance'] = "Other Assistance";
 $lang['label_assistance'] = "Do you or your kids participate in <strong>SNAP</strong>, <strong>TANF</strong>, or <strong>FDPIR</strong>?";
 $lang['label_assistance_clarification'] = "(If so, you are already eligible for free/reduced school lunch.)";
 $lang['link_define'] = "Program Definitions";
+
 // Assistance Modal
 $lang['modal_assistance_title'] = "Program Definitions";
 $lang['modal_assistance_snap'] = "Supplemental Nutrition Assistance Program";
 $lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
 $lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
 $lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
+
 //	NEW STUFF
 $lang['nav_faq'] = "FAQ";
 $lang['nav_required'] = "Required";
