@@ -7,8 +7,7 @@
 
 Thirty million children participate in the National free and reduced-price school lunch program every day. However, the application process is paper based and cumbersome making it challenging for applicants to receive the benefits they need. Enter “LunchBox” – a model web form application that was inspired and informed by user research and constructed to address their key pain points.  “LunchBox” uses plain language to make the requirements clear, uses prompts to reduce user omissions and errors, features help text to answer applicants’ questions as they go, and provides accurate and complete applications to school administrators.
 
-In addition to addressing key issues with the user experience, “LunchBox” was constructed in a way that makes it easy for states to quickly and easily modify the form for their specific use – whether that be something as simple as changing the color scheme, to something more complex, like adding in additional fields and/or validation rules.   Ultimately, the “LunchBox” web-form could create a means for FNS to increase usage and compliance, improve program integrity, and expand insight so that FNS is set up to make the next round of program innovations.  
-FNS is focused on delivering nutritional assistance programs to the people who need them, easily and efficiently.  That is what the “LunchBox” form design and architecture does for free and reduced price meals.
+In addition to addressing key issues with the user experience, “LunchBox” was constructed in a way that makes it easy for states to quickly and easily modify the form for their specific use – whether that be something as simple as changing the color scheme, to something more complex, like adding in additional fields and/or validation rules.   Ultimately, the “LunchBox” web-form could create a means for FNS to increase usage and compliance, improve program integrity, and expand insight so that FNS is set up to make the next round of program innovations.  FNS is focused on delivering nutritional assistance programs to the people who need them, easily and efficiently.  That is what the “LunchBox” form design and architecture does for free and reduced price meals.
 
 
 ___Project Links:___
@@ -26,9 +25,17 @@ ___Project Links:___
 ## Our Inspiration
 
 We were inspired by the stories of the schools and parents that interface with the application process – and shocked at the paper pushing challenges existing in the internet era. Designing for (and with) the user enabled us to bring our theoretical prototype into a working product that put usability – ease of learning, decrease in errors, and increase in reporting – first.
+
 Additionally, we were inspired to change the pace at which government can bring services and products to their citizens. The hackathon approach aligned well with our passion for rapid prototyping of client ideas, which can bring things to life in a matter of weeks or months (not years).
 
+## Our Approach
+
+Our approach began and ended with a focus on the customer.  It started with us really putting ourselves in the shoes of the customer – creating a journey map (informed by interviews) that walked through the process they would follow.  That journey began before they started filling out a free and reduced price meal application, and ended well after they turned it in.   This gave us perspective, empathy, and understanding of the challenges and emotions each user group faced throughout their journey.
+
+![Journey Maps](https://github.com/booz-allen-hamilton/rapid-usda-eat-ux/blob/master/documentation/images/Journey-Map-Paper-03.png)
+
 Using the journey map as a background, we rapidly prototyped a solution using our Rapid Solution Sprint approach, which is a very creative and iterative cycle in which we focus on empathy and understanding of end users and quickly build, test, learn, and validate our solution.  Each iteration building on the last and changing based on the ideas and feedback we obtain through user testing.  For more details on our six phased approach, including how we developed the journey maps and how we iterated and tested our evolving solution, click below.
+
 
 [Read More on Our Story Here](https://github.com/booz-allen-hamilton/rapid-usda-eat-ux/blob/master/documentation/our-story.md)
 
