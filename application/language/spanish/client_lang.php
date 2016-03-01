@@ -233,68 +233,69 @@ $lang['terms_and_cond_help'] = "FIXME tandc";
 $lang['electronic_sig_title'] = "Firma";
 $lang['electronic_sig_subtitle'] = "Por favor indique que usted ha cumplido con la declaracion, escribiendo su nombre en el espacio correspondiente.";
 $lang['electronic_sig_statement'] = "Yo prometo que la informacion en esta aplicacion es verdadera y que he reportado todos mis ingresos.  Yo entiendo que esta informacion ese verdadera y puede concederme fondos federales, y que mi escuela puede investigar la informacion. Estoy conciente que mis niñoss pueden perder los beneficios de alimento y yo puedo ser procesado bajo la ley si yo doy informacion falsa a proposito.";
-$lang['electronic_sig_accept'] = "Accept";
+$lang['electronic_sig_accept'] = "Acepto";
 $lang['electronic_sig_not_available'] = "No disponible";
-$lang['error_electronic_sig_agree'] = "You must agree to continue";
+$lang['error_electronic_sig_agree'] = "Usted debe aceptar para continuar";
 $lang['error_electronic_sig_name'] = "Por favor escriba su nombre.";
 $lang['error_electronic_sig_social'] = "Numero de Seguro Social";
 $lang['electronic_sig_subtitle_help'] = "FIXME sub help";
 $lang['electronic_sig_ssn_help'] = "Si usted no tiene un numero de Seguro Social puede todavía ser elegible para recibir beneficios.";
 
 // Success
-$lang['success_submission_id'] = "Submission ID: ";
-$lang['success_return'] = "Return Home";
+$lang['success_submission_id'] = "Identificación de Envío: ";
+$lang['success_return'] = "Página Principal";
 
 // Possibly unused
 
 // Other Assistance Skip Pattern
-$lang['title_assistance'] = "Other Assistance";
-$lang['label_assistance'] = "Do you or your kids participate in <strong>SNAP</strong>, <strong>TANF</strong>, or <strong>FDPIR</strong>?";
-$lang['label_assistance_clarification'] = "(If so, you are already eligible for free/reduced school lunch.)";
-$lang['link_define'] = "Program Definitions";
+$lang['title_assistance'] = "Programas de Ayuda";
+$lang['label_assistance'] = "Si usted y sus hijos participan en <strong>SNAP</strong>, <strong>TANF</strong>, o <strong>FDPIR</strong>?";
+$lang['label_assistance_clarification'] = "(pueden recibir comidas gratis o a precio rebajado.)";
+$lang['link_define'] = "Las Definiciones de Programas";
 
 // Assistance Modal
-$lang['modal_assistance_title'] = "Program Definitions";
-$lang['modal_assistance_snap'] = "Supplemental Nutrition Assistance Program";
-$lang['modal_assistance_tanf'] = "Temporary Assistance for Needy Families";
-$lang['modal_assistance_fdpir'] = "Food Distribution Program on Indian Reservations";
-$lang['modal_assistance_clarification'] = "If you or anyone else in your household participates in any of these programs, your children are automatically eligible for the free and reduced school lunch program. Just enter your case number.";
+$lang['modal_assistance_title'] = "Las Definiciones de Programas";
+$lang['modal_assistance_snap'] = "El Programa Suplementario de Asistencia Nutricional";
+$lang['modal_assistance_tanf'] = "El Programa de Asistencia Temporal para Familias Necesitadas";
+$lang['modal_assistance_fdpir'] = "Programa de distribución de alimentos en las Reservaciones Indias";
+$lang['modal_assistance_clarification'] = "Si usted o alguien en su familia participa en cualquiera de estos programas, sus hijos son automáticamente elegibles para alimentos gratis o precio rebajado. Simplemente ingrese su número de caso.";
 
-//	NEW STUFF
-$lang['nav_faq'] = "FAQ";
-$lang['nav_required'] = "Required";
-$lang['other_assistance_select_program'] = "Select Program";
-$lang['race_select_all_that_apply'] = "Select all that apply";
-$lang['race_american_indian_alaskan_native'] = "American Indian or Alaskan Native";
-$lang['race_asian_black_african_american'] = "Asian, Black or African American";
-$lang['race_native_hawaiian_other_pacific_islander'] = "Native Hawaiian or Other Pacific Islander";
-$lang['race_white'] = "White";
-$lang['ethnicity_no_answer'] = "No Answer";
-$lang['ethnicity_hispanic_latino'] = "Hispanic / Latino";
-$lang['ethnicity_not_hispanic_latino'] = "Not Hispanic / Latino";
-$lang['weekly'] = "Weekly";
-$lang['twice_a_week'] = "2 Times a Week";
-$lang['monthly'] = "Monthly";
-$lang['twice_a_month'] = "2 Times a Month";
-$lang['child_description_homeless'] = 'Homeless';
-$lang['child_description_migrant'] = 'Migrant';
-$lang['child_description_runaway'] = 'Runaway';
-$lang['child_description_foster'] = 'Foster';
-$lang['child_description_none'] = 'None of the Above';
+// NEW STUFF
+$lang['nav_faq'] = "Preguntas Frecuentes";
+$lang['nav_required'] = "Obligatorio";
+$lang['other_assistance_select_program'] = "Selecione Programa";
+$lang['race_select_all_that_apply'] = "Todos los que aplican";
+$lang['race_american_indian_alaskan_native'] = "Indio Americano o Nativo de Alaska";
+$lang['race_asian_black_african_american'] = "Aciatico, Negro, o Afroamericanos";
+$lang['race_native_hawaiian_other_pacific_islander'] = "Nativo de Hawaii o de las Islas del Pacifico";
+$lang['race_white'] = "Blanco";
+$lang['ethnicity_no_answer'] = "Ninguna Respuesta";
+$lang['ethnicity_hispanic_latino'] = "Hispano / Latino";
+$lang['ethnicity_not_hispanic_latino'] = "No Hispano / Latino";
+$lang['weekly'] = "Semanal";
+$lang['twice_a_week'] = "Dos veces por semana";
+$lang['monthly'] = "Mensual";
+$lang['twice_a_month'] = "Dos veces por mes";
+$lang['child_description_homeless'] = 'Sin hogar';
+$lang['child_description_migrant'] = 'Inmigrante';
+$lang['child_description_runaway'] = 'Escapado';
+$lang['child_description_foster'] = 'Adoptivo';
+$lang['child_description_none'] = 'Ninguno de las Opciones';
+
 //	indexes will serve as keys
-$lang['adult_earnings_from_work_list_1'] = 'Salary, wages, cash bonuses';
-$lang['adult_earnings_from_work_list_2'] = 'Net income from self employment';
-$lang['adult_earnings_from_work_list_3'] = 'Strike benefits';
+$lang['adult_earnings_from_work_list_1'] = 'Sueldos, salarios y bonos en efectivo';
+$lang['adult_earnings_from_work_list_2'] = 'Ingreso neto si es su propio jefe';
+$lang['adult_earnings_from_work_list_3'] = 'Beneficios de huelga';
 $lang['adult_earnings_from_work_list_4'] = 'Allowances for off-base housing, food, and clothing';
-$lang['adult_earnings_from_work_list_5'] = 'Military pay and cash bonuses (do not include combat pay, FSSA or privatized housing allowances)';
-$lang['adult_public_asst_list_1'] = "Unemployment benefits";
+$lang['adult_earnings_from_work_list_5'] = 'Sueldos de militar';
+$lang['adult_public_asst_list_1'] = "beneficios de desempleo";
 $lang['adult_public_asst_list_2'] = "Worker's compensation";
-$lang['adult_public_asst_list_3'] = "Supplemental Security Income (SSI)";
+$lang['adult_public_asst_list_3'] = "Ingreso de Seguro Social (SSI)";
 $lang['adult_public_asst_list_4'] = "Cash assistance from State or local government";
 $lang['adult_public_asst_list_5'] = "Alimony payments";
 $lang['adult_public_asst_list_6'] = "Child support payments";
 $lang['adult_public_asst_list_7'] = "Veteran's benefits";
-$lang['adult_other_income_list_1'] = "Social Security (including railroad and black lung benefits)";
+$lang['adult_other_income_list_1'] = "Seguro Social (including railroad and black lung benefits)";
 $lang['adult_other_income_list_2'] = "Private Pensions or disability";
 $lang['adult_other_income_list_3'] = "Income from trusts or estates";
 $lang['adult_other_income_list_4'] = "Annuities";
