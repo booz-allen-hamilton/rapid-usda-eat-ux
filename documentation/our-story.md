@@ -60,7 +60,7 @@ Armed with our hypotheses and existing knowledge, we created a journey map for t
 Next, we created the first draft of our personas, or archetypes that represent end users. We split into two teams and sketched personas, which enabled us to generate ideas that would meet the needs of the users. We created Run-down Ronaldo, a single dad who is trying to raise a family on little income, and Frazzled Phyllis, a school administrator that is over-worked and short on time. Check out our fine artwork:
 
 ![Ronaldo Sketch](images/UX-Persona-Parent-Sketch.png)
-![Admin sketch](images/school-admin-sketch.pdf)
+![Admin sketch](images/school-admin-sketch.png)
 
 If we were Rondalo, where would we be filling out this form? Maybe on our home computer, perhaps at a public library, but mostly, we found this population accesses the internet from their mobile device. So we used Bootstrap to develop our solution. It provided a robust grid system and pre-styled HTML elements that enabled us to quickly and effectively make a website that is responsive to multiple devices. 
 
