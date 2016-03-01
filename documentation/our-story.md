@@ -213,7 +213,7 @@ We conducted a few in-person moderated tests. We learned about communication pre
 **"I'd prefer if you text me because I don't have a computer."**
 **"If there is information I need to know, you don't want to hide it (behind a menu)."**
 
-In one test, Lucinda, a 43 year-old single mother of two, filled out the adult income and clicked, "save." She wanted to go back to make edits and was confused about how to go back to our modal box. She asked out loud, "How do I get back to income?" The design team changed some language on the form to make the functionality more clear. Here is the questionnaire that she filled out after her test:
+In one test, Lucinda, a 43 year-old single mother of two, filled out the adult income and clicked, "save." She wanted to go back to make edits and was confused about how to go back to our modal box. She asked out loud, "How do I get back to income?" The design team changed some language on the form to make the functionality more clear. 
 
 To learn a little more, we set up a test on **usertesting.com** to test five people with low computer literacy in an unmoderated usability test. We gave users a scenario that they were applying for benefits for their three children - two children and one foster childer. Our user poor had average to low computer literacy, took the test on a desktop computer, made under $40,000 a year, and were parents or foster parents between the ages of 18-50. Overall, 3/5 users completed scenario C successfully. Other users went straight for the option of recieveing other benefits. Here is what they said:
 
@@ -223,7 +223,7 @@ To learn a little more, we set up a test on **usertesting.com** to test five peo
 "Very clean and easy to use. Categorization was spot on. Color scheme was uniform and clear."
 
 **On Instructions**
-"I'd like it if you told me what to expect up front."
+"It would be nice if in the beginning you could tell us what kinds of questions, or categories we should be looking out for in terms of questions. That way, if we need to get certain paperwork we could get it and it's all in front of you."
 
 **On Ease of Use**
 "The site was put together and laid out very well. The site makes a very stressful and depressing process less stressful and not as deressing. No magic wand needed for this site."
@@ -235,9 +235,14 @@ Average confidence rating = 4
 
 **Overall Feedback About the Form**
 " I would probably include and explanation as to why the ethnicity and race is important. Maybe just mentioning that it is for statistitcal services would suffice. I also found it strange how the ethnicities are combined."
+
 "I would add clearer options to the home page and maybe some color to take away the blandness of it all."
 
-What did we learn? From our test we learned that we could improve the wording in the instructions up front. No one opened the FAQ or toolbar, so we might want to revisit what utility that provides. We can also improve the clarity in the choices on the scenarios page. We were happy with the way the aesthetics of the form were recieved. 
+"In the beginning, with those three circles, that were on the screen where the first circle was SNAP benefits and second one was All are foster kids, and third are none of the above. I really liked that because it was very clean, clear, categorization."
+
+![Usability Data](images/usability-test-data.png)
+
+What did we learn? From our test we learned that we could improve the wording in the instructions up front. No one opened the FAQ or toolbar, so we might want to revisit what utility that provides. There is also some work to be done around clarifying the use of the SSN and why we are asking about race and ethnicity - some users found this to be threatening. We were happy with the way the aesthetics of the form were recieved - 5/5 users found the experience enjoyable. 
 
 ###### [ [TOP](#) | [BACK HOME](../README.md) ]
 
