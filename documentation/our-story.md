@@ -240,7 +240,7 @@ Average confidence rating = 4
 
 "In the beginning, with those three circles, that were on the screen where the first circle was SNAP benefits and second one was All are foster kids, and third are none of the above. I really liked that because it was very clean, clear, categorization."
 
-![Usability Data](images/usability-test-data.png)
+![Usability Data](images/Usability-test-data.png)
 
 What did we learn? From our test we learned that we could improve the wording in the instructions up front. No one opened the FAQ or toolbar, so we might want to revisit what utility that provides. There is also some work to be done around clarifying the use of the SSN and why we are asking about race and ethnicity - some users found this to be threatening. We were happy with the way the aesthetics of the form were recieved - 5/5 users found the experience enjoyable. 
 
