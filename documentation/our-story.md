@@ -1,5 +1,5 @@
 # Our Whole Story
-— "How to Rapidly Prototype a Modern Digital Solution in __7 Working-sesions__ Over __3 Weeks__"
+— "How to Rapidly Prototype a Modern Digital Solution in __7 Working-sessions__ Over __3 Weeks__"
 
 ###### [ [BACK HOME](../README.md) ]
 
